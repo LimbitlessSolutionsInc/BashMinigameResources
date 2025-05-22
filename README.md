@@ -3,34 +3,31 @@
 # MinigameCore
 
 ## Table of Contents
+> 1. [Getting Started](#1-getting-started)  
+> 1. [Minigame Base](#2-minigame-base)  
+>    2.1 [Creating a minigame with MinigameBase](#21-creating-a-minigame-with-minigamebase)  
+>    2.2 [Practice Mode](#22-practice-mode)  
+>    2.3 [Minigame Base Settings](#23-minigame-base-settings)  
+>    2.4 [AMinigameBase Member Functions](#24-aminigamebase-member-functions)  
+>    2.5 [Events & Delegates](#25-events-&-delegates)  
+>    2.6 [Player Spawning](#26-player-spawning)  
+>    2.7 [Resetting](#27-resetting)  
+> 1. [Minigame Player](#3-minigame-player)  
+>    3.1 [Player Input](#31-player-input)  
+> 1. [Minigame Captures](#4-minigame-captures)  
+> 1. [BasePointCounter](#5-basepointcounter)  
+> 1. [Minigame UI](#6-minigame-ui)  
+>    6.1 [UMinigameUI](#61-uminigameui)  
+>    6.2 [Splitscreen](#62-splitscreen)  
+> 1. [Player Rotation Component](#7-player-rotation-component)  
+> 1. [Player Acceleration Component](#8-player-acceleration-component)  
+> 1. [Editor Tools](#9-editor-tools)  
+> 1. [Naming Conventions](#10-naming-conventions)  
+> 1. [Minigame Migration](#11-minigame-migration)  
+>    11.1 [Migrating C++](#111-migrating-cpp)  
+>    11.2 [Migrating Assets](#112-migrating-assets)  
 
-
->[Contents](#contents)
->[Getting Started](#gettingstarted)
->[Minigame Base](#minigamebase)
->	[Creating a minigame with MinigameBase](#creatingaminigamewithminigamebase)
->	[Practice Mode](#practicemode)
->	[Minigame Base Settings](#minigamebasesettings)
->	[AMinigameBase Member Functions](#aminigamebasememberfunctions)
->	[Events & Delegates](#eventsdelegates)
->	[Player Spawning](#playerspawning)
->	[Resetting](#resetting)
->[Minigame Player](#minigameplayer)
->	[Player Input](#playerinput)
->[Minigame Captures](#minigamecaptures)
->[BasePointCounter](#basepointcounter)
->[Minigame UI](#minigameui)
->	[UMinigameUI](#uminigameui)
->	[Splitscreen](#splitscreen)
->[Player Rotation Component](#playerrotationcomponent)
->[Player Acceleration Component](#playeraccelerationcomponent)
->[Editor Tools](#editortools)
->[Naming Conventions](#namingconventions)
->[Minigame Migration](#minigamemigration)
->[Migrating C++](#migratingc)
->[Migrating Assets](#migratingassets)
-
-# Getting Started
+# 1. Getting Started
 
 This documentation assumes an understanding of Unreal Engine 5 basics, such as familiarity with blueprints, actors, and gamemodes. C++ knowledge is **not** required.
 
@@ -38,7 +35,7 @@ To get started with making your new minigame:
 
 1. Create a new Unreal Engine 5.1 project with the same name as your minigame
 
-2. Create a folder called Plugins in the root folder of your newly created project. Add **“****MinigameCore",** **“BashCore”**,** “FCTween”**, **“LimbitlessBluetoothPlugin”**, and **“WinBT”** to your new Plugins folder from the provided resources. Enable this plugin in the editor (Edit > Plugins > Search for **MinigameCore **> Select checkbox)
+2. Create a folder called Plugins in the root folder of your newly created project. Add **“MinigameCore",** **“BashCore”**, **“FCTween”**, **“LimbitlessBluetoothPlugin”**, and **“WinBT”** to your new Plugins folder from the provided resources. Enable this plugin in the editor (Edit > Plugins > Search for **MinigameCore** > Select checkbox)
 
 ![Enter image alt description](Images/Dnq_Image_1.png)
 
@@ -50,15 +47,23 @@ To get started with making your new minigame:
 
 Example:
 
-`public class ``MyMinigame : ModuleRules`
-```
-{`	``public ``MyMinigame(ReadOnlyTargetRules Target) : ``base``(Target)`
-	{		PublicDependencyModuleNames.AddRange(`			``new ``string``[]`
-			{`				``"Core"``,`
-`				``"MinigameCore"``,`
-`				``"BashCore"`
-			}		);	}}
+```c#
+public class MyMinigame : ModuleRules
 
+{	public MyMinigame(ReadOnlyTargetRules Target) : base(Target)
+	{		
+			PublicDependencyModuleNames.AddRange(			
+				new string[]
+				{				
+					"Core",
+					"MinigameCore",
+					"BashCore"
+				}		
+			);
+		}
+	}
+
+```
 
 Set the local player for your project. Navigate to Edit > Project Settings > Engine > General Settings > Default Classes > Local Player Class. Alternatively, search “Local Player” in the Project Settings search bar, then scroll down to “Local Player Class”. Select **BashLocalPlayer** from the dropdown. Restart the editor.
 
@@ -71,14 +76,13 @@ Create a new level (File > New Level). This level should have the same name as y
 
 Create a minigame player, either in C++ or Blueprint, deriving from **AMinigamePlayer**. Name this player **BP_[Minigame Name]Player**. Replace [Minigame Name] with the name of your minigame or an initialism. 
 
-```
 To create from Blueprint, right click in the Content Browser and select Blueprint Class > All Classes > Search “MinigamePlayer”
 
 ![Enter image alt description](Images/IVQ_Image_4.png)
 
 To create from C++, go to Tools (in the top toolbar) > New C++ Class > All Classes > Search for “MinigamePlayer”
 
-8. Create a new Gamemode Blueprint derived from **BP_MinigameBase**. Fill the settings in the Details pane (see [AMinigameBase Settings](#heading=h.4pjvfuz1mhn4)). Name this Minigame Base as **BP_[Minigame Name]Gamemode**. Replace [Minigame Name] with the name of your minigame or an initialism. 
+8. Create a new Gamemode Blueprint derived from **BP_MinigameBase**. Fill the settings in the Details pane (see [2.3 Minigame Base Settings](#23-minigame-base-settings)). Name this Minigame Base as **BP_[Minigame Name]Gamemode**. Replace [Minigame Name] with the name of your minigame or an initialism. 
 
 ![Enter image alt description](Images/hEP_Image_5.png)
 
@@ -88,7 +92,7 @@ To create from C++, go to Tools (in the top toolbar) > New C++ Class > All Class
 
 At this point, the minigame is ready to integrate with the rest of the system. The rest of the minigame may be implemented.
 
-# Minigame Base
+# 2. Minigame Base
 
 The minigame base is a GameMode class that handles most of the common functionality of minigames. Create a new Blueprint class derived from MinigameBase for each minigame to add more specific behavior and set important information about your minigame.
 
@@ -96,55 +100,54 @@ To create a GameMode derived from MinigameBase, right click in the Content Brows
 
 ![Enter image alt description](Images/EpY_Image_6.png)
 
-## Creating a minigame with MinigameBase
+## 2.1 Creating a minigame with MinigameBase
 
-When making a minigame, much of the game logic should be in the level’s GameMode. The GameMode should inherit from the **BP_MinigameBase **to make use of common minigame functionality. It is also possible to create your minigame by inheriting from **AMinigameBase** in C++, although it is recommended to derive from Blueprint if possible. However, this will require setting additional fields that **BP_MinigameBase** provides (see [AMinigameBase Settings](#heading=h.4pjvfuz1mhn4)).
+When making a minigame, much of the game logic should be in the level’s GameMode. The GameMode should inherit from the **BP_MinigameBase** to make use of common minigame functionality. It is also possible to create your minigame by inheriting from **AMinigameBase** in C++, although it is recommended to derive from Blueprint if possible. However, this will require setting additional fields that **BP_MinigameBase** provides (see [2.3 Minigame Base Settings](#23-minigame-base-settings)).
 
 The blueprint GameMode used for your minigame should follow the naming convention of: **BP_[Minigame Name]Gamemode**, where [Minigame Name] is replaced with the name of your minigame or an initialism. 
 
 If deriving from AMinigameBase in C++, name the class **[Minigame Name]Gamemode**, where [Minigame Name] is replaced with the name of your minigame or an initialism. The respective header and source file should have the same name. 
 
-## Practice Mode
+## 2.2 Practice Mode
 
 When transitioning into a minigame from the board, it will start in the Practice Mode phase. During this phase, important information like the game controls and game objective is displayed on the screen. Players will be able to play the game during this time to learn how to play, but the results are not considered for rewards. While in Practice Mode, the game will continue to reset. PracticeMode will end once all players are ready by pressing the Ready Up action button.
 
 Practice Mode uses the same level. All of this is handled by the Minigame Base by default.
 
-To comply with the Practice Mode phase reset, ensure that your GameMode and any Actors implement OnReset, if applicable, (see [Resetting](#heading=h.hic783kjv38p)) and that you have filled in all the fields in the Practice category (see [AMinigameBase Settings](#heading=h.4pjvfuz1mhn4)).
+To comply with the Practice Mode phase reset, ensure that your GameMode and any Actors implement OnReset, if applicable, (see [2.7 Resetting](#27-resetting)) and that you have filled in all the fields in the Practice category (see [2.3 Minigame Base Settings](#23-minigame-base-settings)).
 
 Example of Practice Mode
 
 ![Enter image alt description](Images/4Ng_Image_7.png)
 
-## Minigame Base Settings
+## 2.3 Minigame Base Settings
 
 GameMode blueprints derived from **BP_MinigameBase** or **AMinigameBase** will have several fields in the Details pane that set important aspects of the minigame.
 
 | Member | Data Type | Description |
 |---|---|---|
-| Settings |  |  |
-| Player Objects | TArray<TSubclassOf
-<AMinigamePlayer>> | The class that each player will be spawned in as. The array is indexed by team number.  |
+| <strong>Settings</strong>  |
+| Player Objects | TArray<TSubclassOf\> | The class that each player will be spawned in as. The array is indexed by team number.  |
 | Team Type | EMinigameType | Determines the team split of the minigame. Options are free-for-all, 3-against-1, and 2-against-2 |
 | Minigame Duration | float | Duration of the minigame until the game is ended. In Practice Mode, the minigame will automatically reset after this duration. |
 | Level Sequence | ULevelSequence | An optional level sequence that will be played after all players ready up in Practice Mode. |
-| Practice |  |  |
+| <strong>Practice</strong> |
 | Minigame Name | FString | The name of the minigame that will be displayed in Practice Mode |
 | Description | FString | The description of the minigame that will be displayed in Practice Mode. This should explain important details such as game objectives, potential hazards, etc. |
 | Controls | TArray<FControlDisplay> | An array of Image-String pairs. Each image should be an icon that corresponds with a controller button or type of input. The string should be what that button or input does (e.g. “Jump”, “Attack”, etc.) |
 | ResetDelay | float | The amount of time between the game ending and resetting for the screen wipe effect to play.  |
-| UI |  |  |
+| <strong>UI   |
 | Practice UI Class | TSubclassOf<UPracticeModeUI> | The class of widget to display during Practice Mode. Set automatically when deriving from BP_MinigameBase. If deriving from C++, this needs to be set manually. |
 | Minigame UI Class | TSubclassOf<UMinigameUI> | The class of widget specific to the minigame. See Minigame UI. |
 | End UI Class | TSubclassOf<UUserWidget> | The class of widget that is spawned when the minigame is over. WBP_MinigameFinish may be used for this. Set automatically when deriving from BP_MinigameBase. If deriving from C++, this needs to be set manually. |
-| Splitscreen (see Splitscreen) |  |  |
+| <strong> Splitscreen (see Splitscreen)  |
 | SplitBy | ESplitBy | Determines how the screen should be split if UseSplitscreen is true. Can be split either by number of players or by number of teams. |
 | bUseSplitscreen | boolean | Indicates whether this minigame uses splitscreen or not. HIGHLY RECOMMENDED to keep this false unless it is very cheap to render your minigame! |
 | Splitscreen UI Classes | TArray<TSubclassOf<
 USplitscreenUI>> | The classes of widgets that will be used for each number of splits. Index 0 is for 1 split, Index 1 is for 2 splits, etc.
 Currently, even if splitscreen is not used, index 0 must always be set. Set automatically when deriving from BP_MinigameBase. If deriving from C++, this needs to be set manually. |
 
-## AMinigameBase Member Functions
+## 2.4 AMinigameBase Member Functions
 
 The GameMode also provides several helpful functions to access information and control minigame state
 
@@ -161,7 +164,7 @@ The GameMode also provides several helpful functions to access information and c
 | AMinigameCapture* GetCamera(int) | Returns the minigame camera assigned to the associated player number. |
 | AMinigamePlayer* GetPlayer(int) | Returns a pointer to the player associated with the player number |
 
-## Events & Delegates
+## 2.5 Events & Delegates
 
 **AMinigameBase** provides several delegates that trigger on key parts of a minigame’s lifetime.
 
@@ -173,11 +176,11 @@ OnGameReset - triggered right before the minigame is reset
 
 OnPracticeModeEnd - triggered when all players have readied up. Ending practice mode also ends the game and resets the game.
 
-## Player Spawning
+## 2.6 Player Spawning
 
 Player objects will automatically be spawned and assigned to their controllers **AMinigameBase **depending on the value of Team Type and Player Classes. 
 
-Each player class should be a subclass of **AMinigamePlayer** (see [Minigame Player](?tab=t.0#heading=h.v8ilpd82g3vp)).
+Each player class should be a subclass of **AMinigamePlayer** (see [3. Minigame Player](#3-minigame-player)).
 
 The spawn locations will be determined by PlayerSpawns (a BP_MinigamePlayerSpawn Actor or any Actor deriving from **APlayerSpawn**). PlayerSpawns will have four properties:
 
@@ -197,7 +200,7 @@ In FFA, all Player Starts should be set for Team 0. The Position will decide spa
 
 If two player spawns have the same player count, team, and position, only one will be used. A warning will be printed to the screen in these scenarios.
 
-## Resetting
+## 2.7 Resetting
 
 To support Practice Mode’s requirement to play the minigame several times without reloading the level, minigames must be able to reset.
 
@@ -209,7 +212,7 @@ Default functionality like points and the timer will automatically be reset and 
 
 Basic example that destroys an actor that was dynamically spawned over the course of the level.
 
-# Minigame Player
+# 3. Minigame Player
 
 All minigame player pawns should be derived from **AMinigamePlayer**.
 
@@ -225,7 +228,7 @@ Here are some helpful properties available to MinigamePlayers:
 | int Team | The team this player is on. |
 | int PlayerNumber | A unique identifier for this player, from 0-4. This can be used with the minigame base to get/set points, get a reference to the player, etc. |
 
-## Player Input
+## 3.1 Player Input
 
 Players inheriting from **AMinigamePlayer** will automatically be bound to the **IMC_Minigame** Input Context that is passed into it through the details pane. The following input actions in IMC_Minigame may be used as input for the minigame:
 
@@ -243,9 +246,9 @@ A discrete flex is measured by the highest flex value reached while above the re
 
 The highest flex value reached while above the rest threshold determines the type of discrete flex. 0.0 to .33 for Light, .33 to .66 for Medium, and .66 to 1.0 for Strong.
 
-IA_Rotation - the current rotation of the player’s flex device, in Euler angles, from the device’s calibration point. Recommended to use **[UPlayerRotationComponent](?tab=t.0#heading=h.xtr6n69oiazr)**[ ](?tab=t.0#heading=h.xtr6n69oiazr)instead.
+IA_Rotation - the current rotation of the player’s flex device, in Euler angles, from the device’s calibration point. Recommended to use the **[Player Rotation Component](#7-player-rotation-component)** instead.
 
-IA_Acceleration - the proper acceleration of the player’s device. Note that proper acceleration includes the force counteracting gravity, if any. Recommended to use **[UPlayerAccelerationComponent](?tab=t.0#heading=h.seehs4q6nxi7)**[ ](?tab=t.0#heading=h.seehs4q6nxi7)instead.
+IA_Acceleration - the proper acceleration of the player’s device. Note that proper acceleration includes the force counteracting gravity, if any. Recommended to use **[Player Acceleration Component](#8-player-acceleration-component)** instead.
 
 Example of IA_MediumFlex and IA_StrongFlex in use
 
@@ -258,19 +261,21 @@ In Blueprint,
 ![Enter image alt description](Images/A43_Image_11.png)
 
 In C++,
+```cpp
+if (APlayerController* PC = Cast<APlayerController>(GetController())
+{	
+	UEnhancedInputLocalPlayerSubsystem* InputSubsystem = 
+		PC->GetLocalPlayer()->GetSubsystem<UEnhancedInputLocalPlayerSubsystem>();
 
-`if`` ``(APlayerController*`` ``PC`` ``=`` ``Cast<APlayerController>(GetController())`
-```
-{`	``UEnhancedInputLocalPlayerSubsystem*`` ``InputSubsystem`` ``=`` ``PC->GetLocalPlayer()->GetSubsystem<UEnhancedInputLocalPlayerSubsystem>();`
-`	``if`` ``(InputSubsystem)`
-`	``{`
-`		``Vector3`` ``Rotation`` ``=`` ``InputSubsystem->GetPlayerInput()->GetActionValue(``RotationInputAction``).Get<FVector>();`
-`	``}`
+	if (InputSubsystem)
+	{
+		Vector3 Rotation = InputSubsystem->GetPlayerInput()->GetActionValue(RotationInputAction).Get<FVector>();
+	}
 }
 ```
 In this case, RotationInputAction is a member variable of type TObjectPtr<UInputAction> that has been assigned to IA_Rotation in the Details pane.
 
-# Minigame Captures
+# 4. Minigame Captures
 
 The minigame capture is an actor in the world that acts like a camera. Default Unreal cameras will NOT work with minigames.
 
@@ -284,7 +289,7 @@ If the minigame does not use splitscreen, only the first minigame capture (captu
 
 If a minigame capture is assigned to a split that is not used (i.e. in a split-by player minigame that only has three players), the minigame capture will automatically be disabled.
 
-# BasePointCounter
+# 5. BasePointCounter
 
 The Point Counter is an actor component attached to minigame game modes that handle all of the scorekeeping and result calculations. MinigameCore provides BasePointCounter with a basic implementation, but developers may create a point counter deriving from **UBasePointCounter** to customize behavior.
 
@@ -310,9 +315,9 @@ Example of adding points when a target is hit by a projectile
 
 ![Enter image alt description](Images/2vd_Image_13.png)
 
-# Minigame UI
+# 6. Minigame UI
 
-## UMinigameUI
+## 6.1 UMinigameUI
 
 AMinigameBase’s MinigameUIClass property only accepts widgets inheriting from **UMinigameUI**. This class is automatically instantiated and displayed when the minigame starts.
 
@@ -328,17 +333,17 @@ The minigame UI can be used for displaying helpful information such as team scor
 
 To access properties or functions of a derived GameMode, simply cast the widget’s Minigame reference to the type of your minigame’s GameMode.
 
-## Splitscreen
+## 6.2 Splitscreen
 
 If AMinigameBase’s bUseSplitscreen is **true**, then several views of the game will be displayed. Each view will be assigned a different instance of the minigame UI and a different minigame capture. As such, splitscreen minigames require multiple minigame captures to be placed.
 
 A splitscreen minigame can be split either by player or by team. If split by player, each player will have its own split of the screen with its own minigame UI and its own minigame capture. If split by team, each team will share this split.
 
-The minigame capture associated with a specific player’s view can be retrieved via [GetCamera() on AMinigameBase](?tab=t.0#heading=h.xe9wthme2b60).
+The minigame capture associated with a specific player’s view can be retrieved via [GetCamera() on AMinigameBase](#24-aminigamebase-member-functions).
 
 Enabling splitscreen requires rendering the level multiple times and, as such, is ***very expensive***. Splitscreen minigame levels should be simple and fast to render. Use caution when enabling splitscreen.
 
-# Player Rotation Component
+# 7 Player Rotation Component
 
 **UPlayerRotationComponent **is an actor component that is included with MinigameCore. It simplifies the use of raw rotation input (IA_Rotation) and offers convenient functionality for interpreting and processing rotation data in gameplay scenarios. Minigames that use rotation should have this component on its MinigamePlayer subclass. 
 
@@ -358,13 +363,19 @@ FQuat GetRotationInputValue() const - returns a quaternion representation of IA_
 
 Here’s an example which uses a UPlayerRotationComponent to cast a ray in the direction of where the player’s flex device is aiming
 
-BLANK_LINE_FOUND_IN_GOOGLE_DOCS_2MD_PRO`void ``ATestMinigamePlayer::CastRay()`
+```cpp
+void ATestMinigamePlayer::CastRay()`
+{
+	AMinigameCapture* Capture = Minigame->GetCamera(PlayerNumber);
+	FVector RaycastEnd = RotationComponent->GetDirectionFromCamera(Capture->GetActorQuat());
+	FHitResult Res{};
+	if(GetWorld()->LineTraceSingleByChannel(Res, Capture->GetActorLocation(), RaycastEnd, ECollisionChannel::ECC_Visibility)
+	{	
+		// Hit something!
+	}
+}
 ```
-{AMinigameCapture* Capture = Minigame->GetCamera(PlayerNumber);FVector RaycastEnd = RotationComponent->GetDirectionFromCamera(Capture->GetActorQuat());FHitResult Res{};`if``(GetWorld()->LineTraceSingleByChannel(Res, Capture->GetActorLocation(), RaycastEnd, ECollisionChannel::ECC_Visibility)`
-{`	``// Hit something!`
-}}
-
-# Player Acceleration Component
+# 8 Player Acceleration Component
 
 **UPlayerAccelerationComponent **is an actor component that is included with MinigameCore. It simplifies the use of raw acceleration input (IA_Acceleration) and offers convenient functionality for interpreting and processing acceleration data in gameplay scenarios. Minigames that use acceleration should have this component on its MinigamePlayer subclass. 
 
@@ -377,7 +388,6 @@ By default, the **UPlayerAccelerationComponent** cannot reliably distinguish bet
 
 To enable accurate distinction across all three axes (X, Y, and Z) add a **UPlayerRotationComponent** to the player and reset the initial orientation (using UPlayerRotationComponent::ResetInitialOrientation). This provides the necessary reference frame for precise axis-based acceleration tracking.
 
-```
 If more specialized or low-level control is needed, developers can use IA_Acceleration directly without the use of the component.
 
 **Members:**
@@ -398,7 +408,7 @@ Example of ListenForMovement being used in Blueprint:
 
 ![Enter image alt description](Images/QPy_Image_15.png)
 
-# Editor Tools
+# 9 Editor Tools
 
 MinigameCore comes with Editor Utility Widgets to make playtesting and debugging easier. All the editor tools are compiled in **MinigameCore Content > Tools > EUW_MinigameCoreEditorTools**. While playing the minigame, right click the widget asset and select “Run Editor Utility Widget”.
 
@@ -420,7 +430,7 @@ MinigameCore Tools:
 
 There is another editor tool that displays various motion sensor information being received by connected devices. This can be found in **LimbitlessBluetoothPlugin Content > Tools > EUW_DeviceValueTool**. While not strictly necessary for minigame creation, it can be occasionally useful. 
 
-# Naming Conventions
+# 10 Naming Conventions
 
 All in-editor assets and blueprints should follow the standard Unreal asset naming convention. In general, the naming convention is an initialism of the type of asset followed by an underscore should prefix the name of the asset. For example, blueprints are prefixed BP_, textures are prefixed T_, etc.
 
@@ -428,13 +438,13 @@ For more assets, see [Epic’s official guide](https://dev.epicgames.com/documen
 
 Minigame-specific blueprints should additionally include the minigame name (or its initials). For example, for a minigame called “Shooting Range” that has a cannon, the blueprint could be called BP_SRCannon.
 
-# Minigame Migration
+# 11 Minigame Migration
 
 This section documents the process to move minigames created in separate projects into the base Super Bionic Bash project. For minigame creators, this section can be ignored.
 
 The project with the minigame will be referred to as the “minigame project”. Super Bionic Bash will be referred to as the “base project”.
 
-## Migrating C++
+## 11.1 Migrating C++
 
 If the minigame project has C++ classes, then:
 
@@ -448,7 +458,7 @@ If the minigame project has C++ classes, then:
 
 5. Build to ensure there are no compilation errors
 
-## Migrating Assets
+## 11.2 Migrating Assets
 
 Remaining minigame assets (Blueprints, Levels, Textures, etc) can be migrated using Unreal Engine’s migration system.
 
