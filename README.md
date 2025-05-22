@@ -86,9 +86,9 @@ To create from C++, go to Tools (in the top toolbar) > New C++ Class > All Class
 
 ![Enter image alt description](Images/hEP_Image_5.png)
 
-9. Add a **BP_MinigameCapture **object to the world (or multiple if using [Splitscreen](?tab=t.0#heading=h.nvetbk5at1ax)). Default Unreal camera actors will not work. See [Minigame ](?tab=t.0#heading=h.mquo4yfwn6c6)[Captures](?tab=t.0#heading=h.mquo4yfwn6c6). 
+9. Add a **BP_MinigameCapture** object to the world (or multiple if using [Splitscreen](#62-splitscreen). Default Unreal camera actors will not work. See [4. Minigame Captures](#4-minigame-captures). 
 
-10. Add **BP_MinigamePlayerSpawn** objects to the world and populate their fields. Players will spawn at these player spawn locations. Default Unreal PlayerStarts will not work. See [Spawning Players](#heading=h.j6n581jas3rs).
+10. Add **BP_MinigamePlayerSpawn** objects to the world and populate their fields. Players will spawn at these player spawn locations. Default Unreal PlayerStarts will not work. See [2.6 Player Spawning](#26-player-spawning).
 
 At this point, the minigame is ready to integrate with the rest of the system. The rest of the minigame may be implemented.
 
@@ -178,7 +178,7 @@ OnPracticeModeEnd - triggered when all players have readied up. Ending practice 
 
 ## 2.6 Player Spawning
 
-Player objects will automatically be spawned and assigned to their controllers **AMinigameBase **depending on the value of Team Type and Player Classes. 
+Player objects will automatically be spawned and assigned to their controllers **AMinigameBase** depending on the value of Team Type and Player Classes. 
 
 Each player class should be a subclass of **AMinigamePlayer** (see [3. Minigame Player](#3-minigame-player)).
 
@@ -321,7 +321,7 @@ Example of adding points when a target is hit by a projectile
 
 AMinigameBase’s MinigameUIClass property only accepts widgets inheriting from **UMinigameUI**. This class is automatically instantiated and displayed when the minigame starts.
 
-**UMinigameUI **has the following members:
+**UMinigameUI** has the following members:
 
 | Member | Description |
 |---|---|
@@ -345,7 +345,7 @@ Enabling splitscreen requires rendering the level multiple times and, as such, i
 
 # 7 Player Rotation Component
 
-**UPlayerRotationComponent **is an actor component that is included with MinigameCore. It simplifies the use of raw rotation input (IA_Rotation) and offers convenient functionality for interpreting and processing rotation data in gameplay scenarios. Minigames that use rotation should have this component on its MinigamePlayer subclass. 
+**UPlayerRotationComponent** is an actor component that is included with MinigameCore. It simplifies the use of raw rotation input (IA_Rotation) and offers convenient functionality for interpreting and processing rotation data in gameplay scenarios. Minigames that use rotation should have this component on its MinigamePlayer subclass. 
 
 If more specialized or low-level control is needed, developers can use IA_Rotation directly without the use of the component.
 
@@ -418,13 +418,13 @@ MinigameCore Tools:
 
 **Device Scanner** - Start and stop bluetooth scans. Currently, devices can only be connected through the main menu during normal gameplay. Using the Device Scanner is needed to be able to connect devices when starting from a minigame level. 
 
-**Minigame Player Count Helper **- Type the number of players you want to select in the box, then click “Set Player Count”. The minigame level will restart with the desired number of players. 
+**Minigame Player Count Helper** - Type the number of players you want to select in the box, then click “Set Player Count”. The minigame level will restart with the desired number of players. 
 
-**Flex Controller Assignment **- Assigns connected flex controllers to players
+**Flex Controller Assignment** - Assigns connected flex controllers to players
 
-**IMU Calibration **- Starts calibrating the IMU for this device. Set the selected device down on a flat surface with the LED up and wait a few seconds for the IMU calibration to complete.
+**IMU Calibration** - Starts calibrating the IMU for this device. Set the selected device down on a flat surface with the LED up and wait a few seconds for the IMU calibration to complete.
 
-**Flex Calibration **- Starts calibrating the EMG for this device. This includes a period of resting followed by a period of flexing. 
+**Flex Calibration** - Starts calibrating the EMG for this device. This includes a period of resting followed by a period of flexing. 
 
 *Note: We intend to add device connection, assignment, and calibration in minigames as normal gameplay features in the future. This is currently only available in the main menu.*
 
