@@ -2,33 +2,34 @@
 
 # MinigameCore
 
-# Contents
+## Table of Contents
 
 
-[Contents](#contents)
-[Getting Started](#gettingstarted)
-[Minigame Base](#minigamebase)
-[Creating a minigame with MinigameBase](#creatingaminigamewithminigamebase)
-[Practice Mode](#practicemode)
-[Minigame Base Settings](#minigamebasesettings)
-[AMinigameBase Member Functions](#aminigamebasememberfunctions)
-[Events & Delegates](#eventsdelegates)
-[Player Spawning](#playerspawning)
-[Resetting](#resetting)
-[Minigame Player](#minigameplayer)
-[Player Input](#playerinput)
-[Minigame Captures](#minigamecaptures)
-[BasePointCounter](#basepointcounter)
-[Minigame UI](#minigameui)
-[UMinigameUI](#uminigameui)
-[Splitscreen](#splitscreen)
-[Player Rotation Component](#playerrotationcomponent)
-[Player Acceleration Component](#playeraccelerationcomponent)
-[Editor Tools](#editortools)
-[Naming Conventions](#namingconventions)
-[Minigame Migration](#minigamemigration)
-[Migrating C++](#migratingc)
-[Migrating Assets](#migratingassets)
+>[Contents](#contents)
+>[Getting Started](#gettingstarted)
+>[Minigame Base](#minigamebase)
+>	[Creating a minigame with MinigameBase](#creatingaminigamewithminigamebase)
+>	[Practice Mode](#practicemode)
+>	[Minigame Base Settings](#minigamebasesettings)
+>	[AMinigameBase Member Functions](#aminigamebasememberfunctions)
+>	[Events & Delegates](#eventsdelegates)
+>	[Player Spawning](#playerspawning)
+>	[Resetting](#resetting)
+>[Minigame Player](#minigameplayer)
+>	[Player Input](#playerinput)
+>[Minigame Captures](#minigamecaptures)
+>[BasePointCounter](#basepointcounter)
+>[Minigame UI](#minigameui)
+>	[UMinigameUI](#uminigameui)
+>	[Splitscreen](#splitscreen)
+>[Player Rotation Component](#playerrotationcomponent)
+>[Player Acceleration Component](#playeraccelerationcomponent)
+>[Editor Tools](#editortools)
+>[Naming Conventions](#namingconventions)
+>[Minigame Migration](#minigamemigration)
+>[Migrating C++](#migratingc)
+>[Migrating Assets](#migratingassets)
+
 # Getting Started
 
 This documentation assumes an understanding of Unreal Engine 5 basics, such as familiarity with blueprints, actors, and gamemodes. C++ knowledge is **not** required.
@@ -139,7 +140,9 @@ GameMode blueprints derived from **BP_MinigameBase** or **AMinigameBase** will h
 | Splitscreen (see Splitscreen) |  |  |
 | SplitBy | ESplitBy | Determines how the screen should be split if UseSplitscreen is true. Can be split either by number of players or by number of teams. |
 | bUseSplitscreen | boolean | Indicates whether this minigame uses splitscreen or not. HIGHLY RECOMMENDED to keep this false unless it is very cheap to render your minigame! |
-| Splitscreen UI Classes | TArray<TSubclassOf<USplitscreenUI>> | The classes of widgets that will be used for each number of splits. Index 0 is for 1 split, Index 1 is for 2 splits, etc.Currently, even if splitscreen is not used, index 0 must always be set. Set automatically when deriving from BP_MinigameBase. If deriving from C++, this needs to be set manually. |
+| Splitscreen UI Classes | TArray<TSubclassOf<
+USplitscreenUI>> | The classes of widgets that will be used for each number of splits. Index 0 is for 1 split, Index 1 is for 2 splits, etc.
+Currently, even if splitscreen is not used, index 0 must always be set. Set automatically when deriving from BP_MinigameBase. If deriving from C++, this needs to be set manually. |
 
 ## AMinigameBase Member Functions
 
