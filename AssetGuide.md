@@ -13,13 +13,13 @@ Contents
 >    5.1 [/3rdParty/](#3rdparty)  
 ## Important Information
 
-When importing assets into an Unreal Game, the engine makes a *copy *of the source file. It does **not **actually import the original file. To rectify this, Bionic Bash Minigames should contain 2 Asset Folders. **There should be 1 asset folder inside the Content directory, and 1 asset folder inside the project root directory.** These should be exact mirrors of each other. The one inside the content directory should contain** UASSETS**, and the one in root should contain the **original source files**(fbxs, pngs, etc). This does **not **include files like “.mb, .ma, .blender”. Those will not be kept inside of the project or source control. 
+When importing assets into an Unreal Game, the engine makes a *copy* of the source file. It does **not** actually import the original file. To rectify this, Bionic Bash Minigames should contain 2 Asset Folders. **There should be 1 asset folder inside the Content directory, and 1 asset folder inside the project root directory.** These should be exact mirrors of each other. The one inside the content directory should contain **UASSETS**, and the one in root should contain the **original source files** (fbxs, pngs, etc). This does **not** include files like “.mb, .ma, .blender”. Those will not be kept inside of the project or source control. 
 
-For the sake of understanding, for the rest of the guide, the asset folder inside the content directory will be known as the **UASSET **folder and the one inside root will be known as the **SOURCE ASSET** folder. If a rule applies to both folders, it will be made in reference to the **ASSET **or **ROOT ASSET **folder.
+For the sake of understanding, for the rest of the guide, the asset folder inside the content directory will be known as the **UASSET** folder and the one inside root will be known as the **SOURCE ASSET** folder. If a rule applies to both folders, it will be made in reference to the **ASSET** or **ROOT ASSET** folder.
 
-The *SOURCE ASSET *and *UASSET *folder should be an **exact **mirror. This makes it easy to find and make changes to the original files.
+The *SOURCE ASSET* and *UASSET* folder should be an **exact** mirror. This makes it easy to find and make changes to the original files.
 
-*IE:*
+*EG:*
 
 - SOURCE ASSET/
 
