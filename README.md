@@ -2,6 +2,8 @@
 
 # MinigameCore
 
+Here is a sample project that uses MinigameCore. Feel free to reference it to see the plugin's features and structure in use: https://github.com/LimbitlessSolutionsInc/BashMinigameSample
+
 ## Table of Contents
 > 1. [Getting Started](#1-getting-started)  
 > 1. [Minigame Base](#2-minigame-base)  
@@ -48,19 +50,19 @@ Example:
 
 ```c#
 public class MyMinigame : ModuleRules
-
-{	public MyMinigame(ReadOnlyTargetRules Target) : base(Target)
+{	
+	public MyMinigame(ReadOnlyTargetRules Target) : base(Target)
 	{		
-			PublicDependencyModuleNames.AddRange(			
-				new string[]
-				{				
-					"Core",
-					"MinigameCore",
-					"BashCore"
-				}		
-			);
-		}
+		PublicDependencyModuleNames.AddRange(			
+			new string[]
+			{			
+				"Core",
+				"MinigameCore",
+				"BashCore"
+			}
+		);
 	}
+}
 
 ```
 
@@ -419,13 +421,13 @@ MinigameCore Tools:
 
 There is another editor tool that displays various motion sensor information being received by connected devices. This can be found in **LimbitlessBluetoothPlugin Content > Tools > EUW_DeviceValueTool**. While not strictly necessary for minigame creation, it can be occasionally useful. 
 
-# 10 Naming Conventions
+# 10 Asset Organization Conventions
 
 All in-editor assets and blueprints should follow the standard Unreal asset naming convention. In general, the naming convention is an initialism of the type of asset followed by an underscore should prefix the name of the asset. For example, blueprints are prefixed BP_, textures are prefixed T_, etc.
 
-For more assets, see [Epic’s official guide](https://dev.epicgames.com/documentation/en-us/unreal-engine/recommended-asset-naming-conventions-in-unreal-engine-projects).
-
 Minigame-specific blueprints should additionally include the minigame name (or its initials). For example, for a minigame called “Shooting Range” that has a cannon, the blueprint could be called BP_SRCannon.
+
+For more information on asset conventions, see [the Asset Guide](AssetGuide.md).
 
 # 11 Minigame Migration
 
