@@ -15,10 +15,9 @@
 > 1. [Minigame Player](#3-minigame-player)  
 >    3.1 [Player Input](#31-player-input)  
 > 1. [Minigame Captures](#4-minigame-captures)  
+>    4.1 [Splitscreen](#41-splitscreen)  
 > 1. [BasePointCounter](#5-basepointcounter)  
 > 1. [Minigame UI](#6-minigame-ui)  
->    6.1 [UMinigameUI](#61-uminigameui)  
->    6.2 [Splitscreen](#62-splitscreen)  
 > 1. [Player Rotation Component](#7-player-rotation-component)  
 > 1. [Player Acceleration Component](#8-player-acceleration-component)  
 > 1. [Editor Tools](#9-editor-tools)  
@@ -82,17 +81,19 @@ To create from Blueprint, right click in the Content Browser and select Blueprin
 
 To create from C++, go to Tools (in the top toolbar) > New C++ Class > All Classes > Search for “MinigamePlayer”
 
-8. Create a new Gamemode Blueprint derived from **BP_MinigameBase**. Fill the settings in the Details pane (see [2.3 Minigame Base Settings](#23-minigame-base-settings)). Name this Minigame Base as **BP_[Minigame Name]Gamemode**. Replace [Minigame Name] with the name of your minigame or an initialism. 
+8. Create a new GameMode Blueprint derived from **BP_MinigameBase**. Fill the settings in the Details pane (see [2.3 Minigame Base Settings](#23-minigame-base-settings)). Name this Minigame Base as **BP_[Minigame Name]Gamemode**. Replace [Minigame Name] with the name of your minigame or an initialism. 
 
 ![Enter image alt description](Images/hEP_Image_5.png)
 
-9. Add a **BP_MinigameCapture** object to the world (or multiple if using [Splitscreen](#62-splitscreen). Default Unreal camera actors will not work. See [4. Minigame Captures](#4-minigame-captures). 
+9. Set the GameMode override in the level to the newly created minigame GameMode.
 
-10. Add **BP_MinigamePlayerSpawn** objects to the world and populate their fields. Players will spawn at these player spawn locations. Default Unreal PlayerStarts will not work. See [2.6 Player Spawning](#26-player-spawning).
+10. Add a **BP_MinigameCapture** object to the world (or multiple if using [Splitscreen](#62-splitscreen). Default Unreal camera actors will not work. See [4. Minigame Captures](#4-minigame-captures). 
+
+11. Add **BP_MinigamePlayerSpawn** objects to the world and populate their fields. Players will spawn at these player spawn locations. Default Unreal PlayerStarts will not work. See [2.6 Player Spawning](#26-player-spawning).
 
 At this point, the minigame is ready to integrate with the rest of the system. The rest of the minigame may be implemented.
 
-# 2. Minigame Base
+# 2 Minigame Base
 
 The minigame base is a GameMode class that handles most of the common functionality of minigames. Create a new Blueprint class derived from MinigameBase for each minigame to add more specific behavior and set important information about your minigame.
 
@@ -212,7 +213,7 @@ Default functionality like points and the timer will automatically be reset and 
 
 Basic example that destroys an actor that was dynamically spawned over the course of the level.
 
-# 3. Minigame Player
+# 3 Minigame Player
 
 All minigame player pawns should be derived from **AMinigamePlayer**.
 
@@ -232,23 +233,14 @@ Here are some helpful properties available to MinigamePlayers:
 
 Players inheriting from **AMinigamePlayer** will automatically be bound to the **IMC_Minigame** Input Context that is passed into it through the details pane. The following input actions in IMC_Minigame may be used as input for the minigame:
 
-IA_Movement - 2D vector from controller directional pad, thumbstick, or keyboard WASD.
-
-IA_Button1, IA_Button2, IA_Button3, IA_BPress - mapped to a controller’s various action buttons
-
-IA_AnalogFlex - a floating point value ranging from 0* to 1 that represents the current flex value of the player. 0 corresponds to the rest threshold, 1 corresponds to maximum flex reading.
-
-*This value can be negative if the read value is less than the calibrated rest threshold. 
-
-IA_LightFlex, IA_MediumFlex, IA_StrongFlex - input actions that are triggered when a discrete flex is detected.
-
-A discrete flex is measured by the highest flex value reached while above the rest threshold, with the event actually triggering when going back below the rest threshold.
-
-The highest flex value reached while above the rest threshold determines the type of discrete flex. 0.0 to .33 for Light, .33 to .66 for Medium, and .66 to 1.0 for Strong.
-
-IA_Rotation - the current rotation of the player’s flex device, in Euler angles, from the device’s calibration point. Recommended to use the **[Player Rotation Component](#7-player-rotation-component)** instead.
-
-IA_Acceleration - the proper acceleration of the player’s device. Note that proper acceleration includes the force counteracting gravity, if any. Recommended to use **[Player Acceleration Component](#8-player-acceleration-component)** instead.
+| Input Action | Description |
+|---|---|
+| IA_Movement| 2D vector from controller directional pad, thumbstick, or keyboard WASD |
+| IA_Button[1-4] | Controller’s various action buttons |
+| IA_AnalogFlex | Floating point value ranging from 0* to 1 that represents the current flex value of the player. 0 corresponds to the rest threshold, 1 corresponds to maximum flex reading. This value can be negative if the read value is less than the calibrated rest threshold. 
+| IA_LightFlex, IA_MediumFlex, IA_StrongFlex | Input actions that are triggered when a discrete flex is detected. Discrete flex intensity is measured by the peak value reached during a flex.
+| IA_Rotation | The current rotation of the player’s flex device, in Euler angles, from the device’s calibration point. Recommended to use the **[Player Rotation Component](#7-player-rotation-component)** instead. |
+| IA_Acceleration | The proper acceleration of the player’s device. Note that proper acceleration includes the force counteracting gravity, if any. Recommended to use **[Player Acceleration Component](#8-player-acceleration-component)** instead. |
 
 Example of IA_MediumFlex and IA_StrongFlex in use
 
@@ -275,7 +267,7 @@ if (APlayerController* PC = Cast<APlayerController>(GetController())
 ```
 In this case, RotationInputAction is a member variable of type TObjectPtr<UInputAction> that has been assigned to IA_Rotation in the Details pane.
 
-# 4. Minigame Captures
+# 4 Minigame Captures
 
 The minigame capture is an actor in the world that acts like a camera. Default Unreal cameras will NOT work with minigames.
 
@@ -288,6 +280,16 @@ For example, this minigame capture has capture number 0. This capture will be as
 If the minigame does not use splitscreen, only the first minigame capture (capture number = 0) will ever be used. 
 
 If a minigame capture is assigned to a split that is not used (i.e. in a split-by player minigame that only has three players), the minigame capture will automatically be disabled.
+
+## 4.1 Splitscreen
+
+If AMinigameBase’s bUseSplitscreen is **true**, then several views of the game will be displayed. Each view will be assigned a different instance of the minigame UI and a different minigame capture. As such, splitscreen minigames require multiple minigame captures to be placed.
+
+A splitscreen minigame can be split either by player or by team. If split by player, each player will have its own split of the screen with its own minigame UI and its own minigame capture. If split by team, each team will share this split.
+
+The minigame capture associated with a specific player’s view can be retrieved via [GetCamera() on AMinigameBase](#24-aminigamebase-member-functions).
+
+Enabling splitscreen requires rendering the level multiple times and, as such, is ***very expensive***. Splitscreen minigame levels should be simple and fast to render. Use caution when enabling splitscreen.
 
 # 5. BasePointCounter
 
@@ -306,8 +308,7 @@ UBasePointCounter provides the following member functions, all of which may be o
 | int GetPoints(int Team) const | Returns the current number of points of a team. |
 | int GetPointsByPlayer(int Player) const | Returns the current number of points of a player (see Minigame Player). |
 | TArray<FMinigameStanding> GetStandings() const | Gets the results of the minigame based on the current score. Automatically called by Minigame Base when the minigame ends. |
-| void InitializePointCounter(int NumTeams, TArray<int> TeamAssignment) | Initializes point counter with team information. TeamAssignment is given as an array where index is 
-player number and element is team number. |
+| void InitializePointCounter(int NumTeams, TArray<int> TeamAssignment) | Initializes point counter with team information. TeamAssignment is given as an array where index is player number and element is team number. |
 
 Point counters also have a dynamic multicast delegate, OnPointsChanged, that is triggered when the point counter’s score changes. OnPointsChanged provides the team number of the affected team and the new point count.
 
@@ -315,9 +316,7 @@ Example of adding points when a target is hit by a projectile
 
 ![Enter image alt description](Images/2vd_Image_13.png)
 
-# 6. Minigame UI
-
-## 6.1 UMinigameUI
+# 6 Minigame UI
 
 AMinigameBase’s MinigameUIClass property only accepts widgets inheriting from **UMinigameUI**. This class is automatically instantiated and displayed when the minigame starts.
 
@@ -332,16 +331,6 @@ AMinigameBase’s MinigameUIClass property only accepts widgets inheriting from 
 The minigame UI can be used for displaying helpful information such as team score and minigame duration.
 
 To access properties or functions of a derived GameMode, simply cast the widget’s Minigame reference to the type of your minigame’s GameMode.
-
-## 6.2 Splitscreen
-
-If AMinigameBase’s bUseSplitscreen is **true**, then several views of the game will be displayed. Each view will be assigned a different instance of the minigame UI and a different minigame capture. As such, splitscreen minigames require multiple minigame captures to be placed.
-
-A splitscreen minigame can be split either by player or by team. If split by player, each player will have its own split of the screen with its own minigame UI and its own minigame capture. If split by team, each team will share this split.
-
-The minigame capture associated with a specific player’s view can be retrieved via [GetCamera() on AMinigameBase](#24-aminigamebase-member-functions).
-
-Enabling splitscreen requires rendering the level multiple times and, as such, is ***very expensive***. Splitscreen minigame levels should be simple and fast to render. Use caution when enabling splitscreen.
 
 # 7 Player Rotation Component
 
