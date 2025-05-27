@@ -2,6 +2,20 @@
 
 # MinigameCore
 
+## Requirements
+
+MinigameCore requires an installation of Unreal Engine 5.1 on a Windows operating system.
+
+A basic understanding of Unreal Engine 5 is strongly recommended.
+
+For use in Super Bionic Bash, minigames must be hosted in a public GitHub repository with an MIT license.
+
+When creating the repository with GitHub, select "MIT License" from the dropdown to generate an MIT license.
+![alt text](Images/license.png)
+
+
+## Sample Project
+
 Here is a sample project that uses MinigameCore. Feel free to reference it to see the plugin's features and structure in use: https://github.com/LimbitlessSolutionsInc/BashMinigameSample
 
 ## Table of Contents
@@ -36,7 +50,7 @@ To get started with making your new minigame:
 
 1. Create a new Unreal Engine 5.1 project with the same name as your minigame
 
-2. Create a folder called Plugins in the root folder of your newly created project. Add **“MinigameCore",** **“BashCore”**, **“FCTween”**, **“LimbitlessBluetoothPlugin”**, and **“WinBT”** to your new Plugins folder from the provided resources. Enable this plugin in the editor (Edit > Plugins > Search for **MinigameCore** > Select checkbox)
+2. Create a folder called Plugins in the root folder of your newly created project. Download the Plugins folder from this GitHub repository and place its contents into the newly created project Plugins folder. Enable MinigameCore in the editor (Edit > Plugins > Search for **MinigameCore** > Select checkbox)
 
 ![Enter image alt description](Images/Dnq_Image_1.png)
 
@@ -66,32 +80,34 @@ public class MyMinigame : ModuleRules
 
 ```
 
-Set the local player for your project. Navigate to Edit > Project Settings > Engine > General Settings > Default Classes > Local Player Class. Alternatively, search “Local Player” in the Project Settings search bar, then scroll down to “Local Player Class”. Select **BashLocalPlayer** from the dropdown. Restart the editor.
+6. Set the local player for your project. Navigate to Edit > Project Settings > Engine > General Settings > Default Classes > Local Player Class. Alternatively, search “Local Player” in the Project Settings search bar, then scroll down to “Local Player Class”. Select **BashLocalPlayer** from the dropdown. Restart the editor.
 
 
 ![Enter image alt description](Images/Oon_Image_3.png)
 
 
-Create a new level (File > New Level). This level should have the same name as your minigame.
+7. Create a new level (File > New Level). This level should have the same name as your minigame.
 
 
-Create a minigame player, either in C++ or Blueprint, deriving from **AMinigamePlayer**. Name this player **BP_[Minigame Name]Player**. Replace [Minigame Name] with the name of your minigame or an initialism. 
+8. Create a minigame player, either in C++ or Blueprint, deriving from **AMinigamePlayer**. Name this player **BP_[Minigame Name]Player**. Replace [Minigame Name] with the name of your minigame or an initialism. 
 
-To create from Blueprint, right click in the Content Browser and select Blueprint Class > All Classes > Search “MinigamePlayer”
-
-![Enter image alt description](Images/IVQ_Image_4.png)
+To create from Blueprint, right click in the Content Browser and select Blueprint Class > All Classes > Search “MinigamePlayer”.
 
 To create from C++, go to Tools (in the top toolbar) > New C++ Class > All Classes > Search for “MinigamePlayer”
 
-8. Create a new GameMode Blueprint derived from **BP_MinigameBase**. Fill the settings in the Details pane (see [2.3 Minigame Base Settings](#23-minigame-base-settings)). Name this Minigame Base as **BP_[Minigame Name]Gamemode**. Replace [Minigame Name] with the name of your minigame or an initialism. 
+![Enter image alt description](Images/IVQ_Image_4.png)
+
+
+
+9. Create a new GameMode Blueprint derived from **BP_MinigameBase**. Fill the settings in the Details pane (see [2.3 Minigame Base Settings](#23-minigame-base-settings)). Name this Minigame Base as **BP_[Minigame Name]Gamemode**. Replace [Minigame Name] with the name of your minigame or an initialism. 
 
 ![Enter image alt description](Images/hEP_Image_5.png)
 
-9. Set the GameMode override in the level to the newly created minigame GameMode.
+10. Set the GameMode override in the level to the newly created minigame GameMode.
 
-10. Add a **BP_MinigameCapture** object to the world (or multiple if using [Splitscreen](#62-splitscreen). Default Unreal camera actors will not work. See [4. Minigame Captures](#4-minigame-captures). 
+11. Add a **BP_MinigameCapture** object to the world (or multiple if using [Splitscreen](#62-splitscreen). Default Unreal camera actors will not work. See [4. Minigame Captures](#4-minigame-captures). 
 
-11. Add **BP_MinigamePlayerSpawn** objects to the world and populate their fields. Players will spawn at these player spawn locations. Default Unreal PlayerStarts will not work. See [2.6 Player Spawning](#26-player-spawning).
+12. Add **BP_MinigamePlayerSpawn** objects to the world and populate their fields. Players will spawn at these player spawn locations. Default Unreal PlayerStarts will not work. See [2.6 Player Spawning](#26-player-spawning).
 
 At this point, the minigame is ready to integrate with the rest of the system. The rest of the minigame may be implemented.
 
