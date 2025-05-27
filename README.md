@@ -225,7 +225,9 @@ To support Practice Mode’s requirement to play the minigame several times with
 
 The “OnReset” blueprint event should be used on the GameMode and Actors to clean up and reset any values that should not be carried over to the next playthrough, or delete actors that are spawned during the minigame.
 
-Default functionality like points and the timer will automatically be reset and ready to use for the next playthrough. MinigamePlayers spawned through the MinigameBase will also be automatically reset.
+Default functionality like points, timers, and MinigameBase properties will automatically be reset and ready to use for the next playthrough. MinigamePlayers spawned through the MinigameBase will also be automatically reset.
+
+Custom actors or properties on a MinigameBase subclass must manually be reset. 
 
 ![Enter image alt description](Images/6rH_Image_8.png)
 
