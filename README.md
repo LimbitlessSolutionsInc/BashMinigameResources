@@ -425,17 +425,21 @@ MinigameCore comes with Editor Utility Widgets to make playtesting and debugging
 
 MinigameCore Tools:
 
+**JoyCon Scanner** - Scans for JoyCon, DualShock, and DualSense devices connected. Only needs to be done once per session
+
+**JoyCon Assigner** - Assigns a connected JoyCon device to a specific Platform User on Unreal Engine.
+
 **Device Scanner** - Start and stop bluetooth scans. Currently, devices can only be connected through the main menu during normal gameplay. Using the Device Scanner is needed to be able to connect devices when starting from a minigame level. 
 
 **Minigame Player Count Helper** - Type the number of players you want to select in the box, then click “Set Player Count”. The minigame level will restart with the desired number of players. 
 
-**Flex Controller Assignment** - Assigns connected flex controllers to players
+**Flex Controller Assignment** - Assigns connected flex controllers to players.
 
 **IMU Calibration** - Starts calibrating the IMU for this device. Set the selected device down on a flat surface with the LED up and wait a few seconds for the IMU calibration to complete.
 
 **Flex Calibration** - Starts calibrating the EMG for this device. This includes a period of resting followed by a period of flexing. 
 
-*Note: We intend to add device connection, assignment, and calibration in minigames as normal gameplay features in the future. This is currently only available in the main menu.*
+*Note: We intend to add device connection, assignment, and calibration in minigames as normal gameplay features in the future. This is currently only available in the main menu of Super Bionic Bash.*
 
 There is another editor tool that displays various motion sensor information being received by connected devices. This can be found in **LimbitlessBluetoothPlugin Content > Tools > EUW_DeviceValueTool**. While not strictly necessary for minigame creation, it can be occasionally useful. 
 
