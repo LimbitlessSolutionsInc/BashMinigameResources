@@ -99,15 +99,15 @@ To create from C++, go to Tools (in the top toolbar) > New C++ Class > All Class
 
 
 
-9. Create a new GameMode Blueprint derived from **BP_MinigameBase**. Fill the settings in the Details pane (see [2.3 Minigame Base Settings](#23-minigame-base-settings)). Name this Minigame Base as **BP_[Minigame Name]Gamemode**. Replace [Minigame Name] with the name of your minigame or an initialism. 
+9. Create a new GameMode Blueprint derived from **BP_MinigameBase** (similar to step 8 with MinigamePlayer). Name this Minigame Base as **BP_[Minigame Name]Gamemode**. Replace [Minigame Name] with the name of your minigame or an initialism. Open the Blueprint and fill the settings in the Details pane (see [2.3 Minigame Base Settings](#23-minigame-base-settings)) with information about your minigame.
 
 ![Enter image alt description](Images/hEP_Image_5.png)
 
 10. Set the GameMode override in the level to the newly created minigame GameMode.
 
-11. Add a **BP_MinigameCapture** object to the world (or multiple if using [Splitscreen](#62-splitscreen). Default Unreal camera actors will not work. See [4. Minigame Captures](#4-minigame-captures). 
+11. Add a **BP_MinigameCapture** object to the world (or multiple if using [Splitscreen](#62-splitscreen)). Do this by **dragging it out** from the MinigameCore content folder - do **not** make your own Blueprint. Default Unreal camera actors will not work. See [4. Minigame Captures](#4-minigame-captures). 
 
-12. Add **BP_MinigamePlayerSpawn** objects to the world and populate their fields. Players will spawn at these player spawn locations. Default Unreal PlayerStarts will not work. See [2.6 Player Spawning](#26-player-spawning).
+12. Add **BP_MinigamePlayerSpawn** objects to the world and populate their fields. Do this by **dragging it out** from the MinigameCore content folder - do **not** make your own Blueprint. Players will spawn at these player spawn locations. Default Unreal PlayerStarts will not work. See [2.6 Player Spawning](#26-player-spawning).
 
 At this point, the minigame is ready to integrate with the rest of the system. The rest of the minigame may be implemented.
 
@@ -162,9 +162,7 @@ GameMode blueprints derived from **BP_MinigameBase** or **AMinigameBase** will h
 | <strong> Splitscreen (see Splitscreen)  |
 | SplitBy | ESplitBy | Determines how the screen should be split if UseSplitscreen is true. Can be split either by number of players or by number of teams. |
 | bUseSplitscreen | boolean | Indicates whether this minigame uses splitscreen or not. HIGHLY RECOMMENDED to keep this false unless it is very cheap to render your minigame! |
-| Splitscreen UI Classes | TArray<TSubclassOf<
-USplitscreenUI>> | The classes of widgets that will be used for each number of splits. Index 0 is for 1 split, Index 1 is for 2 splits, etc.
-Currently, even if splitscreen is not used, index 0 must always be set. Set automatically when deriving from BP_MinigameBase. If deriving from C++, this needs to be set manually. |
+| Splitscreen UI Classes | TArray<TSubclassOf<USplitscreenUI>> | The classes of widgets that will be used for each number of splits. Index 0 is for 1 split, Index 1 is for 2 splits, etc. Currently, even if splitscreen is not used, index 0 must always be set. Set automatically when deriving from BP_MinigameBase. If deriving from C++, this needs to be set manually. |
 
 ## 2.4 AMinigameBase Member Functions
 
