@@ -31,7 +31,7 @@ Here is a sample project that uses MinigameCore. Feel free to reference it to se
 >    3.1 [Player Input](#31-player-input)  
 > 1. [Minigame Captures](#4-minigame-captures)  
 >    4.1 [Splitscreen](#41-splitscreen)  
-> 1. [Point Counting](#5-basepointcounter)  
+> 1. [Point Counting](#5-point-counting)  
 > 1. [Minigame UI](#6-minigame-ui)  
 > 1. [Player Rotation Component](#7-player-rotation-component)  
 > 1. [Player Acceleration Component](#8-player-acceleration-component)  
