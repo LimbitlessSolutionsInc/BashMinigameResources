@@ -31,7 +31,7 @@ Here is a sample project that uses MinigameCore. Feel free to reference it to se
 >    3.1 [Player Input](#31-player-input)  
 > 1. [Minigame Captures](#4-minigame-captures)  
 >    4.1 [Splitscreen](#41-splitscreen)  
-> 1. [BasePointCounter](#5-basepointcounter)  
+> 1. [Point Counting](#5-basepointcounter)  
 > 1. [Minigame UI](#6-minigame-ui)  
 > 1. [Player Rotation Component](#7-player-rotation-component)  
 > 1. [Player Acceleration Component](#8-player-acceleration-component)  
@@ -308,15 +308,17 @@ The minigame capture associated with a specific player’s view can be retrieved
 
 Enabling splitscreen requires rendering the level multiple times and, as such, is ***very expensive***. Splitscreen minigame levels should be simple and fast to render. Use caution when enabling splitscreen.
 
-# 5. BasePointCounter
+# 5. Point Counting
 
 The Point Counter is an actor component attached to minigame game modes that handle all of the scorekeeping and result calculations. MinigameCore provides BasePointCounter with a basic implementation, but developers may create a point counter deriving from **UBasePointCounter** to customize behavior.
+
+A point counter **must** be registered with the GameMode and used to keep track of points. This is how minigame results is reported back to the board. Using a different scorekeeping system will prevent the minigame from properly interfacing with the rest of Super Bionic Bash.
 
 If a point counter is not provided in the GameMode blueprint, a UBasePointCounter will be created at runtime.
 
 Point counters keep score based on teams. In free-for-all minigames, the player number is used as the team number instead.
 
-UBasePointCounter provides the following member functions, all of which may be overridden in child classes for customization.
+UBasePointCounter provides the following member functions, all of which may be overridden in child classes for customization. In most cases, customization is not necessary.
 
 | Member Function | Description |
 |---|---|
