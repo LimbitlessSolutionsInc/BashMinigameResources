@@ -1,0 +1,34 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\zombi\\onedrive\\desktop\\github\\werid_flex\\plugins\\joyshocklibrary4unreal\\source\\joyshocklibrary4unreal\\joyshocklibrary\\inputhelpers.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\zombi\\onedrive\\desktop\\github\\werid_flex\\intermediate\\build\\win64\\werid_flexeditor\\debuggame\\engine\\sharedpch.engine.nonoptimized.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\users\\zombi\\onedrive\\desktop\\github\\werid_flex\\plugins\\joyshocklibrary4unreal\\intermediate\\build\\win64\\unrealeditor\\debuggame\\joyshocklibrary4unreal\\definitions.joyshocklibrary4unreal.h",
+            "c:\\users\\zombi\\onedrive\\desktop\\github\\werid_flex\\plugins\\joyshocklibrary4unreal\\source\\joyshocklibrary4unreal\\joyshocklibrary\\inputhelpers.h",
+            "c:\\users\\zombi\\onedrive\\desktop\\github\\werid_flex\\plugins\\joyshocklibrary4unreal\\source\\joyshocklibrary4unreal\\joyshocklibrary\\joyshocklibrary.h",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.33.31629\\include\\shared_mutex",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.33.31629\\include\\mutex",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.33.31629\\include\\__msvc_chrono.hpp",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.33.31629\\include\\ratio",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.33.31629\\include\\thread",
+            "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\process.h",
+            "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\corecrt_startup.h",
+            "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\math.h",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.33.31629\\include\\vcruntime_startup.h",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.33.31629\\include\\condition_variable",
+            "c:\\users\\zombi\\onedrive\\desktop\\github\\werid_flex\\plugins\\joyshocklibrary4unreal\\intermediate\\build\\win64\\unrealeditor\\inc\\joyshocklibrary4unreal\\uht\\joyshocklibrary.generated.h",
+            "c:\\users\\zombi\\onedrive\\desktop\\github\\werid_flex\\plugins\\joyshocklibrary4unreal\\source\\joyshocklibrary4unreal\\joyshocklibrary\\joyshock.h",
+            "c:\\users\\zombi\\onedrive\\desktop\\github\\werid_flex\\plugins\\joyshocklibrary4unreal\\source\\joyshocklibrary4unreal\\joyshocklibrary\\gamepadmotion.hpp",
+            "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\math.h",
+            "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\corecrt_math_defines.h",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.33.31629\\include\\bitset",
+            "c:\\users\\zombi\\onedrive\\desktop\\github\\werid_flex\\plugins\\joyshocklibrary4unreal\\thirdparty\\hidapi\\hidapi.h",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.33.31629\\include\\chrono",
+            "c:\\users\\zombi\\onedrive\\desktop\\github\\werid_flex\\plugins\\joyshocklibrary4unreal\\source\\joyshocklibrary4unreal\\joyshocklibrary\\tools.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

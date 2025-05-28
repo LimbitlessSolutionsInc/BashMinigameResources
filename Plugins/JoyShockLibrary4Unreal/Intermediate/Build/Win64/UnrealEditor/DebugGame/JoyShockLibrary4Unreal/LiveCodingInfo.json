@@ -1,0 +1,17 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.JoyShockLibrary4Unreal.cpp.obj": [
+			"JoyShockLibrary.gen.cpp.obj",
+			"JoyShockLibrary4Unreal.init.gen.cpp.obj",
+			"JoyShockLibrary4UnrealSettings.gen.cpp.obj",
+			"InputHelpers.cpp.obj",
+			"JoyShock.cpp.obj",
+			"JoyShockLibrary.cpp.obj",
+			"tools.cpp.obj",
+			"JoyShockInterface.cpp.obj",
+			"JoyShockLibrary4Unreal.cpp.obj",
+			"JoyShockLibrary4UnrealSettings.cpp.obj"
+		]
+	}
+}
