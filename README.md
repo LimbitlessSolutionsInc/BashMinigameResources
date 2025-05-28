@@ -36,11 +36,12 @@ Here is a sample project that uses MinigameCore. Feel free to reference it to se
 > 1. [Player Rotation Component](#7-player-rotation-component)  
 > 1. [Player Acceleration Component](#8-player-acceleration-component)  
 > 1. [Editor Tools](#9-editor-tools)  
-> 1. [Naming Conventions](#10-naming-conventions)  
-> 1. [Minigame Migration](#11-minigame-migration)  
->    11.1 [Migrating C++](#111-migrating-cpp)  
->    11.2 [Migrating Assets](#112-migrating-assets)  
-> 1. [Disclaimer and Licensing](#12-disclaimer-and-licensing)
+> 1. [Asset Organization Conventions](#10-asset-organization-conventions)  
+> 1. [Minigame Design Pillars](#11-minigame-design-pillars)
+> 1. [Minigame Migration](#12-minigame-migration)  
+>    11.1 [Migrating C++](#121-migrating-cpp)  
+>    11.2 [Migrating Assets](#122-migrating-assets)  
+> 1. [Disclaimer and Licensing](#13-disclaimer-and-licensing)
 
 # 1. Getting Started
 
@@ -451,13 +452,28 @@ Minigame-specific blueprints should additionally include the minigame name (or i
 
 For more information on asset conventions, see [the Asset Guide](AssetGuide.md).
 
-# 11 Minigame Migration
+# 11 Minigame Design Pillars
+
+* Foster competition, but prioritize fun for all players  
+  * Games should not be overly punishing.  
+  * Losing should still be somewhat fun.  
+* Focus on interaction between players  
+* Games should be quick to learn, and playable within a minute.  
+  * Simplicity is key  
+* Avoid recreations of existing minigames  
+  * Do not copy theming and mechanics straight from another minigame, either in bash or from another game.  
+* No realistic depictions of violence  
+  * Especially no firearms.  
+* Enemies can be aggressive but never hateful  
+* Avoid controversial content.
+
+# 12 Minigame Migration
 
 This section documents the process to move minigames created in separate projects into the base Super Bionic Bash project. For minigame creators, this section can be ignored.
 
 The project with the minigame will be referred to as the “minigame project”. Super Bionic Bash will be referred to as the “base project”.
 
-## 11.1 Migrating C++
+## 12.1 Migrating C++
 
 If the minigame project has C++ classes, then:
 
@@ -471,7 +487,7 @@ If the minigame project has C++ classes, then:
 
 5. Build to ensure there are no compilation errors
 
-## 11.2 Migrating Assets
+## 12.2 Migrating Assets
 
 Remaining minigame assets (Blueprints, Levels, Textures, etc) can be migrated using Unreal Engine’s migration system.
 
@@ -485,7 +501,7 @@ Remaining minigame assets (Blueprints, Levels, Textures, etc) can be migrated us
 
 5. Open the base project and ensure the newly migrated assets are in their own subfolder within the Content folder, if it isn’t already. The subfolder should have the same name as the minigame. Fix up any redirectors from this move, if necessary
 
-## 12 Disclaimer and Licensing
+## 13 Disclaimer and Licensing
 
 University of Central Florida Research Foundation, Inc., d/b/a Limbitless Solutions, Inc. (Limbitless or LSI), located at the University of Central Florida (University) in Orlando, Florida, United States of America received support to host a game-jam. This project was funded [in part] by a grant from the United States Department of State. The opinions, findings and conclusions stated herein are those of the author[s] and do not  necessarily reflect those of the United States Department of State or the University of Central Florida. 
 
