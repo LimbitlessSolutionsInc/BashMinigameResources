@@ -34,6 +34,7 @@ public class JoyShockLibrary4Unreal : ModuleRules
 				"DeveloperSettings",
 				"InputDevice", 
 				"EnhancedInput", "Slate",
+				"InputCore"
 				// ... add other public dependencies that you statically link with here ...
 			}
 		);

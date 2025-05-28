@@ -2,6 +2,8 @@
 #pragma once
 #include <shared_mutex>
 #include "Containers/StaticArray.h"
+#include "Kismet/BlueprintFunctionLibrary.h"
+#include "Engine/World.h"
 #include "JoyShockLibrary.generated.h"
 
 DECLARE_LOG_CATEGORY_EXTERN(LogJoyShockLibrary, Verbose, All);

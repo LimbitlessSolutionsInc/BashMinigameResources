@@ -2,6 +2,7 @@
 
 
 #include "CoreTypes.h"
+#include "InputCoreTypes.h"
 #include "GenericPlatform/IInputInterface.h"
 #include "IInputDevice.h"
 #include "JoyShockLibrary4UnrealSettings.h"

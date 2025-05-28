@@ -13,7 +13,6 @@ For use in Super Bionic Bash, minigames must be hosted in a public GitHub reposi
 When creating the repository with GitHub, select "MIT License" from the dropdown to generate an MIT license.
 ![alt text](Images/license.png)
 
-
 ## Sample Project
 
 Here is a sample project that uses MinigameCore. Feel free to reference it to see the plugin's features and structure in use: https://github.com/LimbitlessSolutionsInc/BashMinigameSample
