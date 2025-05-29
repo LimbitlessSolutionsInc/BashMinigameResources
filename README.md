@@ -339,7 +339,13 @@ Example of adding points when a target is hit by a projectile
 
 # 6 Minigame UI
 
-AMinigameBase’s MinigameUIClass property only accepts widgets inheriting from **UMinigameUI**. This class is automatically instantiated and displayed when the minigame starts.
+AMinigameBase’s MinigameUIClass property only accepts widgets inheriting from **UMinigameUI**. 
+
+This class is automatically instantiated and displayed when the minigame starts. You do **not** need to manually spawn your widget and add it to viewport.
+
+To get started, create a widget Blueprint that inherits from **UMinigameUI**. Then, set the **Minigame UI** class in the Minigame GameMode to the newly created class. 
+
+![Minigame UI](Images/minigameui.png)
 
 **UMinigameUI** has the following members:
 

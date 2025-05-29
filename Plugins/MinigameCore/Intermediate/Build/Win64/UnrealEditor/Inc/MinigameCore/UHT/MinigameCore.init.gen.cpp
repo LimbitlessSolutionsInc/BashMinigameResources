@@ -35,7 +35,7 @@ void EmptyLinkFunctionForGeneratedCodeMinigameCore_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x86808857,
+				0x1E2D2B40,
 				0x972E5E67,
 				METADATA_PARAMS(nullptr, 0)
 			};
@@ -43,5 +43,5 @@ void EmptyLinkFunctionForGeneratedCodeMinigameCore_init() {}
 		}
 		return Z_Registration_Info_UPackage__Script_MinigameCore.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_MinigameCore(Z_Construct_UPackage__Script_MinigameCore, TEXT("/Script/MinigameCore"), Z_Registration_Info_UPackage__Script_MinigameCore, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x86808857, 0x972E5E67));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_MinigameCore(Z_Construct_UPackage__Script_MinigameCore, TEXT("/Script/MinigameCore"), Z_Registration_Info_UPackage__Script_MinigameCore, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x1E2D2B40, 0x972E5E67));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
