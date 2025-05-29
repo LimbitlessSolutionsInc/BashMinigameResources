@@ -422,6 +422,8 @@ Example of ListenForMovement being used in Blueprint:
 
 MinigameCore comes with Editor Utility Widgets to make playtesting and debugging easier. All the editor tools are compiled in **MinigameCore Content > Tools > EUW_MinigameCoreEditorTools**. While playing the minigame, right click the widget asset and select “Run Editor Utility Widget”.
 
+![MinigameCore Content > Tools > EUW_MinigameCoreEditorTools](Images/tools.png)
+
 **EUW_MinigameCoreEditorTools** has a “Refresh All” button at the top, which refreshes all of the included editor utility widgets. Refreshing the widgets is necessary to show recently connected controllers. 
 
 MinigameCore Tools:
