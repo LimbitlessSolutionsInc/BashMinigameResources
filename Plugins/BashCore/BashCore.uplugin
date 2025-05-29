@@ -27,6 +27,10 @@
 		{
 			"Name": "LimbitlessBluetoothPlugin",
 			"Enabled": true
+		},
+		{
+			"Name": "SkeletalMerging",
+			"Enabled": true
 		}
 	]
 }

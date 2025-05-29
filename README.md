@@ -35,13 +35,14 @@ Here is a sample project that uses MinigameCore. Feel free to reference it to se
 > 1. [Minigame UI](#6-minigame-ui)  
 > 1. [Player Rotation Component](#7-player-rotation-component)  
 > 1. [Player Acceleration Component](#8-player-acceleration-component)  
-> 1. [Editor Tools](#9-editor-tools)  
-> 1. [Asset Organization Conventions](#10-asset-organization-conventions)  
-> 1. [Minigame Design Pillars](#11-minigame-design-pillars)
-> 1. [Minigame Migration](#12-minigame-migration)  
->    11.1 [Migrating C++](#121-migrating-cpp)  
->    11.2 [Migrating Assets](#122-migrating-assets)  
-> 1. [Disclaimer and Licensing](#13-disclaimer-and-licensing)
+> 1. [](#9-player-mesh)
+> 1. [Editor Tools](#10-editor-tools)  
+> 1. [Asset Organization Conventions](#11-asset-organization-conventions)  
+> 1. [Minigame Design Pillars](#12-minigame-design-pillars)
+> 1. [Minigame Migration](#13-minigame-migration)  
+>    12.1 [Migrating C++](#131-migrating-cpp)  
+>    12.2 [Migrating Assets](#132-migrating-assets)  
+> 1. [Disclaimer and Licensing](#14-disclaimer-and-licensing)
 
 # 1. Getting Started
 
@@ -424,7 +425,16 @@ Example of ListenForMovement being used in Blueprint:
 
 ![Enter image alt description](Images/QPy_Image_15.png)
 
-# 9 Editor Tools
+# 9 Player Mesh
+
+Super Bionic Bash uses a character customizer. As such, the mesh for the player is generated at runtime. If you want to use the 
+customized character mesh in your minigame, attach a **BP_PlayerMeshComponent** (located in **Plugins** > **BashCore Content** > **Components**) to your MinigamePlayer.
+
+The character customizer is not included as part of the minigame creation plugins, so there will be no customized character mesh to 
+display when playtesting the game. As such, **BP_PlayerMeshComponent** will display a placeholder mesh of the same proportions as 
+an actual character for reference. In an actual game, the mesh will be replaced with the corresponding player's customized mesh.
+
+# 10 Editor Tools
 
 MinigameCore comes with Editor Utility Widgets to make playtesting and debugging easier. All the editor tools are compiled in **MinigameCore Content > Tools > EUW_MinigameCoreEditorTools**. While playing the minigame, right click the widget asset and select “Run Editor Utility Widget”.
 
@@ -452,7 +462,7 @@ MinigameCore Tools:
 
 There is another editor tool that displays various motion sensor information being received by connected devices. This can be found in **LimbitlessBluetoothPlugin Content > Tools > EUW_DeviceValueTool**. While not strictly necessary for minigame creation, it can be occasionally useful. 
 
-# 10 Asset Organization Conventions
+# 11 Asset Organization Conventions
 
 All in-editor assets and blueprints should follow the standard Unreal asset naming convention. In general, the naming convention is an initialism of the type of asset followed by an underscore should prefix the name of the asset. For example, blueprints are prefixed BP_, textures are prefixed T_, etc.
 
@@ -460,7 +470,7 @@ Minigame-specific blueprints should additionally include the minigame name (or i
 
 For more information on asset conventions, see [the Asset Guide](AssetGuide.md).
 
-# 11 Minigame Design Pillars
+# 12 Minigame Design Pillars
 
 * Foster competition, but prioritize fun for all players  
   * Games should not be overly punishing.  
@@ -475,13 +485,13 @@ For more information on asset conventions, see [the Asset Guide](AssetGuide.md).
 * Enemies can be aggressive but never hateful  
 * Avoid controversial content.
 
-# 12 Minigame Migration
+# 13 Minigame Migration
 
 This section documents the process to move minigames created in separate projects into the base Super Bionic Bash project. For minigame creators, this section can be ignored.
 
 The project with the minigame will be referred to as the “minigame project”. Super Bionic Bash will be referred to as the “base project”.
 
-## 12.1 Migrating C++
+## 13.1 Migrating C++
 
 If the minigame project has C++ classes, then:
 
@@ -495,7 +505,7 @@ If the minigame project has C++ classes, then:
 
 5. Build to ensure there are no compilation errors
 
-## 12.2 Migrating Assets
+## 13.2 Migrating Assets
 
 Remaining minigame assets (Blueprints, Levels, Textures, etc) can be migrated using Unreal Engine’s migration system.
 
@@ -509,7 +519,7 @@ Remaining minigame assets (Blueprints, Levels, Textures, etc) can be migrated us
 
 5. Open the base project and ensure the newly migrated assets are in their own subfolder within the Content folder, if it isn’t already. The subfolder should have the same name as the minigame. Fix up any redirectors from this move, if necessary
 
-## 13 Disclaimer and Licensing
+## 14 Disclaimer and Licensing
 
 University of Central Florida Research Foundation, Inc., d/b/a Limbitless Solutions, Inc. (Limbitless or LSI), located at the University of Central Florida (University) in Orlando, Florida, United States of America received support to host a game-jam. This project was funded [in part] by a grant from the United States Department of State. The opinions, findings and conclusions stated herein are those of the author[s] and do not  necessarily reflect those of the United States Department of State or the University of Central Florida. 
 
