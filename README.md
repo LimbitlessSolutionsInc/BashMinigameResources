@@ -434,6 +434,10 @@ The character customizer is not included as part of the minigame creation plugin
 display when playtesting the game. As such, **BP_PlayerMeshComponent** will display a placeholder mesh of the same proportions as 
 an actual character for reference. In an actual game, the mesh will be replaced with the corresponding player's customized mesh.
 
+The skeleton, physics asset, and fallback skeletal mesh is located in **Plugins** > **BashAssets** > **Content** > **Characters**. Some basic animations for the character can also be found in this folder.
+
+To use custom animations for your minigame, see the [Animation Import Guide](AnimationImportGuide.md).
+
 # 10 Editor Tools
 
 MinigameCore comes with Editor Utility Widgets to make playtesting and debugging easier. All the editor tools are compiled in **MinigameCore Content > Tools > EUW_MinigameCoreEditorTools**. While playing the minigame, right click the widget asset and select “Run Editor Utility Widget”.
