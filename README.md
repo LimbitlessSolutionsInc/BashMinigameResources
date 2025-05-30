@@ -35,7 +35,7 @@ Here is a sample project that uses MinigameCore. Feel free to reference it to se
 > 1. [Minigame UI](#6-minigame-ui)  
 > 1. [Player Rotation Component](#7-player-rotation-component)  
 > 1. [Player Acceleration Component](#8-player-acceleration-component)  
-> 1. [](#9-player-mesh)
+> 1. [Player Mesh](#9-player-mesh)
 > 1. [Editor Tools](#10-editor-tools)  
 > 1. [Asset Organization Conventions](#11-asset-organization-conventions)  
 > 1. [Minigame Design Pillars](#12-minigame-design-pillars)
