@@ -4,7 +4,7 @@ For a majority of the animations on the modular character, we use [Mixamo](https
 
 ## Step 1: Getting the Character Into Mixamo
 
-To get the character into Mixamo, upload the FBX file for the base Modular Character. The FBX file can be found in this repository in the [Assets folder](https://github.com/LimbitlessSolutionsInc/BashMinigameResources/Assets).
+To get the character into Mixamo, upload the FBX file for the base Modular Character. The FBX file can be found in this repository in the [Assets folder](https://github.com/LimbitlessSolutionsInc/BashMinigameResources/tree/main/Assets).
 
 Mixamo will prompt you to place the position for stuff like the arms and knees. 
 
