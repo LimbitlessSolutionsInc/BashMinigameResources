@@ -237,10 +237,6 @@ Basic example that destroys an actor that was dynamically spawned over the cours
 
 All minigame player pawns should be derived from **AMinigamePlayer**.
 
-Blueprint subclasses of minigame players need to specify the input mapping context and the ready input action in the details pane. This should be set to **IMC_Minigame** and **IA_PracticeReadyUp**, which are included with MinigameCore.
-
-![Enter image alt description](Images/Ync_Image_9.png)
-
 Here are some helpful properties available to MinigamePlayers:
 
 | Member | Description |
@@ -250,6 +246,10 @@ Here are some helpful properties available to MinigamePlayers:
 | int PlayerNumber | A unique identifier for this player, from 0-4. This can be used with the minigame base to get/set points, get a reference to the player, etc. |
 
 ## 3.1 Player Input
+
+Minigame players need to specify the input mapping context and the ready input action in the details pane. This should be set to **IMC_Minigame** and **IA_PracticeReadyUp**, which are included with MinigameCore.
+
+![Enter image alt description](Images/Ync_Image_9.png)
 
 Players inheriting from **AMinigamePlayer** will automatically be bound to the **IMC_Minigame** Input Context that is passed into it through the details pane. The following input actions in IMC_Minigame may be used as input for the minigame:
 
