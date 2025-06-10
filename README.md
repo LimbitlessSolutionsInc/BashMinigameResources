@@ -185,15 +185,17 @@ The GameMode also provides several helpful functions to access information and c
 
 ## 2.5 Events & Delegates
 
-**AMinigameBase** provides several delegates that trigger on key parts of a minigame’s lifetime.
+**AMinigameBase** provides several event dispatchers that trigger on key parts of a minigame’s lifetime.
 
-OnGameStart - triggered after players are spawned and the minigame is fully initialized. This is called after a minigame has finished resetting.
+| Dispatcher | Description |
+|---|---|
+| OnGameStart | Triggered after players are spawned and the minigame is fully initialized. This is called after a minigame has finished resetting. |
+| OnGameReset | Returns the amount of time remaining until the minigame automatically ends |
+| OnGameEnd | Sets the amount of time until the minigame ends |
+| OnPracticeModeEnd | Gets the number of players in the minigame. |
 
-OnGameEnd - triggered when the minigame is ended, either due to the timer or EndGame().
 
-OnGameReset - triggered right before the minigame is reset
-
-OnPracticeModeEnd - triggered when all players have readied up. Ending practice mode also ends the game and resets the game.
+These event dispatchers are also provided as BlueprintImplementableEvents (called OnMinigameStart, OnMinigameEnd, OnMinigameReset, and MinigameOnPracticeModeEnd). This makes it easier to listen for these events on the gamemode itself, since event dispatchers require manually binding to it.
 
 ## 2.6 Player Spawning
 
@@ -207,7 +209,7 @@ The spawn locations will be determined by PlayerSpawns (a BP_MinigamePlayerSpawn
 
 - Position - Decides which player on the team will spawn where. The first player on the team will spawn at position 0, the second player on the team will spawn at position 1, etc. This is team specific, so all teams’ first player spawns will have Position set to 0.
 
-- NumPlayersRequired - the number of players required to be in the minigame for this player spawn to be used. For example, if this is set to 2, the player spawn will only be used if there are 2 players in the game. However, this player spawn will NOT be used if 1, 3, or 4 players are in the game. Helpful when positioning players to fill up available space depending on number of players, etc.
+- NumPlayersRequired - the number of players required to be on the Team for this player spawn to be considered. For example, if this is set to 2, the player spawn will only be used if there are 2 players on the team. However, this player spawn will NOT be used if 1, 3, or 4 players are on the team. Helpful when positioning players to fill up available space depending on number of players, etc. In FFA, the number of players on the team is instead the number of players in the game.
 
 - bUseOnAnyPlayerCount - If true, this player spawn is used regardless of player count, ignoring NumPlayersRequired. Select this if you don’t need varied spawn locations based on player count.
 
