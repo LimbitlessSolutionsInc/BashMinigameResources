@@ -5,14 +5,12 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
-#include "MinigameEnums.h"
+#include "MinigameStanding.h"
 #include "BasePointCounter.generated.h"
-
-struct FMinigameStanding;
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FPointsChanged, int, Team, int, Amount);
 
-UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
+UCLASS(Blueprintable, ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class MINIGAMECORE_API UBasePointCounter : public UActorComponent
 {
 	GENERATED_BODY()
@@ -20,36 +18,36 @@ class MINIGAMECORE_API UBasePointCounter : public UActorComponent
 public:	
 	UBasePointCounter();
 
-	UPROPERTY(BlueprintAssignable, Category = "Point Counter");
+	UPROPERTY(BlueprintAssignable, BlueprintCallable, Category = "Point Counter");
 	FPointsChanged OnPointsChanged;
 
 	// Adds points to the team's point counter. In FFA, the player number is the team number.
-	UFUNCTION(BlueprintCallable, Category = "Point Counter")
-	virtual void AddPoints(int Team, int Amount);
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Point Counter")
+	void AddPoints(int Team, int Amount);
 
 	// Sets a team's point counter to the amount. In FFA, the player number is the team number.
-	UFUNCTION(BlueprintCallable, Category = "Point Counter")
-	virtual void SetPoints(int Team, int Amount);
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Point Counter")
+	void SetPoints(int Team, int Amount);
 
 	// Returns the current number of points of a team. In FFA, the player number is the team number.
-	UFUNCTION(BlueprintCallable, Category = "Point Counter")
-	virtual int GetPoints(int Team) const;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Point Counter")
+	int GetPoints(int Team) const;
 
 	// Returns the current number of points of a player. In FFA, the player number is the team number.
-	UFUNCTION(BlueprintCallable, Category = "Point Counter")
-	virtual int GetPointsByPlayer(int Player) const;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Point Counter")
+	int GetPointsByPlayer(int Player) const;
 
 	// Gets the results of the minigame based on the current score
-	virtual TArray<FMinigameStanding> GetStandings() const;
+	UFUNCTION(BlueprintNativeEvent, Category = "Point Counter")
+	TArray<FMinigameStanding> GetStandings() const;
 
 	// Initializes point counter with team information
-	virtual void InitializePointCounter(int NumTeams, TArray<int> TeamAssignment);
+	UFUNCTION(BlueprintNativeEvent, Category = "Point Counter")
+	void InitializePointCounter(int NumTeams, const TArray<int>& TeamAssignment);
 
 protected:
 	TArray<int> TeamPoints{};
 
 	// Maps player numbers to teams
 	TArray<int> PlayersToTeams{};
-
-private:
 };

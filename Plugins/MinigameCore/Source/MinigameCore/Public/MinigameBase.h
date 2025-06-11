@@ -8,6 +8,7 @@
 #include "MinigameEnums.h"
 #include "MinigameBase.generated.h"
 
+class AMinigameCapture;
 // Forward declarations
 class UMinigameUI;
 class UPracticeModeUI;
@@ -39,18 +40,6 @@ class MINIGAMECORE_API AMinigameBase : public ABashGamemode
 
 public:
 	AMinigameBase();
-
-	UPROPERTY(BlueprintAssignable);
-	FGameStartedSignature OnGameStart;
-
-	UPROPERTY(BlueprintAssignable)
-	FGameEndedSignature OnGameEnd;
-	
-	UPROPERTY(BlueprintAssignable)
-	FGameResetSignature OnGameReset;
-
-	UPROPERTY(BlueprintAssignable)
-	FPracticeModeEndSignature OnPracticeModeEnd;
 
 	// Readies a Player to exit practice mode
 	UFUNCTION(BlueprintCallable, Category = "Minigame|Practice")
@@ -96,6 +85,42 @@ protected:
 	void FindPlayerSpawns();
 
 	virtual void ResetLevel() override;
+
+
+public:
+	
+	// Called after players are spawned and the minigame base has initialized. Also called after every reset
+	UPROPERTY(BlueprintAssignable);
+	FGameStartedSignature OnGameStart;
+
+	// Triggered when the minigame end has been initialized, either from the timer or explicit call of EndGame()
+	UPROPERTY(BlueprintAssignable)
+	FGameEndedSignature OnGameEnd;
+
+	// Triggered right before the minigame is reset. Use this to clean up persistent state
+	UPROPERTY(BlueprintAssignable)
+	FGameResetSignature OnGameReset;
+
+	// Triggered when all players have readied up in the practice mode
+	UPROPERTY(BlueprintAssignable)
+	FPracticeModeEndSignature OnPracticeModeEnd;
+protected:
+	// Also provide events as BlueprintImplementableEvent
+	// Event dispatcher allows for other actors to listen for these events
+	// Blueprint implementable event allows for the minigame base to easily listen for these events 
+public:
+	UFUNCTION(BlueprintImplementableEvent)
+	void OnMinigameStart();
+	
+	UFUNCTION(BlueprintImplementableEvent)
+	void OnMinigameEnd();
+	
+	UFUNCTION(BlueprintImplementableEvent)
+	void OnMinigameReset();
+	
+	UFUNCTION(BlueprintImplementableEvent)
+	void MinigameOnPracticeModeEnd();
+	
 private:
 	// The Pawns to spawn as the players of each team. Index 0 corresponds to the first team, etc.
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Minigame|Settings", meta = (AllowPrivateAccess = true))
@@ -182,6 +207,7 @@ private:
 	UBasePointCounter* PointCounter{};
 
 	// Index: Player | Value: Team of player
+	TArray<TArray<int>> Teams;
 	TArray<int> TeamsByPlayers;
 	TArray<int> TeamPoints;
 	TArray<bool> ReadyPlayers;
@@ -197,7 +223,6 @@ private:
 
 	// Player spawns by player count, team, and position
 	APlayerSpawn* PlayerSpawns[4][2][4];
-	//TArray<APlayerSpawn*> PlayerSpawns;
 
 	TArray<AMinigameCapture*> SplitCameras;
 	
@@ -208,11 +233,12 @@ private:
 	FTimerHandle ResetTimerHandle{};
 
 	// Returns the index in playerSpawns that has the specified team and position
-	AActor* GetPlayerSpawn(int Team, int pos) const;
+	AActor* GetPlayerSpawn(int Team, int Pos) const;
 
 	// Splits players into teams depending on the Team Type selected.
 	// Index of resultant array is the player number, value is the team number
 	TArray<int> SplitIntoTeams();
+	TArray<TArray<int>> OrganizeByTeams(TArray<int> TeamsByPlayers);
 
 	// Initializes the team points array based on team arrangement.
 	void InitPoints();

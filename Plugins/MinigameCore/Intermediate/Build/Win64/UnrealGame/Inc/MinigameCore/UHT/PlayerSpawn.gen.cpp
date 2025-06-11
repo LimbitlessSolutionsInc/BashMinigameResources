@@ -86,9 +86,9 @@ void EmptyLinkFunctionForGeneratedCodePlayerSpawn() {}
 		{ "Category", "Spawn Properties" },
 		{ "ClampMax", "4" },
 		{ "ClampMin", "1" },
-		{ "Comment", "// The number of players that must be playing to consider this player spawn\n" },
+		{ "Comment", "/**\n\x09 * The number of players that must on the associated team to consider this player spawn\n\x09 * For example, restricting a player spawn to only work if there are 2 players on a 3v1 minigame\n\x09 */" },
 		{ "ModuleRelativePath", "Public/Player/PlayerSpawn.h" },
-		{ "ToolTip", "The number of players that must be playing to consider this player spawn" },
+		{ "ToolTip", "The number of players that must on the associated team to consider this player spawn\nFor example, restricting a player spawn to only work if there are 2 players on a 3v1 minigame" },
 	};
 #endif
 	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_APlayerSpawn_Statics::NewProp_NumPlayersRequired = { "NumPlayersRequired", nullptr, (EPropertyFlags)0x0010000000000805, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(APlayerSpawn, NumPlayersRequired), METADATA_PARAMS(Z_Construct_UClass_APlayerSpawn_Statics::NewProp_NumPlayersRequired_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayerSpawn_Statics::NewProp_NumPlayersRequired_MetaData)) };
@@ -146,9 +146,9 @@ void EmptyLinkFunctionForGeneratedCodePlayerSpawn() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerSpawn_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APlayerSpawn, APlayerSpawn::StaticClass, TEXT("APlayerSpawn"), &Z_Registration_Info_UClass_APlayerSpawn, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlayerSpawn), 3712772728U) },
+		{ Z_Construct_UClass_APlayerSpawn, APlayerSpawn::StaticClass, TEXT("APlayerSpawn"), &Z_Registration_Info_UClass_APlayerSpawn, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlayerSpawn), 2836455969U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerSpawn_h_218609772(TEXT("/Script/MinigameCore"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerSpawn_h_2304043180(TEXT("/Script/MinigameCore"),
 		Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerSpawn_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerSpawn_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
