@@ -8,6 +8,9 @@
 #include "CustomizerMeshComponent.generated.h"
 
 class UBashLocalPlayer;
+class USkeletalMesh;
+class USkeletalMeshComponent;
+
 /**
  *  Class that uses leader pose component to quickly swap pieces of the mesh out for customization
  *  When done with customization, can also be used to bake a merged skeletal mesh for use in gameplay

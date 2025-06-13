@@ -5,274 +5,286 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "BashCore/Public/BashGamemode.h"
+#include "BashGamemode.h"
+
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
 void EmptyLinkFunctionForGeneratedCodeBashGamemode() {}
-// Cross Module References
-	BASHCORE_API UClass* Z_Construct_UClass_ABashGamemode();
-	BASHCORE_API UClass* Z_Construct_UClass_ABashGamemode_NoRegister();
-	BASHCORE_API UClass* Z_Construct_UClass_UCircularWipeWidget_NoRegister();
-	BASHCORE_API UScriptStruct* Z_Construct_UScriptStruct_FLoadLevelParams();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
-	ENGINE_API UClass* Z_Construct_UClass_AGameModeBase();
-	UPackage* Z_Construct_UPackage__Script_BashCore();
-// End Cross Module References
-	static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_LoadLevelParams;
+
+// ********** Begin Cross Module References ********************************************************
+BASHCORE_API UClass* Z_Construct_UClass_ABashGamemode();
+BASHCORE_API UClass* Z_Construct_UClass_ABashGamemode_NoRegister();
+BASHCORE_API UClass* Z_Construct_UClass_UCircularWipeWidget_NoRegister();
+BASHCORE_API UScriptStruct* Z_Construct_UScriptStruct_FLoadLevelParams();
+COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+ENGINE_API UClass* Z_Construct_UClass_AGameModeBase();
+UPackage* Z_Construct_UPackage__Script_BashCore();
+// ********** End Cross Module References **********************************************************
+
+// ********** Begin ScriptStruct FLoadLevelParams **************************************************
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FLoadLevelParams;
 class UScriptStruct* FLoadLevelParams::StaticStruct()
 {
-	if (!Z_Registration_Info_UScriptStruct_LoadLevelParams.OuterSingleton)
+	if (!Z_Registration_Info_UScriptStruct_FLoadLevelParams.OuterSingleton)
 	{
-		Z_Registration_Info_UScriptStruct_LoadLevelParams.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FLoadLevelParams, Z_Construct_UPackage__Script_BashCore(), TEXT("LoadLevelParams"));
+		Z_Registration_Info_UScriptStruct_FLoadLevelParams.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FLoadLevelParams, (UObject*)Z_Construct_UPackage__Script_BashCore(), TEXT("LoadLevelParams"));
 	}
-	return Z_Registration_Info_UScriptStruct_LoadLevelParams.OuterSingleton;
+	return Z_Registration_Info_UScriptStruct_FLoadLevelParams.OuterSingleton;
 }
-template<> BASHCORE_API UScriptStruct* StaticStruct<FLoadLevelParams>()
+struct Z_Construct_UScriptStruct_FLoadLevelParams_Statics
 {
-	return FLoadLevelParams::StaticStruct();
-}
-	struct Z_Construct_UScriptStruct_FLoadLevelParams_Statics
-	{
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
-#endif
-		static void* NewStructOps();
-		static const UECodeGen_Private::FStructParams ReturnStructParams;
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FLoadLevelParams_Statics::Struct_MetaDataParams[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "Comment", "/**\n * \n */" },
 		{ "ModuleRelativePath", "Public/BashGamemode.h" },
 	};
-#endif
-	void* Z_Construct_UScriptStruct_FLoadLevelParams_Statics::NewStructOps()
+#endif // WITH_METADATA
+	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FLoadLevelParams>();
 	}
-	const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FLoadLevelParams_Statics::ReturnStructParams = {
-		(UObject* (*)())Z_Construct_UPackage__Script_BashCore,
-		nullptr,
-		&NewStructOps,
-		"LoadLevelParams",
-		sizeof(FLoadLevelParams),
-		alignof(FLoadLevelParams),
-		nullptr,
-		0,
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FLoadLevelParams_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FLoadLevelParams_Statics::Struct_MetaDataParams))
-	};
-	UScriptStruct* Z_Construct_UScriptStruct_FLoadLevelParams()
+	static const UECodeGen_Private::FStructParams StructParams;
+};
+const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FLoadLevelParams_Statics::StructParams = {
+	(UObject* (*)())Z_Construct_UPackage__Script_BashCore,
+	nullptr,
+	&NewStructOps,
+	"LoadLevelParams",
+	nullptr,
+	0,
+	sizeof(FLoadLevelParams),
+	alignof(FLoadLevelParams),
+	RF_Public|RF_Transient|RF_MarkAsNative,
+	EStructFlags(0x00000001),
+	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FLoadLevelParams_Statics::Struct_MetaDataParams), Z_Construct_UScriptStruct_FLoadLevelParams_Statics::Struct_MetaDataParams)
+};
+UScriptStruct* Z_Construct_UScriptStruct_FLoadLevelParams()
+{
+	if (!Z_Registration_Info_UScriptStruct_FLoadLevelParams.InnerSingleton)
 	{
-		if (!Z_Registration_Info_UScriptStruct_LoadLevelParams.InnerSingleton)
-		{
-			UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_LoadLevelParams.InnerSingleton, Z_Construct_UScriptStruct_FLoadLevelParams_Statics::ReturnStructParams);
-		}
-		return Z_Registration_Info_UScriptStruct_LoadLevelParams.InnerSingleton;
+		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FLoadLevelParams.InnerSingleton, Z_Construct_UScriptStruct_FLoadLevelParams_Statics::StructParams);
 	}
-	DEFINE_FUNCTION(ABashGamemode::execOpenLevel)
-	{
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		P_THIS->OpenLevel();
-		P_NATIVE_END;
-	}
-	DEFINE_FUNCTION(ABashGamemode::execPlayTransitionEffects)
-	{
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		P_THIS->PlayTransitionEffects();
-		P_NATIVE_END;
-	}
-	DEFINE_FUNCTION(ABashGamemode::execOnEnterTransitionFinish)
-	{
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		P_THIS->OnEnterTransitionFinish();
-		P_NATIVE_END;
-	}
-	void ABashGamemode::StaticRegisterNativesABashGamemode()
-	{
-		UClass* Class = ABashGamemode::StaticClass();
-		static const FNameNativePtrPair Funcs[] = {
-			{ "OnEnterTransitionFinish", &ABashGamemode::execOnEnterTransitionFinish },
-			{ "OpenLevel", &ABashGamemode::execOpenLevel },
-			{ "PlayTransitionEffects", &ABashGamemode::execPlayTransitionEffects },
-		};
-		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-	}
-	struct Z_Construct_UFunction_ABashGamemode_OnEnterTransitionFinish_Statics
-	{
+	return Z_Registration_Info_UScriptStruct_FLoadLevelParams.InnerSingleton;
+}
+// ********** End ScriptStruct FLoadLevelParams ****************************************************
+
+// ********** Begin Class ABashGamemode Function OnEnterTransitionFinish ***************************
+struct Z_Construct_UFunction_ABashGamemode_OnEnterTransitionFinish_Statics
+{
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABashGamemode_OnEnterTransitionFinish_Statics::Function_MetaDataParams[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Comment", "//Called after the circular wipe\n" },
 		{ "ModuleRelativePath", "Public/BashGamemode.h" },
 		{ "ToolTip", "Called after the circular wipe" },
 	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABashGamemode_OnEnterTransitionFinish_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABashGamemode, nullptr, "OnEnterTransitionFinish", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABashGamemode_OnEnterTransitionFinish_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABashGamemode_OnEnterTransitionFinish_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_ABashGamemode_OnEnterTransitionFinish()
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABashGamemode_OnEnterTransitionFinish_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_ABashGamemode, nullptr, "OnEnterTransitionFinish", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080400, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABashGamemode_OnEnterTransitionFinish_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABashGamemode_OnEnterTransitionFinish_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_ABashGamemode_OnEnterTransitionFinish()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
 	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABashGamemode_OnEnterTransitionFinish_Statics::FuncParams);
-		}
-		return ReturnFunction;
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABashGamemode_OnEnterTransitionFinish_Statics::FuncParams);
 	}
-	struct Z_Construct_UFunction_ABashGamemode_OpenLevel_Statics
-	{
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(ABashGamemode::execOnEnterTransitionFinish)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->OnEnterTransitionFinish();
+	P_NATIVE_END;
+}
+// ********** End Class ABashGamemode Function OnEnterTransitionFinish *****************************
+
+// ********** Begin Class ABashGamemode Function OpenLevel *****************************************
+struct Z_Construct_UFunction_ABashGamemode_OpenLevel_Statics
+{
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABashGamemode_OpenLevel_Statics::Function_MetaDataParams[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "Public/BashGamemode.h" },
 	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABashGamemode_OpenLevel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABashGamemode, nullptr, "OpenLevel", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABashGamemode_OpenLevel_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABashGamemode_OpenLevel_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_ABashGamemode_OpenLevel()
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABashGamemode_OpenLevel_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_ABashGamemode, nullptr, "OpenLevel", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABashGamemode_OpenLevel_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABashGamemode_OpenLevel_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_ABashGamemode_OpenLevel()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
 	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABashGamemode_OpenLevel_Statics::FuncParams);
-		}
-		return ReturnFunction;
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABashGamemode_OpenLevel_Statics::FuncParams);
 	}
-	struct Z_Construct_UFunction_ABashGamemode_PlayTransitionEffects_Statics
-	{
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(ABashGamemode::execOpenLevel)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->OpenLevel();
+	P_NATIVE_END;
+}
+// ********** End Class ABashGamemode Function OpenLevel *******************************************
+
+// ********** Begin Class ABashGamemode Function PlayTransitionEffects *****************************
+struct Z_Construct_UFunction_ABashGamemode_PlayTransitionEffects_Statics
+{
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABashGamemode_PlayTransitionEffects_Statics::Function_MetaDataParams[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "Public/BashGamemode.h" },
 	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABashGamemode_PlayTransitionEffects_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABashGamemode, nullptr, "PlayTransitionEffects", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABashGamemode_PlayTransitionEffects_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABashGamemode_PlayTransitionEffects_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_ABashGamemode_PlayTransitionEffects()
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABashGamemode_PlayTransitionEffects_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_ABashGamemode, nullptr, "PlayTransitionEffects", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABashGamemode_PlayTransitionEffects_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABashGamemode_PlayTransitionEffects_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_ABashGamemode_PlayTransitionEffects()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
 	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABashGamemode_PlayTransitionEffects_Statics::FuncParams);
-		}
-		return ReturnFunction;
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABashGamemode_PlayTransitionEffects_Statics::FuncParams);
 	}
-	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(ABashGamemode);
-	UClass* Z_Construct_UClass_ABashGamemode_NoRegister()
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(ABashGamemode::execPlayTransitionEffects)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->PlayTransitionEffects();
+	P_NATIVE_END;
+}
+// ********** End Class ABashGamemode Function PlayTransitionEffects *******************************
+
+// ********** Begin Class ABashGamemode ************************************************************
+void ABashGamemode::StaticRegisterNativesABashGamemode()
+{
+	UClass* Class = ABashGamemode::StaticClass();
+	static const FNameNativePtrPair Funcs[] = {
+		{ "OnEnterTransitionFinish", &ABashGamemode::execOnEnterTransitionFinish },
+		{ "OpenLevel", &ABashGamemode::execOpenLevel },
+		{ "PlayTransitionEffects", &ABashGamemode::execPlayTransitionEffects },
+	};
+	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+}
+FClassRegistrationInfo Z_Registration_Info_UClass_ABashGamemode;
+UClass* ABashGamemode::GetPrivateStaticClass()
+{
+	using TClass = ABashGamemode;
+	if (!Z_Registration_Info_UClass_ABashGamemode.InnerSingleton)
 	{
-		return ABashGamemode::StaticClass();
+		GetPrivateStaticClassBody(
+			StaticPackage(),
+			TEXT("BashGamemode"),
+			Z_Registration_Info_UClass_ABashGamemode.InnerSingleton,
+			StaticRegisterNativesABashGamemode,
+			sizeof(TClass),
+			alignof(TClass),
+			TClass::StaticClassFlags,
+			TClass::StaticClassCastFlags(),
+			TClass::StaticConfigName(),
+			(UClass::ClassConstructorType)InternalConstructor<TClass>,
+			(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
+			UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
+			&TClass::Super::StaticClass,
+			&TClass::WithinClass::StaticClass
+		);
 	}
-	struct Z_Construct_UClass_ABashGamemode_Statics
-	{
-		static UObject* (*const DependentSingletons[])();
-		static const FClassFunctionLinkInfo FuncInfo[];
+	return Z_Registration_Info_UClass_ABashGamemode.InnerSingleton;
+}
+UClass* Z_Construct_UClass_ABashGamemode_NoRegister()
+{
+	return ABashGamemode::GetPrivateStaticClass();
+}
+struct Z_Construct_UClass_ABashGamemode_Statics
+{
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
-#endif
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_CircularWipeClass_MetaData[];
-#endif
-		static const UECodeGen_Private::FClassPropertyParams NewProp_CircularWipeClass;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_CircularWipeWidget_MetaData[];
-#endif
-		static const UECodeGen_Private::FObjectPtrPropertyParams NewProp_CircularWipeWidget;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
-		static const UECodeGen_Private::FClassParams ClassParams;
-	};
-	UObject* (*const Z_Construct_UClass_ABashGamemode_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_AGameModeBase,
-		(UObject* (*)())Z_Construct_UPackage__Script_BashCore,
-	};
-	const FClassFunctionLinkInfo Z_Construct_UClass_ABashGamemode_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_ABashGamemode_OnEnterTransitionFinish, "OnEnterTransitionFinish" }, // 3360706514
-		{ &Z_Construct_UFunction_ABashGamemode_OpenLevel, "OpenLevel" }, // 4101092915
-		{ &Z_Construct_UFunction_ABashGamemode_PlayTransitionEffects, "PlayTransitionEffects" }, // 4161252734
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABashGamemode_Statics::Class_MetaDataParams[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "HideCategories", "Info Rendering MovementReplication Replication Actor Input Movement Collision Rendering HLOD WorldPartition DataLayers Transformation" },
 		{ "IncludePath", "BashGamemode.h" },
 		{ "ModuleRelativePath", "Public/BashGamemode.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
-#endif
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABashGamemode_Statics::NewProp_CircularWipeClass_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CircularWipeClass_MetaData[] = {
 		{ "Category", "BashGamemode" },
 		{ "ModuleRelativePath", "Public/BashGamemode.h" },
 	};
-#endif
-	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ABashGamemode_Statics::NewProp_CircularWipeClass = { "CircularWipeClass", nullptr, (EPropertyFlags)0x0024080000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ABashGamemode, CircularWipeClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UCircularWipeWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABashGamemode_Statics::NewProp_CircularWipeClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABashGamemode_Statics::NewProp_CircularWipeClass_MetaData)) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABashGamemode_Statics::NewProp_CircularWipeWidget_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CircularWipeWidget_MetaData[] = {
 		{ "Category", "BashGamemode" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/BashGamemode.h" },
 	};
-#endif
-	const UECodeGen_Private::FObjectPtrPropertyParams Z_Construct_UClass_ABashGamemode_Statics::NewProp_CircularWipeWidget = { "CircularWipeWidget", nullptr, (EPropertyFlags)0x002408000008001c, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ABashGamemode, CircularWipeWidget), Z_Construct_UClass_UCircularWipeWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABashGamemode_Statics::NewProp_CircularWipeWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABashGamemode_Statics::NewProp_CircularWipeWidget_MetaData)) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABashGamemode_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABashGamemode_Statics::NewProp_CircularWipeClass,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABashGamemode_Statics::NewProp_CircularWipeWidget,
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FClassPropertyParams NewProp_CircularWipeClass;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_CircularWipeWidget;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static UObject* (*const DependentSingletons[])();
+	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_ABashGamemode_OnEnterTransitionFinish, "OnEnterTransitionFinish" }, // 960802673
+		{ &Z_Construct_UFunction_ABashGamemode_OpenLevel, "OpenLevel" }, // 3378913662
+		{ &Z_Construct_UFunction_ABashGamemode_PlayTransitionEffects, "PlayTransitionEffects" }, // 1406427169
 	};
-	const FCppClassTypeInfoStatic Z_Construct_UClass_ABashGamemode_Statics::StaticCppClassTypeInfo = {
+	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
+	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABashGamemode>::IsAbstract,
 	};
-	const UECodeGen_Private::FClassParams Z_Construct_UClass_ABashGamemode_Statics::ClassParams = {
-		&ABashGamemode::StaticClass,
-		"Game",
-		&StaticCppClassTypeInfo,
-		DependentSingletons,
-		FuncInfo,
-		Z_Construct_UClass_ABashGamemode_Statics::PropPointers,
-		nullptr,
-		UE_ARRAY_COUNT(DependentSingletons),
-		UE_ARRAY_COUNT(FuncInfo),
-		UE_ARRAY_COUNT(Z_Construct_UClass_ABashGamemode_Statics::PropPointers),
-		0,
-		0x009002ACu,
-		METADATA_PARAMS(Z_Construct_UClass_ABashGamemode_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ABashGamemode_Statics::Class_MetaDataParams))
-	};
-	UClass* Z_Construct_UClass_ABashGamemode()
+	static const UECodeGen_Private::FClassParams ClassParams;
+};
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ABashGamemode_Statics::NewProp_CircularWipeClass = { "CircularWipeClass", nullptr, (EPropertyFlags)0x0024080000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABashGamemode, CircularWipeClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UCircularWipeWidget_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CircularWipeClass_MetaData), NewProp_CircularWipeClass_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABashGamemode_Statics::NewProp_CircularWipeWidget = { "CircularWipeWidget", nullptr, (EPropertyFlags)0x012408000008001c, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABashGamemode, CircularWipeWidget), Z_Construct_UClass_UCircularWipeWidget_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CircularWipeWidget_MetaData), NewProp_CircularWipeWidget_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABashGamemode_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABashGamemode_Statics::NewProp_CircularWipeClass,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABashGamemode_Statics::NewProp_CircularWipeWidget,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ABashGamemode_Statics::PropPointers) < 2048);
+UObject* (*const Z_Construct_UClass_ABashGamemode_Statics::DependentSingletons[])() = {
+	(UObject* (*)())Z_Construct_UClass_AGameModeBase,
+	(UObject* (*)())Z_Construct_UPackage__Script_BashCore,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ABashGamemode_Statics::DependentSingletons) < 16);
+const UECodeGen_Private::FClassParams Z_Construct_UClass_ABashGamemode_Statics::ClassParams = {
+	&ABashGamemode::StaticClass,
+	"Game",
+	&StaticCppClassTypeInfo,
+	DependentSingletons,
+	FuncInfo,
+	Z_Construct_UClass_ABashGamemode_Statics::PropPointers,
+	nullptr,
+	UE_ARRAY_COUNT(DependentSingletons),
+	UE_ARRAY_COUNT(FuncInfo),
+	UE_ARRAY_COUNT(Z_Construct_UClass_ABashGamemode_Statics::PropPointers),
+	0,
+	0x009003ACu,
+	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABashGamemode_Statics::Class_MetaDataParams), Z_Construct_UClass_ABashGamemode_Statics::Class_MetaDataParams)
+};
+UClass* Z_Construct_UClass_ABashGamemode()
+{
+	if (!Z_Registration_Info_UClass_ABashGamemode.OuterSingleton)
 	{
-		if (!Z_Registration_Info_UClass_ABashGamemode.OuterSingleton)
-		{
-			UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_ABashGamemode.OuterSingleton, Z_Construct_UClass_ABashGamemode_Statics::ClassParams);
-		}
-		return Z_Registration_Info_UClass_ABashGamemode.OuterSingleton;
+		UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_ABashGamemode.OuterSingleton, Z_Construct_UClass_ABashGamemode_Statics::ClassParams);
 	}
-	template<> BASHCORE_API UClass* StaticClass<ABashGamemode>()
-	{
-		return ABashGamemode::StaticClass();
-	}
-	DEFINE_VTABLE_PTR_HELPER_CTOR(ABashGamemode);
-	ABashGamemode::~ABashGamemode() {}
-	struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h_Statics
-	{
-		static const FStructRegisterCompiledInInfo ScriptStructInfo[];
-		static const FClassRegisterCompiledInInfo ClassInfo[];
+	return Z_Registration_Info_UClass_ABashGamemode.OuterSingleton;
+}
+ABashGamemode::ABashGamemode(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
+DEFINE_VTABLE_PTR_HELPER_CTOR(ABashGamemode);
+ABashGamemode::~ABashGamemode() {}
+// ********** End Class ABashGamemode **************************************************************
+
+// ********** Begin Registration *******************************************************************
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_Statics
+{
+	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
+		{ FLoadLevelParams::StaticStruct, Z_Construct_UScriptStruct_FLoadLevelParams_Statics::NewStructOps, TEXT("LoadLevelParams"), &Z_Registration_Info_UScriptStruct_FLoadLevelParams, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FLoadLevelParams), 1997070509U) },
 	};
-	const FStructRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h_Statics::ScriptStructInfo[] = {
-		{ FLoadLevelParams::StaticStruct, Z_Construct_UScriptStruct_FLoadLevelParams_Statics::NewStructOps, TEXT("LoadLevelParams"), &Z_Registration_Info_UScriptStruct_LoadLevelParams, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FLoadLevelParams), 3784311532U) },
+	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
+		{ Z_Construct_UClass_ABashGamemode, ABashGamemode::StaticClass, TEXT("ABashGamemode"), &Z_Registration_Info_UClass_ABashGamemode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABashGamemode), 368478142U) },
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ABashGamemode, ABashGamemode::StaticClass, TEXT("ABashGamemode"), &Z_Registration_Info_UClass_ABashGamemode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABashGamemode), 3455401086U) },
-	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h_3154826167(TEXT("/Script/BashCore"),
-		Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h_Statics::ClassInfo),
-		Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h_Statics::ScriptStructInfo),
-		nullptr, 0);
+};
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_120804633(TEXT("/Script/BashCore"),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_Statics::ScriptStructInfo),
+	nullptr, 0);
+// ********** End Registration *********************************************************************
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

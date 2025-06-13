@@ -1,6 +1,8 @@
 ﻿// MIT License - Copyright (c) 2022 Jared Cook
 #pragma once
 
+#include "Containers/List.h"
+
 template <class T>
 class FCTWEEN_API FCTweenManager
 {

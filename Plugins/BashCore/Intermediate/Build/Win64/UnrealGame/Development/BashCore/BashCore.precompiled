@@ -1,5 +1,16 @@
 {
 	"OutputFiles": [
-		"Module.BashCore.cpp.obj"
+		"..\\..\\..\\x64\\UnrealGame\\Development\\BashCore\\Module.BashCore.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\BashCore\\BashCore.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\BashCore\\BashGamemode.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\BashCore\\CustomizerMeshComponent.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\BashCore\\PlayerMeshComponent.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\BashCore\\UIInputComponent.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\BashCore\\BashLocalPlayer.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\BashCore\\BashPlayerController.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\BashCore\\CircularWipeWidget.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\BashCore\\FlexCalibrationMenu.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\BashCore\\Menu.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\BashCore\\SelectableWidget.cpp.obj"
 	]
 }

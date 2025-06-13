@@ -5,26 +5,30 @@
 ===========================================================================*/
 
 // IWYU pragma: private, include "SensorData.h"
-#include "UObject/ObjectMacros.h"
-#include "UObject/ScriptMacros.h"
 
-PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #ifdef LIMBITLESSBLUETOOTHPLUGIN_SensorData_generated_h
 #error "SensorData.generated.h already included, missing '#pragma once' in SensorData.h"
 #endif
 #define LIMBITLESSBLUETOOTHPLUGIN_SensorData_generated_h
 
-#define FID_Users_zombi_Downloads_Minigame_Plugins_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_SensorData_h_22_GENERATED_BODY \
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
+// ********** Begin ScriptStruct FSensorData *******************************************************
+#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_SensorData_h_22_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSensorData_Statics; \
 	LIMBITLESSBLUETOOTHPLUGIN_API static class UScriptStruct* StaticStruct();
 
 
-template<> LIMBITLESSBLUETOOTHPLUGIN_API UScriptStruct* StaticStruct<struct FSensorData>();
+struct FSensorData;
+// ********** End ScriptStruct FSensorData *********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_Downloads_Minigame_Plugins_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_SensorData_h
+#define CURRENT_FILE_ID FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_SensorData_h
 
-
+// ********** Begin Enum EFlexColor ****************************************************************
 #define FOREACH_ENUM_EFLEXCOLOR(op) \
 	op(EFlexColor::EFC_None) \
 	op(EFlexColor::EFC_Blue) \
@@ -38,5 +42,6 @@ template<> LIMBITLESSBLUETOOTHPLUGIN_API UScriptStruct* StaticStruct<struct FSen
 enum class EFlexColor : uint8;
 template<> struct TIsUEnumClass<EFlexColor> { enum { Value = true }; };
 template<> LIMBITLESSBLUETOOTHPLUGIN_API UEnum* StaticEnum<EFlexColor>();
+// ********** End Enum EFlexColor ******************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -48,6 +48,10 @@
 
 #pragma once
 
+#include "HAL/Platform.h"
+#include "CoreMinimal.h"
+#include "FCEasing.generated.h"
+
 UENUM(BlueprintType)
 enum class EFCEase : uint8
 {

@@ -5,118 +5,73 @@
 ===========================================================================*/
 
 // IWYU pragma: private, include "BaseClasses/LimbitlessLocalPlayer.h"
-#include "UObject/ObjectMacros.h"
-#include "UObject/ScriptMacros.h"
 
-PRAGMA_DISABLE_DEPRECATION_WARNINGS
-class UFlexController;
 #ifdef LIMBITLESSBLUETOOTHPLUGIN_LimbitlessLocalPlayer_generated_h
 #error "LimbitlessLocalPlayer.generated.h already included, missing '#pragma once' in LimbitlessLocalPlayer.h"
 #endif
 #define LIMBITLESSBLUETOOTHPLUGIN_LimbitlessLocalPlayer_generated_h
 
-#define FID_Users_zombi_Downloads_Minigame_Plugins_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_12_DELEGATE \
-struct _Script_LimbitlessBluetoothPlugin_eventOnFlexControllerAssignedSignature_Parms \
-{ \
-	UFlexController* FlexController; \
-}; \
-static inline void FOnFlexControllerAssignedSignature_DelegateWrapper(const FMulticastScriptDelegate& OnFlexControllerAssignedSignature, UFlexController* FlexController) \
-{ \
-	_Script_LimbitlessBluetoothPlugin_eventOnFlexControllerAssignedSignature_Parms Parms; \
-	Parms.FlexController=FlexController; \
-	OnFlexControllerAssignedSignature.ProcessMulticastDelegate<UObject>(&Parms); \
-}
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
+class UFlexController;
+
+// ********** Begin Delegate FOnFlexControllerAssignedSignature ************************************
+#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_12_DELEGATE \
+LIMBITLESSBLUETOOTHPLUGIN_API void FOnFlexControllerAssignedSignature_DelegateWrapper(const FMulticastScriptDelegate& OnFlexControllerAssignedSignature, UFlexController* FlexController);
 
 
-#define FID_Users_zombi_Downloads_Minigame_Plugins_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_SPARSE_DATA
-#define FID_Users_zombi_Downloads_Minigame_Plugins_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_RPC_WRAPPERS \
- \
+// ********** End Delegate FOnFlexControllerAssignedSignature **************************************
+
+// ********** Begin Class ULimbitlessLocalPlayer ***************************************************
+#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execSetFlexController); \
 	DECLARE_FUNCTION(execGetFlexController);
 
 
-#define FID_Users_zombi_Downloads_Minigame_Plugins_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
- \
-	DECLARE_FUNCTION(execSetFlexController); \
-	DECLARE_FUNCTION(execGetFlexController);
+LIMBITLESSBLUETOOTHPLUGIN_API UClass* Z_Construct_UClass_ULimbitlessLocalPlayer_NoRegister();
 
-
-#define FID_Users_zombi_Downloads_Minigame_Plugins_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_ACCESSORS
-#define FID_Users_zombi_Downloads_Minigame_Plugins_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_INCLASS_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesULimbitlessLocalPlayer(); \
 	friend struct Z_Construct_UClass_ULimbitlessLocalPlayer_Statics; \
+	static UClass* GetPrivateStaticClass(); \
+	friend LIMBITLESSBLUETOOTHPLUGIN_API UClass* Z_Construct_UClass_ULimbitlessLocalPlayer_NoRegister(); \
 public: \
-	DECLARE_CLASS(ULimbitlessLocalPlayer, ULocalPlayer, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/LimbitlessBluetoothPlugin"), NO_API) \
+	DECLARE_CLASS2(ULimbitlessLocalPlayer, ULocalPlayer, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/LimbitlessBluetoothPlugin"), Z_Construct_UClass_ULimbitlessLocalPlayer_NoRegister) \
 	DECLARE_SERIALIZER(ULimbitlessLocalPlayer)
 
 
-#define FID_Users_zombi_Downloads_Minigame_Plugins_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_INCLASS \
-private: \
-	static void StaticRegisterNativesULimbitlessLocalPlayer(); \
-	friend struct Z_Construct_UClass_ULimbitlessLocalPlayer_Statics; \
-public: \
-	DECLARE_CLASS(ULimbitlessLocalPlayer, ULocalPlayer, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/LimbitlessBluetoothPlugin"), NO_API) \
-	DECLARE_SERIALIZER(ULimbitlessLocalPlayer)
-
-
-#define FID_Users_zombi_Downloads_Minigame_Plugins_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_STANDARD_CONSTRUCTORS \
+#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ULimbitlessLocalPlayer(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ULimbitlessLocalPlayer) \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ULimbitlessLocalPlayer); \
-	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ULimbitlessLocalPlayer); \
-private: \
-	/** Private move- and copy-constructors, should never be used */ \
-	NO_API ULimbitlessLocalPlayer(ULimbitlessLocalPlayer&&); \
-	NO_API ULimbitlessLocalPlayer(const ULimbitlessLocalPlayer&); \
-public: \
-	NO_API virtual ~ULimbitlessLocalPlayer();
-
-
-#define FID_Users_zombi_Downloads_Minigame_Plugins_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ULimbitlessLocalPlayer(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
-private: \
-	/** Private move- and copy-constructors, should never be used */ \
-	NO_API ULimbitlessLocalPlayer(ULimbitlessLocalPlayer&&); \
-	NO_API ULimbitlessLocalPlayer(const ULimbitlessLocalPlayer&); \
-public: \
+	/** Deleted move- and copy-constructors, should never be used */ \
+	ULimbitlessLocalPlayer(ULimbitlessLocalPlayer&&) = delete; \
+	ULimbitlessLocalPlayer(const ULimbitlessLocalPlayer&) = delete; \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ULimbitlessLocalPlayer); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ULimbitlessLocalPlayer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ULimbitlessLocalPlayer) \
 	NO_API virtual ~ULimbitlessLocalPlayer();
 
 
-#define FID_Users_zombi_Downloads_Minigame_Plugins_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_14_PROLOG
-#define FID_Users_zombi_Downloads_Minigame_Plugins_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_GENERATED_BODY_LEGACY \
+#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_14_PROLOG
+#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_zombi_Downloads_Minigame_Plugins_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_SPARSE_DATA \
-	FID_Users_zombi_Downloads_Minigame_Plugins_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_RPC_WRAPPERS \
-	FID_Users_zombi_Downloads_Minigame_Plugins_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_ACCESSORS \
-	FID_Users_zombi_Downloads_Minigame_Plugins_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_INCLASS \
-	FID_Users_zombi_Downloads_Minigame_Plugins_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_STANDARD_CONSTRUCTORS \
-public: \
-PRAGMA_ENABLE_DEPRECATION_WARNINGS
-
-
-#define FID_Users_zombi_Downloads_Minigame_Plugins_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_GENERATED_BODY \
-PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-public: \
-	FID_Users_zombi_Downloads_Minigame_Plugins_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_SPARSE_DATA \
-	FID_Users_zombi_Downloads_Minigame_Plugins_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_Minigame_Plugins_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_ACCESSORS \
-	FID_Users_zombi_Downloads_Minigame_Plugins_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_INCLASS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_Minigame_Plugins_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_ENHANCED_CONSTRUCTORS \
+	FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_INCLASS_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-template<> LIMBITLESSBLUETOOTHPLUGIN_API UClass* StaticClass<class ULimbitlessLocalPlayer>();
+class ULimbitlessLocalPlayer;
+
+// ********** End Class ULimbitlessLocalPlayer *****************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_Downloads_Minigame_Plugins_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h
-
+#define CURRENT_FILE_ID FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_BaseClasses_LimbitlessLocalPlayer_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -9,7 +9,7 @@ public class LimbitlessBluetoothEditor : ModuleRules
         PublicDependencyModuleNames.AddRange(
             new string[]
             {
-                "Core",
+                "Core", "Blutility",
             }
         );
 

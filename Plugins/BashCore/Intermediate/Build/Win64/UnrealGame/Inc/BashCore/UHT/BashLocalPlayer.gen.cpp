@@ -5,569 +5,610 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "BashCore/Public/Player/BashLocalPlayer.h"
-#include "Engine/Classes/Engine/Engine.h"
+#include "Player/BashLocalPlayer.h"
+#include "Engine/Engine.h"
+
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
 void EmptyLinkFunctionForGeneratedCodeBashLocalPlayer() {}
-// Cross Module References
-	BASHCORE_API UClass* Z_Construct_UClass_UBashLocalPlayer();
-	BASHCORE_API UClass* Z_Construct_UClass_UBashLocalPlayer_NoRegister();
-	BASHCORE_API UClass* Z_Construct_UClass_UPlayerData();
-	BASHCORE_API UClass* Z_Construct_UClass_UPlayerData_NoRegister();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
-	LIMBITLESSBLUETOOTHPLUGIN_API UClass* Z_Construct_UClass_ULimbitlessLocalPlayer();
-	UPackage* Z_Construct_UPackage__Script_BashCore();
-// End Cross Module References
-	DEFINE_FUNCTION(UPlayerData::execSetMobius)
+
+// ********** Begin Cross Module References ********************************************************
+BASHCORE_API UClass* Z_Construct_UClass_UBashLocalPlayer();
+BASHCORE_API UClass* Z_Construct_UClass_UBashLocalPlayer_NoRegister();
+BASHCORE_API UClass* Z_Construct_UClass_UPlayerData();
+BASHCORE_API UClass* Z_Construct_UClass_UPlayerData_NoRegister();
+COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
+LIMBITLESSBLUETOOTHPLUGIN_API UClass* Z_Construct_UClass_ULimbitlessLocalPlayer();
+UPackage* Z_Construct_UPackage__Script_BashCore();
+// ********** End Cross Module References **********************************************************
+
+// ********** Begin Class UPlayerData Function GetCoins ********************************************
+struct Z_Construct_UFunction_UPlayerData_GetCoins_Statics
+{
+	struct PlayerData_eventGetCoins_Parms
 	{
-		P_GET_PROPERTY(FIntProperty,Z_Param_newMobius);
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		P_THIS->SetMobius(Z_Param_newMobius);
-		P_NATIVE_END;
-	}
-	DEFINE_FUNCTION(UPlayerData::execSetCoins)
-	{
-		P_GET_PROPERTY(FIntProperty,Z_Param_newCoins);
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		P_THIS->SetCoins(Z_Param_newCoins);
-		P_NATIVE_END;
-	}
-	DEFINE_FUNCTION(UPlayerData::execSetTilePos)
-	{
-		P_GET_PROPERTY(FIntProperty,Z_Param_newTilePos);
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		P_THIS->SetTilePos(Z_Param_newTilePos);
-		P_NATIVE_END;
-	}
-	DEFINE_FUNCTION(UPlayerData::execGetPlayerNum)
-	{
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		*(int32*)Z_Param__Result=P_THIS->GetPlayerNum();
-		P_NATIVE_END;
-	}
-	DEFINE_FUNCTION(UPlayerData::execGetMobius)
-	{
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		*(int32*)Z_Param__Result=P_THIS->GetMobius();
-		P_NATIVE_END;
-	}
-	DEFINE_FUNCTION(UPlayerData::execGetCoins)
-	{
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		*(int32*)Z_Param__Result=P_THIS->GetCoins();
-		P_NATIVE_END;
-	}
-	DEFINE_FUNCTION(UPlayerData::execGetTilePos)
-	{
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		*(int32*)Z_Param__Result=P_THIS->GetTilePos();
-		P_NATIVE_END;
-	}
-	void UPlayerData::StaticRegisterNativesUPlayerData()
-	{
-		UClass* Class = UPlayerData::StaticClass();
-		static const FNameNativePtrPair Funcs[] = {
-			{ "GetCoins", &UPlayerData::execGetCoins },
-			{ "GetMobius", &UPlayerData::execGetMobius },
-			{ "GetPlayerNum", &UPlayerData::execGetPlayerNum },
-			{ "GetTilePos", &UPlayerData::execGetTilePos },
-			{ "SetCoins", &UPlayerData::execSetCoins },
-			{ "SetMobius", &UPlayerData::execSetMobius },
-			{ "SetTilePos", &UPlayerData::execSetTilePos },
-		};
-		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-	}
-	struct Z_Construct_UFunction_UPlayerData_GetCoins_Statics
-	{
-		struct PlayerData_eventGetCoins_Parms
-		{
-			int32 ReturnValue;
-		};
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_ReturnValue;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UPlayerData_GetCoins_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(PlayerData_eventGetCoins_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPlayerData_GetCoins_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlayerData_GetCoins_Statics::NewProp_ReturnValue,
+		int32 ReturnValue;
 	};
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPlayerData_GetCoins_Statics::Function_MetaDataParams[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Player Data" },
 		{ "ModuleRelativePath", "Public/Player/BashLocalPlayer.h" },
 	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerData_GetCoins_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPlayerData, nullptr, "GetCoins", nullptr, nullptr, sizeof(Z_Construct_UFunction_UPlayerData_GetCoins_Statics::PlayerData_eventGetCoins_Parms), Z_Construct_UFunction_UPlayerData_GetCoins_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_GetCoins_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UPlayerData_GetCoins_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_GetCoins_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UPlayerData_GetCoins()
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UPlayerData_GetCoins_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(PlayerData_eventGetCoins_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPlayerData_GetCoins_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlayerData_GetCoins_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_GetCoins_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerData_GetCoins_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UPlayerData, nullptr, "GetCoins", Z_Construct_UFunction_UPlayerData_GetCoins_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_GetCoins_Statics::PropPointers), sizeof(Z_Construct_UFunction_UPlayerData_GetCoins_Statics::PlayerData_eventGetCoins_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_GetCoins_Statics::Function_MetaDataParams), Z_Construct_UFunction_UPlayerData_GetCoins_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UPlayerData_GetCoins_Statics::PlayerData_eventGetCoins_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UPlayerData_GetCoins()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
 	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UPlayerData_GetCoins_Statics::FuncParams);
-		}
-		return ReturnFunction;
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UPlayerData_GetCoins_Statics::FuncParams);
 	}
-	struct Z_Construct_UFunction_UPlayerData_GetMobius_Statics
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UPlayerData::execGetCoins)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(int32*)Z_Param__Result=P_THIS->GetCoins();
+	P_NATIVE_END;
+}
+// ********** End Class UPlayerData Function GetCoins **********************************************
+
+// ********** Begin Class UPlayerData Function GetMobius *******************************************
+struct Z_Construct_UFunction_UPlayerData_GetMobius_Statics
+{
+	struct PlayerData_eventGetMobius_Parms
 	{
-		struct PlayerData_eventGetMobius_Parms
-		{
-			int32 ReturnValue;
-		};
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_ReturnValue;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UPlayerData_GetMobius_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(PlayerData_eventGetMobius_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPlayerData_GetMobius_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlayerData_GetMobius_Statics::NewProp_ReturnValue,
+		int32 ReturnValue;
 	};
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPlayerData_GetMobius_Statics::Function_MetaDataParams[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Player Data" },
 		{ "ModuleRelativePath", "Public/Player/BashLocalPlayer.h" },
 	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerData_GetMobius_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPlayerData, nullptr, "GetMobius", nullptr, nullptr, sizeof(Z_Construct_UFunction_UPlayerData_GetMobius_Statics::PlayerData_eventGetMobius_Parms), Z_Construct_UFunction_UPlayerData_GetMobius_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_GetMobius_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UPlayerData_GetMobius_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_GetMobius_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UPlayerData_GetMobius()
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UPlayerData_GetMobius_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(PlayerData_eventGetMobius_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPlayerData_GetMobius_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlayerData_GetMobius_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_GetMobius_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerData_GetMobius_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UPlayerData, nullptr, "GetMobius", Z_Construct_UFunction_UPlayerData_GetMobius_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_GetMobius_Statics::PropPointers), sizeof(Z_Construct_UFunction_UPlayerData_GetMobius_Statics::PlayerData_eventGetMobius_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_GetMobius_Statics::Function_MetaDataParams), Z_Construct_UFunction_UPlayerData_GetMobius_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UPlayerData_GetMobius_Statics::PlayerData_eventGetMobius_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UPlayerData_GetMobius()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
 	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UPlayerData_GetMobius_Statics::FuncParams);
-		}
-		return ReturnFunction;
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UPlayerData_GetMobius_Statics::FuncParams);
 	}
-	struct Z_Construct_UFunction_UPlayerData_GetPlayerNum_Statics
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UPlayerData::execGetMobius)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(int32*)Z_Param__Result=P_THIS->GetMobius();
+	P_NATIVE_END;
+}
+// ********** End Class UPlayerData Function GetMobius *********************************************
+
+// ********** Begin Class UPlayerData Function GetPlayerNum ****************************************
+struct Z_Construct_UFunction_UPlayerData_GetPlayerNum_Statics
+{
+	struct PlayerData_eventGetPlayerNum_Parms
 	{
-		struct PlayerData_eventGetPlayerNum_Parms
-		{
-			int32 ReturnValue;
-		};
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_ReturnValue;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UPlayerData_GetPlayerNum_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(PlayerData_eventGetPlayerNum_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPlayerData_GetPlayerNum_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlayerData_GetPlayerNum_Statics::NewProp_ReturnValue,
+		int32 ReturnValue;
 	};
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPlayerData_GetPlayerNum_Statics::Function_MetaDataParams[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Player Data" },
 		{ "ModuleRelativePath", "Public/Player/BashLocalPlayer.h" },
 	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerData_GetPlayerNum_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPlayerData, nullptr, "GetPlayerNum", nullptr, nullptr, sizeof(Z_Construct_UFunction_UPlayerData_GetPlayerNum_Statics::PlayerData_eventGetPlayerNum_Parms), Z_Construct_UFunction_UPlayerData_GetPlayerNum_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_GetPlayerNum_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UPlayerData_GetPlayerNum_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_GetPlayerNum_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UPlayerData_GetPlayerNum()
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UPlayerData_GetPlayerNum_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(PlayerData_eventGetPlayerNum_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPlayerData_GetPlayerNum_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlayerData_GetPlayerNum_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_GetPlayerNum_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerData_GetPlayerNum_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UPlayerData, nullptr, "GetPlayerNum", Z_Construct_UFunction_UPlayerData_GetPlayerNum_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_GetPlayerNum_Statics::PropPointers), sizeof(Z_Construct_UFunction_UPlayerData_GetPlayerNum_Statics::PlayerData_eventGetPlayerNum_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_GetPlayerNum_Statics::Function_MetaDataParams), Z_Construct_UFunction_UPlayerData_GetPlayerNum_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UPlayerData_GetPlayerNum_Statics::PlayerData_eventGetPlayerNum_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UPlayerData_GetPlayerNum()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
 	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UPlayerData_GetPlayerNum_Statics::FuncParams);
-		}
-		return ReturnFunction;
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UPlayerData_GetPlayerNum_Statics::FuncParams);
 	}
-	struct Z_Construct_UFunction_UPlayerData_GetTilePos_Statics
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UPlayerData::execGetPlayerNum)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(int32*)Z_Param__Result=P_THIS->GetPlayerNum();
+	P_NATIVE_END;
+}
+// ********** End Class UPlayerData Function GetPlayerNum ******************************************
+
+// ********** Begin Class UPlayerData Function GetTilePos ******************************************
+struct Z_Construct_UFunction_UPlayerData_GetTilePos_Statics
+{
+	struct PlayerData_eventGetTilePos_Parms
 	{
-		struct PlayerData_eventGetTilePos_Parms
-		{
-			int32 ReturnValue;
-		};
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_ReturnValue;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UPlayerData_GetTilePos_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(PlayerData_eventGetTilePos_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPlayerData_GetTilePos_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlayerData_GetTilePos_Statics::NewProp_ReturnValue,
+		int32 ReturnValue;
 	};
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPlayerData_GetTilePos_Statics::Function_MetaDataParams[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Player Data" },
 		{ "Comment", "//Player Data getters/setters\n" },
 		{ "ModuleRelativePath", "Public/Player/BashLocalPlayer.h" },
 		{ "ToolTip", "Player Data getters/setters" },
 	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerData_GetTilePos_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPlayerData, nullptr, "GetTilePos", nullptr, nullptr, sizeof(Z_Construct_UFunction_UPlayerData_GetTilePos_Statics::PlayerData_eventGetTilePos_Parms), Z_Construct_UFunction_UPlayerData_GetTilePos_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_GetTilePos_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UPlayerData_GetTilePos_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_GetTilePos_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UPlayerData_GetTilePos()
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UPlayerData_GetTilePos_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(PlayerData_eventGetTilePos_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPlayerData_GetTilePos_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlayerData_GetTilePos_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_GetTilePos_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerData_GetTilePos_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UPlayerData, nullptr, "GetTilePos", Z_Construct_UFunction_UPlayerData_GetTilePos_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_GetTilePos_Statics::PropPointers), sizeof(Z_Construct_UFunction_UPlayerData_GetTilePos_Statics::PlayerData_eventGetTilePos_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_GetTilePos_Statics::Function_MetaDataParams), Z_Construct_UFunction_UPlayerData_GetTilePos_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UPlayerData_GetTilePos_Statics::PlayerData_eventGetTilePos_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UPlayerData_GetTilePos()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
 	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UPlayerData_GetTilePos_Statics::FuncParams);
-		}
-		return ReturnFunction;
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UPlayerData_GetTilePos_Statics::FuncParams);
 	}
-	struct Z_Construct_UFunction_UPlayerData_SetCoins_Statics
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UPlayerData::execGetTilePos)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(int32*)Z_Param__Result=P_THIS->GetTilePos();
+	P_NATIVE_END;
+}
+// ********** End Class UPlayerData Function GetTilePos ********************************************
+
+// ********** Begin Class UPlayerData Function SetCoins ********************************************
+struct Z_Construct_UFunction_UPlayerData_SetCoins_Statics
+{
+	struct PlayerData_eventSetCoins_Parms
 	{
-		struct PlayerData_eventSetCoins_Parms
-		{
-			int32 newCoins;
-		};
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_newCoins;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UPlayerData_SetCoins_Statics::NewProp_newCoins = { "newCoins", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(PlayerData_eventSetCoins_Parms, newCoins), METADATA_PARAMS(nullptr, 0) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPlayerData_SetCoins_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlayerData_SetCoins_Statics::NewProp_newCoins,
+		int32 newCoins;
 	};
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPlayerData_SetCoins_Statics::Function_MetaDataParams[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Player Data" },
 		{ "ModuleRelativePath", "Public/Player/BashLocalPlayer.h" },
 	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerData_SetCoins_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPlayerData, nullptr, "SetCoins", nullptr, nullptr, sizeof(Z_Construct_UFunction_UPlayerData_SetCoins_Statics::PlayerData_eventSetCoins_Parms), Z_Construct_UFunction_UPlayerData_SetCoins_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_SetCoins_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UPlayerData_SetCoins_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_SetCoins_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UPlayerData_SetCoins()
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FIntPropertyParams NewProp_newCoins;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UPlayerData_SetCoins_Statics::NewProp_newCoins = { "newCoins", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(PlayerData_eventSetCoins_Parms, newCoins), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPlayerData_SetCoins_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlayerData_SetCoins_Statics::NewProp_newCoins,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_SetCoins_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerData_SetCoins_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UPlayerData, nullptr, "SetCoins", Z_Construct_UFunction_UPlayerData_SetCoins_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_SetCoins_Statics::PropPointers), sizeof(Z_Construct_UFunction_UPlayerData_SetCoins_Statics::PlayerData_eventSetCoins_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_SetCoins_Statics::Function_MetaDataParams), Z_Construct_UFunction_UPlayerData_SetCoins_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UPlayerData_SetCoins_Statics::PlayerData_eventSetCoins_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UPlayerData_SetCoins()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
 	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UPlayerData_SetCoins_Statics::FuncParams);
-		}
-		return ReturnFunction;
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UPlayerData_SetCoins_Statics::FuncParams);
 	}
-	struct Z_Construct_UFunction_UPlayerData_SetMobius_Statics
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UPlayerData::execSetCoins)
+{
+	P_GET_PROPERTY(FIntProperty,Z_Param_newCoins);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->SetCoins(Z_Param_newCoins);
+	P_NATIVE_END;
+}
+// ********** End Class UPlayerData Function SetCoins **********************************************
+
+// ********** Begin Class UPlayerData Function SetMobius *******************************************
+struct Z_Construct_UFunction_UPlayerData_SetMobius_Statics
+{
+	struct PlayerData_eventSetMobius_Parms
 	{
-		struct PlayerData_eventSetMobius_Parms
-		{
-			int32 newMobius;
-		};
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_newMobius;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UPlayerData_SetMobius_Statics::NewProp_newMobius = { "newMobius", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(PlayerData_eventSetMobius_Parms, newMobius), METADATA_PARAMS(nullptr, 0) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPlayerData_SetMobius_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlayerData_SetMobius_Statics::NewProp_newMobius,
+		int32 newMobius;
 	};
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPlayerData_SetMobius_Statics::Function_MetaDataParams[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Player Data" },
 		{ "ModuleRelativePath", "Public/Player/BashLocalPlayer.h" },
 	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerData_SetMobius_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPlayerData, nullptr, "SetMobius", nullptr, nullptr, sizeof(Z_Construct_UFunction_UPlayerData_SetMobius_Statics::PlayerData_eventSetMobius_Parms), Z_Construct_UFunction_UPlayerData_SetMobius_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_SetMobius_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UPlayerData_SetMobius_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_SetMobius_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UPlayerData_SetMobius()
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FIntPropertyParams NewProp_newMobius;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UPlayerData_SetMobius_Statics::NewProp_newMobius = { "newMobius", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(PlayerData_eventSetMobius_Parms, newMobius), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPlayerData_SetMobius_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlayerData_SetMobius_Statics::NewProp_newMobius,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_SetMobius_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerData_SetMobius_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UPlayerData, nullptr, "SetMobius", Z_Construct_UFunction_UPlayerData_SetMobius_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_SetMobius_Statics::PropPointers), sizeof(Z_Construct_UFunction_UPlayerData_SetMobius_Statics::PlayerData_eventSetMobius_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_SetMobius_Statics::Function_MetaDataParams), Z_Construct_UFunction_UPlayerData_SetMobius_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UPlayerData_SetMobius_Statics::PlayerData_eventSetMobius_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UPlayerData_SetMobius()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
 	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UPlayerData_SetMobius_Statics::FuncParams);
-		}
-		return ReturnFunction;
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UPlayerData_SetMobius_Statics::FuncParams);
 	}
-	struct Z_Construct_UFunction_UPlayerData_SetTilePos_Statics
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UPlayerData::execSetMobius)
+{
+	P_GET_PROPERTY(FIntProperty,Z_Param_newMobius);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->SetMobius(Z_Param_newMobius);
+	P_NATIVE_END;
+}
+// ********** End Class UPlayerData Function SetMobius *********************************************
+
+// ********** Begin Class UPlayerData Function SetTilePos ******************************************
+struct Z_Construct_UFunction_UPlayerData_SetTilePos_Statics
+{
+	struct PlayerData_eventSetTilePos_Parms
 	{
-		struct PlayerData_eventSetTilePos_Parms
-		{
-			int32 newTilePos;
-		};
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_newTilePos;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UPlayerData_SetTilePos_Statics::NewProp_newTilePos = { "newTilePos", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(PlayerData_eventSetTilePos_Parms, newTilePos), METADATA_PARAMS(nullptr, 0) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPlayerData_SetTilePos_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlayerData_SetTilePos_Statics::NewProp_newTilePos,
+		int32 newTilePos;
 	};
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPlayerData_SetTilePos_Statics::Function_MetaDataParams[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Player Data" },
 		{ "ModuleRelativePath", "Public/Player/BashLocalPlayer.h" },
 	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerData_SetTilePos_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPlayerData, nullptr, "SetTilePos", nullptr, nullptr, sizeof(Z_Construct_UFunction_UPlayerData_SetTilePos_Statics::PlayerData_eventSetTilePos_Parms), Z_Construct_UFunction_UPlayerData_SetTilePos_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_SetTilePos_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UPlayerData_SetTilePos_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_SetTilePos_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UPlayerData_SetTilePos()
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FIntPropertyParams NewProp_newTilePos;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UPlayerData_SetTilePos_Statics::NewProp_newTilePos = { "newTilePos", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(PlayerData_eventSetTilePos_Parms, newTilePos), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPlayerData_SetTilePos_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlayerData_SetTilePos_Statics::NewProp_newTilePos,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_SetTilePos_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerData_SetTilePos_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UPlayerData, nullptr, "SetTilePos", Z_Construct_UFunction_UPlayerData_SetTilePos_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_SetTilePos_Statics::PropPointers), sizeof(Z_Construct_UFunction_UPlayerData_SetTilePos_Statics::PlayerData_eventSetTilePos_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_SetTilePos_Statics::Function_MetaDataParams), Z_Construct_UFunction_UPlayerData_SetTilePos_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UPlayerData_SetTilePos_Statics::PlayerData_eventSetTilePos_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UPlayerData_SetTilePos()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
 	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UPlayerData_SetTilePos_Statics::FuncParams);
-		}
-		return ReturnFunction;
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UPlayerData_SetTilePos_Statics::FuncParams);
 	}
-	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UPlayerData);
-	UClass* Z_Construct_UClass_UPlayerData_NoRegister()
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UPlayerData::execSetTilePos)
+{
+	P_GET_PROPERTY(FIntProperty,Z_Param_newTilePos);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->SetTilePos(Z_Param_newTilePos);
+	P_NATIVE_END;
+}
+// ********** End Class UPlayerData Function SetTilePos ********************************************
+
+// ********** Begin Class UPlayerData **************************************************************
+void UPlayerData::StaticRegisterNativesUPlayerData()
+{
+	UClass* Class = UPlayerData::StaticClass();
+	static const FNameNativePtrPair Funcs[] = {
+		{ "GetCoins", &UPlayerData::execGetCoins },
+		{ "GetMobius", &UPlayerData::execGetMobius },
+		{ "GetPlayerNum", &UPlayerData::execGetPlayerNum },
+		{ "GetTilePos", &UPlayerData::execGetTilePos },
+		{ "SetCoins", &UPlayerData::execSetCoins },
+		{ "SetMobius", &UPlayerData::execSetMobius },
+		{ "SetTilePos", &UPlayerData::execSetTilePos },
+	};
+	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+}
+FClassRegistrationInfo Z_Registration_Info_UClass_UPlayerData;
+UClass* UPlayerData::GetPrivateStaticClass()
+{
+	using TClass = UPlayerData;
+	if (!Z_Registration_Info_UClass_UPlayerData.InnerSingleton)
 	{
-		return UPlayerData::StaticClass();
+		GetPrivateStaticClassBody(
+			StaticPackage(),
+			TEXT("PlayerData"),
+			Z_Registration_Info_UClass_UPlayerData.InnerSingleton,
+			StaticRegisterNativesUPlayerData,
+			sizeof(TClass),
+			alignof(TClass),
+			TClass::StaticClassFlags,
+			TClass::StaticClassCastFlags(),
+			TClass::StaticConfigName(),
+			(UClass::ClassConstructorType)InternalConstructor<TClass>,
+			(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
+			UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
+			&TClass::Super::StaticClass,
+			&TClass::WithinClass::StaticClass
+		);
 	}
-	struct Z_Construct_UClass_UPlayerData_Statics
-	{
-		static UObject* (*const DependentSingletons[])();
-		static const FClassFunctionLinkInfo FuncInfo[];
+	return Z_Registration_Info_UClass_UPlayerData.InnerSingleton;
+}
+UClass* Z_Construct_UClass_UPlayerData_NoRegister()
+{
+	return UPlayerData::GetPrivateStaticClass();
+}
+struct Z_Construct_UClass_UPlayerData_Statics
+{
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
-#endif
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_PlayerOrder_MetaData[];
-#endif
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_PlayerOrder;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_TilePos_MetaData[];
-#endif
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_TilePos;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_Coins_MetaData[];
-#endif
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_Coins;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_Mobius_MetaData[];
-#endif
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_Mobius;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
-		static const UECodeGen_Private::FClassParams ClassParams;
-	};
-	UObject* (*const Z_Construct_UClass_UPlayerData_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_UObject,
-		(UObject* (*)())Z_Construct_UPackage__Script_BashCore,
-	};
-	const FClassFunctionLinkInfo Z_Construct_UClass_UPlayerData_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UPlayerData_GetCoins, "GetCoins" }, // 2020365329
-		{ &Z_Construct_UFunction_UPlayerData_GetMobius, "GetMobius" }, // 1356794072
-		{ &Z_Construct_UFunction_UPlayerData_GetPlayerNum, "GetPlayerNum" }, // 749425687
-		{ &Z_Construct_UFunction_UPlayerData_GetTilePos, "GetTilePos" }, // 268277266
-		{ &Z_Construct_UFunction_UPlayerData_SetCoins, "SetCoins" }, // 971461214
-		{ &Z_Construct_UFunction_UPlayerData_SetMobius, "SetMobius" }, // 242905957
-		{ &Z_Construct_UFunction_UPlayerData_SetTilePos, "SetTilePos" }, // 150576598
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerData_Statics::Class_MetaDataParams[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "IncludePath", "Player/BashLocalPlayer.h" },
 		{ "ModuleRelativePath", "Public/Player/BashLocalPlayer.h" },
 	};
-#endif
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerData_Statics::NewProp_PlayerOrder_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PlayerOrder_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Player/BashLocalPlayer.h" },
 	};
-#endif
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_UPlayerData_Statics::NewProp_PlayerOrder = { "PlayerOrder", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UPlayerData, PlayerOrder), METADATA_PARAMS(Z_Construct_UClass_UPlayerData_Statics::NewProp_PlayerOrder_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerData_Statics::NewProp_PlayerOrder_MetaData)) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerData_Statics::NewProp_TilePos_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TilePos_MetaData[] = {
 		{ "Category", "Player Data" },
 		{ "ModuleRelativePath", "Public/Player/BashLocalPlayer.h" },
 	};
-#endif
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_UPlayerData_Statics::NewProp_TilePos = { "TilePos", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UPlayerData, TilePos), METADATA_PARAMS(Z_Construct_UClass_UPlayerData_Statics::NewProp_TilePos_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerData_Statics::NewProp_TilePos_MetaData)) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerData_Statics::NewProp_Coins_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Coins_MetaData[] = {
 		{ "Category", "Player Data" },
 		{ "ModuleRelativePath", "Public/Player/BashLocalPlayer.h" },
 	};
-#endif
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_UPlayerData_Statics::NewProp_Coins = { "Coins", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UPlayerData, Coins), METADATA_PARAMS(Z_Construct_UClass_UPlayerData_Statics::NewProp_Coins_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerData_Statics::NewProp_Coins_MetaData)) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerData_Statics::NewProp_Mobius_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Mobius_MetaData[] = {
 		{ "Category", "Player Data" },
 		{ "ModuleRelativePath", "Public/Player/BashLocalPlayer.h" },
 	};
-#endif
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_UPlayerData_Statics::NewProp_Mobius = { "Mobius", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UPlayerData, Mobius), METADATA_PARAMS(Z_Construct_UClass_UPlayerData_Statics::NewProp_Mobius_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerData_Statics::NewProp_Mobius_MetaData)) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UPlayerData_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerData_Statics::NewProp_PlayerOrder,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerData_Statics::NewProp_TilePos,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerData_Statics::NewProp_Coins,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerData_Statics::NewProp_Mobius,
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FIntPropertyParams NewProp_PlayerOrder;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_TilePos;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_Coins;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_Mobius;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static UObject* (*const DependentSingletons[])();
+	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_UPlayerData_GetCoins, "GetCoins" }, // 1413395485
+		{ &Z_Construct_UFunction_UPlayerData_GetMobius, "GetMobius" }, // 4272605864
+		{ &Z_Construct_UFunction_UPlayerData_GetPlayerNum, "GetPlayerNum" }, // 1121576403
+		{ &Z_Construct_UFunction_UPlayerData_GetTilePos, "GetTilePos" }, // 884446194
+		{ &Z_Construct_UFunction_UPlayerData_SetCoins, "SetCoins" }, // 1290350708
+		{ &Z_Construct_UFunction_UPlayerData_SetMobius, "SetMobius" }, // 570519964
+		{ &Z_Construct_UFunction_UPlayerData_SetTilePos, "SetTilePos" }, // 1040611693
 	};
-	const FCppClassTypeInfoStatic Z_Construct_UClass_UPlayerData_Statics::StaticCppClassTypeInfo = {
+	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
+	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UPlayerData>::IsAbstract,
 	};
-	const UECodeGen_Private::FClassParams Z_Construct_UClass_UPlayerData_Statics::ClassParams = {
-		&UPlayerData::StaticClass,
-		nullptr,
-		&StaticCppClassTypeInfo,
-		DependentSingletons,
-		FuncInfo,
-		Z_Construct_UClass_UPlayerData_Statics::PropPointers,
-		nullptr,
-		UE_ARRAY_COUNT(DependentSingletons),
-		UE_ARRAY_COUNT(FuncInfo),
-		UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerData_Statics::PropPointers),
-		0,
-		0x000000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UPlayerData_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerData_Statics::Class_MetaDataParams))
-	};
-	UClass* Z_Construct_UClass_UPlayerData()
+	static const UECodeGen_Private::FClassParams ClassParams;
+};
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UPlayerData_Statics::NewProp_PlayerOrder = { "PlayerOrder", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UPlayerData, PlayerOrder), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayerOrder_MetaData), NewProp_PlayerOrder_MetaData) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UPlayerData_Statics::NewProp_TilePos = { "TilePos", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UPlayerData, TilePos), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TilePos_MetaData), NewProp_TilePos_MetaData) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UPlayerData_Statics::NewProp_Coins = { "Coins", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UPlayerData, Coins), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Coins_MetaData), NewProp_Coins_MetaData) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UPlayerData_Statics::NewProp_Mobius = { "Mobius", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UPlayerData, Mobius), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Mobius_MetaData), NewProp_Mobius_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UPlayerData_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerData_Statics::NewProp_PlayerOrder,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerData_Statics::NewProp_TilePos,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerData_Statics::NewProp_Coins,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerData_Statics::NewProp_Mobius,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerData_Statics::PropPointers) < 2048);
+UObject* (*const Z_Construct_UClass_UPlayerData_Statics::DependentSingletons[])() = {
+	(UObject* (*)())Z_Construct_UClass_UObject,
+	(UObject* (*)())Z_Construct_UPackage__Script_BashCore,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerData_Statics::DependentSingletons) < 16);
+const UECodeGen_Private::FClassParams Z_Construct_UClass_UPlayerData_Statics::ClassParams = {
+	&UPlayerData::StaticClass,
+	nullptr,
+	&StaticCppClassTypeInfo,
+	DependentSingletons,
+	FuncInfo,
+	Z_Construct_UClass_UPlayerData_Statics::PropPointers,
+	nullptr,
+	UE_ARRAY_COUNT(DependentSingletons),
+	UE_ARRAY_COUNT(FuncInfo),
+	UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerData_Statics::PropPointers),
+	0,
+	0x000000A0u,
+	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerData_Statics::Class_MetaDataParams), Z_Construct_UClass_UPlayerData_Statics::Class_MetaDataParams)
+};
+UClass* Z_Construct_UClass_UPlayerData()
+{
+	if (!Z_Registration_Info_UClass_UPlayerData.OuterSingleton)
 	{
-		if (!Z_Registration_Info_UClass_UPlayerData.OuterSingleton)
-		{
-			UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UPlayerData.OuterSingleton, Z_Construct_UClass_UPlayerData_Statics::ClassParams);
-		}
-		return Z_Registration_Info_UClass_UPlayerData.OuterSingleton;
+		UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UPlayerData.OuterSingleton, Z_Construct_UClass_UPlayerData_Statics::ClassParams);
 	}
-	template<> BASHCORE_API UClass* StaticClass<UPlayerData>()
+	return Z_Registration_Info_UClass_UPlayerData.OuterSingleton;
+}
+UPlayerData::UPlayerData(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
+DEFINE_VTABLE_PTR_HELPER_CTOR(UPlayerData);
+UPlayerData::~UPlayerData() {}
+// ********** End Class UPlayerData ****************************************************************
+
+// ********** Begin Class UBashLocalPlayer Function GetPlayerData **********************************
+struct Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData_Statics
+{
+	struct BashLocalPlayer_eventGetPlayerData_Parms
 	{
-		return UPlayerData::StaticClass();
-	}
-	DEFINE_VTABLE_PTR_HELPER_CTOR(UPlayerData);
-	UPlayerData::~UPlayerData() {}
-	DEFINE_FUNCTION(UBashLocalPlayer::execGetPlayerData)
-	{
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		*(UPlayerData**)Z_Param__Result=P_THIS->GetPlayerData();
-		P_NATIVE_END;
-	}
-	void UBashLocalPlayer::StaticRegisterNativesUBashLocalPlayer()
-	{
-		UClass* Class = UBashLocalPlayer::StaticClass();
-		static const FNameNativePtrPair Funcs[] = {
-			{ "GetPlayerData", &UBashLocalPlayer::execGetPlayerData },
-		};
-		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-	}
-	struct Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData_Statics
-	{
-		struct BashLocalPlayer_eventGetPlayerData_Parms
-		{
-			UPlayerData* ReturnValue;
-		};
-		static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(BashLocalPlayer_eventGetPlayerData_Parms, ReturnValue), Z_Construct_UClass_UPlayerData_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData_Statics::NewProp_ReturnValue,
+		UPlayerData* ReturnValue;
 	};
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData_Statics::Function_MetaDataParams[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintGetter", "" },
 		{ "ModuleRelativePath", "Public/Player/BashLocalPlayer.h" },
 	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UBashLocalPlayer, nullptr, "GetPlayerData", nullptr, nullptr, sizeof(Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData_Statics::BashLocalPlayer_eventGetPlayerData_Parms), Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData()
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BashLocalPlayer_eventGetPlayerData_Parms, ReturnValue), Z_Construct_UClass_UPlayerData_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UBashLocalPlayer, nullptr, "GetPlayerData", Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData_Statics::PropPointers), sizeof(Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData_Statics::BashLocalPlayer_eventGetPlayerData_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData_Statics::Function_MetaDataParams), Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData_Statics::BashLocalPlayer_eventGetPlayerData_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
 	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData_Statics::FuncParams);
-		}
-		return ReturnFunction;
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData_Statics::FuncParams);
 	}
-	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UBashLocalPlayer);
-	UClass* Z_Construct_UClass_UBashLocalPlayer_NoRegister()
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UBashLocalPlayer::execGetPlayerData)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(UPlayerData**)Z_Param__Result=P_THIS->GetPlayerData();
+	P_NATIVE_END;
+}
+// ********** End Class UBashLocalPlayer Function GetPlayerData ************************************
+
+// ********** Begin Class UBashLocalPlayer *********************************************************
+void UBashLocalPlayer::StaticRegisterNativesUBashLocalPlayer()
+{
+	UClass* Class = UBashLocalPlayer::StaticClass();
+	static const FNameNativePtrPair Funcs[] = {
+		{ "GetPlayerData", &UBashLocalPlayer::execGetPlayerData },
+	};
+	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+}
+FClassRegistrationInfo Z_Registration_Info_UClass_UBashLocalPlayer;
+UClass* UBashLocalPlayer::GetPrivateStaticClass()
+{
+	using TClass = UBashLocalPlayer;
+	if (!Z_Registration_Info_UClass_UBashLocalPlayer.InnerSingleton)
 	{
-		return UBashLocalPlayer::StaticClass();
+		GetPrivateStaticClassBody(
+			StaticPackage(),
+			TEXT("BashLocalPlayer"),
+			Z_Registration_Info_UClass_UBashLocalPlayer.InnerSingleton,
+			StaticRegisterNativesUBashLocalPlayer,
+			sizeof(TClass),
+			alignof(TClass),
+			TClass::StaticClassFlags,
+			TClass::StaticClassCastFlags(),
+			TClass::StaticConfigName(),
+			(UClass::ClassConstructorType)InternalConstructor<TClass>,
+			(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
+			UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
+			&TClass::Super::StaticClass,
+			&TClass::WithinClass::StaticClass
+		);
 	}
-	struct Z_Construct_UClass_UBashLocalPlayer_Statics
-	{
-		static UObject* (*const DependentSingletons[])();
-		static const FClassFunctionLinkInfo FuncInfo[];
+	return Z_Registration_Info_UClass_UBashLocalPlayer.InnerSingleton;
+}
+UClass* Z_Construct_UClass_UBashLocalPlayer_NoRegister()
+{
+	return UBashLocalPlayer::GetPrivateStaticClass();
+}
+struct Z_Construct_UClass_UBashLocalPlayer_Statics
+{
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
-#endif
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_PlayerData_MetaData[];
-#endif
-		static const UECodeGen_Private::FObjectPtrPropertyParams NewProp_PlayerData;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
-		static const UECodeGen_Private::FClassParams ClassParams;
-	};
-	UObject* (*const Z_Construct_UClass_UBashLocalPlayer_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_ULimbitlessLocalPlayer,
-		(UObject* (*)())Z_Construct_UPackage__Script_BashCore,
-	};
-	const FClassFunctionLinkInfo Z_Construct_UClass_UBashLocalPlayer_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData, "GetPlayerData" }, // 1155461046
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UBashLocalPlayer_Statics::Class_MetaDataParams[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "IncludePath", "Player/BashLocalPlayer.h" },
 		{ "ModuleRelativePath", "Public/Player/BashLocalPlayer.h" },
 	};
-#endif
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UBashLocalPlayer_Statics::NewProp_PlayerData_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PlayerData_MetaData[] = {
 		{ "BlueprintGetter", "GetPlayerData" },
 		{ "Category", "Player Data" },
 		{ "ModuleRelativePath", "Public/Player/BashLocalPlayer.h" },
 	};
-#endif
-	const UECodeGen_Private::FObjectPtrPropertyParams Z_Construct_UClass_UBashLocalPlayer_Statics::NewProp_PlayerData = { "PlayerData", nullptr, (EPropertyFlags)0x0024080000000014, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(UBashLocalPlayer, PlayerData), Z_Construct_UClass_UPlayerData_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UBashLocalPlayer_Statics::NewProp_PlayerData_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UBashLocalPlayer_Statics::NewProp_PlayerData_MetaData)) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UBashLocalPlayer_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBashLocalPlayer_Statics::NewProp_PlayerData,
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_PlayerData;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static UObject* (*const DependentSingletons[])();
+	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_UBashLocalPlayer_GetPlayerData, "GetPlayerData" }, // 4159252913
 	};
-	const FCppClassTypeInfoStatic Z_Construct_UClass_UBashLocalPlayer_Statics::StaticCppClassTypeInfo = {
+	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
+	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UBashLocalPlayer>::IsAbstract,
 	};
-	const UECodeGen_Private::FClassParams Z_Construct_UClass_UBashLocalPlayer_Statics::ClassParams = {
-		&UBashLocalPlayer::StaticClass,
-		"Engine",
-		&StaticCppClassTypeInfo,
-		DependentSingletons,
-		FuncInfo,
-		Z_Construct_UClass_UBashLocalPlayer_Statics::PropPointers,
-		nullptr,
-		UE_ARRAY_COUNT(DependentSingletons),
-		UE_ARRAY_COUNT(FuncInfo),
-		UE_ARRAY_COUNT(Z_Construct_UClass_UBashLocalPlayer_Statics::PropPointers),
-		0,
-		0x001000ACu,
-		METADATA_PARAMS(Z_Construct_UClass_UBashLocalPlayer_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UBashLocalPlayer_Statics::Class_MetaDataParams))
-	};
-	UClass* Z_Construct_UClass_UBashLocalPlayer()
+	static const UECodeGen_Private::FClassParams ClassParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UBashLocalPlayer_Statics::NewProp_PlayerData = { "PlayerData", nullptr, (EPropertyFlags)0x0124080000000014, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBashLocalPlayer, PlayerData), Z_Construct_UClass_UPlayerData_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayerData_MetaData), NewProp_PlayerData_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UBashLocalPlayer_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBashLocalPlayer_Statics::NewProp_PlayerData,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UBashLocalPlayer_Statics::PropPointers) < 2048);
+UObject* (*const Z_Construct_UClass_UBashLocalPlayer_Statics::DependentSingletons[])() = {
+	(UObject* (*)())Z_Construct_UClass_ULimbitlessLocalPlayer,
+	(UObject* (*)())Z_Construct_UPackage__Script_BashCore,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UBashLocalPlayer_Statics::DependentSingletons) < 16);
+const UECodeGen_Private::FClassParams Z_Construct_UClass_UBashLocalPlayer_Statics::ClassParams = {
+	&UBashLocalPlayer::StaticClass,
+	"Engine",
+	&StaticCppClassTypeInfo,
+	DependentSingletons,
+	FuncInfo,
+	Z_Construct_UClass_UBashLocalPlayer_Statics::PropPointers,
+	nullptr,
+	UE_ARRAY_COUNT(DependentSingletons),
+	UE_ARRAY_COUNT(FuncInfo),
+	UE_ARRAY_COUNT(Z_Construct_UClass_UBashLocalPlayer_Statics::PropPointers),
+	0,
+	0x001000ACu,
+	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UBashLocalPlayer_Statics::Class_MetaDataParams), Z_Construct_UClass_UBashLocalPlayer_Statics::Class_MetaDataParams)
+};
+UClass* Z_Construct_UClass_UBashLocalPlayer()
+{
+	if (!Z_Registration_Info_UClass_UBashLocalPlayer.OuterSingleton)
 	{
-		if (!Z_Registration_Info_UClass_UBashLocalPlayer.OuterSingleton)
-		{
-			UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UBashLocalPlayer.OuterSingleton, Z_Construct_UClass_UBashLocalPlayer_Statics::ClassParams);
-		}
-		return Z_Registration_Info_UClass_UBashLocalPlayer.OuterSingleton;
+		UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UBashLocalPlayer.OuterSingleton, Z_Construct_UClass_UBashLocalPlayer_Statics::ClassParams);
 	}
-	template<> BASHCORE_API UClass* StaticClass<UBashLocalPlayer>()
-	{
-		return UBashLocalPlayer::StaticClass();
-	}
-	DEFINE_VTABLE_PTR_HELPER_CTOR(UBashLocalPlayer);
-	UBashLocalPlayer::~UBashLocalPlayer() {}
-	struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_Statics
-	{
-		static const FClassRegisterCompiledInInfo ClassInfo[];
+	return Z_Registration_Info_UClass_UBashLocalPlayer.OuterSingleton;
+}
+UBashLocalPlayer::UBashLocalPlayer(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
+DEFINE_VTABLE_PTR_HELPER_CTOR(UBashLocalPlayer);
+UBashLocalPlayer::~UBashLocalPlayer() {}
+// ********** End Class UBashLocalPlayer ***********************************************************
+
+// ********** Begin Registration *******************************************************************
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h__Script_BashCore_Statics
+{
+	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
+		{ Z_Construct_UClass_UPlayerData, UPlayerData::StaticClass, TEXT("UPlayerData"), &Z_Registration_Info_UClass_UPlayerData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPlayerData), 827673668U) },
+		{ Z_Construct_UClass_UBashLocalPlayer, UBashLocalPlayer::StaticClass, TEXT("UBashLocalPlayer"), &Z_Registration_Info_UClass_UBashLocalPlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBashLocalPlayer), 2662572583U) },
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UPlayerData, UPlayerData::StaticClass, TEXT("UPlayerData"), &Z_Registration_Info_UClass_UPlayerData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPlayerData), 649092226U) },
-		{ Z_Construct_UClass_UBashLocalPlayer, UBashLocalPlayer::StaticClass, TEXT("UBashLocalPlayer"), &Z_Registration_Info_UClass_UBashLocalPlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBashLocalPlayer), 3333085517U) },
-	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_2973619256(TEXT("/Script/BashCore"),
-		Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_Statics::ClassInfo),
-		nullptr, 0,
-		nullptr, 0);
+};
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h__Script_BashCore_3536376633(TEXT("/Script/BashCore"),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h__Script_BashCore_Statics::ClassInfo),
+	nullptr, 0,
+	nullptr, 0);
+// ********** End Registration *********************************************************************
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

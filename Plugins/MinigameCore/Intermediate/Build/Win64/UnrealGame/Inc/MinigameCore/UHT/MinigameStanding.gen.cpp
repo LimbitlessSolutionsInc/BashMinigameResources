@@ -5,106 +5,98 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "MinigameCore/Public/MinigameStanding.h"
+#include "MinigameStanding.h"
+
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
 void EmptyLinkFunctionForGeneratedCodeMinigameStanding() {}
-// Cross Module References
-	MINIGAMECORE_API UScriptStruct* Z_Construct_UScriptStruct_FMinigameStanding();
-	UPackage* Z_Construct_UPackage__Script_MinigameCore();
-// End Cross Module References
-	static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_MinigameStanding;
+
+// ********** Begin Cross Module References ********************************************************
+MINIGAMECORE_API UScriptStruct* Z_Construct_UScriptStruct_FMinigameStanding();
+UPackage* Z_Construct_UPackage__Script_MinigameCore();
+// ********** End Cross Module References **********************************************************
+
+// ********** Begin ScriptStruct FMinigameStanding *************************************************
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FMinigameStanding;
 class UScriptStruct* FMinigameStanding::StaticStruct()
 {
-	if (!Z_Registration_Info_UScriptStruct_MinigameStanding.OuterSingleton)
+	if (!Z_Registration_Info_UScriptStruct_FMinigameStanding.OuterSingleton)
 	{
-		Z_Registration_Info_UScriptStruct_MinigameStanding.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FMinigameStanding, Z_Construct_UPackage__Script_MinigameCore(), TEXT("MinigameStanding"));
+		Z_Registration_Info_UScriptStruct_FMinigameStanding.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FMinigameStanding, (UObject*)Z_Construct_UPackage__Script_MinigameCore(), TEXT("MinigameStanding"));
 	}
-	return Z_Registration_Info_UScriptStruct_MinigameStanding.OuterSingleton;
+	return Z_Registration_Info_UScriptStruct_FMinigameStanding.OuterSingleton;
 }
-template<> MINIGAMECORE_API UScriptStruct* StaticStruct<FMinigameStanding>()
+struct Z_Construct_UScriptStruct_FMinigameStanding_Statics
 {
-	return FMinigameStanding::StaticStruct();
-}
-	struct Z_Construct_UScriptStruct_FMinigameStanding_Statics
-	{
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
-#endif
-		static void* NewStructOps();
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_Player_MetaData[];
-#endif
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_Player;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_Place_MetaData[];
-#endif
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_Place;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-		static const UECodeGen_Private::FStructParams ReturnStructParams;
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMinigameStanding_Statics::Struct_MetaDataParams[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "Comment", "/**\n * \n */" },
 		{ "ModuleRelativePath", "Public/MinigameStanding.h" },
 	};
-#endif
-	void* Z_Construct_UScriptStruct_FMinigameStanding_Statics::NewStructOps()
-	{
-		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FMinigameStanding>();
-	}
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMinigameStanding_Statics::NewProp_Player_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Player_MetaData[] = {
 		{ "Category", "Standing" },
 		{ "Comment", "// Number of the player in this standing\n" },
 		{ "ModuleRelativePath", "Public/MinigameStanding.h" },
 		{ "ToolTip", "Number of the player in this standing" },
 	};
-#endif
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FMinigameStanding_Statics::NewProp_Player = { "Player", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(FMinigameStanding, Player), METADATA_PARAMS(Z_Construct_UScriptStruct_FMinigameStanding_Statics::NewProp_Player_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMinigameStanding_Statics::NewProp_Player_MetaData)) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FMinigameStanding_Statics::NewProp_Place_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Place_MetaData[] = {
 		{ "Category", "Standing" },
 		{ "Comment", "// 1st place, 2nd place, etc. Multiple players can have the same place\n" },
 		{ "ModuleRelativePath", "Public/MinigameStanding.h" },
 		{ "ToolTip", "1st place, 2nd place, etc. Multiple players can have the same place" },
 	};
-#endif
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FMinigameStanding_Statics::NewProp_Place = { "Place", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(FMinigameStanding, Place), METADATA_PARAMS(Z_Construct_UScriptStruct_FMinigameStanding_Statics::NewProp_Place_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMinigameStanding_Statics::NewProp_Place_MetaData)) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FMinigameStanding_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FMinigameStanding_Statics::NewProp_Player,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FMinigameStanding_Statics::NewProp_Place,
-	};
-	const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FMinigameStanding_Statics::ReturnStructParams = {
-		(UObject* (*)())Z_Construct_UPackage__Script_MinigameCore,
-		nullptr,
-		&NewStructOps,
-		"MinigameStanding",
-		sizeof(FMinigameStanding),
-		alignof(FMinigameStanding),
-		Z_Construct_UScriptStruct_FMinigameStanding_Statics::PropPointers,
-		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMinigameStanding_Statics::PropPointers),
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FMinigameStanding_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMinigameStanding_Statics::Struct_MetaDataParams))
-	};
-	UScriptStruct* Z_Construct_UScriptStruct_FMinigameStanding()
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FIntPropertyParams NewProp_Player;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_Place;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static void* NewStructOps()
 	{
-		if (!Z_Registration_Info_UScriptStruct_MinigameStanding.InnerSingleton)
-		{
-			UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_MinigameStanding.InnerSingleton, Z_Construct_UScriptStruct_FMinigameStanding_Statics::ReturnStructParams);
-		}
-		return Z_Registration_Info_UScriptStruct_MinigameStanding.InnerSingleton;
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FMinigameStanding>();
 	}
-	struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameStanding_h_Statics
+	static const UECodeGen_Private::FStructParams StructParams;
+};
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FMinigameStanding_Statics::NewProp_Player = { "Player", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FMinigameStanding, Player), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Player_MetaData), NewProp_Player_MetaData) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FMinigameStanding_Statics::NewProp_Place = { "Place", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FMinigameStanding, Place), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Place_MetaData), NewProp_Place_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FMinigameStanding_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FMinigameStanding_Statics::NewProp_Player,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FMinigameStanding_Statics::NewProp_Place,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMinigameStanding_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FMinigameStanding_Statics::StructParams = {
+	(UObject* (*)())Z_Construct_UPackage__Script_MinigameCore,
+	nullptr,
+	&NewStructOps,
+	"MinigameStanding",
+	Z_Construct_UScriptStruct_FMinigameStanding_Statics::PropPointers,
+	UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMinigameStanding_Statics::PropPointers),
+	sizeof(FMinigameStanding),
+	alignof(FMinigameStanding),
+	RF_Public|RF_Transient|RF_MarkAsNative,
+	EStructFlags(0x00000001),
+	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMinigameStanding_Statics::Struct_MetaDataParams), Z_Construct_UScriptStruct_FMinigameStanding_Statics::Struct_MetaDataParams)
+};
+UScriptStruct* Z_Construct_UScriptStruct_FMinigameStanding()
+{
+	if (!Z_Registration_Info_UScriptStruct_FMinigameStanding.InnerSingleton)
 	{
-		static const FStructRegisterCompiledInInfo ScriptStructInfo[];
+		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FMinigameStanding.InnerSingleton, Z_Construct_UScriptStruct_FMinigameStanding_Statics::StructParams);
+	}
+	return Z_Registration_Info_UScriptStruct_FMinigameStanding.InnerSingleton;
+}
+// ********** End ScriptStruct FMinigameStanding ***************************************************
+
+// ********** Begin Registration *******************************************************************
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameStanding_h__Script_MinigameCore_Statics
+{
+	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
+		{ FMinigameStanding::StaticStruct, Z_Construct_UScriptStruct_FMinigameStanding_Statics::NewStructOps, TEXT("MinigameStanding"), &Z_Registration_Info_UScriptStruct_FMinigameStanding, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMinigameStanding), 2356597280U) },
 	};
-	const FStructRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameStanding_h_Statics::ScriptStructInfo[] = {
-		{ FMinigameStanding::StaticStruct, Z_Construct_UScriptStruct_FMinigameStanding_Statics::NewStructOps, TEXT("MinigameStanding"), &Z_Registration_Info_UScriptStruct_MinigameStanding, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMinigameStanding), 41450610U) },
-	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameStanding_h_2051849693(TEXT("/Script/MinigameCore"),
-		nullptr, 0,
-		Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameStanding_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameStanding_h_Statics::ScriptStructInfo),
-		nullptr, 0);
+};
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameStanding_h__Script_MinigameCore_3839848702(TEXT("/Script/MinigameCore"),
+	nullptr, 0,
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameStanding_h__Script_MinigameCore_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameStanding_h__Script_MinigameCore_Statics::ScriptStructInfo),
+	nullptr, 0);
+// ********** End Registration *********************************************************************
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

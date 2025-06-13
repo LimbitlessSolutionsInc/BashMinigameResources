@@ -7,15 +7,15 @@ public class WinBT : ModuleRules
 {
 	public WinBT(ReadOnlyTargetRules Target) : base(Target)
 	{
-		
-		bUsePrecompiled = true;	
+		bUsePrecompiled = true;
 		
 		PublicDependencyModuleNames.AddRange(
 			new string[]
 			{
 				"Core",
+				// ... add other public dependencies that you statically link with here ...
 			}
-		);
+			);
 			
 		
 		PrivateDependencyModuleNames.AddRange(
@@ -25,8 +25,9 @@ public class WinBT : ModuleRules
 				"Engine",
 				"Slate",
 				"SlateCore",
+				// ... add private dependencies that you statically link with here ...	
 			}
-		);
+			);
 
 		string windowsSdkVersion = Target.WindowsPlatform.WindowsSdkVersion;
 		string windowsSdkPath = Target.WindowsPlatform.WindowsSdkDir;

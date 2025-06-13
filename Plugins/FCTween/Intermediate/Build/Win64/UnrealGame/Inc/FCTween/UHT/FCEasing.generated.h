@@ -5,19 +5,22 @@
 ===========================================================================*/
 
 // IWYU pragma: private, include "FCEasing.h"
-#include "UObject/ObjectMacros.h"
-#include "UObject/ScriptMacros.h"
 
-PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #ifdef FCTWEEN_FCEasing_generated_h
 #error "FCEasing.generated.h already included, missing '#pragma once' in FCEasing.h"
 #endif
 #define FCTWEEN_FCEasing_generated_h
 
+#include "Templates/IsUEnumClass.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ReflectedTypeAccessors.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_Downloads_Minigame_Plugins_FCTween_HostProject_Plugins_FCTween_Source_FCTween_Public_FCEasing_h
+#define CURRENT_FILE_ID FID_Users_zombi_Downloads_FCTween_HostProject_Plugins_FCTween_Source_FCTween_Public_FCEasing_h
 
-
+// ********** Begin Enum EFCEase *******************************************************************
 #define FOREACH_ENUM_EFCEASE(op) \
 	op(EFCEase::Linear) \
 	op(EFCEase::Smoothstep) \
@@ -56,5 +59,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 enum class EFCEase : uint8;
 template<> struct TIsUEnumClass<EFCEase> { enum { Value = true }; };
 template<> FCTWEEN_API UEnum* StaticEnum<EFCEase>();
+// ********** End Enum EFCEase *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -17,13 +17,13 @@ void EmptyLinkFunctionForGeneratedCodeLimbitlessBluetoothEditor_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000040,
-				0x0241E04C,
-				0x5982FE28,
-				METADATA_PARAMS(nullptr, 0)
+				0x1284F885,
+				0x2408B5BF,
+				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_LimbitlessBluetoothEditor.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_LimbitlessBluetoothEditor.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_LimbitlessBluetoothEditor(Z_Construct_UPackage__Script_LimbitlessBluetoothEditor, TEXT("/Script/LimbitlessBluetoothEditor"), Z_Registration_Info_UPackage__Script_LimbitlessBluetoothEditor, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x0241E04C, 0x5982FE28));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_LimbitlessBluetoothEditor(Z_Construct_UPackage__Script_LimbitlessBluetoothEditor, TEXT("/Script/LimbitlessBluetoothEditor"), Z_Registration_Info_UPackage__Script_LimbitlessBluetoothEditor, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x1284F885, 0x2408B5BF));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,5 +1,17 @@
 {
 	"OutputFiles": [
-		"Module.MinigameCore.cpp.obj"
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\Module.MinigameCore.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\BasePointCounter.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\MinigameBase.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\MinigameCapture.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\MinigameCore.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\MinigameCoreBlueprintLibrary.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\MinigameCoreLogChannel.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\MinigamePlayer.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\PlayerAccelerationComponent.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\PlayerRotationComponent.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\MinigameUI.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\PracticeModeUI.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\SplitscreenUI.cpp.obj"
 	]
 }

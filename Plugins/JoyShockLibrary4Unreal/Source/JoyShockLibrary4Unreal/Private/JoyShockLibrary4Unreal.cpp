@@ -5,7 +5,7 @@
 #include "Framework/Application/SlateApplication.h"
 #include "Interfaces/IPluginManager.h"
 
-#define LOCTEXT_NAMESPACE "FJoyShockLibrary4UnrealModule"
+//#define LOCTEXT_NAMESPACE "FJoyShockLibrary4UnrealModule"
 
 #if PLATFORM_WINDOWS
 void *hidapiDllHandle = nullptr;

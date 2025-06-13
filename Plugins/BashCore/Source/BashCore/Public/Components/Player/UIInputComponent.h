@@ -7,6 +7,7 @@
 #include "UIInputComponent.generated.h"
 
 
+class UWidget;
 class UMenu;
 class ABashPlayerController;
 class UInputMappingContext;
@@ -121,7 +122,7 @@ protected:
 
 	//runtime fields
 	UPROPERTY()
-	TObjectPtr<UUserWidget> FocusedWidget;
+	TObjectPtr<UWidget> FocusedWidget;
 	UPROPERTY()
 	TObjectPtr<ABashPlayerController> OwningPlayer;
 private:

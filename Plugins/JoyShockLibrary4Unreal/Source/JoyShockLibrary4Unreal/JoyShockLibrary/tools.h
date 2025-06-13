@@ -2,7 +2,7 @@
 
 
 #include <cstring>
-
+#include <stdint.h>
 //#include <curl/curl.h>
 
 // #pragma warning(disable: 4996)
