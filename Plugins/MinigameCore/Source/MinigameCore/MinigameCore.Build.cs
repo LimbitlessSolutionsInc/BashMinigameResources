@@ -6,18 +6,7 @@ public class MinigameCore : ModuleRules
 {
 	public MinigameCore(ReadOnlyTargetRules Target) : base(Target)
 	{
-		bUsePrecompiled = true;
-
-		PublicIncludePaths.AddRange(
-			new string[] {
-			});
-				
-		
-		PrivateIncludePaths.AddRange(
-			new string[] {
-			}
-			);
-			
+		bUsePrecompiled = true;			
 		
 		PublicDependencyModuleNames.AddRange(
 			new string[]

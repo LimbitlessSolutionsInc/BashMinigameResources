@@ -38,7 +38,7 @@ public:
 	int GetPointsByPlayer(int Player) const;
 
 	// Gets the results of the minigame based on the current score
-	UFUNCTION(BlueprintNativeEvent, Category = "Point Counter")
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Point Counter")
 	TArray<FMinigameStanding> GetStandings() const;
 
 	// Initializes point counter with team information
@@ -46,8 +46,10 @@ public:
 	void InitializePointCounter(int NumTeams, const TArray<int>& TeamAssignment);
 
 protected:
+	UPROPERTY(BlueprintReadWrite, Category = "Point Info")
 	TArray<int> TeamPoints{};
 
 	// Maps player numbers to teams
+	UPROPERTY(BlueprintReadWrite, Category = "Point Info")
 	TArray<int> PlayersToTeams{};
 };
