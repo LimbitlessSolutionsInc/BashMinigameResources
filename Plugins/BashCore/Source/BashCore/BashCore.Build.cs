@@ -39,7 +39,7 @@ public class BashCore : ModuleRules
 				"Engine",
 				"Slate",
 				"SlateCore",
-				"SkeletalMerging"
+				"CustomizableObject"
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);

@@ -3,13 +3,13 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "PlayerMeshData.h"
 #include "BaseClasses/LimbitlessLocalPlayer.h"
 #include "Engine/LocalPlayer.h"
 #include "BashLocalPlayer.generated.h"
 
 class UFlexController;
-
+class UCustomizableObjectInstance;
+class UCustomizableObject;
 
 UCLASS(BlueprintType)
 class UPlayerData : public UObject
@@ -58,6 +58,12 @@ public:
 		Mobius = newMobius;
 	}
 
+	UFUNCTION(BlueprintCallable, Category = "Player Data")
+	UCustomizableObjectInstance* GetCustomizableInstance() const
+	{
+		return CustomizableObjectInstance;
+	}
+
 public:
 	int PlayerNum = -1;
 	UPROPERTY()
@@ -69,15 +75,21 @@ public:
 	UPROPERTY(BlueprintReadWrite, Category = "Player Data")
 	int Mobius = 0;
 
-	FPlayerMeshData PlayerMeshData;
+	UPROPERTY()
+	UCustomizableObjectInstance* CustomizableObjectInstance;
 
+	void InitializeCustomizableInstance(UCustomizableObject* CO);
+	
 };
 
 UCLASS()
 class BASHCORE_API UBashLocalPlayer : public ULimbitlessLocalPlayer
 {
 	GENERATED_BODY()
+
 public:
+	UBashLocalPlayer();
+	
 	UFUNCTION(BlueprintGetter)
 	UPlayerData* GetPlayerData()
 	{
@@ -90,4 +102,7 @@ public:
 protected:
 	UPROPERTY(BlueprintGetter = GetPlayerData, Category = "Player Data")
 	TObjectPtr<UPlayerData> PlayerData;
+
+	UPROPERTY()
+	TObjectPtr<UCustomizableObject> CustomizableObject;
 };

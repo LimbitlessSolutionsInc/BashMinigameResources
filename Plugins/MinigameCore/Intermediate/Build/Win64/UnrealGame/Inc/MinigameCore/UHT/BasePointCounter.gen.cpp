@@ -615,14 +615,14 @@ UBasePointCounter::~UBasePointCounter() {}
 // ********** End Class UBasePointCounter **********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_BasePointCounter_h__Script_MinigameCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_BasePointCounter_h__Script_MinigameCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UBasePointCounter, UBasePointCounter::StaticClass, TEXT("UBasePointCounter"), &Z_Registration_Info_UClass_UBasePointCounter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBasePointCounter), 3523782296U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_BasePointCounter_h__Script_MinigameCore_3362167371(TEXT("/Script/MinigameCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_BasePointCounter_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_BasePointCounter_h__Script_MinigameCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_BasePointCounter_h__Script_MinigameCore_3362167371(TEXT("/Script/MinigameCore"),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_BasePointCounter_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_BasePointCounter_h__Script_MinigameCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

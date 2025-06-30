@@ -6,7 +6,8 @@ public class MinigameCore : ModuleRules
 {
 	public MinigameCore(ReadOnlyTargetRules Target) : base(Target)
 	{
-		bUsePrecompiled = true;			
+		bUsePrecompiled = true;
+			
 		
 		PublicDependencyModuleNames.AddRange(
 			new string[]

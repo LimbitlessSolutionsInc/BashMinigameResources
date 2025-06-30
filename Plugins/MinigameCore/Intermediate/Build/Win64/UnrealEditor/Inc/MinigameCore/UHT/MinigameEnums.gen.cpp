@@ -129,17 +129,17 @@ UEnum* Z_Construct_UEnum_MinigameCore_ESplitBy()
 // ********** End Enum ESplitBy ********************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameEnums_h__Script_MinigameCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameEnums_h__Script_MinigameCore_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EMinigameType_StaticEnum, TEXT("EMinigameType"), &Z_Registration_Info_UEnum_EMinigameType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3776124145U) },
 		{ ESplitBy_StaticEnum, TEXT("ESplitBy"), &Z_Registration_Info_UEnum_ESplitBy, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3143755764U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameEnums_h__Script_MinigameCore_1631320495(TEXT("/Script/MinigameCore"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameEnums_h__Script_MinigameCore_1631320495(TEXT("/Script/MinigameCore"),
 	nullptr, 0,
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameEnums_h__Script_MinigameCore_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameEnums_h__Script_MinigameCore_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameEnums_h__Script_MinigameCore_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameEnums_h__Script_MinigameCore_Statics::EnumInfo));
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

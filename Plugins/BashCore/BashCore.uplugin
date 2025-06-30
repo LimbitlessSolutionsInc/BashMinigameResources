@@ -29,7 +29,7 @@
 			"Enabled": true
 		},
 		{
-			"Name": "SkeletalMerging",
+			"Name": "Mutable",
 			"Enabled": true
 		}
 	]

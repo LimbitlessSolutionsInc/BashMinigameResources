@@ -74,6 +74,9 @@ public:
 	//Has User focus specific widget.
 	UFUNCTION(BlueprintCallable, Category = "Events")
 	void FocusWidget(UUserWidget* widget);
+
+	UFUNCTION(BlueprintCallable, Category = "Events")
+	UWidget* GetFocusWidget() const { return FocusedWidget; }
 	
 	//Input Delegates
 	UPROPERTY(BlueprintAssignable, Category = "Input")

@@ -87,15 +87,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FMinigameStanding()
 // ********** End ScriptStruct FMinigameStanding ***************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameStanding_h__Script_MinigameCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameStanding_h__Script_MinigameCore_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
 		{ FMinigameStanding::StaticStruct, Z_Construct_UScriptStruct_FMinigameStanding_Statics::NewStructOps, TEXT("MinigameStanding"), &Z_Registration_Info_UScriptStruct_FMinigameStanding, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMinigameStanding), 2356597280U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameStanding_h__Script_MinigameCore_3839848702(TEXT("/Script/MinigameCore"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameStanding_h__Script_MinigameCore_3839848702(TEXT("/Script/MinigameCore"),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameStanding_h__Script_MinigameCore_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameStanding_h__Script_MinigameCore_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameStanding_h__Script_MinigameCore_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameStanding_h__Script_MinigameCore_Statics::ScriptStructInfo),
 	nullptr, 0);
 // ********** End Registration *********************************************************************
 

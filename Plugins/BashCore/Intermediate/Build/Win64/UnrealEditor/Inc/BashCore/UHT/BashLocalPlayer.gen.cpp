@@ -18,6 +18,8 @@ BASHCORE_API UClass* Z_Construct_UClass_UBashLocalPlayer_NoRegister();
 BASHCORE_API UClass* Z_Construct_UClass_UPlayerData();
 BASHCORE_API UClass* Z_Construct_UClass_UPlayerData_NoRegister();
 COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
+CUSTOMIZABLEOBJECT_API UClass* Z_Construct_UClass_UCustomizableObject_NoRegister();
+CUSTOMIZABLEOBJECT_API UClass* Z_Construct_UClass_UCustomizableObjectInstance_NoRegister();
 LIMBITLESSBLUETOOTHPLUGIN_API UClass* Z_Construct_UClass_ULimbitlessLocalPlayer();
 UPackage* Z_Construct_UPackage__Script_BashCore();
 // ********** End Cross Module References **********************************************************
@@ -63,6 +65,48 @@ DEFINE_FUNCTION(UPlayerData::execGetCoins)
 	P_NATIVE_END;
 }
 // ********** End Class UPlayerData Function GetCoins **********************************************
+
+// ********** Begin Class UPlayerData Function GetCustomizableInstance *****************************
+struct Z_Construct_UFunction_UPlayerData_GetCustomizableInstance_Statics
+{
+	struct PlayerData_eventGetCustomizableInstance_Parms
+	{
+		UCustomizableObjectInstance* ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Player Data" },
+		{ "ModuleRelativePath", "Public/Player/BashLocalPlayer.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UPlayerData_GetCustomizableInstance_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(PlayerData_eventGetCustomizableInstance_Parms, ReturnValue), Z_Construct_UClass_UCustomizableObjectInstance_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPlayerData_GetCustomizableInstance_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlayerData_GetCustomizableInstance_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_GetCustomizableInstance_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerData_GetCustomizableInstance_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UPlayerData, nullptr, "GetCustomizableInstance", Z_Construct_UFunction_UPlayerData_GetCustomizableInstance_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_GetCustomizableInstance_Statics::PropPointers), sizeof(Z_Construct_UFunction_UPlayerData_GetCustomizableInstance_Statics::PlayerData_eventGetCustomizableInstance_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerData_GetCustomizableInstance_Statics::Function_MetaDataParams), Z_Construct_UFunction_UPlayerData_GetCustomizableInstance_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UPlayerData_GetCustomizableInstance_Statics::PlayerData_eventGetCustomizableInstance_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UPlayerData_GetCustomizableInstance()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UPlayerData_GetCustomizableInstance_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UPlayerData::execGetCustomizableInstance)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(UCustomizableObjectInstance**)Z_Param__Result=P_THIS->GetCustomizableInstance();
+	P_NATIVE_END;
+}
+// ********** End Class UPlayerData Function GetCustomizableInstance *******************************
 
 // ********** Begin Class UPlayerData Function GetMobius *******************************************
 struct Z_Construct_UFunction_UPlayerData_GetMobius_Statics
@@ -327,6 +371,7 @@ void UPlayerData::StaticRegisterNativesUPlayerData()
 	UClass* Class = UPlayerData::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
 		{ "GetCoins", &UPlayerData::execGetCoins },
+		{ "GetCustomizableInstance", &UPlayerData::execGetCustomizableInstance },
 		{ "GetMobius", &UPlayerData::execGetMobius },
 		{ "GetPlayerNum", &UPlayerData::execGetPlayerNum },
 		{ "GetTilePos", &UPlayerData::execGetTilePos },
@@ -388,15 +433,20 @@ struct Z_Construct_UClass_UPlayerData_Statics
 		{ "Category", "Player Data" },
 		{ "ModuleRelativePath", "Public/Player/BashLocalPlayer.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CustomizableObjectInstance_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Player/BashLocalPlayer.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_PlayerOrder;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_TilePos;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_Coins;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_Mobius;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_CustomizableObjectInstance;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UPlayerData_GetCoins, "GetCoins" }, // 1413395485
+		{ &Z_Construct_UFunction_UPlayerData_GetCustomizableInstance, "GetCustomizableInstance" }, // 3165297211
 		{ &Z_Construct_UFunction_UPlayerData_GetMobius, "GetMobius" }, // 4272605864
 		{ &Z_Construct_UFunction_UPlayerData_GetPlayerNum, "GetPlayerNum" }, // 1121576403
 		{ &Z_Construct_UFunction_UPlayerData_GetTilePos, "GetTilePos" }, // 884446194
@@ -414,11 +464,13 @@ const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UPlayerData_Stati
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UPlayerData_Statics::NewProp_TilePos = { "TilePos", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UPlayerData, TilePos), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TilePos_MetaData), NewProp_TilePos_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UPlayerData_Statics::NewProp_Coins = { "Coins", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UPlayerData, Coins), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Coins_MetaData), NewProp_Coins_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UPlayerData_Statics::NewProp_Mobius = { "Mobius", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UPlayerData, Mobius), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Mobius_MetaData), NewProp_Mobius_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UPlayerData_Statics::NewProp_CustomizableObjectInstance = { "CustomizableObjectInstance", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UPlayerData, CustomizableObjectInstance), Z_Construct_UClass_UCustomizableObjectInstance_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CustomizableObjectInstance_MetaData), NewProp_CustomizableObjectInstance_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UPlayerData_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerData_Statics::NewProp_PlayerOrder,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerData_Statics::NewProp_TilePos,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerData_Statics::NewProp_Coins,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerData_Statics::NewProp_Mobius,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerData_Statics::NewProp_CustomizableObjectInstance,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerData_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UPlayerData_Statics::DependentSingletons[])() = {
@@ -546,8 +598,12 @@ struct Z_Construct_UClass_UBashLocalPlayer_Statics
 		{ "Category", "Player Data" },
 		{ "ModuleRelativePath", "Public/Player/BashLocalPlayer.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CustomizableObject_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Player/BashLocalPlayer.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_PlayerData;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_CustomizableObject;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -560,8 +616,10 @@ struct Z_Construct_UClass_UBashLocalPlayer_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UBashLocalPlayer_Statics::NewProp_PlayerData = { "PlayerData", nullptr, (EPropertyFlags)0x0124080000000014, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBashLocalPlayer, PlayerData), Z_Construct_UClass_UPlayerData_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayerData_MetaData), NewProp_PlayerData_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UBashLocalPlayer_Statics::NewProp_CustomizableObject = { "CustomizableObject", nullptr, (EPropertyFlags)0x0124080000000000, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBashLocalPlayer, CustomizableObject), Z_Construct_UClass_UCustomizableObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CustomizableObject_MetaData), NewProp_CustomizableObject_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UBashLocalPlayer_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBashLocalPlayer_Statics::NewProp_PlayerData,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBashLocalPlayer_Statics::NewProp_CustomizableObject,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UBashLocalPlayer_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UBashLocalPlayer_Statics::DependentSingletons[])() = {
@@ -592,21 +650,20 @@ UClass* Z_Construct_UClass_UBashLocalPlayer()
 	}
 	return Z_Registration_Info_UClass_UBashLocalPlayer.OuterSingleton;
 }
-UBashLocalPlayer::UBashLocalPlayer(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 DEFINE_VTABLE_PTR_HELPER_CTOR(UBashLocalPlayer);
 UBashLocalPlayer::~UBashLocalPlayer() {}
 // ********** End Class UBashLocalPlayer ***********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h__Script_BashCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h__Script_BashCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UPlayerData, UPlayerData::StaticClass, TEXT("UPlayerData"), &Z_Registration_Info_UClass_UPlayerData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPlayerData), 827673668U) },
-		{ Z_Construct_UClass_UBashLocalPlayer, UBashLocalPlayer::StaticClass, TEXT("UBashLocalPlayer"), &Z_Registration_Info_UClass_UBashLocalPlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBashLocalPlayer), 2662572583U) },
+		{ Z_Construct_UClass_UPlayerData, UPlayerData::StaticClass, TEXT("UPlayerData"), &Z_Registration_Info_UClass_UPlayerData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPlayerData), 3309081850U) },
+		{ Z_Construct_UClass_UBashLocalPlayer, UBashLocalPlayer::StaticClass, TEXT("UBashLocalPlayer"), &Z_Registration_Info_UClass_UBashLocalPlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBashLocalPlayer), 3532342674U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h__Script_BashCore_3536376633(TEXT("/Script/BashCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h__Script_BashCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h__Script_BashCore_1003253594(TEXT("/Script/BashCore"),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h__Script_BashCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************
