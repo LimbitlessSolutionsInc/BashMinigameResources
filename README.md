@@ -4,7 +4,7 @@
 
 ## Requirements
 
-MinigameCore requires an installation of Unreal Engine 5.1 on a Windows operating system.
+MinigameCore requires an installation of Unreal Engine 5.6 on a Windows operating system.
 
 A basic understanding of Unreal Engine 5 is strongly recommended.
 
@@ -33,9 +33,14 @@ Here is a sample project that uses MinigameCore. Feel free to reference it to se
 >    4.1 [Splitscreen](#41-splitscreen)  
 > 1. [Point Counting](#5-point-counting)  
 > 1. [Minigame UI](#6-minigame-ui)  
-> 1. [Player Rotation Component](#7-player-rotation-component)  
-> 1. [Player Acceleration Component](#8-player-acceleration-component)  
-> 1. [Player Mesh](#9-player-mesh)
+> 1. [Player Components](#7-player-components)  
+	 7.1 [Player Rotation Component](#71-player-rotation-component)  
+	 7.2 [Player Acceleration Component](#72-player-acceleration-component)  
+> 1. [Cutscenes](#8-cutscenes)  
+	 8.1 [Cutscene Manager](#81-cutscene-manager)  
+	 8.2 [Level Sequence Cutscene Manager](#82-level-sequence-cutscene-manager)  
+> 1. [Player Mesh](#9-player-mesh)  
+     9.1 [Customizer Character Actor](#91-character-customizer-actor)  
 > 1. [Editor Tools](#10-editor-tools)  
 > 1. [Asset Organization Conventions](#11-asset-organization-conventions)  
 > 1. [Minigame Design Pillars](#12-minigame-design-pillars)
@@ -52,7 +57,7 @@ To get started with making your new minigame:
 
 1. Create a new Unreal Engine 5.1 project with the same name as your minigame
 
-2. Create a folder called Plugins in the root folder of your newly created project. Download the Plugins folder from this GitHub repository and place its contents into the newly created project Plugins folder. Enable MinigameCore in the editor (Edit > Plugins > Search for **MinigameCore** > Select checkbox)
+2. Create a folder called Plugins in the root folder of your newly created project. Clone this GitHub repository and copy the contents of its Plugins into the newly created project Plugins folder. Enable MinigameCore in the editor (Edit > Plugins > Search for **MinigameCore** > Select checkbox)
 
 ![Enter image alt description](Images/Dnq_Image_1.png)
 
@@ -90,7 +95,6 @@ public class MyMinigame : ModuleRules
 
 7. Create a new level (File > New Level). This level should have the same name as your minigame.
 
-
 8. Create a minigame player, either in C++ or Blueprint, deriving from **AMinigamePlayer**. Name this player **BP_[Minigame Name]Player**. Replace [Minigame Name] with the name of your minigame or an initialism. 
 
 To create from Blueprint, right click in the Content Browser and select Blueprint Class > All Classes > Search “MinigamePlayer”.
@@ -107,7 +111,7 @@ To create from C++, go to Tools (in the top toolbar) > New C++ Class > All Class
 
 10. Set the GameMode override in the level to the newly created minigame GameMode.
 
-11. Add a **BP_MinigameCapture** object to the world (or multiple if using [Splitscreen](#62-splitscreen)). Do this by **dragging it out** from the MinigameCore content folder - do **not** make your own Blueprint. Default Unreal camera actors will not work. See [4. Minigame Captures](#4-minigame-captures). 
+11. Add a **BP_MinigameCapture** object to the world (or multiple if using [Splitscreen](#62-splitscreen)). Do this by **dragging it out** from the MinigameCore content folder - do **not** make your own Blueprint unless you want to extend the capture's functionality. Default Unreal camera actors will not work. See [4. Minigame Captures](#4-minigame-captures). 
 
 12. Add **BP_MinigamePlayerSpawn** objects to the world and populate their fields. Do this by **dragging it out** from the MinigameCore content folder - do **not** make your own Blueprint. Players will spawn at these player spawn locations. Default Unreal PlayerStarts will not work. See [2.6 Player Spawning](#26-player-spawning).
 
@@ -179,7 +183,7 @@ The GameMode also provides several helpful functions to access information and c
 | bool IsPractice() | Returns true if the minigame is in practice mode |
 | bool IsInProgress() | Returns true if the minigame is not in progress (i.e. EndGame has not been called, time hasn’t ran out, etc.) |
 | void EndGame()
- | Ends the minigame early. Has no effect if the minigame is already ending. |
+| Ends the minigame early. Has no effect if the minigame is already ending. |
 | AMinigameCapture* GetCamera(int) | Returns the minigame camera assigned to the associated player number. |
 | AMinigamePlayer* GetPlayer(int) | Returns a pointer to the player associated with the player number |
 
@@ -249,11 +253,10 @@ Here are some helpful properties available to MinigamePlayers:
 
 ## 3.1 Player Input
 
-Minigame players need to specify the input mapping context and the ready input action in the details pane. This should be set to **IMC_Minigame** and **IA_PracticeReadyUp**, which are included with MinigameCore.
 
 ![Enter image alt description](Images/Ync_Image_9.png)
 
-Players inheriting from **AMinigamePlayer** will automatically be bound to the **IMC_Minigame** Input Context that is passed into it through the details pane. The following input actions in IMC_Minigame may be used as input for the minigame:
+Players inheriting from **AMinigamePlayer** will automatically be bound to the **IMC_Minigame** Input Context. The following input actions in IMC_Minigame may be used as input for the minigame:
 
 | Input Action | Description |
 |---|---|
@@ -362,7 +365,9 @@ The minigame UI can be used for displaying helpful information such as team scor
 
 To access properties or functions of a derived GameMode, simply cast the widget’s Minigame reference to the type of your minigame’s GameMode.
 
-# 7 Player Rotation Component
+# 7 Player Components
+
+## 7.1 Player Rotation Component
 
 **UPlayerRotationComponent** is an actor component that is included with MinigameCore. It simplifies the use of raw rotation input (IA_Rotation) and offers convenient functionality for interpreting and processing rotation data in gameplay scenarios. Minigames that use rotation should have this component on its MinigamePlayer subclass. 
 
@@ -394,7 +399,7 @@ void ATestMinigamePlayer::CastRay()`
 	}
 }
 ```
-# 8 Player Acceleration Component
+## 7.2 Player Acceleration Component
 
 **UPlayerAccelerationComponent **is an actor component that is included with MinigameCore. It simplifies the use of raw acceleration input (IA_Acceleration) and offers convenient functionality for interpreting and processing acceleration data in gameplay scenarios. Minigames that use acceleration should have this component on its MinigamePlayer subclass. 
 
@@ -427,18 +432,64 @@ Example of ListenForMovement being used in Blueprint:
 
 ![Enter image alt description](Images/QPy_Image_15.png)
 
+# 8 Cutscenes
+
+Cutscenes are events that momentarily pause a minigame's normal progression outside of the Practice Mode. Currently, there are two places in a minigame that can use a cutscene: 
+ * Intro Cutscene - triggered after practice mode ends, before the minigame starts for the final time
+ * End Cutscene - triggered when the minigame ends, right before transitioning to the board
+
+Cutscenes can be set in the **MinigameBase**'s details pane.
+
+![MinigameBase Cutscene Selection](Images/cutscenedetails.png)
+
+## 8.1 Cutscene Manager
+
+**UMinigameCutsceneManager** is the base class for all minigame cutscenes and is how the **MinigameBase** can interface with a cutscene. To create a new cutscene, create a Blueprint that subclasses it. Then, implement the **OnStartCutscene** Blueprint native event. This event will be called when the minigame is started. 
+
+Cutscenes always have a reference to the **MinigameBase**, which is called **CurrentMinigame** in Blueprints.
+
+Be sure to call **EndCutscene** when the cutscene is over. Cutscenes that are not ended will prevent the game from being able to continue. Calling **EndCutscene** will start the game and clear any UI spawned during the cutscene. You can still execute cutscene logic after **EndCutscene** - for example, spawning a lingering "Start!" prompt.
+
+If the cutscene manager's **bShouldSpawnPlayers** property is true for an intro cutscene, the minigame players will be spawned before the cutscene plays. This allows cutscenes to use the minigame players directly in the cutscene. If false, minigame players will spawn after the cutscene. This has no effect on end cutscenes.
+
+## 8.2 Level Sequence Cutscene Manager
+
+A common way to implement cutscenes is through the use of a **level sequence**. The **ULevelSequenceMinigameCutsceneManager** inherits from **UMinigameCutsceneManager** and helps integrate level sequences with minigame cutscenes.
+
+Level Sequence cutscenes has two new properties:
+| Property | Description |
+|---|---|
+| ULevelSequence* LevelSequence | The level sequence to play for the cutscene |
+| bool bBindSpawnedPlayersToSequence | If this is true and bShouldSpawnPlayers is true, the minigame players will automatically be bound to possessable bindings on the level sequence. The bindings should be tagged as "Player0", "Player1", "Player2", and "Player3". |
+
+Level Sequence cutscenes also have several new BlueprintNativeEvents that can be overriden:
+ * InitializeLevelSequence(ALevelSequenceActor*) - Called after the level sequence has been created, but before it has been started. Use this for any custom bindings or pre-level sequence logic. By default, this binds players (if bBindSpawnedPlayersToSequence) and the MinigameCapture to the "Camera" binding tag. Use a **Call to Parent** node if you also want to maintain the default functionality.
+
+![Initialize Level Sequence Example](Images/initlevelsequence.png)
+
+ * OnLevelSequenceComplete() - Called when the level sequence has finished. By default, this ends the cutscene. However, it can be overridden to have more cutscene logic or to cleanup after the level sequence.
+
+![On Level Sequence Complete Example](Images/levelsequencecomplete.png)
+ 
 # 9 Player Mesh
 
 Super Bionic Bash uses a character customizer. As such, the mesh for the player is generated at runtime. If you want to use the 
-customized character mesh in your minigame, attach a **BP_PlayerMeshComponent** (located in **Plugins** > **BashCore Content** > **Components**) to your MinigamePlayer.
+customized character mesh in your minigame, attach a **CustomizablePlayer** component (located in the **BashCore** module) to your MinigamePlayer's **skeletal mesh component**. The skeletal mesh will be set at runtime by the CustomizablePlayer component. Optionally, you can set the skeletal mesh component itself to use **SKM_ModularCharacterFallback**'s skeletal mesh for reference of the character's size in viewport and editor (note that it will still be overridden at runtime).
+
+![Skeletal mesh and customizable player component](Images/customizableplayercomponent.png)
+
+In the Blueprint's Components Tab, click **Add**, search for **Customizable Player**, then click on the search result
 
 The character customizer is not included as part of the minigame creation plugins, so there will be no customized character mesh to 
-display when playtesting the game. As such, **BP_PlayerMeshComponent** will display a placeholder mesh of the same proportions as 
-an actual character for reference. In an actual game, the mesh will be replaced with the corresponding player's customized mesh.
+display when playtesting the game. By default, **CustomizablePlayer** will display a randomized player for reference. In an a full Bash game, the mesh will be replaced with the corresponding player's customized mesh.
 
 The skeleton, physics asset, and fallback skeletal mesh is located in **Plugins** > **BashAssets** > **Content** > **Characters**. Some basic animations for the character can also be found in this folder.
 
 To use custom animations for your minigame, see the [Animation Import Guide](AnimationImportGuide.md).
+
+## 9.1 Character Customizer Actor
+
+BashCore has **BP_CharacterCustomizerActor**, which is a basic actor that uses the character customizer mesh of the specified player controller. The player controller can be specified by player number. This actor has no logic attached to it other than loading the customizer mesh, making it a good candidate for things like cutscenes that only need to animate with it.
 
 # 10 Editor Tools
 
