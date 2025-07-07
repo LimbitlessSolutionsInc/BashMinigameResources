@@ -55,7 +55,9 @@ struct Z_Construct_UClass_UJoyShockLibrary4UnrealSettings_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "JoyShockLibrary4UnrealSettings.h" },
 		{ "ModuleRelativePath", "Public/JoyShockLibrary4UnrealSettings.h" },
 	};
@@ -100,14 +102,14 @@ UJoyShockLibrary4UnrealSettings::~UJoyShockLibrary4UnrealSettings() {}
 // ********** End Class UJoyShockLibrary4UnrealSettings ********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_Public_JoyShockLibrary4UnrealSettings_h__Script_JoyShockLibrary4Unreal_Statics
+struct Z_CompiledInDeferFile_FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_Public_JoyShockLibrary4UnrealSettings_h__Script_JoyShockLibrary4Unreal_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UJoyShockLibrary4UnrealSettings, UJoyShockLibrary4UnrealSettings::StaticClass, TEXT("UJoyShockLibrary4UnrealSettings"), &Z_Registration_Info_UClass_UJoyShockLibrary4UnrealSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UJoyShockLibrary4UnrealSettings), 108476124U) },
+		{ Z_Construct_UClass_UJoyShockLibrary4UnrealSettings, UJoyShockLibrary4UnrealSettings::StaticClass, TEXT("UJoyShockLibrary4UnrealSettings"), &Z_Registration_Info_UClass_UJoyShockLibrary4UnrealSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UJoyShockLibrary4UnrealSettings), 463691552U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_Public_JoyShockLibrary4UnrealSettings_h__Script_JoyShockLibrary4Unreal_1358011297(TEXT("/Script/JoyShockLibrary4Unreal"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_Public_JoyShockLibrary4UnrealSettings_h__Script_JoyShockLibrary4Unreal_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_Public_JoyShockLibrary4UnrealSettings_h__Script_JoyShockLibrary4Unreal_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_Public_JoyShockLibrary4UnrealSettings_h__Script_JoyShockLibrary4Unreal_101583976(TEXT("/Script/JoyShockLibrary4Unreal"),
+	Z_CompiledInDeferFile_FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_Public_JoyShockLibrary4UnrealSettings_h__Script_JoyShockLibrary4Unreal_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_Public_JoyShockLibrary4UnrealSettings_h__Script_JoyShockLibrary4Unreal_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************
