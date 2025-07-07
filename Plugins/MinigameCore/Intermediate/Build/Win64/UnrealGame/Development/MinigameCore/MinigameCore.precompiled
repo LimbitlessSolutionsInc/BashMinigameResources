@@ -1,12 +1,14 @@
 {
 	"OutputFiles": [
 		"..\\..\\..\\x64\\UnrealGame\\Development\\MinigameCore\\Module.MinigameCore.cpp.obj",
-		"..\\..\\..\\x64\\UnrealGame\\Development\\MinigameCore\\BasePointCounter.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Development\\MinigameCore\\MinigameBase.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Development\\MinigameCore\\MinigameCapture.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Development\\MinigameCore\\MinigameCore.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Development\\MinigameCore\\MinigameCoreBlueprintLibrary.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Development\\MinigameCore\\MinigameCoreLogChannel.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MinigameCore\\BasePointCounter.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MinigameCore\\LevelSequenceMinigameCutsceneManager.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MinigameCore\\MinigameCutsceneManager.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Development\\MinigameCore\\MinigamePlayer.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Development\\MinigameCore\\PlayerAccelerationComponent.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Development\\MinigameCore\\PlayerRotationComponent.cpp.obj",

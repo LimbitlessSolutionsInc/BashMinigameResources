@@ -9,18 +9,25 @@
 #include "Math/MathFwd.h"
 #include "SplitscreenUI.generated.h"
 
+class UCanvasPanel;
 /**
  * 
  */
-UCLASS()
+UCLASS(BlueprintType)
 class MINIGAMECORE_API USplitscreenUI : public UUserWidget
 {
 	GENERATED_BODY()
 
 public:
+	UFUNCTION(BlueprintCallable, Category = "Splitscreen")
 	int GetNumSplits() const;
+	
+	UFUNCTION(BlueprintCallable, Category = "Splitscreen")
 	class UOverlay* GetSplitPanel(int Num) const;
 
+	UFUNCTION(BlueprintImplementableEvent)
+	UCanvasPanel* GetRootCanvas() const;
+	
 	void NativeOnInitialized() override;
 
 private:

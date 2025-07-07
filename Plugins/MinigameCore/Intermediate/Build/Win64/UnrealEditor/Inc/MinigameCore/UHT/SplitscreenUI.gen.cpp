@@ -16,14 +16,164 @@ COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector2D();
 ENGINE_API UClass* Z_Construct_UClass_UCanvasRenderTarget2D_NoRegister();
 MINIGAMECORE_API UClass* Z_Construct_UClass_USplitscreenUI();
 MINIGAMECORE_API UClass* Z_Construct_UClass_USplitscreenUI_NoRegister();
+UMG_API UClass* Z_Construct_UClass_UCanvasPanel_NoRegister();
 UMG_API UClass* Z_Construct_UClass_UOverlay_NoRegister();
 UMG_API UClass* Z_Construct_UClass_UUserWidget();
 UPackage* Z_Construct_UPackage__Script_MinigameCore();
 // ********** End Cross Module References **********************************************************
 
+// ********** Begin Class USplitscreenUI Function GetNumSplits *************************************
+struct Z_Construct_UFunction_USplitscreenUI_GetNumSplits_Statics
+{
+	struct SplitscreenUI_eventGetNumSplits_Parms
+	{
+		int32 ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Splitscreen" },
+		{ "ModuleRelativePath", "Public/Widgets/SplitscreenUI.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_USplitscreenUI_GetNumSplits_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(SplitscreenUI_eventGetNumSplits_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_USplitscreenUI_GetNumSplits_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_USplitscreenUI_GetNumSplits_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_USplitscreenUI_GetNumSplits_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USplitscreenUI_GetNumSplits_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_USplitscreenUI, nullptr, "GetNumSplits", Z_Construct_UFunction_USplitscreenUI_GetNumSplits_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USplitscreenUI_GetNumSplits_Statics::PropPointers), sizeof(Z_Construct_UFunction_USplitscreenUI_GetNumSplits_Statics::SplitscreenUI_eventGetNumSplits_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USplitscreenUI_GetNumSplits_Statics::Function_MetaDataParams), Z_Construct_UFunction_USplitscreenUI_GetNumSplits_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_USplitscreenUI_GetNumSplits_Statics::SplitscreenUI_eventGetNumSplits_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_USplitscreenUI_GetNumSplits()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_USplitscreenUI_GetNumSplits_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(USplitscreenUI::execGetNumSplits)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(int32*)Z_Param__Result=P_THIS->GetNumSplits();
+	P_NATIVE_END;
+}
+// ********** End Class USplitscreenUI Function GetNumSplits ***************************************
+
+// ********** Begin Class USplitscreenUI Function GetRootCanvas ************************************
+struct SplitscreenUI_eventGetRootCanvas_Parms
+{
+	UCanvasPanel* ReturnValue;
+
+	/** Constructor, initializes return property only **/
+	SplitscreenUI_eventGetRootCanvas_Parms()
+		: ReturnValue(NULL)
+	{
+	}
+};
+static FName NAME_USplitscreenUI_GetRootCanvas = FName(TEXT("GetRootCanvas"));
+UCanvasPanel* USplitscreenUI::GetRootCanvas() const
+{
+	SplitscreenUI_eventGetRootCanvas_Parms Parms;
+	UFunction* Func = FindFunctionChecked(NAME_USplitscreenUI_GetRootCanvas);
+		const_cast<USplitscreenUI*>(this)->ProcessEvent(Func,&Parms);
+	return Parms.ReturnValue;
+}
+struct Z_Construct_UFunction_USplitscreenUI_GetRootCanvas_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Widgets/SplitscreenUI.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_USplitscreenUI_GetRootCanvas_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(SplitscreenUI_eventGetRootCanvas_Parms, ReturnValue), Z_Construct_UClass_UCanvasPanel_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_USplitscreenUI_GetRootCanvas_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_USplitscreenUI_GetRootCanvas_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_USplitscreenUI_GetRootCanvas_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USplitscreenUI_GetRootCanvas_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_USplitscreenUI, nullptr, "GetRootCanvas", Z_Construct_UFunction_USplitscreenUI_GetRootCanvas_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USplitscreenUI_GetRootCanvas_Statics::PropPointers), sizeof(SplitscreenUI_eventGetRootCanvas_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x48020800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USplitscreenUI_GetRootCanvas_Statics::Function_MetaDataParams), Z_Construct_UFunction_USplitscreenUI_GetRootCanvas_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(SplitscreenUI_eventGetRootCanvas_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_USplitscreenUI_GetRootCanvas()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_USplitscreenUI_GetRootCanvas_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+// ********** End Class USplitscreenUI Function GetRootCanvas **************************************
+
+// ********** Begin Class USplitscreenUI Function GetSplitPanel ************************************
+struct Z_Construct_UFunction_USplitscreenUI_GetSplitPanel_Statics
+{
+	struct SplitscreenUI_eventGetSplitPanel_Parms
+	{
+		int32 Num;
+		UOverlay* ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Splitscreen" },
+		{ "ModuleRelativePath", "Public/Widgets/SplitscreenUI.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FIntPropertyParams NewProp_Num;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_USplitscreenUI_GetSplitPanel_Statics::NewProp_Num = { "Num", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(SplitscreenUI_eventGetSplitPanel_Parms, Num), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_USplitscreenUI_GetSplitPanel_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(SplitscreenUI_eventGetSplitPanel_Parms, ReturnValue), Z_Construct_UClass_UOverlay_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_USplitscreenUI_GetSplitPanel_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_USplitscreenUI_GetSplitPanel_Statics::NewProp_Num,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_USplitscreenUI_GetSplitPanel_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_USplitscreenUI_GetSplitPanel_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USplitscreenUI_GetSplitPanel_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_USplitscreenUI, nullptr, "GetSplitPanel", Z_Construct_UFunction_USplitscreenUI_GetSplitPanel_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USplitscreenUI_GetSplitPanel_Statics::PropPointers), sizeof(Z_Construct_UFunction_USplitscreenUI_GetSplitPanel_Statics::SplitscreenUI_eventGetSplitPanel_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USplitscreenUI_GetSplitPanel_Statics::Function_MetaDataParams), Z_Construct_UFunction_USplitscreenUI_GetSplitPanel_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_USplitscreenUI_GetSplitPanel_Statics::SplitscreenUI_eventGetSplitPanel_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_USplitscreenUI_GetSplitPanel()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_USplitscreenUI_GetSplitPanel_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(USplitscreenUI::execGetSplitPanel)
+{
+	P_GET_PROPERTY(FIntProperty,Z_Param_Num);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(UOverlay**)Z_Param__Result=P_THIS->GetSplitPanel(Z_Param_Num);
+	P_NATIVE_END;
+}
+// ********** End Class USplitscreenUI Function GetSplitPanel **************************************
+
 // ********** Begin Class USplitscreenUI ***********************************************************
 void USplitscreenUI::StaticRegisterNativesUSplitscreenUI()
 {
+	UClass* Class = USplitscreenUI::StaticClass();
+	static const FNameNativePtrPair Funcs[] = {
+		{ "GetNumSplits", &USplitscreenUI::execGetNumSplits },
+		{ "GetSplitPanel", &USplitscreenUI::execGetSplitPanel },
+	};
+	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
 FClassRegistrationInfo Z_Registration_Info_UClass_USplitscreenUI;
 UClass* USplitscreenUI::GetPrivateStaticClass()
@@ -58,6 +208,7 @@ struct Z_Construct_UClass_USplitscreenUI_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
 		{ "Comment", "/**\n * \n */" },
 		{ "IncludePath", "Widgets/SplitscreenUI.h" },
 		{ "ModuleRelativePath", "Public/Widgets/SplitscreenUI.h" },
@@ -84,6 +235,12 @@ struct Z_Construct_UClass_USplitscreenUI_Statics
 	static const UECodeGen_Private::FStructPropertyParams NewProp_TargetSize;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
+	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_USplitscreenUI_GetNumSplits, "GetNumSplits" }, // 3677521046
+		{ &Z_Construct_UFunction_USplitscreenUI_GetRootCanvas, "GetRootCanvas" }, // 144272371
+		{ &Z_Construct_UFunction_USplitscreenUI_GetSplitPanel, "GetSplitPanel" }, // 3732533482
+	};
+	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<USplitscreenUI>::IsAbstract,
 	};
@@ -112,11 +269,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_USplitscreenUI_Statics:
 	nullptr,
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
-	nullptr,
+	FuncInfo,
 	Z_Construct_UClass_USplitscreenUI_Statics::PropPointers,
 	nullptr,
 	UE_ARRAY_COUNT(DependentSingletons),
-	0,
+	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_USplitscreenUI_Statics::PropPointers),
 	0,
 	0x00B010A0u,
@@ -136,14 +293,14 @@ USplitscreenUI::~USplitscreenUI() {}
 // ********** End Class USplitscreenUI *************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Widgets_SplitscreenUI_h__Script_MinigameCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Widgets_SplitscreenUI_h__Script_MinigameCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_USplitscreenUI, USplitscreenUI::StaticClass, TEXT("USplitscreenUI"), &Z_Registration_Info_UClass_USplitscreenUI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USplitscreenUI), 2146320322U) },
+		{ Z_Construct_UClass_USplitscreenUI, USplitscreenUI::StaticClass, TEXT("USplitscreenUI"), &Z_Registration_Info_UClass_USplitscreenUI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USplitscreenUI), 2353890109U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Widgets_SplitscreenUI_h__Script_MinigameCore_357266059(TEXT("/Script/MinigameCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Widgets_SplitscreenUI_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Widgets_SplitscreenUI_h__Script_MinigameCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Widgets_SplitscreenUI_h__Script_MinigameCore_3683807104(TEXT("/Script/MinigameCore"),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Widgets_SplitscreenUI_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Widgets_SplitscreenUI_h__Script_MinigameCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

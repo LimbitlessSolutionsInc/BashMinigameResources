@@ -5,7 +5,7 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
-#include "MinigameStanding.h"
+#include "Data/MinigameStanding.h"
 #include "BasePointCounter.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FPointsChanged, int, Team, int, Amount);

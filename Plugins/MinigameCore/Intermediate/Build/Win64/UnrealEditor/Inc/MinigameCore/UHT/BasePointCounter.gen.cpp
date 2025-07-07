@@ -5,8 +5,8 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "BasePointCounter.h"
-#include "MinigameStanding.h"
+#include "Components/BasePointCounter.h"
+#include "Data/MinigameStanding.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
@@ -31,7 +31,7 @@ struct Z_Construct_UDelegateFunction_MinigameCore_PointsChanged__DelegateSignatu
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Public/BasePointCounter.h" },
+		{ "ModuleRelativePath", "Public/Components/BasePointCounter.h" },
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_Team;
@@ -99,7 +99,7 @@ struct Z_Construct_UFunction_UBasePointCounter_AddPoints_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Point Counter" },
 		{ "Comment", "// Adds points to the team's point counter. In FFA, the player number is the team number.\n" },
-		{ "ModuleRelativePath", "Public/BasePointCounter.h" },
+		{ "ModuleRelativePath", "Public/Components/BasePointCounter.h" },
 		{ "ToolTip", "Adds points to the team's point counter. In FFA, the player number is the team number." },
 	};
 #endif // WITH_METADATA
@@ -171,7 +171,7 @@ struct Z_Construct_UFunction_UBasePointCounter_GetPoints_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Point Counter" },
 		{ "Comment", "// Returns the current number of points of a team. In FFA, the player number is the team number.\n" },
-		{ "ModuleRelativePath", "Public/BasePointCounter.h" },
+		{ "ModuleRelativePath", "Public/Components/BasePointCounter.h" },
 		{ "ToolTip", "Returns the current number of points of a team. In FFA, the player number is the team number." },
 	};
 #endif // WITH_METADATA
@@ -242,7 +242,7 @@ struct Z_Construct_UFunction_UBasePointCounter_GetPointsByPlayer_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Point Counter" },
 		{ "Comment", "// Returns the current number of points of a player. In FFA, the player number is the team number.\n" },
-		{ "ModuleRelativePath", "Public/BasePointCounter.h" },
+		{ "ModuleRelativePath", "Public/Components/BasePointCounter.h" },
 		{ "ToolTip", "Returns the current number of points of a player. In FFA, the player number is the team number." },
 	};
 #endif // WITH_METADATA
@@ -305,7 +305,7 @@ struct Z_Construct_UFunction_UBasePointCounter_GetStandings_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Point Counter" },
 		{ "Comment", "// Gets the results of the minigame based on the current score\n" },
-		{ "ModuleRelativePath", "Public/BasePointCounter.h" },
+		{ "ModuleRelativePath", "Public/Components/BasePointCounter.h" },
 		{ "ToolTip", "Gets the results of the minigame based on the current score" },
 	};
 #endif // WITH_METADATA
@@ -314,8 +314,8 @@ struct Z_Construct_UFunction_UBasePointCounter_GetStandings_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UBasePointCounter_GetStandings_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FMinigameStanding, METADATA_PARAMS(0, nullptr) }; // 2356597280
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UBasePointCounter_GetStandings_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BasePointCounter_eventGetStandings_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) }; // 2356597280
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UBasePointCounter_GetStandings_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FMinigameStanding, METADATA_PARAMS(0, nullptr) }; // 585325468
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UBasePointCounter_GetStandings_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BasePointCounter_eventGetStandings_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) }; // 585325468
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UBasePointCounter_GetStandings_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UBasePointCounter_GetStandings_Statics::NewProp_ReturnValue_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UBasePointCounter_GetStandings_Statics::NewProp_ReturnValue,
@@ -369,7 +369,7 @@ struct Z_Construct_UFunction_UBasePointCounter_InitializePointCounter_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Point Counter" },
 		{ "Comment", "// Initializes point counter with team information\n" },
-		{ "ModuleRelativePath", "Public/BasePointCounter.h" },
+		{ "ModuleRelativePath", "Public/Components/BasePointCounter.h" },
 		{ "ToolTip", "Initializes point counter with team information" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TeamAssignment_MetaData[] = {
@@ -441,7 +441,7 @@ struct Z_Construct_UFunction_UBasePointCounter_SetPoints_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Point Counter" },
 		{ "Comment", "// Sets a team's point counter to the amount. In FFA, the player number is the team number.\n" },
-		{ "ModuleRelativePath", "Public/BasePointCounter.h" },
+		{ "ModuleRelativePath", "Public/Components/BasePointCounter.h" },
 		{ "ToolTip", "Sets a team's point counter to the amount. In FFA, the player number is the team number." },
 	};
 #endif // WITH_METADATA
@@ -529,22 +529,22 @@ struct Z_Construct_UClass_UBasePointCounter_Statics
 		{ "BlueprintSpawnableComponent", "" },
 		{ "BlueprintType", "true" },
 		{ "ClassGroupNames", "Custom" },
-		{ "IncludePath", "BasePointCounter.h" },
+		{ "IncludePath", "Components/BasePointCounter.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "Public/BasePointCounter.h" },
+		{ "ModuleRelativePath", "Public/Components/BasePointCounter.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnPointsChanged_MetaData[] = {
 		{ "Category", "Point Counter" },
-		{ "ModuleRelativePath", "Public/BasePointCounter.h" },
+		{ "ModuleRelativePath", "Public/Components/BasePointCounter.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TeamPoints_MetaData[] = {
 		{ "Category", "Point Info" },
-		{ "ModuleRelativePath", "Public/BasePointCounter.h" },
+		{ "ModuleRelativePath", "Public/Components/BasePointCounter.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PlayersToTeams_MetaData[] = {
 		{ "Category", "Point Info" },
 		{ "Comment", "// Maps player numbers to teams\n" },
-		{ "ModuleRelativePath", "Public/BasePointCounter.h" },
+		{ "ModuleRelativePath", "Public/Components/BasePointCounter.h" },
 		{ "ToolTip", "Maps player numbers to teams" },
 	};
 #endif // WITH_METADATA
@@ -556,12 +556,12 @@ struct Z_Construct_UClass_UBasePointCounter_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UBasePointCounter_AddPoints, "AddPoints" }, // 3551484085
-		{ &Z_Construct_UFunction_UBasePointCounter_GetPoints, "GetPoints" }, // 1113390403
-		{ &Z_Construct_UFunction_UBasePointCounter_GetPointsByPlayer, "GetPointsByPlayer" }, // 1046211785
-		{ &Z_Construct_UFunction_UBasePointCounter_GetStandings, "GetStandings" }, // 3194793866
-		{ &Z_Construct_UFunction_UBasePointCounter_InitializePointCounter, "InitializePointCounter" }, // 2999947695
-		{ &Z_Construct_UFunction_UBasePointCounter_SetPoints, "SetPoints" }, // 668280701
+		{ &Z_Construct_UFunction_UBasePointCounter_AddPoints, "AddPoints" }, // 2677129301
+		{ &Z_Construct_UFunction_UBasePointCounter_GetPoints, "GetPoints" }, // 346090920
+		{ &Z_Construct_UFunction_UBasePointCounter_GetPointsByPlayer, "GetPointsByPlayer" }, // 1184841961
+		{ &Z_Construct_UFunction_UBasePointCounter_GetStandings, "GetStandings" }, // 190263886
+		{ &Z_Construct_UFunction_UBasePointCounter_InitializePointCounter, "InitializePointCounter" }, // 844582397
+		{ &Z_Construct_UFunction_UBasePointCounter_SetPoints, "SetPoints" }, // 3799764789
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -569,7 +569,7 @@ struct Z_Construct_UClass_UBasePointCounter_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UBasePointCounter_Statics::NewProp_OnPointsChanged = { "OnPointsChanged", nullptr, (EPropertyFlags)0x0010100010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBasePointCounter, OnPointsChanged), Z_Construct_UDelegateFunction_MinigameCore_PointsChanged__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnPointsChanged_MetaData), NewProp_OnPointsChanged_MetaData) }; // 3514636867
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UBasePointCounter_Statics::NewProp_OnPointsChanged = { "OnPointsChanged", nullptr, (EPropertyFlags)0x0010100010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBasePointCounter, OnPointsChanged), Z_Construct_UDelegateFunction_MinigameCore_PointsChanged__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnPointsChanged_MetaData), NewProp_OnPointsChanged_MetaData) }; // 2274746109
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UBasePointCounter_Statics::NewProp_TeamPoints_Inner = { "TeamPoints", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UBasePointCounter_Statics::NewProp_TeamPoints = { "TeamPoints", nullptr, (EPropertyFlags)0x0020080000000004, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBasePointCounter, TeamPoints), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TeamPoints_MetaData), NewProp_TeamPoints_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UBasePointCounter_Statics::NewProp_PlayersToTeams_Inner = { "PlayersToTeams", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
@@ -615,14 +615,14 @@ UBasePointCounter::~UBasePointCounter() {}
 // ********** End Class UBasePointCounter **********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_BasePointCounter_h__Script_MinigameCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h__Script_MinigameCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UBasePointCounter, UBasePointCounter::StaticClass, TEXT("UBasePointCounter"), &Z_Registration_Info_UClass_UBasePointCounter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBasePointCounter), 3523782296U) },
+		{ Z_Construct_UClass_UBasePointCounter, UBasePointCounter::StaticClass, TEXT("UBasePointCounter"), &Z_Registration_Info_UClass_UBasePointCounter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBasePointCounter), 3383986389U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_BasePointCounter_h__Script_MinigameCore_3362167371(TEXT("/Script/MinigameCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_BasePointCounter_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_BasePointCounter_h__Script_MinigameCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h__Script_MinigameCore_515918461(TEXT("/Script/MinigameCore"),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h__Script_MinigameCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

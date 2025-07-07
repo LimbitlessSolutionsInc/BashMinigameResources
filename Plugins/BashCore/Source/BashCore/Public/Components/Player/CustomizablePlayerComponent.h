@@ -8,6 +8,8 @@
 #include "CustomizablePlayerComponent.generated.h"
 
 
+class ABashPlayerController;
+
 UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent))
 class BASHCORE_API UCustomizablePlayerComponent : public UCustomizableSkeletalComponent
 {
@@ -15,6 +17,9 @@ class BASHCORE_API UCustomizablePlayerComponent : public UCustomizableSkeletalCo
 
 	UCustomizablePlayerComponent();
 	
+public:
+	UFUNCTION(BlueprintCallable, Category="Customizable Player")
+	void LoadCustomizableInstance(ABashPlayerController* PC);
 protected:
 	virtual void BeginPlay() override;
 };

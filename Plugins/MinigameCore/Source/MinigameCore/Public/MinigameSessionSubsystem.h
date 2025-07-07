@@ -5,7 +5,7 @@
 
 #include "CoreMinimal.h"
 #include "Subsystems/GameInstanceSubsystem.h"
-#include "MinigameStanding.h"
+#include "Data/MinigameStanding.h"
 #include "MinigameSessionSubsystem.generated.h"
 
 DECLARE_DYNAMIC_DELEGATE_RetVal(int, FGetMinigamePlayerCountSignature);

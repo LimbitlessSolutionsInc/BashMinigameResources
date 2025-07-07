@@ -6,6 +6,7 @@
 #include "GameFramework/Pawn.h"
 #include "MinigamePlayer.generated.h"
 
+struct FInputActionValue;
 class UInputMappingContext;
 class UInputAction;
 class AMinigameBase;
@@ -36,13 +37,22 @@ public:
 	UPROPERTY(BlueprintReadOnly, Category = "Minigame Player")
 	AMinigameBase* Minigame;
 
-private:
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Minigame Input", meta = (AllowPrivateAccess = true))
-	TObjectPtr<UInputMappingContext> InputMapping;
+	UFUNCTION(BlueprintCallable, Category = "Minigame Player")
+	void AddMappingContext();
 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Minigame Input",  meta=(AllowPrivateAccess = true))
+	UFUNCTION(BlueprintCallable, Category = "Minigame Player")
+	void RemoveMappingContext();
+
+private:
+	TObjectPtr<UInputMappingContext> InputMapping;
 	TObjectPtr<UInputAction> ReadyAction;
 
+#if WITH_EDITOR
+	TObjectPtr<UInputAction> ReadyAllPlayersAction;
+
+	void ReadyAllPlayers();
+#endif
+	
 protected:
 	virtual void SetupPlayerInputComponent(UInputComponent* playerInputComponent) override;
 };

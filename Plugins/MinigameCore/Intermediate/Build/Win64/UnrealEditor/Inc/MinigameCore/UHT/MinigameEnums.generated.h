@@ -4,7 +4,7 @@
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-// IWYU pragma: private, include "MinigameEnums.h"
+// IWYU pragma: private, include "Data/MinigameEnums.h"
 
 #ifdef MINIGAMECORE_MinigameEnums_generated_h
 #error "MinigameEnums.generated.h already included, missing '#pragma once' in MinigameEnums.h"
@@ -18,7 +18,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameEnums_h
+#define CURRENT_FILE_ID FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Data_MinigameEnums_h
 
 // ********** Begin Enum EMinigameType *************************************************************
 #define FOREACH_ENUM_EMINIGAMETYPE(op) \

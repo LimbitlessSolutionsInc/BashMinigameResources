@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "ControlDisplay.h"
+#include "Data/ControlDisplay.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
@@ -33,18 +33,18 @@ struct Z_Construct_UScriptStruct_FControlDisplay_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "Comment", "/**\n * \n */" },
-		{ "ModuleRelativePath", "Public/ControlDisplay.h" },
+		{ "ModuleRelativePath", "Public/Data/ControlDisplay.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_image_MetaData[] = {
 		{ "Category", "Control Display" },
 		{ "Comment", "// The image that will be displayed in the instructions. Use to designate what the input is (button, flex, etc.)\n" },
-		{ "ModuleRelativePath", "Public/ControlDisplay.h" },
+		{ "ModuleRelativePath", "Public/Data/ControlDisplay.h" },
 		{ "ToolTip", "The image that will be displayed in the instructions. Use to designate what the input is (button, flex, etc.)" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_text_MetaData[] = {
 		{ "Category", "Control Display" },
 		{ "Comment", "// The text that will be displayed in the instructions. Describe what effect the input will have on the game or player.\n" },
-		{ "ModuleRelativePath", "Public/ControlDisplay.h" },
+		{ "ModuleRelativePath", "Public/Data/ControlDisplay.h" },
 		{ "ToolTip", "The text that will be displayed in the instructions. Describe what effect the input will have on the game or player." },
 	};
 #endif // WITH_METADATA
@@ -88,15 +88,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FControlDisplay()
 // ********** End ScriptStruct FControlDisplay *****************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_ControlDisplay_h__Script_MinigameCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Data_ControlDisplay_h__Script_MinigameCore_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FControlDisplay::StaticStruct, Z_Construct_UScriptStruct_FControlDisplay_Statics::NewStructOps, TEXT("ControlDisplay"), &Z_Registration_Info_UScriptStruct_FControlDisplay, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FControlDisplay), 2672431919U) },
+		{ FControlDisplay::StaticStruct, Z_Construct_UScriptStruct_FControlDisplay_Statics::NewStructOps, TEXT("ControlDisplay"), &Z_Registration_Info_UScriptStruct_FControlDisplay, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FControlDisplay), 2154370425U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_ControlDisplay_h__Script_MinigameCore_1619899810(TEXT("/Script/MinigameCore"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Data_ControlDisplay_h__Script_MinigameCore_962829047(TEXT("/Script/MinigameCore"),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_ControlDisplay_h__Script_MinigameCore_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_ControlDisplay_h__Script_MinigameCore_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Data_ControlDisplay_h__Script_MinigameCore_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Data_ControlDisplay_h__Script_MinigameCore_Statics::ScriptStructInfo),
 	nullptr, 0);
 // ********** End Registration *********************************************************************
 

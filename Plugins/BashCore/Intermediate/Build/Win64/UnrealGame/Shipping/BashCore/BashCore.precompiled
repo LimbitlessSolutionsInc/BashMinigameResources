@@ -2,6 +2,7 @@
 	"OutputFiles": [
 		"..\\..\\..\\x64\\UnrealGame\\Shipping\\BashCore\\Module.BashCore.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Shipping\\BashCore\\BashCore.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\BashCore\\BashCoreLog.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Shipping\\BashCore\\BashGamemode.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Shipping\\BashCore\\CustomizablePlayerComponent.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Shipping\\BashCore\\UIInputComponent.cpp.obj",

@@ -19,38 +19,34 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class AMinigameCapture;
 class AMinigamePlayer;
 class UBasePointCounter;
+class UOverlaySlot;
+class USplitscreenUI;
+class UUserWidget;
 enum class EMinigameType : uint8;
 
 // ********** Begin Delegate FGameStartedSignature *************************************************
-#define FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_24_DELEGATE \
+#define FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_24_DELEGATE \
 MINIGAMECORE_API void FGameStartedSignature_DelegateWrapper(const FMulticastScriptDelegate& GameStartedSignature);
 
 
 // ********** End Delegate FGameStartedSignature ***************************************************
 
 // ********** Begin Delegate FGameEndedSignature ***************************************************
-#define FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_25_DELEGATE \
+#define FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_25_DELEGATE \
 MINIGAMECORE_API void FGameEndedSignature_DelegateWrapper(const FMulticastScriptDelegate& GameEndedSignature);
 
 
 // ********** End Delegate FGameEndedSignature *****************************************************
 
 // ********** Begin Delegate FGameResetSignature ***************************************************
-#define FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_26_DELEGATE \
+#define FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_26_DELEGATE \
 MINIGAMECORE_API void FGameResetSignature_DelegateWrapper(const FMulticastScriptDelegate& GameResetSignature);
 
 
 // ********** End Delegate FGameResetSignature *****************************************************
 
-// ********** Begin Delegate FPracticeModeEndSignature *********************************************
-#define FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_27_DELEGATE \
-MINIGAMECORE_API void FPracticeModeEndSignature_DelegateWrapper(const FMulticastScriptDelegate& PracticeModeEndSignature);
-
-
-// ********** End Delegate FPracticeModeEndSignature ***********************************************
-
 // ********** Begin Class AMinigameBase ************************************************************
-#define FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_39_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_38_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execGetPointCounter); \
 	DECLARE_FUNCTION(execGetTeamType); \
 	DECLARE_FUNCTION(execIsInProgress); \
@@ -60,19 +56,24 @@ MINIGAMECORE_API void FPracticeModeEndSignature_DelegateWrapper(const FMulticast
 	DECLARE_FUNCTION(execSetTimeRemaining); \
 	DECLARE_FUNCTION(execGetTimeRemaining); \
 	DECLARE_FUNCTION(execStartGame); \
+	DECLARE_FUNCTION(execSetupGame); \
+	DECLARE_FUNCTION(execPlayMinigameTransitionEffects); \
+	DECLARE_FUNCTION(execAddWidgetToMinigameUISplit); \
+	DECLARE_FUNCTION(execGetMinigameWidgetRoot); \
 	DECLARE_FUNCTION(execGetNumCameraSplits); \
 	DECLARE_FUNCTION(execGetCamera); \
 	DECLARE_FUNCTION(execAddCamera); \
+	DECLARE_FUNCTION(execGetPlayers); \
 	DECLARE_FUNCTION(execGetPlayer); \
 	DECLARE_FUNCTION(execEndGame); \
 	DECLARE_FUNCTION(execCheckReady); \
 	DECLARE_FUNCTION(execReadyPlayer);
 
 
-#define FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_39_CALLBACK_WRAPPERS
+#define FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_38_CALLBACK_WRAPPERS
 MINIGAMECORE_API UClass* Z_Construct_UClass_AMinigameBase_NoRegister();
 
-#define FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_39_INCLASS_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_38_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMinigameBase(); \
 	friend struct Z_Construct_UClass_AMinigameBase_Statics; \
@@ -83,7 +84,7 @@ public: \
 	DECLARE_SERIALIZER(AMinigameBase)
 
 
-#define FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_39_ENHANCED_CONSTRUCTORS \
+#define FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_38_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	AMinigameBase(AMinigameBase&&) = delete; \
 	AMinigameBase(const AMinigameBase&) = delete; \
@@ -93,14 +94,14 @@ public: \
 	NO_API virtual ~AMinigameBase();
 
 
-#define FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_36_PROLOG
-#define FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_39_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_35_PROLOG
+#define FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_38_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_39_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_39_CALLBACK_WRAPPERS \
-	FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_39_INCLASS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_39_ENHANCED_CONSTRUCTORS \
+	FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_38_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_38_CALLBACK_WRAPPERS \
+	FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_38_INCLASS_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h_38_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -110,6 +111,6 @@ class AMinigameBase;
 // ********** End Class AMinigameBase **************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h
+#define CURRENT_FILE_ID FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

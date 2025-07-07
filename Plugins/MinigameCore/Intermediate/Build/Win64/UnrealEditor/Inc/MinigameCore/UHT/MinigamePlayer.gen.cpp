@@ -14,14 +14,42 @@ void EmptyLinkFunctionForGeneratedCodeMinigamePlayer() {}
 
 // ********** Begin Cross Module References ********************************************************
 ENGINE_API UClass* Z_Construct_UClass_APawn();
-ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputAction_NoRegister();
-ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
 ENHANCEDINPUT_API UScriptStruct* Z_Construct_UScriptStruct_FInputActionValue();
 MINIGAMECORE_API UClass* Z_Construct_UClass_AMinigameBase_NoRegister();
 MINIGAMECORE_API UClass* Z_Construct_UClass_AMinigamePlayer();
 MINIGAMECORE_API UClass* Z_Construct_UClass_AMinigamePlayer_NoRegister();
 UPackage* Z_Construct_UPackage__Script_MinigameCore();
 // ********** End Cross Module References **********************************************************
+
+// ********** Begin Class AMinigamePlayer Function AddMappingContext *******************************
+struct Z_Construct_UFunction_AMinigamePlayer_AddMappingContext_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Minigame Player" },
+		{ "ModuleRelativePath", "Public/Player/MinigamePlayer.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMinigamePlayer_AddMappingContext_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMinigamePlayer, nullptr, "AddMappingContext", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMinigamePlayer_AddMappingContext_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMinigamePlayer_AddMappingContext_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_AMinigamePlayer_AddMappingContext()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AMinigamePlayer_AddMappingContext_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(AMinigamePlayer::execAddMappingContext)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->AddMappingContext();
+	P_NATIVE_END;
+}
+// ********** End Class AMinigamePlayer Function AddMappingContext *********************************
 
 // ********** Begin Class AMinigamePlayer Function ReadyPlayer *************************************
 struct Z_Construct_UFunction_AMinigamePlayer_ReadyPlayer_Statics
@@ -68,12 +96,44 @@ DEFINE_FUNCTION(AMinigamePlayer::execReadyPlayer)
 }
 // ********** End Class AMinigamePlayer Function ReadyPlayer ***************************************
 
+// ********** Begin Class AMinigamePlayer Function RemoveMappingContext ****************************
+struct Z_Construct_UFunction_AMinigamePlayer_RemoveMappingContext_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Minigame Player" },
+		{ "ModuleRelativePath", "Public/Player/MinigamePlayer.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMinigamePlayer_RemoveMappingContext_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMinigamePlayer, nullptr, "RemoveMappingContext", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMinigamePlayer_RemoveMappingContext_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMinigamePlayer_RemoveMappingContext_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_AMinigamePlayer_RemoveMappingContext()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AMinigamePlayer_RemoveMappingContext_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(AMinigamePlayer::execRemoveMappingContext)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->RemoveMappingContext();
+	P_NATIVE_END;
+}
+// ********** End Class AMinigamePlayer Function RemoveMappingContext ******************************
+
 // ********** Begin Class AMinigamePlayer **********************************************************
 void AMinigamePlayer::StaticRegisterNativesAMinigamePlayer()
 {
 	UClass* Class = AMinigamePlayer::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
+		{ "AddMappingContext", &AMinigamePlayer::execAddMappingContext },
 		{ "ReadyPlayer", &AMinigamePlayer::execReadyPlayer },
+		{ "RemoveMappingContext", &AMinigamePlayer::execRemoveMappingContext },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -134,16 +194,6 @@ struct Z_Construct_UClass_AMinigamePlayer_Statics
 		{ "Category", "Minigame Player" },
 		{ "ModuleRelativePath", "Public/Player/MinigamePlayer.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InputMapping_MetaData[] = {
-		{ "AllowPrivateAccess", "TRUE" },
-		{ "Category", "Minigame Input" },
-		{ "ModuleRelativePath", "Public/Player/MinigamePlayer.h" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReadyAction_MetaData[] = {
-		{ "AllowPrivateAccess", "TRUE" },
-		{ "Category", "Minigame Input" },
-		{ "ModuleRelativePath", "Public/Player/MinigamePlayer.h" },
-	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_Team;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_PlayerNumber;
@@ -152,12 +202,12 @@ struct Z_Construct_UClass_AMinigamePlayer_Statics
 	static void NewProp_bIsReady_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsReady;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Minigame;
-	static const UECodeGen_Private::FObjectPropertyParams NewProp_InputMapping;
-	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReadyAction;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_AMinigamePlayer_AddMappingContext, "AddMappingContext" }, // 2835768884
 		{ &Z_Construct_UFunction_AMinigamePlayer_ReadyPlayer, "ReadyPlayer" }, // 2676108870
+		{ &Z_Construct_UFunction_AMinigamePlayer_RemoveMappingContext, "RemoveMappingContext" }, // 1691158015
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -178,16 +228,12 @@ void Z_Construct_UClass_AMinigamePlayer_Statics::NewProp_bIsReady_SetBit(void* O
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AMinigamePlayer_Statics::NewProp_bIsReady = { "bIsReady", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AMinigamePlayer), &Z_Construct_UClass_AMinigamePlayer_Statics::NewProp_bIsReady_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bIsReady_MetaData), NewProp_bIsReady_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMinigamePlayer_Statics::NewProp_Minigame = { "Minigame", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigamePlayer, Minigame), Z_Construct_UClass_AMinigameBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Minigame_MetaData), NewProp_Minigame_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMinigamePlayer_Statics::NewProp_InputMapping = { "InputMapping", nullptr, (EPropertyFlags)0x0144000000010015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigamePlayer, InputMapping), Z_Construct_UClass_UInputMappingContext_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InputMapping_MetaData), NewProp_InputMapping_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMinigamePlayer_Statics::NewProp_ReadyAction = { "ReadyAction", nullptr, (EPropertyFlags)0x0144000000010015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigamePlayer, ReadyAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReadyAction_MetaData), NewProp_ReadyAction_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMinigamePlayer_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigamePlayer_Statics::NewProp_Team,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigamePlayer_Statics::NewProp_PlayerNumber,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigamePlayer_Statics::NewProp_bHasFlexDevice,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigamePlayer_Statics::NewProp_bIsReady,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigamePlayer_Statics::NewProp_Minigame,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigamePlayer_Statics::NewProp_InputMapping,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigamePlayer_Statics::NewProp_ReadyAction,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AMinigamePlayer_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AMinigamePlayer_Statics::DependentSingletons[])() = {
@@ -223,14 +269,14 @@ AMinigamePlayer::~AMinigamePlayer() {}
 // ********** End Class AMinigamePlayer ************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h__Script_MinigameCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h__Script_MinigameCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AMinigamePlayer, AMinigamePlayer::StaticClass, TEXT("AMinigamePlayer"), &Z_Registration_Info_UClass_AMinigamePlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMinigamePlayer), 1313769371U) },
+		{ Z_Construct_UClass_AMinigamePlayer, AMinigamePlayer::StaticClass, TEXT("AMinigamePlayer"), &Z_Registration_Info_UClass_AMinigamePlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMinigamePlayer), 4214636693U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h__Script_MinigameCore_4272126214(TEXT("/Script/MinigameCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h__Script_MinigameCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h__Script_MinigameCore_1301999596(TEXT("/Script/MinigameCore"),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h__Script_MinigameCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

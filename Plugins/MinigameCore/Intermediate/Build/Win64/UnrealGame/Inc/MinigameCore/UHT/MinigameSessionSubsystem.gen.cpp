@@ -6,8 +6,8 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "MinigameSessionSubsystem.h"
+#include "Data/MinigameStanding.h"
 #include "Engine/GameInstance.h"
-#include "MinigameStanding.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
@@ -91,8 +91,8 @@ struct Z_Construct_UFunction_UMinigameSessionSubsystem_GetMinigameResults_Static
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMinigameSessionSubsystem_GetMinigameResults_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FMinigameStanding, METADATA_PARAMS(0, nullptr) }; // 2356597280
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UMinigameSessionSubsystem_GetMinigameResults_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MinigameSessionSubsystem_eventGetMinigameResults_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) }; // 2356597280
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMinigameSessionSubsystem_GetMinigameResults_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FMinigameStanding, METADATA_PARAMS(0, nullptr) }; // 585325468
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UMinigameSessionSubsystem_GetMinigameResults_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MinigameSessionSubsystem_eventGetMinigameResults_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) }; // 585325468
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMinigameSessionSubsystem_GetMinigameResults_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMinigameSessionSubsystem_GetMinigameResults_Statics::NewProp_ReturnValue_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMinigameSessionSubsystem_GetMinigameResults_Statics::NewProp_ReturnValue,
@@ -343,7 +343,7 @@ struct Z_Construct_UClass_UMinigameSessionSubsystem_Statics
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UMinigameSessionSubsystem_GetMinigameResults, "GetMinigameResults" }, // 2841664250
+		{ &Z_Construct_UFunction_UMinigameSessionSubsystem_GetMinigameResults, "GetMinigameResults" }, // 4254838859
 		{ &Z_Construct_UFunction_UMinigameSessionSubsystem_GetMinigameReturnLevel, "GetMinigameReturnLevel" }, // 1430433858
 		{ &Z_Construct_UFunction_UMinigameSessionSubsystem_GetPlayerCount, "GetPlayerCount" }, // 3128610292
 		{ &Z_Construct_UFunction_UMinigameSessionSubsystem_SetMinigameReturnLevel, "SetMinigameReturnLevel" }, // 1579177313
@@ -389,14 +389,14 @@ UMinigameSessionSubsystem::~UMinigameSessionSubsystem() {}
 // ********** End Class UMinigameSessionSubsystem **************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameSessionSubsystem_h__Script_MinigameCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameSessionSubsystem_h__Script_MinigameCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMinigameSessionSubsystem, UMinigameSessionSubsystem::StaticClass, TEXT("UMinigameSessionSubsystem"), &Z_Registration_Info_UClass_UMinigameSessionSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMinigameSessionSubsystem), 1809905030U) },
+		{ Z_Construct_UClass_UMinigameSessionSubsystem, UMinigameSessionSubsystem::StaticClass, TEXT("UMinigameSessionSubsystem"), &Z_Registration_Info_UClass_UMinigameSessionSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMinigameSessionSubsystem), 3292440744U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameSessionSubsystem_h__Script_MinigameCore_1709954979(TEXT("/Script/MinigameCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameSessionSubsystem_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameSessionSubsystem_h__Script_MinigameCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameSessionSubsystem_h__Script_MinigameCore_1740446214(TEXT("/Script/MinigameCore"),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameSessionSubsystem_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameSessionSubsystem_h__Script_MinigameCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************
