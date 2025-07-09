@@ -8,6 +8,17 @@ public class MinigameCore : ModuleRules
 	{
 		bUsePrecompiled = true;
 		
+		PublicIncludePaths.AddRange(
+			new string[] {
+			});
+				
+		
+		PrivateIncludePaths.AddRange(
+			new string[] {
+			}
+			);
+			
+		
 		PublicDependencyModuleNames.AddRange(
 			new string[]
 			{

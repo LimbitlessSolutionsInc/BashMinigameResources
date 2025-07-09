@@ -193,13 +193,12 @@ The GameMode also provides several helpful functions to access information and c
 
 | Dispatcher | Description |
 |---|---|
-| OnGameStart | Triggered after players are spawned and the minigame is fully initialized. This is called after a minigame has finished resetting. |
-| OnGameReset | Returns the amount of time remaining until the minigame automatically ends |
-| OnGameEnd | Sets the amount of time until the minigame ends |
-| OnPracticeModeEnd | Gets the number of players in the minigame. |
+| OnMinigameStartEvent | Triggered after players are spawned and the minigame is fully initialized. This is called after the intro cutscene is finished playing, if there is one. This should be used to kickoff minigame logic |
+| OnMinigameResetEvent | This is called when the minigame resets, before the minigame starts again. Use this to clean up (i.e. destroy actors, reset properties) |
+| OnMinigameEndEvent | Called when the minigame ends, either when the timer runs out or EndGame() is explicitly called. Called before the end cutscene, if any, is played |
 
 
-These event dispatchers are also provided as BlueprintImplementableEvents (called OnMinigameStart, OnMinigameEnd, OnMinigameReset, and MinigameOnPracticeModeEnd). This makes it easier to listen for these events on the gamemode itself, since event dispatchers require manually binding to it.
+These event dispatchers are also provided as BlueprintImplementableEvents (called OnMinigameStart, OnMinigameEnd, and OnMinigameReset). This makes it easier to listen for these events on the gamemode itself, since event dispatchers require manually binding to it.
 
 ## 2.6 Player Spawning
 
@@ -229,11 +228,13 @@ If two player spawns have the same player count, team, and position, only one wi
 
 To support Practice Mode’s requirement to play the minigame several times without reloading the level, minigames must be able to reset.
 
-The “OnReset” blueprint event should be used on the GameMode and Actors to clean up and reset any values that should not be carried over to the next playthrough, or delete actors that are spawned during the minigame.
+The **OnReset** blueprint event should be used on Actors to clean up and reset any values that should not be carried over to the next playthrough, or delete actors that are spawned during the minigame.
 
-Default functionality like points, timers, and MinigameBase properties will automatically be reset and ready to use for the next playthrough. MinigamePlayers spawned through the MinigameBase will also be automatically reset.
+For the minigame, either **OnReset** or **OnMinigameReset** may be used to handle clean up and resetting.
 
-Custom actors or properties on a MinigameBase subclass must manually be reset. 
+Default functionality like points, timers, and MinigameBase properties will automatically be reset and ready to use for the next playthrough. MinigamePlayers spawned through the MinigameBase will also be automatically reset. As such, you should not handle clean up for players or default minigame functionality.
+
+Custom actors or custom properties on a MinigameBase subclass must manually be reset. 
 
 ![Enter image alt description](Images/6rH_Image_8.png)
 
@@ -251,8 +252,11 @@ Here are some helpful properties available to MinigamePlayers:
 | int Team | The team this player is on. |
 | int PlayerNumber | A unique identifier for this player, from 0-4. This can be used with the minigame base to get/set points, get a reference to the player, etc. |
 
-## 3.1 Player Input
+The timing of the Minigame Player's **BeginPlay** is sometimes inconsistent with the minigame's **OnMinigameStart**. To fix this, the Minigame Player has **OnPlayerSpawned**. This is guaranteed to be called *before* the minigame's **OnMinigameStart**. Use **OnPlayerSpawned** if you need this precise timing, like if you need to subscribe to the minigame's **OnMinigameStartEvent**. This is especially important when using an intro cutscene, since the minigame doesn't start until the intro cutscene is completed.
 
+![OnPlayerSpawned event example](Images/OnPlayerSpawned.png)
+
+## 3.1 Player Input
 
 ![Enter image alt description](Images/Ync_Image_9.png)
 

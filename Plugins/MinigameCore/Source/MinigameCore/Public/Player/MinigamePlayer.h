@@ -43,6 +43,10 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Minigame Player")
 	void RemoveMappingContext();
 
+	// Called when the minigame creates the player. This happens before OnMinigameStart is called
+	UFUNCTION(BlueprintImplementableEvent)
+	void OnPlayerSpawned();
+
 private:
 	TObjectPtr<UInputMappingContext> InputMapping;
 	TObjectPtr<UInputAction> ReadyAction;

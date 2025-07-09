@@ -290,7 +290,16 @@ int32 UJoyShockLibrary::JslConnectDevices()
 
 	int res = hid_init();
 
-	devs = hid_enumerate(0x0, 0x0);
+	if (FPlatformProcess::GetDllHandle(TEXT("hidapi.dll")) != nullptr)
+	{
+		devs = hid_enumerate(0x0, 0x0);
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("hidapi.dll not loaded when device enumeration attempted"));
+		return 0;
+	}
+	
 	cur_dev = devs;
 	while (cur_dev) {
 		bool isSupported = false;

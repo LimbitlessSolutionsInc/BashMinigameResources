@@ -32,7 +32,7 @@ struct FMotionState;
 struct FTouchState;
 
 // ********** Begin ScriptStruct FJoyShockState ****************************************************
-#define FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_93_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_93_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FJoyShockState_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -41,7 +41,7 @@ struct FJoyShockState;
 // ********** End ScriptStruct FJoyShockState ******************************************************
 
 // ********** Begin ScriptStruct FJSL4UJoyShockState ***********************************************
-#define FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_131_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_131_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FJSL4UJoyShockState_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -50,7 +50,7 @@ struct FJSL4UJoyShockState;
 // ********** End ScriptStruct FJSL4UJoyShockState *************************************************
 
 // ********** Begin ScriptStruct FIMUState *********************************************************
-#define FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_152_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_152_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FIMUState_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -59,7 +59,7 @@ struct FIMUState;
 // ********** End ScriptStruct FIMUState ***********************************************************
 
 // ********** Begin ScriptStruct FJSL4UIMUState ****************************************************
-#define FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_177_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_177_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FJSL4UIMUState_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -68,7 +68,7 @@ struct FJSL4UIMUState;
 // ********** End ScriptStruct FJSL4UIMUState ******************************************************
 
 // ********** Begin ScriptStruct FMotionState ******************************************************
-#define FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_189_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_189_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMotionState_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -77,7 +77,7 @@ struct FMotionState;
 // ********** End ScriptStruct FMotionState ********************************************************
 
 // ********** Begin ScriptStruct FJSL4UMotionState *************************************************
-#define FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_238_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_238_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FJSL4UMotionState_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -86,7 +86,7 @@ struct FJSL4UMotionState;
 // ********** End ScriptStruct FJSL4UMotionState ***************************************************
 
 // ********** Begin ScriptStruct FTouchState *******************************************************
-#define FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_253_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_253_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FTouchState_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -95,7 +95,7 @@ struct FTouchState;
 // ********** End ScriptStruct FTouchState *********************************************************
 
 // ********** Begin ScriptStruct FJSL4USingleTouchState ********************************************
-#define FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_283_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_283_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FJSL4USingleTouchState_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -104,7 +104,7 @@ struct FJSL4USingleTouchState;
 // ********** End ScriptStruct FJSL4USingleTouchState **********************************************
 
 // ********** Begin ScriptStruct FJSL4UTouchState **************************************************
-#define FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_298_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_298_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FJSL4UTouchState_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -113,7 +113,7 @@ struct FJSL4UTouchState;
 // ********** End ScriptStruct FJSL4UTouchState ****************************************************
 
 // ********** Begin ScriptStruct FJSLAutoCalibration ***********************************************
-#define FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_310_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_310_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FJSLAutoCalibration_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -122,7 +122,7 @@ struct FJSLAutoCalibration;
 // ********** End ScriptStruct FJSLAutoCalibration *************************************************
 
 // ********** Begin ScriptStruct FJSL4USettings ****************************************************
-#define FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_344_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_344_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FJSL4USettings_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -131,7 +131,7 @@ struct FJSL4USettings;
 // ********** End ScriptStruct FJSL4USettings ******************************************************
 
 // ********** Begin ScriptStruct FJSLSettings ******************************************************
-#define FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_374_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_374_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FJSLSettings_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -140,7 +140,7 @@ struct FJSLSettings;
 // ********** End ScriptStruct FJSLSettings ********************************************************
 
 // ********** Begin Class UJoyShockLibrary *********************************************************
-#define FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_404_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_404_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execJslSetPlayerNumber); \
 	DECLARE_FUNCTION(execJslSetRumble); \
 	DECLARE_FUNCTION(execJslSetLightColor); \
@@ -204,7 +204,7 @@ struct FJSLSettings;
 
 JOYSHOCKLIBRARY4UNREAL_API UClass* Z_Construct_UClass_UJoyShockLibrary_NoRegister();
 
-#define FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_404_INCLASS_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_404_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUJoyShockLibrary(); \
 	friend struct Z_Construct_UClass_UJoyShockLibrary_Statics; \
@@ -215,7 +215,7 @@ public: \
 	DECLARE_SERIALIZER(UJoyShockLibrary)
 
 
-#define FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_404_ENHANCED_CONSTRUCTORS \
+#define FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_404_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UJoyShockLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -227,13 +227,13 @@ public: \
 	NO_API virtual ~UJoyShockLibrary();
 
 
-#define FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_401_PROLOG
-#define FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_404_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_401_PROLOG
+#define FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_404_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_404_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_404_INCLASS_NO_PURE_DECLS \
-	FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_404_ENHANCED_CONSTRUCTORS \
+	FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_404_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_404_INCLASS_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h_404_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -243,7 +243,7 @@ class UJoyShockLibrary;
 // ********** End Class UJoyShockLibrary ***********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h
+#define CURRENT_FILE_ID FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h
 
 // ********** Begin Enum EJSL4UControllerType ******************************************************
 #define FOREACH_ENUM_EJSL4UCONTROLLERTYPE(op) \

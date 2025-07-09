@@ -1186,17 +1186,17 @@ struct Z_Construct_UClass_AMinigameBase_Statics
 		{ "Category", "Debug" },
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnGameStart_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnMinigameStartEvent_MetaData[] = {
 		{ "Comment", "// Called after players are spawned and the minigame base has initialized. Also called after every reset\n" },
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
 		{ "ToolTip", "Called after players are spawned and the minigame base has initialized. Also called after every reset" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnGameEnd_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnMinigameEndEvent_MetaData[] = {
 		{ "Comment", "// Triggered when the minigame end has been initialized, either from the timer or explicit call of EndGame()\n" },
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
 		{ "ToolTip", "Triggered when the minigame end has been initialized, either from the timer or explicit call of EndGame()" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnGameReset_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnMinigameResetEvent_MetaData[] = {
 		{ "Comment", "// Triggered right before the minigame is reset. Use this to clean up persistent state\n" },
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
 		{ "ToolTip", "Triggered right before the minigame is reset. Use this to clean up persistent state" },
@@ -1334,9 +1334,9 @@ struct Z_Construct_UClass_AMinigameBase_Statics
 #endif // WITH_METADATA
 	static void NewProp_DebugHideUI_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_DebugHideUI;
-	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnGameStart;
-	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnGameEnd;
-	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnGameReset;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnMinigameStartEvent;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnMinigameEndEvent;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnMinigameResetEvent;
 	static const UECodeGen_Private::FClassPropertyParams NewProp_PlayerObjects_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_PlayerObjects;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_TeamType_Underlying;
@@ -1404,9 +1404,9 @@ void Z_Construct_UClass_AMinigameBase_Statics::NewProp_DebugHideUI_SetBit(void* 
 	((AMinigameBase*)Obj)->DebugHideUI = 1;
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_DebugHideUI = { "DebugHideUI", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AMinigameBase), &Z_Construct_UClass_AMinigameBase_Statics::NewProp_DebugHideUI_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DebugHideUI_MetaData), NewProp_DebugHideUI_MetaData) };
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_OnGameStart = { "OnGameStart", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, OnGameStart), Z_Construct_UDelegateFunction_MinigameCore_GameStartedSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnGameStart_MetaData), NewProp_OnGameStart_MetaData) }; // 214695888
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_OnGameEnd = { "OnGameEnd", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, OnGameEnd), Z_Construct_UDelegateFunction_MinigameCore_GameEndedSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnGameEnd_MetaData), NewProp_OnGameEnd_MetaData) }; // 219998007
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_OnGameReset = { "OnGameReset", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, OnGameReset), Z_Construct_UDelegateFunction_MinigameCore_GameResetSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnGameReset_MetaData), NewProp_OnGameReset_MetaData) }; // 2057380670
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_OnMinigameStartEvent = { "OnMinigameStartEvent", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, OnMinigameStartEvent), Z_Construct_UDelegateFunction_MinigameCore_GameStartedSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnMinigameStartEvent_MetaData), NewProp_OnMinigameStartEvent_MetaData) }; // 214695888
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_OnMinigameEndEvent = { "OnMinigameEndEvent", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, OnMinigameEndEvent), Z_Construct_UDelegateFunction_MinigameCore_GameEndedSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnMinigameEndEvent_MetaData), NewProp_OnMinigameEndEvent_MetaData) }; // 219998007
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_OnMinigameResetEvent = { "OnMinigameResetEvent", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, OnMinigameResetEvent), Z_Construct_UDelegateFunction_MinigameCore_GameResetSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnMinigameResetEvent_MetaData), NewProp_OnMinigameResetEvent_MetaData) }; // 2057380670
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_PlayerObjects_Inner = { "PlayerObjects", nullptr, (EPropertyFlags)0x0004000000000000, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UClass, Z_Construct_UClass_AMinigamePlayer_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_PlayerObjects = { "PlayerObjects", nullptr, (EPropertyFlags)0x0044000000010015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, PlayerObjects), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayerObjects_MetaData), NewProp_PlayerObjects_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_TeamType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
@@ -1446,9 +1446,9 @@ const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMinigameBase_S
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_CurrentCutscene = { "CurrentCutscene", nullptr, (EPropertyFlags)0x0144000000000000, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, CurrentCutscene), Z_Construct_UClass_UMinigameCutsceneManager_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CurrentCutscene_MetaData), NewProp_CurrentCutscene_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMinigameBase_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_DebugHideUI,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_OnGameStart,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_OnGameEnd,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_OnGameReset,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_OnMinigameStartEvent,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_OnMinigameEndEvent,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_OnMinigameResetEvent,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_PlayerObjects_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_PlayerObjects,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_TeamType_Underlying,
@@ -1509,14 +1509,14 @@ AMinigameBase::~AMinigameBase() {}
 // ********** End Class AMinigameBase **************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AMinigameBase, AMinigameBase::StaticClass, TEXT("AMinigameBase"), &Z_Registration_Info_UClass_AMinigameBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMinigameBase), 3136036584U) },
+		{ Z_Construct_UClass_AMinigameBase, AMinigameBase::StaticClass, TEXT("AMinigameBase"), &Z_Registration_Info_UClass_AMinigameBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMinigameBase), 3155477463U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_1865745959(TEXT("/Script/MinigameCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_4120971777(TEXT("/Script/MinigameCore"),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

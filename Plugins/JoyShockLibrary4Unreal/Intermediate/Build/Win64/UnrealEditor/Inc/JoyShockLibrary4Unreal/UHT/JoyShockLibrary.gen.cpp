@@ -52,13 +52,9 @@ struct Z_Construct_UScriptStruct_FJoyShockState_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "// typedef struct JOY_SHOCK_STATE\n" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "typedef struct JOY_SHOCK_STATE" },
-#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_buttons_MetaData[] = {
 		{ "Category", "State" },
@@ -158,13 +154,9 @@ struct Z_Construct_UScriptStruct_FJSL4UJoyShockState_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "// JOY_SHOCK_STATE;\n// typedef struct JOY_SHOCK_STATE\n" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "JOY_SHOCK_STATE;\ntypedef struct JOY_SHOCK_STATE" },
-#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Buttons_MetaData[] = {
 		{ "Category", "State" },
@@ -250,13 +242,9 @@ struct Z_Construct_UScriptStruct_FIMUState_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "// typedef struct IMU_STATE\n" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "typedef struct IMU_STATE" },
-#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_accelX_MetaData[] = {
 		{ "Category", "State" },
@@ -349,13 +337,9 @@ struct Z_Construct_UScriptStruct_FJSL4UIMUState_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "// New Struct\n" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "New Struct" },
-#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Acceleration_MetaData[] = {
 		{ "Category", "State" },
@@ -420,13 +404,9 @@ struct Z_Construct_UScriptStruct_FMotionState_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "// typedef struct MOTION_STATE\n" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "typedef struct MOTION_STATE" },
-#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_quatW_MetaData[] = {
 		{ "Category", "State" },
@@ -575,13 +555,9 @@ struct Z_Construct_UScriptStruct_FJSL4UMotionState_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "// New Struct\n" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "New Struct" },
-#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Orientation_MetaData[] = {
 		{ "Category", "State" },
@@ -653,13 +629,9 @@ struct Z_Construct_UScriptStruct_FTouchState_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "// typedef struct TOUCH_STATE {\n" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "typedef struct TOUCH_STATE {" },
-#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_t0Id_MetaData[] = {
 		{ "Category", "State" },
@@ -776,13 +748,9 @@ struct Z_Construct_UScriptStruct_FJSL4USingleTouchState_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "// TOUCH_STATE;\n" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "TOUCH_STATE;" },
-#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TouchID_MetaData[] = {
 		{ "Category", "State" },
@@ -879,8 +847,8 @@ struct Z_Construct_UScriptStruct_FJSL4UTouchState_Statics
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FJSL4UTouchState_Statics::NewProp_PrimaryTouch = { "PrimaryTouch", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FJSL4UTouchState, PrimaryTouch), Z_Construct_UScriptStruct_FJSL4USingleTouchState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PrimaryTouch_MetaData), NewProp_PrimaryTouch_MetaData) }; // 3062175401
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FJSL4UTouchState_Statics::NewProp_SecondaryTouch = { "SecondaryTouch", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FJSL4UTouchState, SecondaryTouch), Z_Construct_UScriptStruct_FJSL4USingleTouchState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SecondaryTouch_MetaData), NewProp_SecondaryTouch_MetaData) }; // 3062175401
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FJSL4UTouchState_Statics::NewProp_PrimaryTouch = { "PrimaryTouch", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FJSL4UTouchState, PrimaryTouch), Z_Construct_UScriptStruct_FJSL4USingleTouchState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PrimaryTouch_MetaData), NewProp_PrimaryTouch_MetaData) }; // 2241891130
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FJSL4UTouchState_Statics::NewProp_SecondaryTouch = { "SecondaryTouch", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FJSL4UTouchState, SecondaryTouch), Z_Construct_UScriptStruct_FJSL4USingleTouchState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SecondaryTouch_MetaData), NewProp_SecondaryTouch_MetaData) }; // 2241891130
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FJSL4UTouchState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FJSL4UTouchState_Statics::NewProp_PrimaryTouch,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FJSL4UTouchState_Statics::NewProp_SecondaryTouch,
@@ -924,13 +892,9 @@ struct Z_Construct_UScriptStruct_FJSLAutoCalibration_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "// typedef struct JSL_AUTO_CALIBRATION {\n" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "typedef struct JSL_AUTO_CALIBRATION {" },
-#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_confidence_MetaData[] = {
 		{ "Category", "State" },
@@ -1016,9 +980,7 @@ struct Z_Construct_UEnum_JoyShockLibrary4Unreal_EJSL4UControllerType_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "// JSL_AUTO_CALIBRATION;\n" },
-#endif
 		{ "DualSense.DisplayName", "DualSense" },
 		{ "DualSense.Name", "EJSL4UControllerType::DualSense" },
 		{ "DualShock4.DisplayName", "DualShock 4" },
@@ -1030,9 +992,7 @@ struct Z_Construct_UEnum_JoyShockLibrary4Unreal_EJSL4UControllerType_Statics
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
 		{ "ProController.DisplayName", "Pro Controller" },
 		{ "ProController.Name", "EJSL4UControllerType::ProController" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "JSL_AUTO_CALIBRATION;" },
-#endif
 		{ "Undefined.DisplayName", "Undefined" },
 		{ "Undefined.Name", "EJSL4UControllerType::Undefined" },
 	};
@@ -1145,13 +1105,9 @@ struct Z_Construct_UScriptStruct_FJSL4USettings_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "// typedef struct JSL_SETTINGS {\n" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "typedef struct JSL_SETTINGS {" },
-#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GyroSpace_MetaData[] = {
 		{ "Category", "Settings" },
@@ -1209,7 +1165,7 @@ const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FJSL4USett
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FJSL4USettings_Statics::NewProp_Color = { "Color", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FJSL4USettings, Color), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Color_MetaData), NewProp_Color_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FJSL4USettings_Statics::NewProp_PlayerNumber = { "PlayerNumber", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FJSL4USettings, PlayerNumber), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayerNumber_MetaData), NewProp_PlayerNumber_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FJSL4USettings_Statics::NewProp_ControllerType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FJSL4USettings_Statics::NewProp_ControllerType = { "ControllerType", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FJSL4USettings, ControllerType), Z_Construct_UEnum_JoyShockLibrary4Unreal_EJSL4UControllerType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ControllerType_MetaData), NewProp_ControllerType_MetaData) }; // 2875432823
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FJSL4USettings_Statics::NewProp_ControllerType = { "ControllerType", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FJSL4USettings, ControllerType), Z_Construct_UEnum_JoyShockLibrary4Unreal_EJSL4UControllerType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ControllerType_MetaData), NewProp_ControllerType_MetaData) }; // 3956998331
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FJSL4USettings_Statics::NewProp_SplitType = { "SplitType", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FJSL4USettings, SplitType), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SplitType_MetaData), NewProp_SplitType_MetaData) };
 void Z_Construct_UScriptStruct_FJSL4USettings_Statics::NewProp_bIsCalibrating_SetBit(void* Obj)
 {
@@ -1276,13 +1232,9 @@ struct Z_Construct_UScriptStruct_FJSLSettings_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "// typedef struct JSL_SETTINGS {\n" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "typedef struct JSL_SETTINGS {" },
-#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_gyroSpace_MetaData[] = {
 		{ "Category", "Settings" },
@@ -1393,13 +1345,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_GetNumPlayerControllers_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary|Debug" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "// TODO: Remove temporary debug function\n" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "TODO: Remove temporary debug function" },
-#endif
 		{ "WorldContext", "WorldContextObject" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WorldContextObject_MetaData[] = {
@@ -1450,13 +1398,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetAndFlushAccumulatedGyro_St
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_InDeviceId;
@@ -1503,13 +1447,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetControllerInfoAndSettings_
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "// NEW FUNCTION\n" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "NEW FUNCTION" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_DeviceId;
@@ -1518,7 +1458,7 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetControllerInfoAndSettings_
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetControllerInfoAndSettings_Statics::NewProp_DeviceId = { "DeviceId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJSL4UGetControllerInfoAndSettings_Parms, DeviceId), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetControllerInfoAndSettings_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJSL4UGetControllerInfoAndSettings_Parms, ReturnValue), Z_Construct_UScriptStruct_FJSL4USettings, METADATA_PARAMS(0, nullptr) }; // 1059778004
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetControllerInfoAndSettings_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJSL4UGetControllerInfoAndSettings_Parms, ReturnValue), Z_Construct_UScriptStruct_FJSL4USettings, METADATA_PARAMS(0, nullptr) }; // 2515472080
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetControllerInfoAndSettings_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetControllerInfoAndSettings_Statics::NewProp_DeviceId,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetControllerInfoAndSettings_Statics::NewProp_ReturnValue,
@@ -1556,13 +1496,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetIMUState_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "// NEW FUNCTION\n" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "NEW FUNCTION" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_DeviceID;
@@ -1571,7 +1507,7 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetIMUState_Statics
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetIMUState_Statics::NewProp_DeviceID = { "DeviceID", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJSL4UGetIMUState_Parms, DeviceID), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetIMUState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJSL4UGetIMUState_Parms, ReturnValue), Z_Construct_UScriptStruct_FJSL4UIMUState, METADATA_PARAMS(0, nullptr) }; // 3936227341
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetIMUState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJSL4UGetIMUState_Parms, ReturnValue), Z_Construct_UScriptStruct_FJSL4UIMUState, METADATA_PARAMS(0, nullptr) }; // 3000476736
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetIMUState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetIMUState_Statics::NewProp_DeviceID,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetIMUState_Statics::NewProp_ReturnValue,
@@ -1609,13 +1545,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetLeftStick_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "// NEW FUNCTION\n" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "NEW FUNCTION" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_DeviceId;
@@ -1662,13 +1594,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetMotionState_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "// NEW FUNCTION\n" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "NEW FUNCTION" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_DeviceID;
@@ -1677,7 +1605,7 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetMotionState_Statics
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetMotionState_Statics::NewProp_DeviceID = { "DeviceID", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJSL4UGetMotionState_Parms, DeviceID), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetMotionState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJSL4UGetMotionState_Parms, ReturnValue), Z_Construct_UScriptStruct_FJSL4UMotionState, METADATA_PARAMS(0, nullptr) }; // 520995207
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetMotionState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJSL4UGetMotionState_Parms, ReturnValue), Z_Construct_UScriptStruct_FJSL4UMotionState, METADATA_PARAMS(0, nullptr) }; // 1866137965
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetMotionState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetMotionState_Statics::NewProp_DeviceID,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetMotionState_Statics::NewProp_ReturnValue,
@@ -1715,13 +1643,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetRawIMUState_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "// NEW FUNCTION\n" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "NEW FUNCTION" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_DeviceID;
@@ -1730,7 +1654,7 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetRawIMUState_Statics
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetRawIMUState_Statics::NewProp_DeviceID = { "DeviceID", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJSL4UGetRawIMUState_Parms, DeviceID), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetRawIMUState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJSL4UGetRawIMUState_Parms, ReturnValue), Z_Construct_UScriptStruct_FJSL4UIMUState, METADATA_PARAMS(0, nullptr) }; // 3936227341
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetRawIMUState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJSL4UGetRawIMUState_Parms, ReturnValue), Z_Construct_UScriptStruct_FJSL4UIMUState, METADATA_PARAMS(0, nullptr) }; // 3000476736
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetRawIMUState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetRawIMUState_Statics::NewProp_DeviceID,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetRawIMUState_Statics::NewProp_ReturnValue,
@@ -1768,13 +1692,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetRawMotionState_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "// NEW FUNCTION\n" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "NEW FUNCTION" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_DeviceID;
@@ -1783,7 +1703,7 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetRawMotionState_Statics
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetRawMotionState_Statics::NewProp_DeviceID = { "DeviceID", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJSL4UGetRawMotionState_Parms, DeviceID), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetRawMotionState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJSL4UGetRawMotionState_Parms, ReturnValue), Z_Construct_UScriptStruct_FJSL4UMotionState, METADATA_PARAMS(0, nullptr) }; // 520995207
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetRawMotionState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJSL4UGetRawMotionState_Parms, ReturnValue), Z_Construct_UScriptStruct_FJSL4UMotionState, METADATA_PARAMS(0, nullptr) }; // 1866137965
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetRawMotionState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetRawMotionState_Statics::NewProp_DeviceID,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetRawMotionState_Statics::NewProp_ReturnValue,
@@ -1868,13 +1788,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetSimpleState_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_DeviceId;
@@ -1883,7 +1799,7 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetSimpleState_Statics
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetSimpleState_Statics::NewProp_DeviceId = { "DeviceId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJSL4UGetSimpleState_Parms, DeviceId), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetSimpleState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJSL4UGetSimpleState_Parms, ReturnValue), Z_Construct_UScriptStruct_FJSL4UJoyShockState, METADATA_PARAMS(0, nullptr) }; // 3333883751
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetSimpleState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJSL4UGetSimpleState_Parms, ReturnValue), Z_Construct_UScriptStruct_FJSL4UJoyShockState, METADATA_PARAMS(0, nullptr) }; // 399669378
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetSimpleState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetSimpleState_Statics::NewProp_DeviceId,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetSimpleState_Statics::NewProp_ReturnValue,
@@ -1922,14 +1838,10 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetTouch_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "// NEW FUNCTION\n" },
-#endif
 		{ "CPP_Default_bSecondTouch", "false" },
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "NEW FUNCTION" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_DeviceId;
@@ -1986,14 +1898,10 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetTouchState_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "CPP_Default_bPrevious", "false" },
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_DeviceId;
@@ -2009,7 +1917,7 @@ void Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetTouchState_Statics::NewProp_
 	((JoyShockLibrary_eventJSL4UGetTouchState_Parms*)Obj)->bPrevious = 1;
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetTouchState_Statics::NewProp_bPrevious = { "bPrevious", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(JoyShockLibrary_eventJSL4UGetTouchState_Parms), &Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetTouchState_Statics::NewProp_bPrevious_SetBit, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetTouchState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJSL4UGetTouchState_Parms, ReturnValue), Z_Construct_UScriptStruct_FJSL4UTouchState, METADATA_PARAMS(0, nullptr) }; // 3007366577
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetTouchState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJSL4UGetTouchState_Parms, ReturnValue), Z_Construct_UScriptStruct_FJSL4UTouchState, METADATA_PARAMS(0, nullptr) }; // 982850333
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetTouchState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetTouchState_Statics::NewProp_DeviceId,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetTouchState_Statics::NewProp_bPrevious,
@@ -2049,13 +1957,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JSL4USetGyroSpace_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_InDeviceID;
@@ -2143,13 +2047,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslDisconnectAndDisposeAll_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -2184,13 +2084,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetAccelX_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -2237,13 +2133,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetAccelY_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -2290,13 +2182,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetAccelZ_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -2345,13 +2233,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetAndFlushAccumulatedGyro_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -2407,13 +2291,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetAutoCalibrationStatus_Static
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -2422,7 +2302,7 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetAutoCalibrationStatus_Static
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JslGetAutoCalibrationStatus_Statics::NewProp_deviceId = { "deviceId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJslGetAutoCalibrationStatus_Parms, deviceId), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JslGetAutoCalibrationStatus_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJslGetAutoCalibrationStatus_Parms, ReturnValue), Z_Construct_UScriptStruct_FJSLAutoCalibration, METADATA_PARAMS(0, nullptr) }; // 2131711646
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JslGetAutoCalibrationStatus_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJslGetAutoCalibrationStatus_Parms, ReturnValue), Z_Construct_UScriptStruct_FJSLAutoCalibration, METADATA_PARAMS(0, nullptr) }; // 1450566247
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UJoyShockLibrary_JslGetAutoCalibrationStatus_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UJoyShockLibrary_JslGetAutoCalibrationStatus_Statics::NewProp_deviceId,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UJoyShockLibrary_JslGetAutoCalibrationStatus_Statics::NewProp_ReturnValue,
@@ -2460,13 +2340,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetButtons_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -2515,13 +2391,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetCalibrationOffset_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -2577,13 +2449,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetConnectedDeviceHandles_Stati
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* int* */" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "int*" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_OutDeviceHandleArray_Inner;
@@ -2633,13 +2501,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetControllerColor_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\" static int32 JslGetControllerColour(int32 deviceId); */" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\" static int32 JslGetControllerColour(int32 deviceId);" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_InDeviceId;
@@ -2686,13 +2550,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetControllerInfoAndSettings_St
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -2701,7 +2561,7 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetControllerInfoAndSettings_St
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JslGetControllerInfoAndSettings_Statics::NewProp_deviceId = { "deviceId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJslGetControllerInfoAndSettings_Parms, deviceId), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JslGetControllerInfoAndSettings_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJslGetControllerInfoAndSettings_Parms, ReturnValue), Z_Construct_UScriptStruct_FJSLSettings, METADATA_PARAMS(0, nullptr) }; // 1022612596
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JslGetControllerInfoAndSettings_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJslGetControllerInfoAndSettings_Parms, ReturnValue), Z_Construct_UScriptStruct_FJSLSettings, METADATA_PARAMS(0, nullptr) }; // 3258019054
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UJoyShockLibrary_JslGetControllerInfoAndSettings_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UJoyShockLibrary_JslGetControllerInfoAndSettings_Statics::NewProp_deviceId,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UJoyShockLibrary_JslGetControllerInfoAndSettings_Statics::NewProp_ReturnValue,
@@ -2739,13 +2599,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetControllerSplitType_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -2792,13 +2648,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetControllerType_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -2845,13 +2697,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetGyroX_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -2898,13 +2746,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetGyroY_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -2951,13 +2795,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetGyroZ_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -3004,13 +2844,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetIMUState_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -3019,7 +2855,7 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetIMUState_Statics
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JslGetIMUState_Statics::NewProp_deviceId = { "deviceId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJslGetIMUState_Parms, deviceId), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JslGetIMUState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJslGetIMUState_Parms, ReturnValue), Z_Construct_UScriptStruct_FIMUState, METADATA_PARAMS(0, nullptr) }; // 3946382089
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JslGetIMUState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJslGetIMUState_Parms, ReturnValue), Z_Construct_UScriptStruct_FIMUState, METADATA_PARAMS(0, nullptr) }; // 1045335441
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UJoyShockLibrary_JslGetIMUState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UJoyShockLibrary_JslGetIMUState_Statics::NewProp_deviceId,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UJoyShockLibrary_JslGetIMUState_Statics::NewProp_ReturnValue,
@@ -3057,13 +2893,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetLeftTrigger_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -3110,13 +2942,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetLeftX_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -3163,13 +2991,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetLeftY_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -3216,13 +3040,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetMotionState_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -3231,7 +3051,7 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetMotionState_Statics
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JslGetMotionState_Statics::NewProp_deviceId = { "deviceId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJslGetMotionState_Parms, deviceId), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JslGetMotionState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJslGetMotionState_Parms, ReturnValue), Z_Construct_UScriptStruct_FMotionState, METADATA_PARAMS(0, nullptr) }; // 366009385
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JslGetMotionState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJslGetMotionState_Parms, ReturnValue), Z_Construct_UScriptStruct_FMotionState, METADATA_PARAMS(0, nullptr) }; // 3164105239
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UJoyShockLibrary_JslGetMotionState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UJoyShockLibrary_JslGetMotionState_Statics::NewProp_deviceId,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UJoyShockLibrary_JslGetMotionState_Statics::NewProp_ReturnValue,
@@ -3269,13 +3089,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetPollRate_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -3322,13 +3138,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetRightTrigger_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -3375,13 +3187,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetRightX_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -3428,13 +3236,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetRightY_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -3481,13 +3285,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetSimpleState_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -3496,7 +3296,7 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetSimpleState_Statics
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JslGetSimpleState_Statics::NewProp_deviceId = { "deviceId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJslGetSimpleState_Parms, deviceId), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JslGetSimpleState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJslGetSimpleState_Parms, ReturnValue), Z_Construct_UScriptStruct_FJoyShockState, METADATA_PARAMS(0, nullptr) }; // 2739281120
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JslGetSimpleState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJslGetSimpleState_Parms, ReturnValue), Z_Construct_UScriptStruct_FJoyShockState, METADATA_PARAMS(0, nullptr) }; // 2382127637
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UJoyShockLibrary_JslGetSimpleState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UJoyShockLibrary_JslGetSimpleState_Statics::NewProp_deviceId,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UJoyShockLibrary_JslGetSimpleState_Statics::NewProp_ReturnValue,
@@ -3534,13 +3334,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetStickStep_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -3587,13 +3383,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetTimeSinceLastUpdate_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -3641,14 +3433,10 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetTouchDown_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "CPP_Default_secondTouch", "false" },
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -3710,14 +3498,10 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetTouchId_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "CPP_Default_secondTouch", "false" },
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -3775,13 +3559,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetTouchpadDimension_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -3842,14 +3622,10 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetTouchState_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "CPP_Default_previous", "false" },
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -3865,7 +3641,7 @@ void Z_Construct_UFunction_UJoyShockLibrary_JslGetTouchState_Statics::NewProp_pr
 	((JoyShockLibrary_eventJslGetTouchState_Parms*)Obj)->previous = 1;
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JslGetTouchState_Statics::NewProp_previous = { "previous", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(JoyShockLibrary_eventJslGetTouchState_Parms), &Z_Construct_UFunction_UJoyShockLibrary_JslGetTouchState_Statics::NewProp_previous_SetBit, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JslGetTouchState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJslGetTouchState_Parms, ReturnValue), Z_Construct_UScriptStruct_FTouchState, METADATA_PARAMS(0, nullptr) }; // 2107349325
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UJoyShockLibrary_JslGetTouchState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(JoyShockLibrary_eventJslGetTouchState_Parms, ReturnValue), Z_Construct_UScriptStruct_FTouchState, METADATA_PARAMS(0, nullptr) }; // 507316608
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UJoyShockLibrary_JslGetTouchState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UJoyShockLibrary_JslGetTouchState_Statics::NewProp_deviceId,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UJoyShockLibrary_JslGetTouchState_Statics::NewProp_previous,
@@ -3906,14 +3682,10 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetTouchX_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "CPP_Default_secondTouch", "false" },
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -3970,14 +3742,10 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetTouchY_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "CPP_Default_secondTouch", "false" },
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -4033,13 +3801,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslGetTriggerStep_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -4085,13 +3849,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslPauseContinuousCalibration_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -4134,13 +3894,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslResetContinuousCalibration_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -4184,13 +3940,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslSetAutomaticCalibration_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -4245,13 +3997,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslSetCalibrationOffset_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -4307,13 +4055,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslSetGyroSpace_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -4361,13 +4105,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslSetLightColor_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\" static void JslSetLightColour(int32 deviceId, int32 colour); */" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\" static void JslSetLightColour(int32 deviceId, int32 colour);" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_InDeviceId;
@@ -4415,13 +4155,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslSetPlayerNumber_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -4470,13 +4206,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslSetRumble_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -4527,13 +4259,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslStartContinuousCalibration_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -4577,13 +4305,9 @@ struct Z_Construct_UFunction_UJoyShockLibrary_JslStillConnected_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "JoyShockLibrary" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*extern \"C\"*/" },
-#endif
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "extern \"C\"" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_deviceId;
@@ -4724,77 +4448,73 @@ struct Z_Construct_UClass_UJoyShockLibrary_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "// JSL_SETTINGS;\n" },
-#endif
 		{ "IncludePath", "JoyShockLibrary/JoyShockLibrary.h" },
 		{ "ModuleRelativePath", "JoyShockLibrary/JoyShockLibrary.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "JSL_SETTINGS;" },
-#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UJoyShockLibrary_GetNumPlayerControllers, "GetNumPlayerControllers" }, // 52357210
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetAndFlushAccumulatedGyro, "JSL4UGetAndFlushAccumulatedGyro" }, // 3445856381
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetControllerInfoAndSettings, "JSL4UGetControllerInfoAndSettings" }, // 3482316299
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetIMUState, "JSL4UGetIMUState" }, // 88288635
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetLeftStick, "JSL4UGetLeftStick" }, // 1372293431
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetMotionState, "JSL4UGetMotionState" }, // 4105701603
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetRawIMUState, "JSL4UGetRawIMUState" }, // 2865494753
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetRawMotionState, "JSL4UGetRawMotionState" }, // 1365907532
+		{ &Z_Construct_UFunction_UJoyShockLibrary_GetNumPlayerControllers, "GetNumPlayerControllers" }, // 951574218
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetAndFlushAccumulatedGyro, "JSL4UGetAndFlushAccumulatedGyro" }, // 2022166707
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetControllerInfoAndSettings, "JSL4UGetControllerInfoAndSettings" }, // 2898908902
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetIMUState, "JSL4UGetIMUState" }, // 450218118
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetLeftStick, "JSL4UGetLeftStick" }, // 2561545877
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetMotionState, "JSL4UGetMotionState" }, // 977693685
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetRawIMUState, "JSL4UGetRawIMUState" }, // 2021497192
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetRawMotionState, "JSL4UGetRawMotionState" }, // 2006053539
 		{ &Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetRightStick, "JSL4UGetRightStick" }, // 94256140
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetSimpleState, "JSL4UGetSimpleState" }, // 3811046087
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetTouch, "JSL4UGetTouch" }, // 1325251720
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetTouchState, "JSL4UGetTouchState" }, // 1688578535
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JSL4USetGyroSpace, "JSL4USetGyroSpace" }, // 2918539313
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetSimpleState, "JSL4UGetSimpleState" }, // 796040162
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetTouch, "JSL4UGetTouch" }, // 1133733378
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JSL4UGetTouchState, "JSL4UGetTouchState" }, // 3995710784
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JSL4USetGyroSpace, "JSL4USetGyroSpace" }, // 3380550155
 		{ &Z_Construct_UFunction_UJoyShockLibrary_JslConnectDevices, "JslConnectDevices" }, // 3001796712
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslDisconnectAndDisposeAll, "JslDisconnectAndDisposeAll" }, // 3369968678
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetAccelX, "JslGetAccelX" }, // 2123642981
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetAccelY, "JslGetAccelY" }, // 2964572498
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetAccelZ, "JslGetAccelZ" }, // 1399404591
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetAndFlushAccumulatedGyro, "JslGetAndFlushAccumulatedGyro" }, // 3902452216
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetAutoCalibrationStatus, "JslGetAutoCalibrationStatus" }, // 793480660
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetButtons, "JslGetButtons" }, // 3725489223
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetCalibrationOffset, "JslGetCalibrationOffset" }, // 1791189322
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetConnectedDeviceHandles, "JslGetConnectedDeviceHandles" }, // 2190848535
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetControllerColor, "JslGetControllerColor" }, // 2032343436
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetControllerInfoAndSettings, "JslGetControllerInfoAndSettings" }, // 372230043
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetControllerSplitType, "JslGetControllerSplitType" }, // 1920297346
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetControllerType, "JslGetControllerType" }, // 1261708887
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetGyroX, "JslGetGyroX" }, // 2959024644
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetGyroY, "JslGetGyroY" }, // 2721693792
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetGyroZ, "JslGetGyroZ" }, // 4030652444
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetIMUState, "JslGetIMUState" }, // 2428880353
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetLeftTrigger, "JslGetLeftTrigger" }, // 240609942
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetLeftX, "JslGetLeftX" }, // 1356371093
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetLeftY, "JslGetLeftY" }, // 1205156036
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetMotionState, "JslGetMotionState" }, // 199149790
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetPollRate, "JslGetPollRate" }, // 3911102494
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetRightTrigger, "JslGetRightTrigger" }, // 1625365314
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetRightX, "JslGetRightX" }, // 775212960
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetRightY, "JslGetRightY" }, // 1861972994
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetSimpleState, "JslGetSimpleState" }, // 2009132605
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetStickStep, "JslGetStickStep" }, // 499149351
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetTimeSinceLastUpdate, "JslGetTimeSinceLastUpdate" }, // 1850288275
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetTouchDown, "JslGetTouchDown" }, // 3393250233
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetTouchId, "JslGetTouchId" }, // 3069663964
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetTouchpadDimension, "JslGetTouchpadDimension" }, // 582102666
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetTouchState, "JslGetTouchState" }, // 1706021123
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetTouchX, "JslGetTouchX" }, // 4076033036
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetTouchY, "JslGetTouchY" }, // 3380077673
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetTriggerStep, "JslGetTriggerStep" }, // 2253651126
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslPauseContinuousCalibration, "JslPauseContinuousCalibration" }, // 587009136
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslResetContinuousCalibration, "JslResetContinuousCalibration" }, // 2271861807
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslSetAutomaticCalibration, "JslSetAutomaticCalibration" }, // 264345131
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslSetCalibrationOffset, "JslSetCalibrationOffset" }, // 3201135841
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslSetGyroSpace, "JslSetGyroSpace" }, // 1350876117
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslSetLightColor, "JslSetLightColor" }, // 2360825662
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslSetPlayerNumber, "JslSetPlayerNumber" }, // 2659810939
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslSetRumble, "JslSetRumble" }, // 2448835062
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslStartContinuousCalibration, "JslStartContinuousCalibration" }, // 333263045
-		{ &Z_Construct_UFunction_UJoyShockLibrary_JslStillConnected, "JslStillConnected" }, // 378082125
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslDisconnectAndDisposeAll, "JslDisconnectAndDisposeAll" }, // 1170594522
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetAccelX, "JslGetAccelX" }, // 1782366088
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetAccelY, "JslGetAccelY" }, // 844112721
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetAccelZ, "JslGetAccelZ" }, // 541956801
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetAndFlushAccumulatedGyro, "JslGetAndFlushAccumulatedGyro" }, // 1845104753
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetAutoCalibrationStatus, "JslGetAutoCalibrationStatus" }, // 4125636151
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetButtons, "JslGetButtons" }, // 4251522006
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetCalibrationOffset, "JslGetCalibrationOffset" }, // 1918635048
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetConnectedDeviceHandles, "JslGetConnectedDeviceHandles" }, // 2756530744
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetControllerColor, "JslGetControllerColor" }, // 1285904241
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetControllerInfoAndSettings, "JslGetControllerInfoAndSettings" }, // 2134584627
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetControllerSplitType, "JslGetControllerSplitType" }, // 401924753
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetControllerType, "JslGetControllerType" }, // 82434760
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetGyroX, "JslGetGyroX" }, // 2491978309
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetGyroY, "JslGetGyroY" }, // 4165742474
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetGyroZ, "JslGetGyroZ" }, // 2260346851
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetIMUState, "JslGetIMUState" }, // 1276710543
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetLeftTrigger, "JslGetLeftTrigger" }, // 723995443
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetLeftX, "JslGetLeftX" }, // 2390605361
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetLeftY, "JslGetLeftY" }, // 3198937211
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetMotionState, "JslGetMotionState" }, // 504765627
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetPollRate, "JslGetPollRate" }, // 528104254
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetRightTrigger, "JslGetRightTrigger" }, // 3887948117
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetRightX, "JslGetRightX" }, // 4009039308
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetRightY, "JslGetRightY" }, // 2696535532
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetSimpleState, "JslGetSimpleState" }, // 2898814634
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetStickStep, "JslGetStickStep" }, // 2825690981
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetTimeSinceLastUpdate, "JslGetTimeSinceLastUpdate" }, // 4236705995
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetTouchDown, "JslGetTouchDown" }, // 3409842814
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetTouchId, "JslGetTouchId" }, // 1096470435
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetTouchpadDimension, "JslGetTouchpadDimension" }, // 331022489
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetTouchState, "JslGetTouchState" }, // 2534332913
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetTouchX, "JslGetTouchX" }, // 3841951768
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetTouchY, "JslGetTouchY" }, // 448819166
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslGetTriggerStep, "JslGetTriggerStep" }, // 4004216757
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslPauseContinuousCalibration, "JslPauseContinuousCalibration" }, // 2029614393
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslResetContinuousCalibration, "JslResetContinuousCalibration" }, // 2027392414
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslSetAutomaticCalibration, "JslSetAutomaticCalibration" }, // 3017719738
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslSetCalibrationOffset, "JslSetCalibrationOffset" }, // 2117867922
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslSetGyroSpace, "JslSetGyroSpace" }, // 1989339207
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslSetLightColor, "JslSetLightColor" }, // 2508087036
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslSetPlayerNumber, "JslSetPlayerNumber" }, // 3829311359
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslSetRumble, "JslSetRumble" }, // 889341373
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslStartContinuousCalibration, "JslStartContinuousCalibration" }, // 2099129164
+		{ &Z_Construct_UFunction_UJoyShockLibrary_JslStillConnected, "JslStillConnected" }, // 4142094727
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -4836,34 +4556,34 @@ UJoyShockLibrary::~UJoyShockLibrary() {}
 // ********** End Class UJoyShockLibrary ***********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h__Script_JoyShockLibrary4Unreal_Statics
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h__Script_JoyShockLibrary4Unreal_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EJSL4UControllerType_StaticEnum, TEXT("EJSL4UControllerType"), &Z_Registration_Info_UEnum_EJSL4UControllerType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2875432823U) },
+		{ EJSL4UControllerType_StaticEnum, TEXT("EJSL4UControllerType"), &Z_Registration_Info_UEnum_EJSL4UControllerType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3956998331U) },
 		{ EJSL4UGyroSpace_StaticEnum, TEXT("EJSL4UGyroSpace"), &Z_Registration_Info_UEnum_EJSL4UGyroSpace, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 644337271U) },
 	};
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FJoyShockState::StaticStruct, Z_Construct_UScriptStruct_FJoyShockState_Statics::NewStructOps, TEXT("JoyShockState"), &Z_Registration_Info_UScriptStruct_FJoyShockState, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FJoyShockState), 2739281120U) },
-		{ FJSL4UJoyShockState::StaticStruct, Z_Construct_UScriptStruct_FJSL4UJoyShockState_Statics::NewStructOps, TEXT("JSL4UJoyShockState"), &Z_Registration_Info_UScriptStruct_FJSL4UJoyShockState, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FJSL4UJoyShockState), 3333883751U) },
-		{ FIMUState::StaticStruct, Z_Construct_UScriptStruct_FIMUState_Statics::NewStructOps, TEXT("IMUState"), &Z_Registration_Info_UScriptStruct_FIMUState, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIMUState), 3946382089U) },
-		{ FJSL4UIMUState::StaticStruct, Z_Construct_UScriptStruct_FJSL4UIMUState_Statics::NewStructOps, TEXT("JSL4UIMUState"), &Z_Registration_Info_UScriptStruct_FJSL4UIMUState, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FJSL4UIMUState), 3936227341U) },
-		{ FMotionState::StaticStruct, Z_Construct_UScriptStruct_FMotionState_Statics::NewStructOps, TEXT("MotionState"), &Z_Registration_Info_UScriptStruct_FMotionState, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMotionState), 366009385U) },
-		{ FJSL4UMotionState::StaticStruct, Z_Construct_UScriptStruct_FJSL4UMotionState_Statics::NewStructOps, TEXT("JSL4UMotionState"), &Z_Registration_Info_UScriptStruct_FJSL4UMotionState, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FJSL4UMotionState), 520995207U) },
-		{ FTouchState::StaticStruct, Z_Construct_UScriptStruct_FTouchState_Statics::NewStructOps, TEXT("TouchState"), &Z_Registration_Info_UScriptStruct_FTouchState, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FTouchState), 2107349325U) },
-		{ FJSL4USingleTouchState::StaticStruct, Z_Construct_UScriptStruct_FJSL4USingleTouchState_Statics::NewStructOps, TEXT("JSL4USingleTouchState"), &Z_Registration_Info_UScriptStruct_FJSL4USingleTouchState, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FJSL4USingleTouchState), 3062175401U) },
-		{ FJSL4UTouchState::StaticStruct, Z_Construct_UScriptStruct_FJSL4UTouchState_Statics::NewStructOps, TEXT("JSL4UTouchState"), &Z_Registration_Info_UScriptStruct_FJSL4UTouchState, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FJSL4UTouchState), 3007366577U) },
-		{ FJSLAutoCalibration::StaticStruct, Z_Construct_UScriptStruct_FJSLAutoCalibration_Statics::NewStructOps, TEXT("JSLAutoCalibration"), &Z_Registration_Info_UScriptStruct_FJSLAutoCalibration, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FJSLAutoCalibration), 2131711646U) },
-		{ FJSL4USettings::StaticStruct, Z_Construct_UScriptStruct_FJSL4USettings_Statics::NewStructOps, TEXT("JSL4USettings"), &Z_Registration_Info_UScriptStruct_FJSL4USettings, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FJSL4USettings), 1059778004U) },
-		{ FJSLSettings::StaticStruct, Z_Construct_UScriptStruct_FJSLSettings_Statics::NewStructOps, TEXT("JSLSettings"), &Z_Registration_Info_UScriptStruct_FJSLSettings, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FJSLSettings), 1022612596U) },
+		{ FJoyShockState::StaticStruct, Z_Construct_UScriptStruct_FJoyShockState_Statics::NewStructOps, TEXT("JoyShockState"), &Z_Registration_Info_UScriptStruct_FJoyShockState, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FJoyShockState), 2382127637U) },
+		{ FJSL4UJoyShockState::StaticStruct, Z_Construct_UScriptStruct_FJSL4UJoyShockState_Statics::NewStructOps, TEXT("JSL4UJoyShockState"), &Z_Registration_Info_UScriptStruct_FJSL4UJoyShockState, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FJSL4UJoyShockState), 399669378U) },
+		{ FIMUState::StaticStruct, Z_Construct_UScriptStruct_FIMUState_Statics::NewStructOps, TEXT("IMUState"), &Z_Registration_Info_UScriptStruct_FIMUState, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIMUState), 1045335441U) },
+		{ FJSL4UIMUState::StaticStruct, Z_Construct_UScriptStruct_FJSL4UIMUState_Statics::NewStructOps, TEXT("JSL4UIMUState"), &Z_Registration_Info_UScriptStruct_FJSL4UIMUState, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FJSL4UIMUState), 3000476736U) },
+		{ FMotionState::StaticStruct, Z_Construct_UScriptStruct_FMotionState_Statics::NewStructOps, TEXT("MotionState"), &Z_Registration_Info_UScriptStruct_FMotionState, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMotionState), 3164105239U) },
+		{ FJSL4UMotionState::StaticStruct, Z_Construct_UScriptStruct_FJSL4UMotionState_Statics::NewStructOps, TEXT("JSL4UMotionState"), &Z_Registration_Info_UScriptStruct_FJSL4UMotionState, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FJSL4UMotionState), 1866137965U) },
+		{ FTouchState::StaticStruct, Z_Construct_UScriptStruct_FTouchState_Statics::NewStructOps, TEXT("TouchState"), &Z_Registration_Info_UScriptStruct_FTouchState, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FTouchState), 507316608U) },
+		{ FJSL4USingleTouchState::StaticStruct, Z_Construct_UScriptStruct_FJSL4USingleTouchState_Statics::NewStructOps, TEXT("JSL4USingleTouchState"), &Z_Registration_Info_UScriptStruct_FJSL4USingleTouchState, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FJSL4USingleTouchState), 2241891130U) },
+		{ FJSL4UTouchState::StaticStruct, Z_Construct_UScriptStruct_FJSL4UTouchState_Statics::NewStructOps, TEXT("JSL4UTouchState"), &Z_Registration_Info_UScriptStruct_FJSL4UTouchState, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FJSL4UTouchState), 982850333U) },
+		{ FJSLAutoCalibration::StaticStruct, Z_Construct_UScriptStruct_FJSLAutoCalibration_Statics::NewStructOps, TEXT("JSLAutoCalibration"), &Z_Registration_Info_UScriptStruct_FJSLAutoCalibration, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FJSLAutoCalibration), 1450566247U) },
+		{ FJSL4USettings::StaticStruct, Z_Construct_UScriptStruct_FJSL4USettings_Statics::NewStructOps, TEXT("JSL4USettings"), &Z_Registration_Info_UScriptStruct_FJSL4USettings, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FJSL4USettings), 2515472080U) },
+		{ FJSLSettings::StaticStruct, Z_Construct_UScriptStruct_FJSLSettings_Statics::NewStructOps, TEXT("JSLSettings"), &Z_Registration_Info_UScriptStruct_FJSLSettings, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FJSLSettings), 3258019054U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UJoyShockLibrary, UJoyShockLibrary::StaticClass, TEXT("UJoyShockLibrary"), &Z_Registration_Info_UClass_UJoyShockLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UJoyShockLibrary), 779832203U) },
+		{ Z_Construct_UClass_UJoyShockLibrary, UJoyShockLibrary::StaticClass, TEXT("UJoyShockLibrary"), &Z_Registration_Info_UClass_UJoyShockLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UJoyShockLibrary), 1951435348U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h__Script_JoyShockLibrary4Unreal_746903365(TEXT("/Script/JoyShockLibrary4Unreal"),
-	Z_CompiledInDeferFile_FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h__Script_JoyShockLibrary4Unreal_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h__Script_JoyShockLibrary4Unreal_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h__Script_JoyShockLibrary4Unreal_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h__Script_JoyShockLibrary4Unreal_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h__Script_JoyShockLibrary4Unreal_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_OneDrive_Desktop_GitHub_werid_flex_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h__Script_JoyShockLibrary4Unreal_Statics::EnumInfo));
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h__Script_JoyShockLibrary4Unreal_4201755052(TEXT("/Script/JoyShockLibrary4Unreal"),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h__Script_JoyShockLibrary4Unreal_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h__Script_JoyShockLibrary4Unreal_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h__Script_JoyShockLibrary4Unreal_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h__Script_JoyShockLibrary4Unreal_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h__Script_JoyShockLibrary4Unreal_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_JoyShockLibrary_JoyShockLibrary_h__Script_JoyShockLibrary4Unreal_Statics::EnumInfo));
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
