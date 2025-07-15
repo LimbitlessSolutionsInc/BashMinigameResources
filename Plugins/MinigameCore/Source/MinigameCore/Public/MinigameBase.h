@@ -90,6 +90,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "MinigameUI")
 	void PlayMinigameTransitionEffects();
 protected:
+
+	virtual APawn* SpawnDefaultPawnFor_Implementation(AController* NewPlayer, AActor* StartSpot) override;
+	
 	virtual void Tick(float DeltaTime) override;
 
 	virtual void StartPlay() override;

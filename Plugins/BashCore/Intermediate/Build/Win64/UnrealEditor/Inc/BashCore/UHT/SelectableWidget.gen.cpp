@@ -159,14 +159,14 @@ DEFINE_VTABLE_PTR_HELPER_CTOR(USelectableWidget);
 // ********** End Interface USelectableWidget ******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h__Script_BashCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h__Script_BashCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_USelectableWidget, USelectableWidget::StaticClass, TEXT("USelectableWidget"), &Z_Registration_Info_UClass_USelectableWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USelectableWidget), 681419205U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h__Script_BashCore_2990343557(TEXT("/Script/BashCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h__Script_BashCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h__Script_BashCore_2990343557(TEXT("/Script/BashCore"),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h__Script_BashCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

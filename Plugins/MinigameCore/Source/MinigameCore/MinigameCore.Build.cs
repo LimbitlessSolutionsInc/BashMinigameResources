@@ -7,22 +7,12 @@ public class MinigameCore : ModuleRules
 	public MinigameCore(ReadOnlyTargetRules Target) : base(Target)
 	{
 		bUsePrecompiled = true;
-		
-		PublicIncludePaths.AddRange(
-			new string[] {
-			});
-				
-		
-		PrivateIncludePaths.AddRange(
-			new string[] {
-			}
-			);
 			
 		
 		PublicDependencyModuleNames.AddRange(
 			new string[]
 			{
-				"Core", "BashCore",
+				"Core", "BashCore", "LimbitlessBluetoothPlugin",
 				"LevelSequence", "MovieScene",
 				"UMG", "InputCore", "EnhancedInput"
 			}

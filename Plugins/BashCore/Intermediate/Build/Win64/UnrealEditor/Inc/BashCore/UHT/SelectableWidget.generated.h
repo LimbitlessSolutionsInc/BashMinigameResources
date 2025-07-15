@@ -17,15 +17,15 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Interface USelectableWidget ****************************************************
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void OnSelected_Implementation() {}; \
 	DECLARE_FUNCTION(execOnSelected);
 
 
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h_13_CALLBACK_WRAPPERS
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h_13_CALLBACK_WRAPPERS
 BASHCORE_API UClass* Z_Construct_UClass_USelectableWidget_NoRegister();
 
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h_13_ENHANCED_CONSTRUCTORS \
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h_13_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	BASHCORE_API USelectableWidget(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -37,7 +37,7 @@ BASHCORE_API UClass* Z_Construct_UClass_USelectableWidget_NoRegister();
 	virtual ~USelectableWidget() = default;
 
 
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h_13_GENERATED_UINTERFACE_BODY() \
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h_13_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUSelectableWidget(); \
 	friend struct Z_Construct_UClass_USelectableWidget_Statics; \
@@ -48,15 +48,15 @@ public: \
 	DECLARE_SERIALIZER(USelectableWidget)
 
 
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h_13_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h_13_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h_13_GENERATED_UINTERFACE_BODY() \
-	FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h_13_ENHANCED_CONSTRUCTORS \
+	FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h_13_GENERATED_UINTERFACE_BODY() \
+	FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h_13_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h_13_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~ISelectableWidget() {} \
 public: \
@@ -66,13 +66,13 @@ public: \
 	virtual UObject* _getUObject() const { return nullptr; }
 
 
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h_10_PROLOG
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h_21_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h_10_PROLOG
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h_21_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h_13_CALLBACK_WRAPPERS \
-	FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h_13_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h_13_CALLBACK_WRAPPERS \
+	FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h_13_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -82,6 +82,6 @@ class USelectableWidget;
 // ********** End Interface USelectableWidget ******************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h
+#define CURRENT_FILE_ID FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_SelectableWidget_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

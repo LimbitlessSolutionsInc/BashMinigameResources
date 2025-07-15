@@ -9,6 +9,11 @@
 class UInputAction;
 class UEnhancedInputLocalPlayerSubsystem;
 
+/**
+ * Processes raw rotation input data to provide helpful utilities.
+ * Recommended if minigame needs motion inputs for gameplay.
+ * Requires resetting the initial orientation for accurate Z-axis orientation
+ */
 UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent))
 class MINIGAMECORE_API UPlayerRotationComponent : public UActorComponent
 {
@@ -33,10 +38,13 @@ public:
 
 	// Returns the rotation from the set initial orientation
 	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "Player Rotation")
-	FQuat GetDeltaRotation() const { return DeltaRot; }
+	virtual FQuat GetDeltaRotation() const { return DeltaRot; }
 
 	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "Player Rotation")
-	FVector GetDeltaRotationEuler() const { return DeltaRot.Euler(); }
+	FVector GetDeltaRotationEuler() const { return GetDeltaRotation().Euler(); }
+
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "Player Rotation")
+	FRotator GetDeltaRotator() const { return GetDeltaRotation().Rotator(); }
 
 	// Gets the screenspace position of the aimed position. Good for rendering a crosshair on a widget.
 	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "Player Rotation")
@@ -52,14 +60,27 @@ public:
 	// Reads the rotation value from the Rotation input action
 	UFUNCTION(BlueprintCallable, Category = "Player Rotation")
 	FQuat GetRotationInputValue() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Player Rotation")
+	FVector GetRotationInputValueVector() const;
 	
 protected:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Input")
 	TObjectPtr<UInputAction> RotationAction;
 
 	virtual void InitializeComponent() override;
-	
+
+	// Updates AimPos from rotation, usually the delta rotation
+	void UpdateAimPosition(const FQuat& Rotation);
+
 protected:
+	void UpdateDeltaRotation()
+	{
+		DeltaRot = GetRotationInputValue() * InitialRotation.Inverse();
+	}
+	
+	FVector GetRotationInputValueVectorRaw() const;
+	
 	// Screen distance traveled per angle of rotation
 	UPROPERTY(EditDefaultsOnly, Category = "Player Rotation")
 	double AimSensitivity{ 25.0 };

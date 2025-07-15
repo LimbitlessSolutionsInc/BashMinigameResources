@@ -33,13 +33,13 @@ void EmptyLinkFunctionForGeneratedCodeMinigameCore_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xFABA6F06,
-				0x39279C29,
+				0xCE7618C5,
+				0x23DDBCDB,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_MinigameCore.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_MinigameCore.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_MinigameCore(Z_Construct_UPackage__Script_MinigameCore, TEXT("/Script/MinigameCore"), Z_Registration_Info_UPackage__Script_MinigameCore, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xFABA6F06, 0x39279C29));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_MinigameCore(Z_Construct_UPackage__Script_MinigameCore, TEXT("/Script/MinigameCore"), Z_Registration_Info_UPackage__Script_MinigameCore, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xCE7618C5, 0x23DDBCDB));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

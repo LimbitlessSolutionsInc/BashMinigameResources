@@ -272,7 +272,7 @@ ABashGamemode::~ABashGamemode() {}
 // ********** End Class ABashGamemode **************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
 		{ FLoadLevelParams::StaticStruct, Z_Construct_UScriptStruct_FLoadLevelParams_Statics::NewStructOps, TEXT("LoadLevelParams"), &Z_Registration_Info_UScriptStruct_FLoadLevelParams, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FLoadLevelParams), 1997070509U) },
@@ -281,9 +281,9 @@ struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plug
 		{ Z_Construct_UClass_ABashGamemode, ABashGamemode::StaticClass, TEXT("ABashGamemode"), &Z_Registration_Info_UClass_ABashGamemode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABashGamemode), 368478142U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_120804633(TEXT("/Script/BashCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_120804633(TEXT("/Script/BashCore"),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_Statics::ScriptStructInfo),
 	nullptr, 0);
 // ********** End Registration *********************************************************************
 

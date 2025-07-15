@@ -13,6 +13,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerRotationComponent() {}
 
 // ********** Begin Cross Module References ********************************************************
 COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FQuat();
+COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FRotator();
 COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector2D();
 ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
@@ -136,7 +137,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPlaye
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotation_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotation_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotation_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UPlayerRotationComponent, nullptr, "GetDeltaRotation", Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotation_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotation_Statics::PropPointers), sizeof(Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotation_Statics::PlayerRotationComponent_eventGetDeltaRotation_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotation_Statics::Function_MetaDataParams), Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotation_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotation_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UPlayerRotationComponent, nullptr, "GetDeltaRotation", Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotation_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotation_Statics::PropPointers), sizeof(Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotation_Statics::PlayerRotationComponent_eventGetDeltaRotation_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820400, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotation_Statics::Function_MetaDataParams), Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotation_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotation_Statics::PlayerRotationComponent_eventGetDeltaRotation_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotation()
 {
@@ -197,6 +198,48 @@ DEFINE_FUNCTION(UPlayerRotationComponent::execGetDeltaRotationEuler)
 	P_NATIVE_END;
 }
 // ********** End Class UPlayerRotationComponent Function GetDeltaRotationEuler ********************
+
+// ********** Begin Class UPlayerRotationComponent Function GetDeltaRotator ************************
+struct Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotator_Statics
+{
+	struct PlayerRotationComponent_eventGetDeltaRotator_Parms
+	{
+		FRotator ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Player Rotation" },
+		{ "ModuleRelativePath", "Public/Player/PlayerRotationComponent.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotator_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(PlayerRotationComponent_eventGetDeltaRotator_Parms, ReturnValue), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotator_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotator_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotator_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotator_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UPlayerRotationComponent, nullptr, "GetDeltaRotator", Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotator_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotator_Statics::PropPointers), sizeof(Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotator_Statics::PlayerRotationComponent_eventGetDeltaRotator_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotator_Statics::Function_MetaDataParams), Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotator_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotator_Statics::PlayerRotationComponent_eventGetDeltaRotator_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotator()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotator_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UPlayerRotationComponent::execGetDeltaRotator)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(FRotator*)Z_Param__Result=P_THIS->GetDeltaRotator();
+	P_NATIVE_END;
+}
+// ********** End Class UPlayerRotationComponent Function GetDeltaRotator **************************
 
 // ********** Begin Class UPlayerRotationComponent Function GetDirectionFromCamera *****************
 struct Z_Construct_UFunction_UPlayerRotationComponent_GetDirectionFromCamera_Statics
@@ -291,6 +334,48 @@ DEFINE_FUNCTION(UPlayerRotationComponent::execGetRotationInputValue)
 }
 // ********** End Class UPlayerRotationComponent Function GetRotationInputValue ********************
 
+// ********** Begin Class UPlayerRotationComponent Function GetRotationInputValueVector ************
+struct Z_Construct_UFunction_UPlayerRotationComponent_GetRotationInputValueVector_Statics
+{
+	struct PlayerRotationComponent_eventGetRotationInputValueVector_Parms
+	{
+		FVector ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Player Rotation" },
+		{ "ModuleRelativePath", "Public/Player/PlayerRotationComponent.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UPlayerRotationComponent_GetRotationInputValueVector_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(PlayerRotationComponent_eventGetRotationInputValueVector_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPlayerRotationComponent_GetRotationInputValueVector_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlayerRotationComponent_GetRotationInputValueVector_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerRotationComponent_GetRotationInputValueVector_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerRotationComponent_GetRotationInputValueVector_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UPlayerRotationComponent, nullptr, "GetRotationInputValueVector", Z_Construct_UFunction_UPlayerRotationComponent_GetRotationInputValueVector_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerRotationComponent_GetRotationInputValueVector_Statics::PropPointers), sizeof(Z_Construct_UFunction_UPlayerRotationComponent_GetRotationInputValueVector_Statics::PlayerRotationComponent_eventGetRotationInputValueVector_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerRotationComponent_GetRotationInputValueVector_Statics::Function_MetaDataParams), Z_Construct_UFunction_UPlayerRotationComponent_GetRotationInputValueVector_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UPlayerRotationComponent_GetRotationInputValueVector_Statics::PlayerRotationComponent_eventGetRotationInputValueVector_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UPlayerRotationComponent_GetRotationInputValueVector()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UPlayerRotationComponent_GetRotationInputValueVector_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UPlayerRotationComponent::execGetRotationInputValueVector)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(FVector*)Z_Param__Result=P_THIS->GetRotationInputValueVector();
+	P_NATIVE_END;
+}
+// ********** End Class UPlayerRotationComponent Function GetRotationInputValueVector **************
+
 // ********** Begin Class UPlayerRotationComponent Function ResetInitialOrientation ****************
 struct Z_Construct_UFunction_UPlayerRotationComponent_ResetInitialOrientation_Statics
 {
@@ -332,8 +417,10 @@ void UPlayerRotationComponent::StaticRegisterNativesUPlayerRotationComponent()
 		{ "GetAimPosition", &UPlayerRotationComponent::execGetAimPosition },
 		{ "GetDeltaRotation", &UPlayerRotationComponent::execGetDeltaRotation },
 		{ "GetDeltaRotationEuler", &UPlayerRotationComponent::execGetDeltaRotationEuler },
+		{ "GetDeltaRotator", &UPlayerRotationComponent::execGetDeltaRotator },
 		{ "GetDirectionFromCamera", &UPlayerRotationComponent::execGetDirectionFromCamera },
 		{ "GetRotationInputValue", &UPlayerRotationComponent::execGetRotationInputValue },
+		{ "GetRotationInputValueVector", &UPlayerRotationComponent::execGetRotationInputValueVector },
 		{ "ResetInitialOrientation", &UPlayerRotationComponent::execResetInitialOrientation },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -373,8 +460,10 @@ struct Z_Construct_UClass_UPlayerRotationComponent_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "ClassGroupNames", "Custom" },
+		{ "Comment", "/**\n * Processes raw rotation input data to provide helpful utilities.\n * Recommended if minigame needs motion inputs for gameplay.\n * Requires resetting the initial orientation for accurate Z-axis orientation\n */" },
 		{ "IncludePath", "Player/PlayerRotationComponent.h" },
 		{ "ModuleRelativePath", "Public/Player/PlayerRotationComponent.h" },
+		{ "ToolTip", "Processes raw rotation input data to provide helpful utilities.\nRecommended if minigame needs motion inputs for gameplay.\nRequires resetting the initial orientation for accurate Z-axis orientation" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InitialPosition_MetaData[] = {
 		{ "Category", "Player Rotation" },
@@ -413,10 +502,12 @@ struct Z_Construct_UClass_UPlayerRotationComponent_Statics
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UPlayerRotationComponent_AddAimOffset, "AddAimOffset" }, // 827499667
 		{ &Z_Construct_UFunction_UPlayerRotationComponent_GetAimPosition, "GetAimPosition" }, // 667872270
-		{ &Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotation, "GetDeltaRotation" }, // 515634467
+		{ &Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotation, "GetDeltaRotation" }, // 1815841424
 		{ &Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotationEuler, "GetDeltaRotationEuler" }, // 473017462
+		{ &Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotator, "GetDeltaRotator" }, // 3681972672
 		{ &Z_Construct_UFunction_UPlayerRotationComponent_GetDirectionFromCamera, "GetDirectionFromCamera" }, // 2522827164
 		{ &Z_Construct_UFunction_UPlayerRotationComponent_GetRotationInputValue, "GetRotationInputValue" }, // 1386139466
+		{ &Z_Construct_UFunction_UPlayerRotationComponent_GetRotationInputValueVector, "GetRotationInputValueVector" }, // 1927099902
 		{ &Z_Construct_UFunction_UPlayerRotationComponent_ResetInitialOrientation, "ResetInitialOrientation" }, // 3902731151
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -471,14 +562,14 @@ UPlayerRotationComponent::~UPlayerRotationComponent() {}
 // ********** End Class UPlayerRotationComponent ***************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerRotationComponent_h__Script_MinigameCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerRotationComponent_h__Script_MinigameCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UPlayerRotationComponent, UPlayerRotationComponent::StaticClass, TEXT("UPlayerRotationComponent"), &Z_Registration_Info_UClass_UPlayerRotationComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPlayerRotationComponent), 3946523360U) },
+		{ Z_Construct_UClass_UPlayerRotationComponent, UPlayerRotationComponent::StaticClass, TEXT("UPlayerRotationComponent"), &Z_Registration_Info_UClass_UPlayerRotationComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPlayerRotationComponent), 3796062523U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerRotationComponent_h__Script_MinigameCore_1856772744(TEXT("/Script/MinigameCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerRotationComponent_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerRotationComponent_h__Script_MinigameCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerRotationComponent_h__Script_MinigameCore_1272334125(TEXT("/Script/MinigameCore"),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerRotationComponent_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerRotationComponent_h__Script_MinigameCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

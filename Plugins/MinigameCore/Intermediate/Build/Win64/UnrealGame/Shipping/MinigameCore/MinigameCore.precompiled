@@ -12,6 +12,7 @@
 		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\MinigamePlayer.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\PlayerAccelerationComponent.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\PlayerRotationComponent.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\PlayerRotationMovingAverageComponent.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\MinigameUI.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\PracticeModeUI.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\SplitscreenUI.cpp.obj"

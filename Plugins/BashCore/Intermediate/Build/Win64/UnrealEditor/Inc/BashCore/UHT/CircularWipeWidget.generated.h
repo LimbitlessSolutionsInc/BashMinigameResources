@@ -19,14 +19,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct FCircleWipeParams;
 
 // ********** Begin Delegate FOnWipeFilledSignature ************************************************
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h_13_DELEGATE \
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h_13_DELEGATE \
 BASHCORE_API void FOnWipeFilledSignature_DelegateWrapper(const FScriptDelegate& OnWipeFilledSignature);
 
 
 // ********** End Delegate FOnWipeFilledSignature **************************************************
 
 // ********** Begin ScriptStruct FCircleWipeParams *************************************************
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h_18_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h_18_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FCircleWipeParams_Statics; \
 	BASHCORE_API static class UScriptStruct* StaticStruct();
 
@@ -35,17 +35,17 @@ struct FCircleWipeParams;
 // ********** End ScriptStruct FCircleWipeParams ***************************************************
 
 // ********** Begin Class UCircularWipeWidget ******************************************************
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h_31_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h_31_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execCallDelegate); \
 	DECLARE_FUNCTION(execPlayFullWipe); \
 	DECLARE_FUNCTION(execFadeFromBlack); \
 	DECLARE_FUNCTION(execStartWipe);
 
 
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h_31_CALLBACK_WRAPPERS
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h_31_CALLBACK_WRAPPERS
 BASHCORE_API UClass* Z_Construct_UClass_UCircularWipeWidget_NoRegister();
 
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h_31_INCLASS_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h_31_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUCircularWipeWidget(); \
 	friend struct Z_Construct_UClass_UCircularWipeWidget_Statics; \
@@ -56,7 +56,7 @@ public: \
 	DECLARE_SERIALIZER(UCircularWipeWidget)
 
 
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h_31_ENHANCED_CONSTRUCTORS \
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h_31_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UCircularWipeWidget(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -68,14 +68,14 @@ public: \
 	NO_API virtual ~UCircularWipeWidget();
 
 
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h_28_PROLOG
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h_31_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h_28_PROLOG
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h_31_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h_31_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h_31_CALLBACK_WRAPPERS \
-	FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h_31_INCLASS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h_31_ENHANCED_CONSTRUCTORS \
+	FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h_31_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h_31_CALLBACK_WRAPPERS \
+	FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h_31_INCLASS_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h_31_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -85,6 +85,6 @@ class UCircularWipeWidget;
 // ********** End Class UCircularWipeWidget ********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h
+#define CURRENT_FILE_ID FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

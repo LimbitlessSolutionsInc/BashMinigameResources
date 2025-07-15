@@ -7,7 +7,8 @@ public class BashCore : ModuleRules
 	public BashCore(ReadOnlyTargetRules Target) : base(Target)
 	{
 		bUsePrecompiled = true;
-				
+			
+		
 		PublicDependencyModuleNames.AddRange(
 			new string[]
 			{
@@ -27,6 +28,14 @@ public class BashCore : ModuleRules
 				"SlateCore",
 				"CustomizableObject"
 				// ... add private dependencies that you statically link with here ...	
+			}
+			);
+		
+		
+		DynamicallyLoadedModuleNames.AddRange(
+			new string[]
+			{
+				// ... add any modules that your module loads dynamically here ...
 			}
 			);
 	}

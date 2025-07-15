@@ -21,7 +21,7 @@ class UFlexController;
 enum class EFlexColor : uint8;
 
 // ********** Begin Class UBluetoothManagerSubsystem ***********************************************
-#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_BluetoothManagerSubsystem_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_BluetoothManagerSubsystem_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execAssignControllerToPlayer); \
 	DECLARE_FUNCTION(execStopScan); \
 	DECLARE_FUNCTION(execStartScan); \
@@ -30,7 +30,7 @@ enum class EFlexColor : uint8;
 
 PLATFORMMANAGER_API UClass* Z_Construct_UClass_UBluetoothManagerSubsystem_NoRegister();
 
-#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_BluetoothManagerSubsystem_h_26_INCLASS_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_BluetoothManagerSubsystem_h_26_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUBluetoothManagerSubsystem(); \
 	friend struct Z_Construct_UClass_UBluetoothManagerSubsystem_Statics; \
@@ -41,7 +41,7 @@ public: \
 	DECLARE_SERIALIZER(UBluetoothManagerSubsystem)
 
 
-#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_BluetoothManagerSubsystem_h_26_ENHANCED_CONSTRUCTORS \
+#define FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_BluetoothManagerSubsystem_h_26_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UBluetoothManagerSubsystem(); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -53,13 +53,13 @@ public: \
 	NO_API virtual ~UBluetoothManagerSubsystem();
 
 
-#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_BluetoothManagerSubsystem_h_23_PROLOG
-#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_BluetoothManagerSubsystem_h_26_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_BluetoothManagerSubsystem_h_23_PROLOG
+#define FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_BluetoothManagerSubsystem_h_26_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_BluetoothManagerSubsystem_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_BluetoothManagerSubsystem_h_26_INCLASS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_BluetoothManagerSubsystem_h_26_ENHANCED_CONSTRUCTORS \
+	FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_BluetoothManagerSubsystem_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_BluetoothManagerSubsystem_h_26_INCLASS_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_BluetoothManagerSubsystem_h_26_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -69,6 +69,6 @@ class UBluetoothManagerSubsystem;
 // ********** End Class UBluetoothManagerSubsystem *************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_BluetoothManagerSubsystem_h
+#define CURRENT_FILE_ID FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_BluetoothManagerSubsystem_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

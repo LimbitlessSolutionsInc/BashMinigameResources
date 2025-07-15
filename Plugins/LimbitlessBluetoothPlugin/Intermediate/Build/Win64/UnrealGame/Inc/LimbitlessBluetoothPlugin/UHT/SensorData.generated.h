@@ -17,7 +17,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin ScriptStruct FSensorData *******************************************************
-#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_SensorData_h_22_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_SensorData_h_22_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSensorData_Statics; \
 	LIMBITLESSBLUETOOTHPLUGIN_API static class UScriptStruct* StaticStruct();
 
@@ -26,7 +26,7 @@ struct FSensorData;
 // ********** End ScriptStruct FSensorData *********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_SensorData_h
+#define CURRENT_FILE_ID FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_SensorData_h
 
 // ********** Begin Enum EFlexColor ****************************************************************
 #define FOREACH_ENUM_EFLEXCOLOR(op) \

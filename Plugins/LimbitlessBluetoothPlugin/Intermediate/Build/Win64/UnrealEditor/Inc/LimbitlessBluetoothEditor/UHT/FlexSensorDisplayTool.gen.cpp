@@ -326,7 +326,7 @@ UFlexSensorDisplayTool::~UFlexSensorDisplayTool() {}
 // ********** End Class UFlexSensorDisplayTool *****************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothEditor_Public_FlexSensorDisplayTool_h__Script_LimbitlessBluetoothEditor_Statics
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothEditor_Public_FlexSensorDisplayTool_h__Script_LimbitlessBluetoothEditor_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
 		{ FSensorDisplayData::StaticStruct, Z_Construct_UScriptStruct_FSensorDisplayData_Statics::NewStructOps, TEXT("SensorDisplayData"), &Z_Registration_Info_UScriptStruct_FSensorDisplayData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSensorDisplayData), 109474022U) },
@@ -335,9 +335,9 @@ struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin
 		{ Z_Construct_UClass_UFlexSensorDisplayTool, UFlexSensorDisplayTool::StaticClass, TEXT("UFlexSensorDisplayTool"), &Z_Registration_Info_UClass_UFlexSensorDisplayTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UFlexSensorDisplayTool), 2915366502U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothEditor_Public_FlexSensorDisplayTool_h__Script_LimbitlessBluetoothEditor_3892604895(TEXT("/Script/LimbitlessBluetoothEditor"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothEditor_Public_FlexSensorDisplayTool_h__Script_LimbitlessBluetoothEditor_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothEditor_Public_FlexSensorDisplayTool_h__Script_LimbitlessBluetoothEditor_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothEditor_Public_FlexSensorDisplayTool_h__Script_LimbitlessBluetoothEditor_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothEditor_Public_FlexSensorDisplayTool_h__Script_LimbitlessBluetoothEditor_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothEditor_Public_FlexSensorDisplayTool_h__Script_LimbitlessBluetoothEditor_3892604895(TEXT("/Script/LimbitlessBluetoothEditor"),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothEditor_Public_FlexSensorDisplayTool_h__Script_LimbitlessBluetoothEditor_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothEditor_Public_FlexSensorDisplayTool_h__Script_LimbitlessBluetoothEditor_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothEditor_Public_FlexSensorDisplayTool_h__Script_LimbitlessBluetoothEditor_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothEditor_Public_FlexSensorDisplayTool_h__Script_LimbitlessBluetoothEditor_Statics::ScriptStructInfo),
 	nullptr, 0);
 // ********** End Registration *********************************************************************
 

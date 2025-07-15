@@ -20,7 +20,7 @@ class UCustomizableObjectInstance;
 class UPlayerData;
 
 // ********** Begin Class UPlayerData **************************************************************
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execGetCustomizableInstance); \
 	DECLARE_FUNCTION(execSetMobius); \
 	DECLARE_FUNCTION(execSetCoins); \
@@ -33,7 +33,7 @@ class UPlayerData;
 
 BASHCORE_API UClass* Z_Construct_UClass_UPlayerData_NoRegister();
 
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_17_INCLASS_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUPlayerData(); \
 	friend struct Z_Construct_UClass_UPlayerData_Statics; \
@@ -44,7 +44,7 @@ public: \
 	DECLARE_SERIALIZER(UPlayerData)
 
 
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_17_ENHANCED_CONSTRUCTORS \
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_17_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UPlayerData(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -56,13 +56,13 @@ public: \
 	NO_API virtual ~UPlayerData();
 
 
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_14_PROLOG
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_17_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_14_PROLOG
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_17_INCLASS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_17_ENHANCED_CONSTRUCTORS \
+	FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_17_INCLASS_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -72,13 +72,13 @@ class UPlayerData;
 // ********** End Class UPlayerData ****************************************************************
 
 // ********** Begin Class UBashLocalPlayer *********************************************************
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_88_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_88_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execGetPlayerData);
 
 
 BASHCORE_API UClass* Z_Construct_UClass_UBashLocalPlayer_NoRegister();
 
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_88_INCLASS_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_88_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUBashLocalPlayer(); \
 	friend struct Z_Construct_UClass_UBashLocalPlayer_Statics; \
@@ -89,7 +89,7 @@ public: \
 	DECLARE_SERIALIZER(UBashLocalPlayer)
 
 
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_88_ENHANCED_CONSTRUCTORS \
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_88_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UBashLocalPlayer(UBashLocalPlayer&&) = delete; \
 	UBashLocalPlayer(const UBashLocalPlayer&) = delete; \
@@ -99,13 +99,13 @@ public: \
 	NO_API virtual ~UBashLocalPlayer();
 
 
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_85_PROLOG
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_88_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_85_PROLOG
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_88_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_88_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_88_INCLASS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_88_ENHANCED_CONSTRUCTORS \
+	FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_88_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_88_INCLASS_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h_88_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -115,6 +115,6 @@ class UBashLocalPlayer;
 // ********** End Class UBashLocalPlayer ***********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h
+#define CURRENT_FILE_ID FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashLocalPlayer_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

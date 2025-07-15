@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Interface UBluetoothManager ****************************************************
 LIMBITLESSBLUETOOTHPLUGIN_API UClass* Z_Construct_UClass_UBluetoothManager_NoRegister();
 
-#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Managers_BluetoothManager_h_22_ENHANCED_CONSTRUCTORS \
+#define FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Managers_BluetoothManager_h_22_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UBluetoothManager(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -31,7 +31,7 @@ LIMBITLESSBLUETOOTHPLUGIN_API UClass* Z_Construct_UClass_UBluetoothManager_NoReg
 	virtual ~UBluetoothManager() = default;
 
 
-#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Managers_BluetoothManager_h_22_GENERATED_UINTERFACE_BODY() \
+#define FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Managers_BluetoothManager_h_22_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUBluetoothManager(); \
 	friend struct Z_Construct_UClass_UBluetoothManager_Statics; \
@@ -42,15 +42,15 @@ public: \
 	DECLARE_SERIALIZER(UBluetoothManager)
 
 
-#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Managers_BluetoothManager_h_22_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Managers_BluetoothManager_h_22_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Managers_BluetoothManager_h_22_GENERATED_UINTERFACE_BODY() \
-	FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Managers_BluetoothManager_h_22_ENHANCED_CONSTRUCTORS \
+	FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Managers_BluetoothManager_h_22_GENERATED_UINTERFACE_BODY() \
+	FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Managers_BluetoothManager_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Managers_BluetoothManager_h_22_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Managers_BluetoothManager_h_22_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~IBluetoothManager() {} \
 public: \
@@ -59,11 +59,11 @@ public: \
 	virtual UObject* _getUObject() const { return nullptr; }
 
 
-#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Managers_BluetoothManager_h_19_PROLOG
-#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Managers_BluetoothManager_h_30_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Managers_BluetoothManager_h_19_PROLOG
+#define FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Managers_BluetoothManager_h_30_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Managers_BluetoothManager_h_22_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Managers_BluetoothManager_h_22_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -73,6 +73,6 @@ class UBluetoothManager;
 // ********** End Interface UBluetoothManager ******************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Managers_BluetoothManager_h
+#define CURRENT_FILE_ID FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Managers_BluetoothManager_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

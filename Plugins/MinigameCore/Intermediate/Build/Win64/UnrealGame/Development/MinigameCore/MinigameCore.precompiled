@@ -12,6 +12,7 @@
 		"..\\..\\..\\x64\\UnrealGame\\Development\\MinigameCore\\MinigamePlayer.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Development\\MinigameCore\\PlayerAccelerationComponent.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Development\\MinigameCore\\PlayerRotationComponent.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MinigameCore\\PlayerRotationMovingAverageComponent.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Development\\MinigameCore\\MinigameUI.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Development\\MinigameCore\\PracticeModeUI.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Development\\MinigameCore\\SplitscreenUI.cpp.obj"

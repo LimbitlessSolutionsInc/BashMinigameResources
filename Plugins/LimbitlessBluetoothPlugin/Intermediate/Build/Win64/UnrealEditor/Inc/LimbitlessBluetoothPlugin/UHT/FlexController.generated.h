@@ -17,70 +17,70 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Delegate FAnalogReceivedFlexSignature ******************************************
-#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_14_DELEGATE \
+#define FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_14_DELEGATE \
 LIMBITLESSBLUETOOTHPLUGIN_API void FAnalogReceivedFlexSignature_DelegateWrapper(const FMulticastScriptDelegate& AnalogReceivedFlexSignature, float Value);
 
 
 // ********** End Delegate FAnalogReceivedFlexSignature ********************************************
 
 // ********** Begin Delegate FOnRotationReceivedSignature ******************************************
-#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_15_DELEGATE \
+#define FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_15_DELEGATE \
 LIMBITLESSBLUETOOTHPLUGIN_API void FOnRotationReceivedSignature_DelegateWrapper(const FMulticastScriptDelegate& OnRotationReceivedSignature, FVector Value);
 
 
 // ********** End Delegate FOnRotationReceivedSignature ********************************************
 
 // ********** Begin Delegate FOnAccelerationReceivedSignature **************************************
-#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_16_DELEGATE \
+#define FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_16_DELEGATE \
 LIMBITLESSBLUETOOTHPLUGIN_API void FOnAccelerationReceivedSignature_DelegateWrapper(const FMulticastScriptDelegate& OnAccelerationReceivedSignature, FVector Value);
 
 
 // ********** End Delegate FOnAccelerationReceivedSignature ****************************************
 
 // ********** Begin Delegate FOnAngularVelocityReceivedSignature ***********************************
-#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_17_DELEGATE \
+#define FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_17_DELEGATE \
 LIMBITLESSBLUETOOTHPLUGIN_API void FOnAngularVelocityReceivedSignature_DelegateWrapper(const FMulticastScriptDelegate& OnAngularVelocityReceivedSignature, FVector Value);
 
 
 // ********** End Delegate FOnAngularVelocityReceivedSignature *************************************
 
 // ********** Begin Delegate FDiscreteReceivedFlexSignature ****************************************
-#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_18_DELEGATE \
+#define FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_18_DELEGATE \
 LIMBITLESSBLUETOOTHPLUGIN_API void FDiscreteReceivedFlexSignature_DelegateWrapper(const FMulticastScriptDelegate& DiscreteReceivedFlexSignature, int32 Level);
 
 
 // ********** End Delegate FDiscreteReceivedFlexSignature ******************************************
 
 // ********** Begin Delegate FDiscreteThresholdReachedSignature ************************************
-#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_19_DELEGATE \
+#define FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_19_DELEGATE \
 LIMBITLESSBLUETOOTHPLUGIN_API void FDiscreteThresholdReachedSignature_DelegateWrapper(const FMulticastScriptDelegate& DiscreteThresholdReachedSignature, int32 Level);
 
 
 // ********** End Delegate FDiscreteThresholdReachedSignature **************************************
 
 // ********** Begin Delegate FOnCalibrationStartedSignature ****************************************
-#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_21_DELEGATE \
+#define FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_21_DELEGATE \
 LIMBITLESSBLUETOOTHPLUGIN_API void FOnCalibrationStartedSignature_DelegateWrapper(const FMulticastScriptDelegate& OnCalibrationStartedSignature, float Duration);
 
 
 // ********** End Delegate FOnCalibrationStartedSignature ******************************************
 
 // ********** Begin Delegate FOnCalibrationEndedSignature ******************************************
-#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_22_DELEGATE \
+#define FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_22_DELEGATE \
 LIMBITLESSBLUETOOTHPLUGIN_API void FOnCalibrationEndedSignature_DelegateWrapper(const FMulticastScriptDelegate& OnCalibrationEndedSignature);
 
 
 // ********** End Delegate FOnCalibrationEndedSignature ********************************************
 
 // ********** Begin Class UFlexController **********************************************************
-#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execBeginFlexCalibration); \
 	DECLARE_FUNCTION(execBeginIMUCalibration);
 
 
 LIMBITLESSBLUETOOTHPLUGIN_API UClass* Z_Construct_UClass_UFlexController_NoRegister();
 
-#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_29_INCLASS_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_29_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFlexController(); \
 	friend struct Z_Construct_UClass_UFlexController_Statics; \
@@ -91,7 +91,7 @@ public: \
 	DECLARE_SERIALIZER(UFlexController)
 
 
-#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_29_ENHANCED_CONSTRUCTORS \
+#define FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_29_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFlexController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -103,13 +103,13 @@ public: \
 	NO_API virtual ~UFlexController();
 
 
-#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_26_PROLOG
-#define FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_29_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_26_PROLOG
+#define FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_29_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_29_INCLASS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_29_ENHANCED_CONSTRUCTORS \
+	FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_29_INCLASS_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h_29_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -119,6 +119,6 @@ class UFlexController;
 // ********** End Class UFlexController ************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h
+#define CURRENT_FILE_ID FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_FlexController_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -100,14 +100,14 @@ UWindowsFlexController::~UWindowsFlexController() {}
 // ********** End Class UWindowsFlexController *****************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBTWindows_Public_WindowsFlexController_h__Script_LimbitlessBTWindows_Statics
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBTWindows_Public_WindowsFlexController_h__Script_LimbitlessBTWindows_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UWindowsFlexController, UWindowsFlexController::StaticClass, TEXT("UWindowsFlexController"), &Z_Registration_Info_UClass_UWindowsFlexController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UWindowsFlexController), 123888930U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBTWindows_Public_WindowsFlexController_h__Script_LimbitlessBTWindows_278266075(TEXT("/Script/LimbitlessBTWindows"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBTWindows_Public_WindowsFlexController_h__Script_LimbitlessBTWindows_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBTWindows_Public_WindowsFlexController_h__Script_LimbitlessBTWindows_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBTWindows_Public_WindowsFlexController_h__Script_LimbitlessBTWindows_278266075(TEXT("/Script/LimbitlessBTWindows"),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBTWindows_Public_WindowsFlexController_h__Script_LimbitlessBTWindows_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBTWindows_Public_WindowsFlexController_h__Script_LimbitlessBTWindows_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

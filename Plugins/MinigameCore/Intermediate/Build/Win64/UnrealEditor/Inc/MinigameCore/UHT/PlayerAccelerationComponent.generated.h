@@ -17,21 +17,21 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Delegate FOnMovementTriggeredSignature *****************************************
-#define FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h_13_DELEGATE \
+#define FID_Users_zombi_Downloads_P_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h_13_DELEGATE \
 MINIGAMECORE_API void FOnMovementTriggeredSignature_DelegateWrapper(const FScriptDelegate& OnMovementTriggeredSignature);
 
 
 // ********** End Delegate FOnMovementTriggeredSignature *******************************************
 
 // ********** Begin Delegate FEvaluateMovementSignature ********************************************
-#define FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h_14_DELEGATE \
+#define FID_Users_zombi_Downloads_P_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h_14_DELEGATE \
 MINIGAMECORE_API bool FEvaluateMovementSignature_DelegateWrapper(const FScriptDelegate& EvaluateMovementSignature, FVector CoordinateAcceleration);
 
 
 // ********** End Delegate FEvaluateMovementSignature **********************************************
 
 // ********** Begin Class UPlayerAccelerationComponent *********************************************
-#define FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_P_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execGetAccelerationInputValue); \
 	DECLARE_FUNCTION(execGetCoordinateAcceleration); \
 	DECLARE_FUNCTION(execListenForMovement);
@@ -39,7 +39,7 @@ MINIGAMECORE_API bool FEvaluateMovementSignature_DelegateWrapper(const FScriptDe
 
 MINIGAMECORE_API UClass* Z_Construct_UClass_UPlayerAccelerationComponent_NoRegister();
 
-#define FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h_19_INCLASS_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_P_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUPlayerAccelerationComponent(); \
 	friend struct Z_Construct_UClass_UPlayerAccelerationComponent_Statics; \
@@ -50,7 +50,7 @@ public: \
 	DECLARE_SERIALIZER(UPlayerAccelerationComponent)
 
 
-#define FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h_19_ENHANCED_CONSTRUCTORS \
+#define FID_Users_zombi_Downloads_P_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h_19_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UPlayerAccelerationComponent(UPlayerAccelerationComponent&&) = delete; \
 	UPlayerAccelerationComponent(const UPlayerAccelerationComponent&) = delete; \
@@ -60,13 +60,13 @@ public: \
 	NO_API virtual ~UPlayerAccelerationComponent();
 
 
-#define FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h_16_PROLOG
-#define FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h_19_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_P_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h_16_PROLOG
+#define FID_Users_zombi_Downloads_P_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h_19_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h_19_INCLASS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h_19_ENHANCED_CONSTRUCTORS \
+	FID_Users_zombi_Downloads_P_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_P_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h_19_INCLASS_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_P_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -76,6 +76,6 @@ class UPlayerAccelerationComponent;
 // ********** End Class UPlayerAccelerationComponent ***********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h
+#define CURRENT_FILE_ID FID_Users_zombi_Downloads_P_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

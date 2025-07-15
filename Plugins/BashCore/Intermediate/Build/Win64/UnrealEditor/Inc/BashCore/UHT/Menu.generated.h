@@ -19,14 +19,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UUserWidget;
 
 // ********** Begin Class UMenu ********************************************************************
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execGetDefaultSelectedWidget);
 
 
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h_16_CALLBACK_WRAPPERS
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h_16_CALLBACK_WRAPPERS
 BASHCORE_API UClass* Z_Construct_UClass_UMenu_NoRegister();
 
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h_16_INCLASS_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMenu(); \
 	friend struct Z_Construct_UClass_UMenu_Statics; \
@@ -37,7 +37,7 @@ public: \
 	DECLARE_SERIALIZER(UMenu)
 
 
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h_16_ENHANCED_CONSTRUCTORS \
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h_16_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UMenu(UMenu&&) = delete; \
 	UMenu(const UMenu&) = delete; \
@@ -47,14 +47,14 @@ public: \
 	NO_API virtual ~UMenu();
 
 
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h_13_PROLOG
-#define FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h_16_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h_13_PROLOG
+#define FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h_16_CALLBACK_WRAPPERS \
-	FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h_16_INCLASS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h_16_ENHANCED_CONSTRUCTORS \
+	FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h_16_CALLBACK_WRAPPERS \
+	FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h_16_INCLASS_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -64,6 +64,6 @@ class UMenu;
 // ********** End Class UMenu **********************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_Downloads_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h
+#define CURRENT_FILE_ID FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
