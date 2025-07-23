@@ -10,7 +10,8 @@
 	"DocsURL": "",
 	"MarketplaceURL": "",
 	"SupportURL": "",
-	"EngineVersion": "5.6.0",
 	"CanContainContent": true,
-	"Installed": true
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false
 }
