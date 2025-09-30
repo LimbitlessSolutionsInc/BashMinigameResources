@@ -12,7 +12,7 @@ class UCustomizableObjectInstance;
 class UCustomizableObject;
 
 UCLASS(BlueprintType)
-class UPlayerData : public UObject
+class BASHCORE_API UPlayerData : public UObject
 {
 	GENERATED_BODY()
 
@@ -22,13 +22,22 @@ public:
 	int GetTilePos() const
 	{
 		return TilePos;
-	};
+	}
 
 	UFUNCTION(BlueprintCallable, Category = "Player Data")
-	int GetCoins() const
+	void SetPlayerNum(int Num)
 	{
-		return Coins;
+		PlayerNum = Num;
 	}
+
+	UFUNCTION(BlueprintCallable, Category = "Player Data")
+	void SetTilePos(int NewTilePos)
+	{
+		TilePos = NewTilePos;
+	}
+
+	UFUNCTION(BlueprintCallable, Category = "Player Data")
+	int GetCoins() const;
 
 	UFUNCTION(BlueprintCallable, Category = "Player Data")
 	int GetMobius() const
@@ -41,16 +50,14 @@ public:
 	{
 		return PlayerNum;
 	}
+	
+	UFUNCTION(BlueprintCallable, Category = "Player Data")
+	void SetCoins(int newCoins);
 
 	UFUNCTION(BlueprintCallable, Category = "Player Data")
-	void SetTilePos(int newTilePos)
+	void ModifyCoins(int DeltaCoins)
 	{
-		TilePos = newTilePos;
-	}
-	UFUNCTION(BlueprintCallable, Category = "Player Data")
-	void SetCoins(int newCoins)
-	{
-		Coins = newCoins;
+		SetCoins(FMath::Max(Coins + DeltaCoins, 0));
 	}
 	UFUNCTION(BlueprintCallable, Category = "Player Data")
 	void SetMobius(int newMobius)
@@ -64,22 +71,29 @@ public:
 		return CustomizableObjectInstance;
 	}
 
-public:
+	UFUNCTION(BlueprintCallable, Category = "Player Data")
+	void AddBoardItem(UObject* Item);
+
+	UFUNCTION(BlueprintCallable, Category = "Player Data")
+	void RemoveBoardItem(UObject* Item);
+	
+	UFUNCTION(BlueprintCallable, Category = "Player Data")
+	const TArray<UObject*>& GetBoardItems() const;
+	
+	void InitializeCustomizableInstance(UCustomizableObject* CO);
+
+private:
 	int PlayerNum = -1;
-	UPROPERTY()
 	int PlayerOrder = 0;
-	UPROPERTY(BlueprintReadWrite, Category = "Player Data")
 	int TilePos = 0;
-	UPROPERTY(BlueprintReadWrite, Category = "Player Data")
 	int Coins = 0;
-	UPROPERTY(BlueprintReadWrite, Category = "Player Data")
 	int Mobius = 0;
 
 	UPROPERTY()
-	UCustomizableObjectInstance* CustomizableObjectInstance;
+	TArray<TObjectPtr<UObject>> BoardItems{};
 
-	void InitializeCustomizableInstance(UCustomizableObject* CO);
-	
+	UPROPERTY()
+	UCustomizableObjectInstance* CustomizableObjectInstance;
 };
 
 UCLASS()

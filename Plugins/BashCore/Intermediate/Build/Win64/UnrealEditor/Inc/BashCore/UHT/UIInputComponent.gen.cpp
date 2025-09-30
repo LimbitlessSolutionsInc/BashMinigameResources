@@ -481,6 +481,238 @@ DEFINE_FUNCTION(UUIInputComponent::execNavigateUp)
 }
 // ********** End Class UUIInputComponent Function NavigateUp **************************************
 
+// ********** Begin Class UUIInputComponent Function OnDownCompleted *******************************
+struct Z_Construct_UFunction_UUIInputComponent_OnDownCompleted_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Components/Player/UIInputComponent.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UUIInputComponent_OnDownCompleted_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UUIInputComponent, nullptr, "OnDownCompleted", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UUIInputComponent_OnDownCompleted_Statics::Function_MetaDataParams), Z_Construct_UFunction_UUIInputComponent_OnDownCompleted_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_UUIInputComponent_OnDownCompleted()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UUIInputComponent_OnDownCompleted_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UUIInputComponent::execOnDownCompleted)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->OnDownCompleted();
+	P_NATIVE_END;
+}
+// ********** End Class UUIInputComponent Function OnDownCompleted *********************************
+
+// ********** Begin Class UUIInputComponent Function OnDownHeld ************************************
+struct Z_Construct_UFunction_UUIInputComponent_OnDownHeld_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Components/Player/UIInputComponent.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UUIInputComponent_OnDownHeld_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UUIInputComponent, nullptr, "OnDownHeld", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UUIInputComponent_OnDownHeld_Statics::Function_MetaDataParams), Z_Construct_UFunction_UUIInputComponent_OnDownHeld_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_UUIInputComponent_OnDownHeld()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UUIInputComponent_OnDownHeld_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UUIInputComponent::execOnDownHeld)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->OnDownHeld();
+	P_NATIVE_END;
+}
+// ********** End Class UUIInputComponent Function OnDownHeld **************************************
+
+// ********** Begin Class UUIInputComponent Function OnLeftCompleted *******************************
+struct Z_Construct_UFunction_UUIInputComponent_OnLeftCompleted_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Components/Player/UIInputComponent.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UUIInputComponent_OnLeftCompleted_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UUIInputComponent, nullptr, "OnLeftCompleted", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UUIInputComponent_OnLeftCompleted_Statics::Function_MetaDataParams), Z_Construct_UFunction_UUIInputComponent_OnLeftCompleted_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_UUIInputComponent_OnLeftCompleted()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UUIInputComponent_OnLeftCompleted_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UUIInputComponent::execOnLeftCompleted)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->OnLeftCompleted();
+	P_NATIVE_END;
+}
+// ********** End Class UUIInputComponent Function OnLeftCompleted *********************************
+
+// ********** Begin Class UUIInputComponent Function OnLeftHeld ************************************
+struct Z_Construct_UFunction_UUIInputComponent_OnLeftHeld_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Components/Player/UIInputComponent.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UUIInputComponent_OnLeftHeld_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UUIInputComponent, nullptr, "OnLeftHeld", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UUIInputComponent_OnLeftHeld_Statics::Function_MetaDataParams), Z_Construct_UFunction_UUIInputComponent_OnLeftHeld_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_UUIInputComponent_OnLeftHeld()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UUIInputComponent_OnLeftHeld_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UUIInputComponent::execOnLeftHeld)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->OnLeftHeld();
+	P_NATIVE_END;
+}
+// ********** End Class UUIInputComponent Function OnLeftHeld **************************************
+
+// ********** Begin Class UUIInputComponent Function OnRightCompleted ******************************
+struct Z_Construct_UFunction_UUIInputComponent_OnRightCompleted_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Components/Player/UIInputComponent.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UUIInputComponent_OnRightCompleted_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UUIInputComponent, nullptr, "OnRightCompleted", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UUIInputComponent_OnRightCompleted_Statics::Function_MetaDataParams), Z_Construct_UFunction_UUIInputComponent_OnRightCompleted_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_UUIInputComponent_OnRightCompleted()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UUIInputComponent_OnRightCompleted_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UUIInputComponent::execOnRightCompleted)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->OnRightCompleted();
+	P_NATIVE_END;
+}
+// ********** End Class UUIInputComponent Function OnRightCompleted ********************************
+
+// ********** Begin Class UUIInputComponent Function OnRightHeld ***********************************
+struct Z_Construct_UFunction_UUIInputComponent_OnRightHeld_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Components/Player/UIInputComponent.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UUIInputComponent_OnRightHeld_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UUIInputComponent, nullptr, "OnRightHeld", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UUIInputComponent_OnRightHeld_Statics::Function_MetaDataParams), Z_Construct_UFunction_UUIInputComponent_OnRightHeld_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_UUIInputComponent_OnRightHeld()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UUIInputComponent_OnRightHeld_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UUIInputComponent::execOnRightHeld)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->OnRightHeld();
+	P_NATIVE_END;
+}
+// ********** End Class UUIInputComponent Function OnRightHeld *************************************
+
+// ********** Begin Class UUIInputComponent Function OnUpCompleted *********************************
+struct Z_Construct_UFunction_UUIInputComponent_OnUpCompleted_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Components/Player/UIInputComponent.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UUIInputComponent_OnUpCompleted_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UUIInputComponent, nullptr, "OnUpCompleted", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UUIInputComponent_OnUpCompleted_Statics::Function_MetaDataParams), Z_Construct_UFunction_UUIInputComponent_OnUpCompleted_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_UUIInputComponent_OnUpCompleted()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UUIInputComponent_OnUpCompleted_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UUIInputComponent::execOnUpCompleted)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->OnUpCompleted();
+	P_NATIVE_END;
+}
+// ********** End Class UUIInputComponent Function OnUpCompleted ***********************************
+
+// ********** Begin Class UUIInputComponent Function OnUpHeld **************************************
+struct Z_Construct_UFunction_UUIInputComponent_OnUpHeld_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Components/Player/UIInputComponent.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UUIInputComponent_OnUpHeld_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UUIInputComponent, nullptr, "OnUpHeld", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UUIInputComponent_OnUpHeld_Statics::Function_MetaDataParams), Z_Construct_UFunction_UUIInputComponent_OnUpHeld_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_UUIInputComponent_OnUpHeld()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UUIInputComponent_OnUpHeld_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UUIInputComponent::execOnUpHeld)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->OnUpHeld();
+	P_NATIVE_END;
+}
+// ********** End Class UUIInputComponent Function OnUpHeld ****************************************
+
 // ********** Begin Class UUIInputComponent Function OpenMenu **************************************
 struct Z_Construct_UFunction_UUIInputComponent_OpenMenu_Statics
 {
@@ -582,6 +814,14 @@ void UUIInputComponent::StaticRegisterNativesUUIInputComponent()
 		{ "NavigateLeft", &UUIInputComponent::execNavigateLeft },
 		{ "NavigateRight", &UUIInputComponent::execNavigateRight },
 		{ "NavigateUp", &UUIInputComponent::execNavigateUp },
+		{ "OnDownCompleted", &UUIInputComponent::execOnDownCompleted },
+		{ "OnDownHeld", &UUIInputComponent::execOnDownHeld },
+		{ "OnLeftCompleted", &UUIInputComponent::execOnLeftCompleted },
+		{ "OnLeftHeld", &UUIInputComponent::execOnLeftHeld },
+		{ "OnRightCompleted", &UUIInputComponent::execOnRightCompleted },
+		{ "OnRightHeld", &UUIInputComponent::execOnRightHeld },
+		{ "OnUpCompleted", &UUIInputComponent::execOnUpCompleted },
+		{ "OnUpHeld", &UUIInputComponent::execOnUpHeld },
 		{ "OpenMenu", &UUIInputComponent::execOpenMenu },
 		{ "StartButtonPressed", &UUIInputComponent::execStartButtonPressed },
 	};
@@ -655,6 +895,22 @@ struct Z_Construct_UClass_UUIInputComponent_Statics
 		{ "Category", "Input" },
 		{ "ModuleRelativePath", "Public/Components/Player/UIInputComponent.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnUpButtonHeld_MetaData[] = {
+		{ "Category", "Input" },
+		{ "ModuleRelativePath", "Public/Components/Player/UIInputComponent.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnDownButtonHeld_MetaData[] = {
+		{ "Category", "Input" },
+		{ "ModuleRelativePath", "Public/Components/Player/UIInputComponent.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnLeftButtonHeld_MetaData[] = {
+		{ "Category", "Input" },
+		{ "ModuleRelativePath", "Public/Components/Player/UIInputComponent.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnRightButtonHeld_MetaData[] = {
+		{ "Category", "Input" },
+		{ "ModuleRelativePath", "Public/Components/Player/UIInputComponent.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SelectAction_MetaData[] = {
 		{ "Category", "Input" },
 		{ "Comment", "//Input:\n//Input Actions:\n" },
@@ -691,6 +947,18 @@ struct Z_Construct_UClass_UUIInputComponent_Statics
 		{ "ModuleRelativePath", "Public/Components/Player/UIInputComponent.h" },
 		{ "ToolTip", "Input Mapping context:" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InitialHoldNavigationDelay_MetaData[] = {
+		{ "Category", "Input" },
+		{ "Comment", "// How long should the input be pressed to start hold navigating\n" },
+		{ "ModuleRelativePath", "Public/Components/Player/UIInputComponent.h" },
+		{ "ToolTip", "How long should the input be pressed to start hold navigating" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RepeatHoldNavigationDelay_MetaData[] = {
+		{ "Category", "Input" },
+		{ "Comment", "// How often should navigation happen when hold navigating\n" },
+		{ "ModuleRelativePath", "Public/Components/Player/UIInputComponent.h" },
+		{ "ToolTip", "How often should navigation happen when hold navigating" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FocusedWidget_MetaData[] = {
 		{ "Comment", "//runtime fields\n" },
 		{ "EditInline", "true" },
@@ -711,6 +979,10 @@ struct Z_Construct_UClass_UUIInputComponent_Statics
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnDownButtonPressed;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnLeftButtonPressed;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnRightButtonPressed;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnUpButtonHeld;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnDownButtonHeld;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnLeftButtonHeld;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnRightButtonHeld;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SelectAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_BackAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_StartAction;
@@ -719,6 +991,8 @@ struct Z_Construct_UClass_UUIInputComponent_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_LeftNavigateAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_RightNavigateAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MenuMappingContext;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_InitialHoldNavigationDelay;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_RepeatHoldNavigationDelay;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FocusedWidget;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_OwningPlayer;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MenuStack_Inner;
@@ -735,6 +1009,14 @@ struct Z_Construct_UClass_UUIInputComponent_Statics
 		{ &Z_Construct_UFunction_UUIInputComponent_NavigateLeft, "NavigateLeft" }, // 2922688387
 		{ &Z_Construct_UFunction_UUIInputComponent_NavigateRight, "NavigateRight" }, // 4213174726
 		{ &Z_Construct_UFunction_UUIInputComponent_NavigateUp, "NavigateUp" }, // 2774351449
+		{ &Z_Construct_UFunction_UUIInputComponent_OnDownCompleted, "OnDownCompleted" }, // 3388296333
+		{ &Z_Construct_UFunction_UUIInputComponent_OnDownHeld, "OnDownHeld" }, // 4143658816
+		{ &Z_Construct_UFunction_UUIInputComponent_OnLeftCompleted, "OnLeftCompleted" }, // 787298568
+		{ &Z_Construct_UFunction_UUIInputComponent_OnLeftHeld, "OnLeftHeld" }, // 146800470
+		{ &Z_Construct_UFunction_UUIInputComponent_OnRightCompleted, "OnRightCompleted" }, // 2483702795
+		{ &Z_Construct_UFunction_UUIInputComponent_OnRightHeld, "OnRightHeld" }, // 1231197678
+		{ &Z_Construct_UFunction_UUIInputComponent_OnUpCompleted, "OnUpCompleted" }, // 2664660582
+		{ &Z_Construct_UFunction_UUIInputComponent_OnUpHeld, "OnUpHeld" }, // 2619393673
 		{ &Z_Construct_UFunction_UUIInputComponent_OpenMenu, "OpenMenu" }, // 3952153712
 		{ &Z_Construct_UFunction_UUIInputComponent_StartButtonPressed, "StartButtonPressed" }, // 2385315693
 	};
@@ -751,6 +1033,10 @@ const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UUI
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UUIInputComponent_Statics::NewProp_OnDownButtonPressed = { "OnDownButtonPressed", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UUIInputComponent, OnDownButtonPressed), Z_Construct_UDelegateFunction_BashCore_UIInputSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnDownButtonPressed_MetaData), NewProp_OnDownButtonPressed_MetaData) }; // 4160662544
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UUIInputComponent_Statics::NewProp_OnLeftButtonPressed = { "OnLeftButtonPressed", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UUIInputComponent, OnLeftButtonPressed), Z_Construct_UDelegateFunction_BashCore_UIInputSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnLeftButtonPressed_MetaData), NewProp_OnLeftButtonPressed_MetaData) }; // 4160662544
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UUIInputComponent_Statics::NewProp_OnRightButtonPressed = { "OnRightButtonPressed", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UUIInputComponent, OnRightButtonPressed), Z_Construct_UDelegateFunction_BashCore_UIInputSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnRightButtonPressed_MetaData), NewProp_OnRightButtonPressed_MetaData) }; // 4160662544
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UUIInputComponent_Statics::NewProp_OnUpButtonHeld = { "OnUpButtonHeld", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UUIInputComponent, OnUpButtonHeld), Z_Construct_UDelegateFunction_BashCore_UIInputSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnUpButtonHeld_MetaData), NewProp_OnUpButtonHeld_MetaData) }; // 4160662544
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UUIInputComponent_Statics::NewProp_OnDownButtonHeld = { "OnDownButtonHeld", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UUIInputComponent, OnDownButtonHeld), Z_Construct_UDelegateFunction_BashCore_UIInputSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnDownButtonHeld_MetaData), NewProp_OnDownButtonHeld_MetaData) }; // 4160662544
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UUIInputComponent_Statics::NewProp_OnLeftButtonHeld = { "OnLeftButtonHeld", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UUIInputComponent, OnLeftButtonHeld), Z_Construct_UDelegateFunction_BashCore_UIInputSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnLeftButtonHeld_MetaData), NewProp_OnLeftButtonHeld_MetaData) }; // 4160662544
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UUIInputComponent_Statics::NewProp_OnRightButtonHeld = { "OnRightButtonHeld", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UUIInputComponent, OnRightButtonHeld), Z_Construct_UDelegateFunction_BashCore_UIInputSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnRightButtonHeld_MetaData), NewProp_OnRightButtonHeld_MetaData) }; // 4160662544
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UUIInputComponent_Statics::NewProp_SelectAction = { "SelectAction", nullptr, (EPropertyFlags)0x0124080000000015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UUIInputComponent, SelectAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SelectAction_MetaData), NewProp_SelectAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UUIInputComponent_Statics::NewProp_BackAction = { "BackAction", nullptr, (EPropertyFlags)0x0124080000000015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UUIInputComponent, BackAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BackAction_MetaData), NewProp_BackAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UUIInputComponent_Statics::NewProp_StartAction = { "StartAction", nullptr, (EPropertyFlags)0x0124080000000015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UUIInputComponent, StartAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StartAction_MetaData), NewProp_StartAction_MetaData) };
@@ -759,6 +1045,8 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UUIInputCompon
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UUIInputComponent_Statics::NewProp_LeftNavigateAction = { "LeftNavigateAction", nullptr, (EPropertyFlags)0x0124080000000015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UUIInputComponent, LeftNavigateAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LeftNavigateAction_MetaData), NewProp_LeftNavigateAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UUIInputComponent_Statics::NewProp_RightNavigateAction = { "RightNavigateAction", nullptr, (EPropertyFlags)0x0124080000000015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UUIInputComponent, RightNavigateAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RightNavigateAction_MetaData), NewProp_RightNavigateAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UUIInputComponent_Statics::NewProp_MenuMappingContext = { "MenuMappingContext", nullptr, (EPropertyFlags)0x0124080000000015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UUIInputComponent, MenuMappingContext), Z_Construct_UClass_UInputMappingContext_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MenuMappingContext_MetaData), NewProp_MenuMappingContext_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UUIInputComponent_Statics::NewProp_InitialHoldNavigationDelay = { "InitialHoldNavigationDelay", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UUIInputComponent, InitialHoldNavigationDelay), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InitialHoldNavigationDelay_MetaData), NewProp_InitialHoldNavigationDelay_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UUIInputComponent_Statics::NewProp_RepeatHoldNavigationDelay = { "RepeatHoldNavigationDelay", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UUIInputComponent, RepeatHoldNavigationDelay), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RepeatHoldNavigationDelay_MetaData), NewProp_RepeatHoldNavigationDelay_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UUIInputComponent_Statics::NewProp_FocusedWidget = { "FocusedWidget", nullptr, (EPropertyFlags)0x0124080000080008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UUIInputComponent, FocusedWidget), Z_Construct_UClass_UWidget_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FocusedWidget_MetaData), NewProp_FocusedWidget_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UUIInputComponent_Statics::NewProp_OwningPlayer = { "OwningPlayer", nullptr, (EPropertyFlags)0x0124080000000000, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UUIInputComponent, OwningPlayer), Z_Construct_UClass_ABashPlayerController_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OwningPlayer_MetaData), NewProp_OwningPlayer_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UUIInputComponent_Statics::NewProp_MenuStack_Inner = { "MenuStack", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UMenuStackContext_NoRegister, METADATA_PARAMS(0, nullptr) };
@@ -771,6 +1059,10 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UUIInputC
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UUIInputComponent_Statics::NewProp_OnDownButtonPressed,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UUIInputComponent_Statics::NewProp_OnLeftButtonPressed,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UUIInputComponent_Statics::NewProp_OnRightButtonPressed,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UUIInputComponent_Statics::NewProp_OnUpButtonHeld,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UUIInputComponent_Statics::NewProp_OnDownButtonHeld,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UUIInputComponent_Statics::NewProp_OnLeftButtonHeld,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UUIInputComponent_Statics::NewProp_OnRightButtonHeld,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UUIInputComponent_Statics::NewProp_SelectAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UUIInputComponent_Statics::NewProp_BackAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UUIInputComponent_Statics::NewProp_StartAction,
@@ -779,6 +1071,8 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UUIInputC
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UUIInputComponent_Statics::NewProp_LeftNavigateAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UUIInputComponent_Statics::NewProp_RightNavigateAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UUIInputComponent_Statics::NewProp_MenuMappingContext,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UUIInputComponent_Statics::NewProp_InitialHoldNavigationDelay,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UUIInputComponent_Statics::NewProp_RepeatHoldNavigationDelay,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UUIInputComponent_Statics::NewProp_FocusedWidget,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UUIInputComponent_Statics::NewProp_OwningPlayer,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UUIInputComponent_Statics::NewProp_MenuStack_Inner,
@@ -818,15 +1112,15 @@ UUIInputComponent::~UUIInputComponent() {}
 // ********** End Class UUIInputComponent **********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h__Script_BashCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h__Script_BashCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UMenuStackContext, UMenuStackContext::StaticClass, TEXT("UMenuStackContext"), &Z_Registration_Info_UClass_UMenuStackContext, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMenuStackContext), 866477904U) },
-		{ Z_Construct_UClass_UUIInputComponent, UUIInputComponent::StaticClass, TEXT("UUIInputComponent"), &Z_Registration_Info_UClass_UUIInputComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UUIInputComponent), 2309172974U) },
+		{ Z_Construct_UClass_UUIInputComponent, UUIInputComponent::StaticClass, TEXT("UUIInputComponent"), &Z_Registration_Info_UClass_UUIInputComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UUIInputComponent), 566022695U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h__Script_BashCore_1591193211(TEXT("/Script/BashCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h__Script_BashCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h__Script_BashCore_531958118(TEXT("/Script/BashCore"),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h__Script_BashCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "InputActionValue.h"
 #include "Components/ActorComponent.h"
 #include "UIInputComponent.generated.h"
 
@@ -93,6 +94,15 @@ public:
 	FUIInputSignature OnLeftButtonPressed;
 	UPROPERTY(BlueprintAssignable, Category = "Input")
 	FUIInputSignature OnRightButtonPressed;
+
+	UPROPERTY(BlueprintAssignable, Category = "Input")
+	FUIInputSignature OnUpButtonHeld;
+	UPROPERTY(BlueprintAssignable, Category = "Input")
+	FUIInputSignature OnDownButtonHeld;
+	UPROPERTY(BlueprintAssignable, Category = "Input")
+	FUIInputSignature OnLeftButtonHeld;
+	UPROPERTY(BlueprintAssignable, Category = "Input")
+	FUIInputSignature OnRightButtonHeld;
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
@@ -122,7 +132,16 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 	TObjectPtr<UInputMappingContext> MenuMappingContext;
 
+	// How long should the input be pressed to start hold navigating
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+	float InitialHoldNavigationDelay = .75;
 
+	// How often should navigation happen when hold navigating
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+	float RepeatHoldNavigationDelay = .25;
+	
+	virtual void TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+	
 	//runtime fields
 	UPROPERTY()
 	TObjectPtr<UWidget> FocusedWidget;
@@ -138,17 +157,42 @@ private:
 	UFUNCTION()
 	void NavigateRight();
 	UFUNCTION()
+	void OnUpHeld();
+	UFUNCTION()
+	void OnDownHeld();
+	UFUNCTION()
+	void OnLeftHeld();
+	UFUNCTION()
+	void OnRightHeld();
+	UFUNCTION()
+	void OnUpCompleted();
+	UFUNCTION()
+	void OnDownCompleted();
+	UFUNCTION()
+	void OnLeftCompleted();
+	UFUNCTION()
+	void OnRightCompleted();
+	UFUNCTION()
 	void StartButtonPressed();
 	UFUNCTION()
 	void BackButtonPressed();
+	
 	enum class ENavigationDirection
 	{
+		END_None,
 		END_Up,
 		END_Down,
 		END_Left,
 		END_Right
 	};
+
+	void SetHoldDirection(ENavigationDirection direction);
+	void OnDirectionReleased(ENavigationDirection direction);
+
 	void NavigateDirection(ENavigationDirection direction);
+
+	float CurrentHeldNavDelay;
+	ENavigationDirection HeldNavDirection;
 private:
 
 

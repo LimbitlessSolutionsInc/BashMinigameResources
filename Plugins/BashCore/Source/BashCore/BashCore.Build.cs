@@ -7,6 +7,19 @@ public class BashCore : ModuleRules
 	public BashCore(ReadOnlyTargetRules Target) : base(Target)
 	{
 		bUsePrecompiled = true;
+		
+		PublicIncludePaths.AddRange(
+			new string[] {
+				// ... add public include paths required here ...
+			}
+			);
+				
+		
+		PrivateIncludePaths.AddRange(
+			new string[] {
+				// ... add other private include paths required here ...
+			}
+			);
 			
 		
 		PublicDependencyModuleNames.AddRange(

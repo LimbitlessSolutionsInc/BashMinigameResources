@@ -56,6 +56,12 @@ public:
 	{
 		return DefaultSelectedWidget;
 	};
+
+	UFUNCTION(BlueprintCallable, Category = "Menu")
+	bool AllowsHoldNavigation() const
+	{
+		return bAllowHoldNavigation;
+	};
 	
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Menu", meta = (ExposeOnSpawn = "true"))
@@ -63,4 +69,8 @@ protected:
 	
 	UPROPERTY(BlueprintReadOnly, Category = "Menu")
 	TWeakObjectPtr<ABashPlayerController> OwningPlayer;
+
+	// If true, this menu will quickly navigable by holding directional inputs. Best for longer menus
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Menu")
+	bool bAllowHoldNavigation{};
 };

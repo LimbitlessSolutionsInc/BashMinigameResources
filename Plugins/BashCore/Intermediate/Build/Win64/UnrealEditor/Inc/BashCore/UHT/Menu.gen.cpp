@@ -20,6 +20,53 @@ UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 UPackage* Z_Construct_UPackage__Script_BashCore();
 // ********** End Cross Module References **********************************************************
 
+// ********** Begin Class UMenu Function AllowsHoldNavigation **************************************
+struct Z_Construct_UFunction_UMenu_AllowsHoldNavigation_Statics
+{
+	struct Menu_eventAllowsHoldNavigation_Parms
+	{
+		bool ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Menu" },
+		{ "ModuleRelativePath", "Public/Widgets/Menu.h" },
+	};
+#endif // WITH_METADATA
+	static void NewProp_ReturnValue_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+void Z_Construct_UFunction_UMenu_AllowsHoldNavigation_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+{
+	((Menu_eventAllowsHoldNavigation_Parms*)Obj)->ReturnValue = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UMenu_AllowsHoldNavigation_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(Menu_eventAllowsHoldNavigation_Parms), &Z_Construct_UFunction_UMenu_AllowsHoldNavigation_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMenu_AllowsHoldNavigation_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMenu_AllowsHoldNavigation_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMenu_AllowsHoldNavigation_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMenu_AllowsHoldNavigation_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMenu, nullptr, "AllowsHoldNavigation", Z_Construct_UFunction_UMenu_AllowsHoldNavigation_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMenu_AllowsHoldNavigation_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMenu_AllowsHoldNavigation_Statics::Menu_eventAllowsHoldNavigation_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMenu_AllowsHoldNavigation_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMenu_AllowsHoldNavigation_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UMenu_AllowsHoldNavigation_Statics::Menu_eventAllowsHoldNavigation_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UMenu_AllowsHoldNavigation()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UMenu_AllowsHoldNavigation_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UMenu::execAllowsHoldNavigation)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(bool*)Z_Param__Result=P_THIS->AllowsHoldNavigation();
+	P_NATIVE_END;
+}
+// ********** End Class UMenu Function AllowsHoldNavigation ****************************************
+
 // ********** Begin Class UMenu Function GetDefaultSelectedWidget **********************************
 struct Z_Construct_UFunction_UMenu_GetDefaultSelectedWidget_Statics
 {
@@ -186,6 +233,7 @@ void UMenu::StaticRegisterNativesUMenu()
 {
 	UClass* Class = UMenu::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
+		{ "AllowsHoldNavigation", &UMenu::execAllowsHoldNavigation },
 		{ "GetDefaultSelectedWidget", &UMenu::execGetDefaultSelectedWidget },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -238,12 +286,21 @@ struct Z_Construct_UClass_UMenu_Statics
 		{ "Category", "Menu" },
 		{ "ModuleRelativePath", "Public/Widgets/Menu.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bAllowHoldNavigation_MetaData[] = {
+		{ "Category", "Menu" },
+		{ "Comment", "// If true, this menu will quickly navigable by holding directional inputs. Best for longer menus\n" },
+		{ "ModuleRelativePath", "Public/Widgets/Menu.h" },
+		{ "ToolTip", "If true, this menu will quickly navigable by holding directional inputs. Best for longer menus" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_DefaultSelectedWidget;
 	static const UECodeGen_Private::FWeakObjectPropertyParams NewProp_OwningPlayer;
+	static void NewProp_bAllowHoldNavigation_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_bAllowHoldNavigation;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_UMenu_AllowsHoldNavigation, "AllowsHoldNavigation" }, // 47951364
 		{ &Z_Construct_UFunction_UMenu_GetDefaultSelectedWidget, "GetDefaultSelectedWidget" }, // 1211342720
 		{ &Z_Construct_UFunction_UMenu_OnCloseMenuBP, "OnCloseMenuBP" }, // 1118517529
 		{ &Z_Construct_UFunction_UMenu_OnEnterMenuBP, "OnEnterMenuBP" }, // 352668010
@@ -258,9 +315,15 @@ struct Z_Construct_UClass_UMenu_Statics
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UMenu_Statics::NewProp_DefaultSelectedWidget = { "DefaultSelectedWidget", nullptr, (EPropertyFlags)0x002108000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMenu, DefaultSelectedWidget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultSelectedWidget_MetaData), NewProp_DefaultSelectedWidget_MetaData) };
 const UECodeGen_Private::FWeakObjectPropertyParams Z_Construct_UClass_UMenu_Statics::NewProp_OwningPlayer = { "OwningPlayer", nullptr, (EPropertyFlags)0x0024080000000014, UECodeGen_Private::EPropertyGenFlags::WeakObject, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMenu, OwningPlayer), Z_Construct_UClass_ABashPlayerController_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OwningPlayer_MetaData), NewProp_OwningPlayer_MetaData) };
+void Z_Construct_UClass_UMenu_Statics::NewProp_bAllowHoldNavigation_SetBit(void* Obj)
+{
+	((UMenu*)Obj)->bAllowHoldNavigation = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UMenu_Statics::NewProp_bAllowHoldNavigation = { "bAllowHoldNavigation", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UMenu), &Z_Construct_UClass_UMenu_Statics::NewProp_bAllowHoldNavigation_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bAllowHoldNavigation_MetaData), NewProp_bAllowHoldNavigation_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UMenu_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMenu_Statics::NewProp_DefaultSelectedWidget,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMenu_Statics::NewProp_OwningPlayer,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMenu_Statics::NewProp_bAllowHoldNavigation,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UMenu_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UMenu_Statics::DependentSingletons[])() = {
@@ -296,14 +359,14 @@ UMenu::~UMenu() {}
 // ********** End Class UMenu **********************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h__Script_BashCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h__Script_BashCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMenu, UMenu::StaticClass, TEXT("UMenu"), &Z_Registration_Info_UClass_UMenu, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMenu), 1230076061U) },
+		{ Z_Construct_UClass_UMenu, UMenu::StaticClass, TEXT("UMenu"), &Z_Registration_Info_UClass_UMenu, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMenu), 3606566194U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h__Script_BashCore_3484607486(TEXT("/Script/BashCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_PackagePlugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h__Script_BashCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h__Script_BashCore_4210257142(TEXT("/Script/BashCore"),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h__Script_BashCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************
