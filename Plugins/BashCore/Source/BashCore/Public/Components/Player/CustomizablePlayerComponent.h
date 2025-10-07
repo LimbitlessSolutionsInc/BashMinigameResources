@@ -15,11 +15,11 @@ class BASHCORE_API UCustomizablePlayerComponent : public UCustomizableSkeletalCo
 {
 	GENERATED_BODY()
 
+public:
 	UCustomizablePlayerComponent();
 	
-public:
 	UFUNCTION(BlueprintCallable, Category="Customizable Player")
-	void LoadCustomizableInstance(ABashPlayerController* PC);
+	virtual void LoadCustomizableInstance(ABashPlayerController* PC);
 protected:
 	virtual void BeginPlay() override;
 };

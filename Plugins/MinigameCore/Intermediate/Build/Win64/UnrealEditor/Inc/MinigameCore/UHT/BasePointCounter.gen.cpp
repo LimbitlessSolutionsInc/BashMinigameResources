@@ -137,6 +137,53 @@ DEFINE_FUNCTION(UBasePointCounter::execAddPoints)
 }
 // ********** End Class UBasePointCounter Function AddPoints ***************************************
 
+// ********** Begin Class UBasePointCounter Function GetIsInitialized ******************************
+struct Z_Construct_UFunction_UBasePointCounter_GetIsInitialized_Statics
+{
+	struct BasePointCounter_eventGetIsInitialized_Parms
+	{
+		bool ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Point Counters" },
+		{ "ModuleRelativePath", "Public/Components/BasePointCounter.h" },
+	};
+#endif // WITH_METADATA
+	static void NewProp_ReturnValue_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+void Z_Construct_UFunction_UBasePointCounter_GetIsInitialized_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+{
+	((BasePointCounter_eventGetIsInitialized_Parms*)Obj)->ReturnValue = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UBasePointCounter_GetIsInitialized_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(BasePointCounter_eventGetIsInitialized_Parms), &Z_Construct_UFunction_UBasePointCounter_GetIsInitialized_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UBasePointCounter_GetIsInitialized_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UBasePointCounter_GetIsInitialized_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UBasePointCounter_GetIsInitialized_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UBasePointCounter_GetIsInitialized_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UBasePointCounter, nullptr, "GetIsInitialized", Z_Construct_UFunction_UBasePointCounter_GetIsInitialized_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UBasePointCounter_GetIsInitialized_Statics::PropPointers), sizeof(Z_Construct_UFunction_UBasePointCounter_GetIsInitialized_Statics::BasePointCounter_eventGetIsInitialized_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UBasePointCounter_GetIsInitialized_Statics::Function_MetaDataParams), Z_Construct_UFunction_UBasePointCounter_GetIsInitialized_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UBasePointCounter_GetIsInitialized_Statics::BasePointCounter_eventGetIsInitialized_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UBasePointCounter_GetIsInitialized()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UBasePointCounter_GetIsInitialized_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UBasePointCounter::execGetIsInitialized)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(bool*)Z_Param__Result=P_THIS->GetIsInitialized();
+	P_NATIVE_END;
+}
+// ********** End Class UBasePointCounter Function GetIsInitialized ********************************
+
 // ********** Begin Class UBasePointCounter Function GetPoints *************************************
 struct BasePointCounter_eventGetPoints_Parms
 {
@@ -479,17 +526,89 @@ DEFINE_FUNCTION(UBasePointCounter::execSetPoints)
 }
 // ********** End Class UBasePointCounter Function SetPoints ***************************************
 
+// ********** Begin Class UBasePointCounter Function SetupTeamAssignment ***************************
+struct BasePointCounter_eventSetupTeamAssignment_Parms
+{
+	int32 NumTeams;
+	TArray<int32> TeamAssignments;
+};
+static FName NAME_UBasePointCounter_SetupTeamAssignment = FName(TEXT("SetupTeamAssignment"));
+void UBasePointCounter::SetupTeamAssignment(int32 NumTeams, TArray<int32> const& TeamAssignments)
+{
+	UFunction* Func = FindFunctionChecked(NAME_UBasePointCounter_SetupTeamAssignment);
+	if (!Func->GetOwnerClass()->HasAnyClassFlags(CLASS_Native))
+	{
+		BasePointCounter_eventSetupTeamAssignment_Parms Parms;
+		Parms.NumTeams=NumTeams;
+		Parms.TeamAssignments=TeamAssignments;
+	ProcessEvent(Func,&Parms);
+	}
+	else
+	{
+		SetupTeamAssignment_Implementation(NumTeams, TeamAssignments);
+	}
+}
+struct Z_Construct_UFunction_UBasePointCounter_SetupTeamAssignment_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Point Counter" },
+		{ "ModuleRelativePath", "Public/Components/BasePointCounter.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TeamAssignments_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FIntPropertyParams NewProp_NumTeams;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_TeamAssignments_Inner;
+	static const UECodeGen_Private::FArrayPropertyParams NewProp_TeamAssignments;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UBasePointCounter_SetupTeamAssignment_Statics::NewProp_NumTeams = { "NumTeams", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BasePointCounter_eventSetupTeamAssignment_Parms, NumTeams), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UBasePointCounter_SetupTeamAssignment_Statics::NewProp_TeamAssignments_Inner = { "TeamAssignments", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UBasePointCounter_SetupTeamAssignment_Statics::NewProp_TeamAssignments = { "TeamAssignments", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BasePointCounter_eventSetupTeamAssignment_Parms, TeamAssignments), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TeamAssignments_MetaData), NewProp_TeamAssignments_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UBasePointCounter_SetupTeamAssignment_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UBasePointCounter_SetupTeamAssignment_Statics::NewProp_NumTeams,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UBasePointCounter_SetupTeamAssignment_Statics::NewProp_TeamAssignments_Inner,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UBasePointCounter_SetupTeamAssignment_Statics::NewProp_TeamAssignments,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UBasePointCounter_SetupTeamAssignment_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UBasePointCounter_SetupTeamAssignment_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UBasePointCounter, nullptr, "SetupTeamAssignment", Z_Construct_UFunction_UBasePointCounter_SetupTeamAssignment_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UBasePointCounter_SetupTeamAssignment_Statics::PropPointers), sizeof(BasePointCounter_eventSetupTeamAssignment_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08420C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UBasePointCounter_SetupTeamAssignment_Statics::Function_MetaDataParams), Z_Construct_UFunction_UBasePointCounter_SetupTeamAssignment_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(BasePointCounter_eventSetupTeamAssignment_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UBasePointCounter_SetupTeamAssignment()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UBasePointCounter_SetupTeamAssignment_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UBasePointCounter::execSetupTeamAssignment)
+{
+	P_GET_PROPERTY(FIntProperty,Z_Param_NumTeams);
+	P_GET_TARRAY_REF(int32,Z_Param_Out_TeamAssignments);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->SetupTeamAssignment_Implementation(Z_Param_NumTeams,Z_Param_Out_TeamAssignments);
+	P_NATIVE_END;
+}
+// ********** End Class UBasePointCounter Function SetupTeamAssignment *****************************
+
 // ********** Begin Class UBasePointCounter ********************************************************
 void UBasePointCounter::StaticRegisterNativesUBasePointCounter()
 {
 	UClass* Class = UBasePointCounter::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
 		{ "AddPoints", &UBasePointCounter::execAddPoints },
+		{ "GetIsInitialized", &UBasePointCounter::execGetIsInitialized },
 		{ "GetPoints", &UBasePointCounter::execGetPoints },
 		{ "GetPointsByPlayer", &UBasePointCounter::execGetPointsByPlayer },
 		{ "GetStandings", &UBasePointCounter::execGetStandings },
 		{ "InitializePointCounter", &UBasePointCounter::execInitializePointCounter },
 		{ "SetPoints", &UBasePointCounter::execSetPoints },
+		{ "SetupTeamAssignment", &UBasePointCounter::execSetupTeamAssignment },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -557,11 +676,13 @@ struct Z_Construct_UClass_UBasePointCounter_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UBasePointCounter_AddPoints, "AddPoints" }, // 2677129301
+		{ &Z_Construct_UFunction_UBasePointCounter_GetIsInitialized, "GetIsInitialized" }, // 2025712767
 		{ &Z_Construct_UFunction_UBasePointCounter_GetPoints, "GetPoints" }, // 346090920
 		{ &Z_Construct_UFunction_UBasePointCounter_GetPointsByPlayer, "GetPointsByPlayer" }, // 1184841961
 		{ &Z_Construct_UFunction_UBasePointCounter_GetStandings, "GetStandings" }, // 190263886
 		{ &Z_Construct_UFunction_UBasePointCounter_InitializePointCounter, "InitializePointCounter" }, // 844582397
 		{ &Z_Construct_UFunction_UBasePointCounter_SetPoints, "SetPoints" }, // 3799764789
+		{ &Z_Construct_UFunction_UBasePointCounter_SetupTeamAssignment, "SetupTeamAssignment" }, // 571587040
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -615,14 +736,14 @@ UBasePointCounter::~UBasePointCounter() {}
 // ********** End Class UBasePointCounter **********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h__Script_MinigameCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h__Script_MinigameCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UBasePointCounter, UBasePointCounter::StaticClass, TEXT("UBasePointCounter"), &Z_Registration_Info_UClass_UBasePointCounter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBasePointCounter), 3383986389U) },
+		{ Z_Construct_UClass_UBasePointCounter, UBasePointCounter::StaticClass, TEXT("UBasePointCounter"), &Z_Registration_Info_UClass_UBasePointCounter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBasePointCounter), 787038019U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h__Script_MinigameCore_515918461(TEXT("/Script/MinigameCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h__Script_MinigameCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h__Script_MinigameCore_1637911243(TEXT("/Script/MinigameCore"),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h__Script_MinigameCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

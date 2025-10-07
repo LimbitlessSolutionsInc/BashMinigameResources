@@ -6,6 +6,7 @@
 		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\MinigameCore.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\MinigameCoreBlueprintLibrary.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\MinigameCoreLogChannel.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\MinigameCustomizablePlayerComponent.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\BasePointCounter.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\LevelSequenceMinigameCutsceneManager.cpp.obj",
 		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MinigameCore\\MinigameCutsceneManager.cpp.obj",

@@ -45,6 +45,8 @@ public:
 	UFUNCTION(BlueprintNativeEvent, Category = "Point Counter")
 	void InitializePointCounter(int NumTeams, const TArray<int>& TeamAssignment);
 
+	UFUNCTION(BlueprintNativeEvent, Category = "Point Counter")
+	void SetupTeamAssignment(int NumTeams, const TArray<int>& TeamAssignments);
 protected:
 	UPROPERTY(BlueprintReadWrite, Category = "Point Info")
 	TArray<int> TeamPoints{};
@@ -52,4 +54,11 @@ protected:
 	// Maps player numbers to teams
 	UPROPERTY(BlueprintReadWrite, Category = "Point Info")
 	TArray<int> PlayersToTeams{};
+
+private:
+	bool bIsInitialized{};
+
+public:
+	UFUNCTION(BlueprintCallable, Category = "Point Counters")
+	bool GetIsInitialized() const { return bIsInitialized; }
 };

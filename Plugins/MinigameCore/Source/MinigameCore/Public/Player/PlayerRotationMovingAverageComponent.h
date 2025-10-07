@@ -33,4 +33,6 @@ protected:
 private:
 	TSimpleMovingAverage<FVector> DeltaXSMA{};
 	TSimpleMovingAverage<FVector> DeltaYSMA{};
+
+	void InitializeDeltaSMA();
 };

@@ -41,7 +41,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UCusto
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UCustomizablePlayerComponent_LoadCustomizableInstance_Statics::NewProp_PC,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UCustomizablePlayerComponent_LoadCustomizableInstance_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UCustomizablePlayerComponent_LoadCustomizableInstance_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UCustomizablePlayerComponent, nullptr, "LoadCustomizableInstance", Z_Construct_UFunction_UCustomizablePlayerComponent_LoadCustomizableInstance_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UCustomizablePlayerComponent_LoadCustomizableInstance_Statics::PropPointers), sizeof(Z_Construct_UFunction_UCustomizablePlayerComponent_LoadCustomizableInstance_Statics::CustomizablePlayerComponent_eventLoadCustomizableInstance_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UCustomizablePlayerComponent_LoadCustomizableInstance_Statics::Function_MetaDataParams), Z_Construct_UFunction_UCustomizablePlayerComponent_LoadCustomizableInstance_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UCustomizablePlayerComponent_LoadCustomizableInstance_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UCustomizablePlayerComponent, nullptr, "LoadCustomizableInstance", Z_Construct_UFunction_UCustomizablePlayerComponent_LoadCustomizableInstance_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UCustomizablePlayerComponent_LoadCustomizableInstance_Statics::PropPointers), sizeof(Z_Construct_UFunction_UCustomizablePlayerComponent_LoadCustomizableInstance_Statics::CustomizablePlayerComponent_eventLoadCustomizableInstance_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020400, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UCustomizablePlayerComponent_LoadCustomizableInstance_Statics::Function_MetaDataParams), Z_Construct_UFunction_UCustomizablePlayerComponent_LoadCustomizableInstance_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UCustomizablePlayerComponent_LoadCustomizableInstance_Statics::CustomizablePlayerComponent_eventLoadCustomizableInstance_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UCustomizablePlayerComponent_LoadCustomizableInstance()
 {
@@ -113,7 +113,7 @@ struct Z_Construct_UClass_UCustomizablePlayerComponent_Statics
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UCustomizablePlayerComponent_LoadCustomizableInstance, "LoadCustomizableInstance" }, // 914337122
+		{ &Z_Construct_UFunction_UCustomizablePlayerComponent_LoadCustomizableInstance, "LoadCustomizableInstance" }, // 2897733214
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -154,14 +154,14 @@ UCustomizablePlayerComponent::~UCustomizablePlayerComponent() {}
 // ********** End Class UCustomizablePlayerComponent ***********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_CustomizablePlayerComponent_h__Script_BashCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_CustomizablePlayerComponent_h__Script_BashCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UCustomizablePlayerComponent, UCustomizablePlayerComponent::StaticClass, TEXT("UCustomizablePlayerComponent"), &Z_Registration_Info_UClass_UCustomizablePlayerComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCustomizablePlayerComponent), 3681337023U) },
+		{ Z_Construct_UClass_UCustomizablePlayerComponent, UCustomizablePlayerComponent::StaticClass, TEXT("UCustomizablePlayerComponent"), &Z_Registration_Info_UClass_UCustomizablePlayerComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCustomizablePlayerComponent), 2692324332U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_CustomizablePlayerComponent_h__Script_BashCore_1069717256(TEXT("/Script/BashCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_CustomizablePlayerComponent_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_BashCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_CustomizablePlayerComponent_h__Script_BashCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_CustomizablePlayerComponent_h__Script_BashCore_2275078915(TEXT("/Script/BashCore"),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_CustomizablePlayerComponent_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_CustomizablePlayerComponent_h__Script_BashCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

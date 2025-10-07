@@ -19,6 +19,7 @@ class USplitscreenUI;
 class UBasePointCounter;
 class UMinigameCutsceneManager;
 class UOverlaySlot;
+class UCustomizableObjectInstance;
 
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FGameStartedSignature);
@@ -204,7 +205,6 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category="Minigame|Cutscenes")
 	TSubclassOf<UMinigameCutsceneManager> EndingCutscene{};
 
-private:
 	TObjectPtr<UMinigameSessionSubsystem> MinigameSessionSubsystem;
 
 	TObjectPtr<UPracticeModeUI> PracticeUI{};
@@ -215,6 +215,9 @@ private:
 
 	UPROPERTY()
 	TObjectPtr<UMinigameCutsceneManager> CurrentCutscene{};
+
+	UPROPERTY()
+	TArray<TObjectPtr<UCustomizableObjectInstance>> CachedCustomizationOverrides;
 
 	// Index: Player | Value: Team of player
 	TArray<TArray<int>> Teams;
@@ -308,6 +311,9 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Minigame|Points")
 	UBasePointCounter* GetPointCounter() const { return PointCounter; }
+	
+	UCustomizableObjectInstance* GetCachedOverride(int32 PlayerNumber);
+	void CacheOverride(UCustomizableObjectInstance* Override, int32 PlayerNumber);
 };
 
 

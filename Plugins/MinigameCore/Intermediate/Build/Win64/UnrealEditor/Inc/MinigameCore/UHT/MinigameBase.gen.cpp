@@ -15,6 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeMinigameBase() {}
 // ********** Begin Cross Module References ********************************************************
 BASHCORE_API UClass* Z_Construct_UClass_ABashGamemode();
 COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+CUSTOMIZABLEOBJECT_API UClass* Z_Construct_UClass_UCustomizableObjectInstance_NoRegister();
 MINIGAMECORE_API UClass* Z_Construct_UClass_AMinigameBase();
 MINIGAMECORE_API UClass* Z_Construct_UClass_AMinigameBase_NoRegister();
 MINIGAMECORE_API UClass* Z_Construct_UClass_AMinigameCapture_NoRegister();
@@ -1331,6 +1332,9 @@ struct Z_Construct_UClass_AMinigameBase_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CurrentCutscene_MetaData[] = {
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CachedCustomizationOverrides_MetaData[] = {
+		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+	};
 #endif // WITH_METADATA
 	static void NewProp_DebugHideUI_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_DebugHideUI;
@@ -1365,6 +1369,8 @@ struct Z_Construct_UClass_AMinigameBase_Statics
 	static const UECodeGen_Private::FClassPropertyParams NewProp_IntroCutscene;
 	static const UECodeGen_Private::FClassPropertyParams NewProp_EndingCutscene;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CurrentCutscene;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_CachedCustomizationOverrides_Inner;
+	static const UECodeGen_Private::FArrayPropertyParams NewProp_CachedCustomizationOverrides;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -1444,6 +1450,8 @@ const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AMinigameBase_St
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_IntroCutscene = { "IntroCutscene", nullptr, (EPropertyFlags)0x0044000000010001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, IntroCutscene), Z_Construct_UClass_UClass, Z_Construct_UClass_UMinigameCutsceneManager_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IntroCutscene_MetaData), NewProp_IntroCutscene_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_EndingCutscene = { "EndingCutscene", nullptr, (EPropertyFlags)0x0044000000010001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, EndingCutscene), Z_Construct_UClass_UClass, Z_Construct_UClass_UMinigameCutsceneManager_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EndingCutscene_MetaData), NewProp_EndingCutscene_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_CurrentCutscene = { "CurrentCutscene", nullptr, (EPropertyFlags)0x0144000000000000, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, CurrentCutscene), Z_Construct_UClass_UMinigameCutsceneManager_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CurrentCutscene_MetaData), NewProp_CurrentCutscene_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_CachedCustomizationOverrides_Inner = { "CachedCustomizationOverrides", nullptr, (EPropertyFlags)0x0104000000000000, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UCustomizableObjectInstance_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_CachedCustomizationOverrides = { "CachedCustomizationOverrides", nullptr, (EPropertyFlags)0x0144000000000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, CachedCustomizationOverrides), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CachedCustomizationOverrides_MetaData), NewProp_CachedCustomizationOverrides_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMinigameBase_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_DebugHideUI,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_OnMinigameStartEvent,
@@ -1474,6 +1482,8 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMinigame
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_IntroCutscene,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_EndingCutscene,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_CurrentCutscene,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_CachedCustomizationOverrides_Inner,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_CachedCustomizationOverrides,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AMinigameBase_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AMinigameBase_Statics::DependentSingletons[])() = {
@@ -1509,14 +1519,14 @@ AMinigameBase::~AMinigameBase() {}
 // ********** End Class AMinigameBase **************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AMinigameBase, AMinigameBase::StaticClass, TEXT("AMinigameBase"), &Z_Registration_Info_UClass_AMinigameBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMinigameBase), 3155477463U) },
+		{ Z_Construct_UClass_AMinigameBase, AMinigameBase::StaticClass, TEXT("AMinigameBase"), &Z_Registration_Info_UClass_AMinigameBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMinigameBase), 2587834866U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_4120971777(TEXT("/Script/MinigameCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_3200781457(TEXT("/Script/MinigameCore"),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

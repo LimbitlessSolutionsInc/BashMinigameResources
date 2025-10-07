@@ -18,7 +18,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_Downloads_P_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Data_MinigameEnums_h
+#define CURRENT_FILE_ID FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Data_MinigameEnums_h
 
 // ********** Begin Enum EMinigameType *************************************************************
 #define FOREACH_ENUM_EMINIGAMETYPE(op) \
