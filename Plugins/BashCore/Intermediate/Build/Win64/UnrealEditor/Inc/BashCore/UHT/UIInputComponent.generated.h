@@ -22,7 +22,7 @@ class UUserWidget;
 class UWidget;
 
 // ********** Begin Delegate FUIInputSignature *****************************************************
-#define FID_Users_zombi_Downloads_MinigameCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_19_DELEGATE \
+#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_19_DELEGATE \
 BASHCORE_API void FUIInputSignature_DelegateWrapper(const FMulticastScriptDelegate& UIInputSignature, ABashPlayerController* FromPlayer);
 
 
@@ -31,7 +31,7 @@ BASHCORE_API void FUIInputSignature_DelegateWrapper(const FMulticastScriptDelega
 // ********** Begin Class UMenuStackContext ********************************************************
 BASHCORE_API UClass* Z_Construct_UClass_UMenuStackContext_NoRegister();
 
-#define FID_Users_zombi_Downloads_MinigameCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_28_INCLASS_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_28_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMenuStackContext(); \
 	friend struct Z_Construct_UClass_UMenuStackContext_Statics; \
@@ -42,7 +42,7 @@ public: \
 	DECLARE_SERIALIZER(UMenuStackContext)
 
 
-#define FID_Users_zombi_Downloads_MinigameCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_28_ENHANCED_CONSTRUCTORS \
+#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_28_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UMenuStackContext(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -54,12 +54,12 @@ public: \
 	NO_API virtual ~UMenuStackContext();
 
 
-#define FID_Users_zombi_Downloads_MinigameCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_25_PROLOG
-#define FID_Users_zombi_Downloads_MinigameCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_28_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_25_PROLOG
+#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_28_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_zombi_Downloads_MinigameCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_28_INCLASS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_MinigameCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_28_ENHANCED_CONSTRUCTORS \
+	FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_28_INCLASS_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_28_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -69,7 +69,7 @@ class UMenuStackContext;
 // ********** End Class UMenuStackContext **********************************************************
 
 // ********** Begin Class UUIInputComponent ********************************************************
-#define FID_Users_zombi_Downloads_MinigameCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_48_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_48_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execBackButtonPressed); \
 	DECLARE_FUNCTION(execStartButtonPressed); \
 	DECLARE_FUNCTION(execOnRightCompleted); \
@@ -93,7 +93,7 @@ class UMenuStackContext;
 
 BASHCORE_API UClass* Z_Construct_UClass_UUIInputComponent_NoRegister();
 
-#define FID_Users_zombi_Downloads_MinigameCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_48_INCLASS_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_48_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUUIInputComponent(); \
 	friend struct Z_Construct_UClass_UUIInputComponent_Statics; \
@@ -104,7 +104,7 @@ public: \
 	DECLARE_SERIALIZER(UUIInputComponent)
 
 
-#define FID_Users_zombi_Downloads_MinigameCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_48_ENHANCED_CONSTRUCTORS \
+#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_48_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UUIInputComponent(UUIInputComponent&&) = delete; \
 	UUIInputComponent(const UUIInputComponent&) = delete; \
@@ -114,13 +114,13 @@ public: \
 	NO_API virtual ~UUIInputComponent();
 
 
-#define FID_Users_zombi_Downloads_MinigameCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_45_PROLOG
-#define FID_Users_zombi_Downloads_MinigameCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_48_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_45_PROLOG
+#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_48_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_zombi_Downloads_MinigameCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_48_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_MinigameCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_48_INCLASS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_MinigameCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_48_ENHANCED_CONSTRUCTORS \
+	FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_48_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_48_INCLASS_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_48_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -130,6 +130,6 @@ class UUIInputComponent;
 // ********** End Class UUIInputComponent **********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_Downloads_MinigameCore_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h
+#define CURRENT_FILE_ID FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

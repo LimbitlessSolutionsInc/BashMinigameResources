@@ -36,25 +36,31 @@ public:
 
 	UPROPERTY(BlueprintReadOnly, Category = "Minigame Player")
 	AMinigameBase* Minigame;
-
-	UFUNCTION(BlueprintCallable, Category = "Minigame Player")
-	void AddMappingContext();
-
-	UFUNCTION(BlueprintCallable, Category = "Minigame Player")
-	void RemoveMappingContext();
-
+	
 	// Called when the minigame creates the player. This happens before OnMinigameStart is called
 	UFUNCTION(BlueprintImplementableEvent)
 	void OnPlayerSpawned();
 
 private:
-	TObjectPtr<UInputMappingContext> InputMapping;
 	TObjectPtr<UInputAction> ReadyAction;
 
 #if WITH_EDITOR
+	TObjectPtr<UInputMappingContext> DebugInputMapping;
 	TObjectPtr<UInputAction> ReadyAllPlayersAction;
 
+	TObjectPtr<UInputAction> SetPlayerCount1;
+	TObjectPtr<UInputAction> SetPlayerCount2;
+	TObjectPtr<UInputAction> SetPlayerCount3;
+	TObjectPtr<UInputAction> SetPlayerCount4;
+
 	void ReadyAllPlayers();
+
+	void SetPlayerCountOne()	{ SetPlayerCount(1); }
+	void SetPlayerCountTwo()	{ SetPlayerCount(2); }
+	void SetPlayerCountThree()	{ SetPlayerCount(3); }
+	void SetPlayerCountFour()	{ SetPlayerCount(4); }
+	
+	void SetPlayerCount(int32 PlayerCount) const;
 #endif
 	
 protected:

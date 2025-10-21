@@ -190,7 +190,7 @@ UMinigameCustomizablePlayerComponent::~UMinigameCustomizablePlayerComponent() {}
 // ********** End Class UMinigameCustomizablePlayerComponent ***************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCustomizablePlayerComponent_h__Script_MinigameCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCustomizablePlayerComponent_h__Script_MinigameCore_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
 		{ FCustomizationOverride::StaticStruct, Z_Construct_UScriptStruct_FCustomizationOverride_Statics::NewStructOps, TEXT("CustomizationOverride"), &Z_Registration_Info_UScriptStruct_FCustomizationOverride, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCustomizationOverride), 4287615833U) },
@@ -199,9 +199,9 @@ struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_MinigameCore
 		{ Z_Construct_UClass_UMinigameCustomizablePlayerComponent, UMinigameCustomizablePlayerComponent::StaticClass, TEXT("UMinigameCustomizablePlayerComponent"), &Z_Registration_Info_UClass_UMinigameCustomizablePlayerComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMinigameCustomizablePlayerComponent), 1036254586U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCustomizablePlayerComponent_h__Script_MinigameCore_310793339(TEXT("/Script/MinigameCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCustomizablePlayerComponent_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCustomizablePlayerComponent_h__Script_MinigameCore_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCustomizablePlayerComponent_h__Script_MinigameCore_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCustomizablePlayerComponent_h__Script_MinigameCore_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCustomizablePlayerComponent_h__Script_MinigameCore_310793339(TEXT("/Script/MinigameCore"),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCustomizablePlayerComponent_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCustomizablePlayerComponent_h__Script_MinigameCore_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCustomizablePlayerComponent_h__Script_MinigameCore_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCustomizablePlayerComponent_h__Script_MinigameCore_Statics::ScriptStructInfo),
 	nullptr, 0);
 // ********** End Registration *********************************************************************
 

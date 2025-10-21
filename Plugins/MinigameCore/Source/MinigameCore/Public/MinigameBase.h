@@ -20,18 +20,11 @@ class UBasePointCounter;
 class UMinigameCutsceneManager;
 class UOverlaySlot;
 class UCustomizableObjectInstance;
-
+class UInputMappingContext;
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FGameStartedSignature);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FGameEndedSignature);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FGameResetSignature);
-
-/**
- * 
- */
-
-constexpr int MaxTeams{};
-constexpr int MaxPlayers{};
 
 UCLASS()
 class MINIGAMECORE_API AMinigameBase : public ABashGamemode
@@ -41,6 +34,10 @@ class MINIGAMECORE_API AMinigameBase : public ABashGamemode
 public:
 	AMinigameBase();
 
+	/*
+	 *  Game flow
+	 */
+	
 	// Readies a Player to exit practice mode
 	UFUNCTION(BlueprintCallable, Category = "Minigame|Practice")
 	void ReadyPlayer(int Player, bool state);
@@ -49,23 +46,55 @@ public:
 	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "Minigame|Practice")
 	int CheckReady(int Player) const;
 
+	UFUNCTION(BlueprintGetter)
+	int32 GetMinigameNumPlayers() { return NumPlayers; }
+	
 	// Ends the minigame early
 	UFUNCTION(BlueprintCallable, Category = "Minigame")
 	void EndGame();
 
+	UFUNCTION(BlueprintGetter)
+	double GetTimeRemaining() const { return TimeRemaining; }
+
+	UFUNCTION(BlueprintSetter)
+	void SetTimeRemaining(double time) { TimeRemaining = time; }
+
+	UFUNCTION(BlueprintGetter)
+	double GetTimeElapsed() const { return TimeElapsed; }
+
+	UFUNCTION(BlueprintGetter)
+	bool IsPractice() const { return bIsPractice; }
+
+	UFUNCTION(BlueprintGetter)
+	bool IsInProgress() const { return bIsInProgress; }
+
+	UFUNCTION(BlueprintCallable, Category = "Minigame|Points")
+	UBasePointCounter* GetPointCounter() const { return PointCounter; }
+	
+	
+	/*
+	 *  Players & Teams
+	 */
+	
 	UFUNCTION(BlueprintCallable, Category = "Minigame|Player")
 	AMinigamePlayer* GetPlayer(int PlayerNum) const;
 
 	UFUNCTION(BlueprintCallable, Category = "Minigame|Player")
 	const TArray<AMinigamePlayer*>& GetPlayers() const { return Players; }
+
+	UFUNCTION(BlueprintGetter)
+	EMinigameType GetTeamType() const { return TeamType; }
+
+	/*
+	 *  Customization overrides
+	 */
 	
-	/**
-	*	Handles ending of the game.
-	*	@param bTransitionToPractice True if the game will transition
-	*	@param bOverrideIfInProgress Can end the game, even if the game is already ending. Used to transition
-	*	out of practice mode if practice mode is already resetting
-	*/
-	void EndGameInternal(bool bTransitionToPractice, bool bOverrideIfInProgress = false);
+	UCustomizableObjectInstance* GetCachedOverride(int32 PlayerNumber);
+	void CacheOverride(UCustomizableObjectInstance* Override, int32 PlayerNumber);
+
+	/*
+	 *  Cameras/UI
+	 */
 
 	// Registers a camera to be used by the splitscreen system
 	UFUNCTION(BlueprintCallable, Category = "Minigame|Splitscreen")
@@ -79,9 +108,6 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Minigame|Splitscreen")
 	int GetNumCameraSplits() const;
 	
-	UPROPERTY(EditAnywhere, Category = "Debug")
-	bool DebugHideUI{};
-
 	UFUNCTION(BlueprintCallable, Category = "MinigameUI")
 	USplitscreenUI* GetMinigameWidgetRoot() const { return CurrentMinigameUI; }
 
@@ -90,21 +116,24 @@ public:
 	
 	UFUNCTION(BlueprintCallable, Category = "MinigameUI")
 	void PlayMinigameTransitionEffects();
+	
 protected:
-
+	/*
+	 *  Base overrides
+	 */
 	virtual APawn* SpawnDefaultPawnFor_Implementation(AController* NewPlayer, AActor* StartSpot) override;
 	
 	virtual void Tick(float DeltaTime) override;
 
 	virtual void StartPlay() override;
-
-	void FindPlayerSpawns();
-
+	
 	virtual void ResetLevel() override;
 
 
+	/*
+	 *  Events
+	 */
 public:
-	
 	// Called after players are spawned and the minigame base has initialized. Also called after every reset
 	UPROPERTY(BlueprintAssignable);
 	FGameStartedSignature OnMinigameStartEvent;
@@ -116,12 +145,7 @@ public:
 	// Triggered right before the minigame is reset. Use this to clean up persistent state
 	UPROPERTY(BlueprintAssignable)
 	FGameResetSignature OnMinigameResetEvent;
-
-protected:
-	// Also provide events as BlueprintImplementableEvent
-	// Event dispatcher allows for other actors to listen for these events
-	// Blueprint implementable event allows for the minigame base to easily listen for these events 
-public:
+	
 	UFUNCTION(BlueprintImplementableEvent)
 	void OnMinigameStart();
 	
@@ -130,8 +154,16 @@ public:
 	
 	UFUNCTION(BlueprintImplementableEvent)
 	void OnMinigameReset();
-	
+
 private:
+	/*
+	 *  Properties
+	 */
+
+	/*
+	 *  General Settings 
+	 */
+	
 	// The Pawns to spawn as the players of each team. Index 0 corresponds to the first team, etc.
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Minigame|Settings", meta = (AllowPrivateAccess = true))
 	TArray<TSubclassOf<AMinigamePlayer>> PlayerObjects;
@@ -144,10 +176,11 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = "Minigame|Settings")
 	double MinigameDuration;
 
-	// The amount of time remaining for this minigame, in seconds.
-	UPROPERTY(EditInstanceOnly, BlueprintGetter = GetTimeRemaining, BlueprintSetter = SetTimeRemaining, Category = "Minigame|Gameplay", meta = (AllowPrivateAccess = true))
-	double TimeRemaining;
 
+	/*
+	 *  Practice Mode
+	 */
+	
 	// The name of the minigame to display in Practice UI
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Minigame|Practice", meta = (AllowPrivateAccess = true))
 	FString MinigameName;
@@ -163,6 +196,11 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = "Minigame|Practice")
 	float ResetDelay{ 1.f };
 
+
+	/*
+	 *  UI
+	 */
+	
 	// The UI to spawn during the Practice phase
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Minigame|UI", meta = (AllowPrivateAccess = true))
 	TSubclassOf<UPracticeModeUI> PracticeUIClass;
@@ -183,12 +221,16 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = "Minigame|Splitscreen", meta = (AllowPrivateAccess = true))
 	TArray<TSubclassOf<USplitscreenUI>> SplitscreenUIClasses;
 
+	/*
+	 *  Gameplay
+	 */
+	
 	// The amount of time that has passed since the start of the minigame, in seconds
 	UPROPERTY(VisibleInstanceOnly, BlueprintGetter = GetTimeElapsed, Category = "Minigame|Gameplay")
 	double TimeElapsed;
 
 	// Number of players currently in this game
-	UPROPERTY(BlueprintGetter = GetInstanceNumPlayers, meta = (AllowPrivateAccess = true), Category = "Minigame|Gameplay")
+	UPROPERTY(BlueprintGetter = GetMinigameNumPlayers, meta = (AllowPrivateAccess = true), Category = "Minigame|Gameplay")
 	int NumPlayers;
 
 	// True if the minigame is in practice mode
@@ -199,20 +241,35 @@ private:
 	UPROPERTY(BlueprintGetter = IsInProgress, meta = (AllowPrivateAccess = true), Category = "Minigame|Gameplay")
 	bool bIsInProgress;
 
+	UPROPERTY(EditAnywhere, Category = "Debug")
+	bool DebugHideUI{};
+	
+	// The amount of time remaining for this minigame, in seconds.
+	UPROPERTY(EditInstanceOnly, BlueprintGetter = GetTimeRemaining, BlueprintSetter = SetTimeRemaining, Category = "Minigame|Gameplay", meta = (AllowPrivateAccess = true))
+	double TimeRemaining;
+
+	/*
+	 *  Cutscenes
+	 */
 	UPROPERTY(EditDefaultsOnly, Category="Minigame|Cutscenes")
 	TSubclassOf<UMinigameCutsceneManager> IntroCutscene{};
 
 	UPROPERTY(EditDefaultsOnly, Category="Minigame|Cutscenes")
 	TSubclassOf<UMinigameCutsceneManager> EndingCutscene{};
 
+
+	/*
+	 *  Private references 
+	 */
+	
 	TObjectPtr<UMinigameSessionSubsystem> MinigameSessionSubsystem;
-
-	TObjectPtr<UPracticeModeUI> PracticeUI{};
-
-	TObjectPtr<USplitscreenUI> CurrentMinigameUI{};
-
 	TObjectPtr<UBasePointCounter> PointCounter{};
 
+	TObjectPtr<UInputMappingContext> MinigameMappingContext{};
+
+
+	TObjectPtr<UPracticeModeUI> PracticeUI{};
+	TObjectPtr<USplitscreenUI> CurrentMinigameUI{};
 	UPROPERTY()
 	TObjectPtr<UMinigameCutsceneManager> CurrentCutscene{};
 
@@ -222,15 +279,7 @@ private:
 	// Index: Player | Value: Team of player
 	TArray<TArray<int>> Teams;
 	TArray<int> TeamsByPlayers;
-	TArray<int> TeamPoints;
 	TArray<bool> ReadyPlayers;
-
-	// Index: Player number | Value: Minigame rank (1st, 2nd, 3rd, 4th)
-	// Note that there can be two players with the same rank
-	TArray<int> StandingsByPlayers;
-
-	// Index: Position on the results board | Value: Player number
-	TArray<int> PlayersByStandings;
 
 	TArray<TObjectPtr<AMinigamePlayer>> Players{};
 
@@ -272,6 +321,8 @@ private:
 	// Ends practice and begins transition to actual minigame
 	void EndPracticeMode();
 
+	void FindPlayerSpawns();
+	
 	void ClearMinigameUI();
 
 	// Draws minigame UI whenever the minigame is started.
@@ -283,37 +334,19 @@ private:
 	USplitscreenUI* SpawnSplitscreenUI(int NumSplits);
 	void SetupMinigameUI(USplitscreenUI* SplitscreenUI);
 
+	void EnablePlayerInput();
+	void DisablePlayerInput();
+	
+	/**
+	*	Handles ending of the game.
+	*	@param bTransitionToPractice True if the game will transition
+	*	@param bOverrideIfInProgress Can end the game, even if the game is already ending. Used to transition
+	*	out of practice mode if practice mode is already resetting
+	*/
+	void EndGameInternal(bool bTransitionToPractice, bool bOverrideIfInProgress = false);
+	
 	// Alerts to log and error
 	FORCEINLINE void AlertWarning(const FString& Text) const;
 	FORCEINLINE void AlertError(const FString& Text) const;
-
-public:
-	UFUNCTION(BlueprintGetter)
-	double GetTimeRemaining() const { return TimeRemaining; }
-
-	UFUNCTION(BlueprintSetter)
-	void SetTimeRemaining(double time) { TimeRemaining = time; }
-
-	UFUNCTION(BlueprintGetter)
-	double GetTimeElapsed() const { return TimeElapsed; }
-
-	UFUNCTION(BlueprintGetter)
-	int GetInstanceNumPlayers() const { return NumPlayers; }
-
-	UFUNCTION(BlueprintGetter)
-	bool IsPractice() const { return bIsPractice; }
-
-	UFUNCTION(BlueprintGetter)
-	bool IsInProgress() const { return bIsInProgress; }
-
-	UFUNCTION(BlueprintGetter)
-	EMinigameType GetTeamType() const { return TeamType; }
-
-	UFUNCTION(BlueprintCallable, Category = "Minigame|Points")
-	UBasePointCounter* GetPointCounter() const { return PointCounter; }
-	
-	UCustomizableObjectInstance* GetCachedOverride(int32 PlayerNumber);
-	void CacheOverride(UCustomizableObjectInstance* Override, int32 PlayerNumber);
 };
-
 

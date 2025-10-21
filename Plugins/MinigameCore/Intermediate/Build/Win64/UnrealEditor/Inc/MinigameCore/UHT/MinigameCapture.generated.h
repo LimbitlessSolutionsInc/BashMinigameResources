@@ -17,7 +17,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class AMinigameCapture *********************************************************
-#define FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCapture_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCapture_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execSetShakeIntensity); \
 	DECLARE_FUNCTION(execGetShakeIntensity); \
 	DECLARE_FUNCTION(execGetCaptureNumber); \
@@ -26,7 +26,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 MINIGAMECORE_API UClass* Z_Construct_UClass_AMinigameCapture_NoRegister();
 
-#define FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCapture_h_16_INCLASS_NO_PURE_DECLS \
+#define FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCapture_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMinigameCapture(); \
 	friend struct Z_Construct_UClass_AMinigameCapture_Statics; \
@@ -37,7 +37,7 @@ public: \
 	DECLARE_SERIALIZER(AMinigameCapture)
 
 
-#define FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCapture_h_16_ENHANCED_CONSTRUCTORS \
+#define FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCapture_h_16_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	AMinigameCapture(AMinigameCapture&&) = delete; \
 	AMinigameCapture(const AMinigameCapture&) = delete; \
@@ -47,13 +47,13 @@ public: \
 	NO_API virtual ~AMinigameCapture();
 
 
-#define FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCapture_h_13_PROLOG
-#define FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCapture_h_16_GENERATED_BODY \
+#define FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCapture_h_13_PROLOG
+#define FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCapture_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCapture_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCapture_h_16_INCLASS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCapture_h_16_ENHANCED_CONSTRUCTORS \
+	FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCapture_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCapture_h_16_INCLASS_NO_PURE_DECLS \
+	FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCapture_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -63,6 +63,6 @@ class AMinigameCapture;
 // ********** End Class AMinigameCapture ***********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_Downloads_MinigameCore_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCapture_h
+#define CURRENT_FILE_ID FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCapture_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

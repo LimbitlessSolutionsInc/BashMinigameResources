@@ -10,12 +10,15 @@ class UCircularWipeWidget;
 /**
  * 
  */
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FLoadLevelParams
 {
 	GENERATED_BODY()
 public:
+	UPROPERTY(BlueprintReadWrite, Category="LoadLevel")
 	FName LevelToOpenName;
+
+	UPROPERTY(BlueprintReadWrite, Category="LoadLevel")
 	TSoftObjectPtr<UWorld> LevelToOpen;
 };
 
@@ -24,6 +27,7 @@ class BASHCORE_API ABashGamemode : public AGameModeBase
 {
 	GENERATED_BODY()
 public:
+	UFUNCTION(BlueprintCallable, Category="LoadLevel")
 	void TransitionToLevel(FLoadLevelParams loadLevelParams);
 	
 protected:
