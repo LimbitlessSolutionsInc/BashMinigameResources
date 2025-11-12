@@ -117,6 +117,7 @@ protected:
 	UPROPERTY(BlueprintGetter = GetPlayerData, Category = "Player Data")
 	TObjectPtr<UPlayerData> PlayerData;
 
+private:
 	UPROPERTY()
 	TObjectPtr<UCustomizableObject> CustomizableObject;
 };

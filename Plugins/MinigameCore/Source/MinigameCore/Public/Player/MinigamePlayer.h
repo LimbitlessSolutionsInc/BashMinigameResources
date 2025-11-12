@@ -44,6 +44,11 @@ public:
 private:
 	TObjectPtr<UInputAction> ReadyAction;
 
+	// Disables debug input mapping contexts from applying to players.
+	// In non-editor builds, debug inputs are always disabled
+	UPROPERTY(EditDefaultsOnly, Category = "Debug")
+	bool bDisableDebugInputs{};
+	
 #if WITH_EDITOR
 	TObjectPtr<UInputMappingContext> DebugInputMapping;
 	TObjectPtr<UInputAction> ReadyAllPlayersAction;

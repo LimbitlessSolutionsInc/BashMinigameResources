@@ -8,6 +8,8 @@
 #include "CustomizablePlayerComponent.generated.h"
 
 
+class IBashController;
+class UPlayerData;
 class ABashPlayerController;
 
 UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent))
@@ -19,7 +21,7 @@ public:
 	UCustomizablePlayerComponent();
 	
 	UFUNCTION(BlueprintCallable, Category="Customizable Player")
-	virtual void LoadCustomizableInstance(ABashPlayerController* PC);
+	virtual void LoadCustomizableInstance(UPlayerData* PlayerData);
 protected:
 	virtual void BeginPlay() override;
 };

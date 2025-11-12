@@ -39,6 +39,9 @@ public:
 
 	void EnableCamera(bool bIsEnabled);
 
+	UFUNCTION(BlueprintCallable, Category = "Projection")
+	bool ProjectWorldToCapture(const FVector& WorldPosition, FVector2D& OutScreenPosition) const;
+
 	UFUNCTION(BlueprintCallable, Category = "Effects")
 	float GetShakeIntensity() const { return CameraShakeIntensity; }
 

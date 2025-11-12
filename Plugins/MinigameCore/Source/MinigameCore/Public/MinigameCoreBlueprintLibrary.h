@@ -48,6 +48,7 @@ public:
 	 * @param bCalculateAlternateTrajectory If true, calculates an alternate trajectory that arcs even higher
 	 * This projectile's flight may be very long
 	 * @param OutVelocity The velocity needed to launch the projectile at for the desired trajectory
+	 * @param OutTravelTime The predicted time the projectile will be in flight for to reach destination
 	 * @return True if a valid trajectory exists, false otherwise
 	 */
 	UFUNCTION(BlueprintCallable, Category = "Projectile Motion", meta = (ReturnDisplayName = "Valid Trajectory Found", WorldContext = "WorldContextObject"))
@@ -57,7 +58,8 @@ public:
 		FVector Target,
 		float LaunchSpeed,
 		bool bCalculateAlternateTrajectory,
-		FVector& OutVelocity);
+		FVector& OutVelocity,
+		float& OutTravelTime);
 
 	/**
 	 * Gets the velocity needed to shoot a freefall projectile from Source to Target

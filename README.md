@@ -31,23 +31,24 @@ Here is a sample project that uses MinigameCore. Feel free to reference it to se
 >    3.1 [Player Input](#31-player-input)  
 > 1. [Minigame Captures](#4-minigame-captures)  
 >    4.1 [Splitscreen](#41-splitscreen)  
-> 1. [Point Counting](#5-point-counting)  
-> 1. [Minigame UI](#6-minigame-ui)  
-> 1. [Player Components](#7-player-components)  
-	 7.1 [Player Rotation Component](#71-player-rotation-component)  
-	 7.2 [Player Acceleration Component](#72-player-acceleration-component)  
-> 1. [Cutscenes](#8-cutscenes)  
-	 8.1 [Cutscene Manager](#81-cutscene-manager)  
-	 8.2 [Level Sequence Cutscene Manager](#82-level-sequence-cutscene-manager)  
-> 1. [Player Mesh](#9-player-mesh)  
-     9.1 [Customizer Character Actor](#91-character-customizer-actor)  
-> 1. [Editor Tools](#10-editor-tools)  
-> 1. [Asset Organization Conventions](#11-asset-organization-conventions)  
-> 1. [Minigame Design Pillars](#12-minigame-design-pillars)
-> 1. [Minigame Migration](#13-minigame-migration)  
->    12.1 [Migrating C++](#131-migrating-cpp)  
->    12.2 [Migrating Assets](#132-migrating-assets)  
-> 1. [Disclaimer and Licensing](#14-disclaimer-and-licensing)
+> 1. [Minigame AI](#5-minigame-ai)
+> 1. [Point Counting](#6-point-counting)  
+> 1. [Minigame UI](#7-minigame-ui)  
+> 1. [Player Components](#8-player-components)  
+	 8.1 [Player Rotation Component](#81-player-rotation-component)  
+	 8.2 [Player Acceleration Component](#82-player-acceleration-component)  
+> 1. [Cutscenes](#9-cutscenes)  
+	 9.1 [Cutscene Manager](#91-cutscene-manager)  
+	 9.2 [Level Sequence Cutscene Manager](#92-level-sequence-cutscene-manager)  
+> 1. [Player Mesh](#10-player-mesh)  
+     10.1 [Customizer Character Actor](#101-character-customizer-actor)  
+> 1. [Editor Tools](#11-editor-tools)  
+> 1. [Asset Organization Conventions](#12-asset-organization-conventions)  
+> 1. [Minigame Design Pillars](#13-minigame-design-pillars)
+> 1. [Minigame Migration](#14-minigame-migration)  
+>    14.1 [Migrating C++](#141-migrating-cpp)  
+>    14.2 [Migrating Assets](#142-migrating-assets)  
+> 1. [Disclaimer and Licensing](#15-disclaimer-and-licensing)
 
 # 1. Getting Started
 
@@ -271,6 +272,13 @@ Players inheriting from **AMinigamePlayer** will automatically be bound to the *
 | IA_Rotation | The current rotation of the player’s flex device, in Euler angles, from the device’s calibration point. Recommended to use the **[Player Rotation Component](#7-player-rotation-component)** instead. |
 | IA_Acceleration | The proper acceleration of the player’s device. Note that proper acceleration includes the force counteracting gravity, if any. Recommended to use **[Player Acceleration Component](#8-player-acceleration-component)** instead. |
 
+There is also an input mapping context with several helpful debug actions. This input mapping context is automatically applied and configured to apply the described debug actions. This input mapping context is not applied to players in non-editor builds, or if the player's **Disable Debug Inputs** setting is checked.
+
+| Input Action | Description | Keybind |
+| --- | --- | --- |
+| IA_DebugReadyAllPlayers | Readies all players in Practice Mode, starting a transition to the game | Q
+| IA_DebugSetPlayerCount[1-4] | Sets the player count of the minigame to the specified number, depending on which action is used | 1, 2, 3, 4
+ 
 Example of IA_MediumFlex and IA_StrongFlex in use
 
 ![Enter image alt description](Images/XAX_Image_10.png)
@@ -320,7 +328,18 @@ The minigame capture associated with a specific player’s view can be retrieved
 
 Enabling splitscreen requires rendering the level multiple times and, as such, is ***very expensive***. Splitscreen minigame levels should be simple and fast to render. Use caution when enabling splitscreen.
 
-# 5. Point Counting
+# 5 Minigame AI
+
+To set up your minigame to use AI:
+1. Create a Blueprint inheriting from **AMinigameAIController**. Name this **BP_[Your Minigame Name]AIController** or something similar.
+2. In your minigame player's Blueprint class, set **AI Controller Class** to your newly created AI Controller
+3. In your minigame player's Blueprint class, ensure **Auto Possess AI** is set to *Spawned*.
+
+Now, players that do not have a corresponding PlayerController will automatically spawn using the AI Controller.
+
+All decision-making logic for the player should be contained in the AI Controller. You should **not** put AI-specific logic in the Minigame Player blueprint class.
+
+# 6. Point Counting
 
 The Point Counter is an actor component attached to minigame game modes that handle all of the scorekeeping and result calculations. MinigameCore provides BasePointCounter with a basic implementation, but developers may create a point counter deriving from **UBasePointCounter** to customize behavior.
 
@@ -347,7 +366,7 @@ Example of adding points when a target is hit by a projectile
 
 ![Enter image alt description](Images/2vd_Image_13.png)
 
-# 6 Minigame UI
+# 7 Minigame UI
 
 AMinigameBase’s MinigameUIClass property only accepts widgets inheriting from **UMinigameUI**. 
 
@@ -369,9 +388,9 @@ The minigame UI can be used for displaying helpful information such as team scor
 
 To access properties or functions of a derived GameMode, simply cast the widget’s Minigame reference to the type of your minigame’s GameMode.
 
-# 7 Player Components
+# 8 Player Components
 
-## 7.1 Player Rotation Component
+## 8.1 Player Rotation Component
 
 **UPlayerRotationComponent** is an actor component that is included with MinigameCore. It simplifies the use of raw rotation input (IA_Rotation) and offers convenient functionality for interpreting and processing rotation data in gameplay scenarios. Minigames that use rotation should have this component on its MinigamePlayer subclass. 
 
@@ -403,7 +422,7 @@ void ATestMinigamePlayer::CastRay()`
 	}
 }
 ```
-## 7.2 Player Acceleration Component
+## 8.2 Player Acceleration Component
 
 **UPlayerAccelerationComponent **is an actor component that is included with MinigameCore. It simplifies the use of raw acceleration input (IA_Acceleration) and offers convenient functionality for interpreting and processing acceleration data in gameplay scenarios. Minigames that use acceleration should have this component on its MinigamePlayer subclass. 
 
@@ -436,7 +455,7 @@ Example of ListenForMovement being used in Blueprint:
 
 ![Enter image alt description](Images/QPy_Image_15.png)
 
-# 8 Cutscenes
+# 9 Cutscenes
 
 Cutscenes are events that momentarily pause a minigame's normal progression outside of the Practice Mode. Currently, there are two places in a minigame that can use a cutscene: 
  * Intro Cutscene - triggered after practice mode ends, before the minigame starts for the final time
@@ -446,7 +465,7 @@ Cutscenes can be set in the **MinigameBase**'s details pane.
 
 ![MinigameBase Cutscene Selection](Images/cutscenedetails.png)
 
-## 8.1 Cutscene Manager
+## 9.1 Cutscene Manager
 
 **UMinigameCutsceneManager** is the base class for all minigame cutscenes and is how the **MinigameBase** can interface with a cutscene. To create a new cutscene, create a Blueprint that subclasses it. Then, implement the **OnStartCutscene** Blueprint native event. This event will be called when the minigame is started. 
 
@@ -456,7 +475,7 @@ Be sure to call **EndCutscene** when the cutscene is over. Cutscenes that are no
 
 If the cutscene manager's **bShouldSpawnPlayers** property is true for an intro cutscene, the minigame players will be spawned before the cutscene plays. This allows cutscenes to use the minigame players directly in the cutscene. If false, minigame players will spawn after the cutscene. This has no effect on end cutscenes.
 
-## 8.2 Level Sequence Cutscene Manager
+## 9.2 Level Sequence Cutscene Manager
 
 A common way to implement cutscenes is through the use of a **level sequence**. The **ULevelSequenceMinigameCutsceneManager** inherits from **UMinigameCutsceneManager** and helps integrate level sequences with minigame cutscenes.
 
@@ -475,7 +494,7 @@ Level Sequence cutscenes also have several new BlueprintNativeEvents that can be
 
 ![On Level Sequence Complete Example](Images/levelsequencecomplete.png)
  
-# 9 Player Mesh
+# 10 Player Mesh
 
 Super Bionic Bash uses a character customizer. As such, the mesh for the player is generated at runtime. If you want to use the 
 customized character mesh in your minigame, attach a **CustomizablePlayer** component (located in the **BashCore** module) to your MinigamePlayer's **skeletal mesh component**. The skeletal mesh will be set at runtime by the CustomizablePlayer component. Optionally, you can set the skeletal mesh component itself to use **SKM_ModularCharacterFallback**'s skeletal mesh for reference of the character's size in viewport and editor (note that it will still be overridden at runtime).
@@ -491,11 +510,25 @@ The skeleton, physics asset, and fallback skeletal mesh is located in **Plugins*
 
 To use custom animations for your minigame, see the [Animation Import Guide](AnimationImportGuide.md).
 
-## 9.1 Character Customizer Actor
+## 10.1 Character Customizer Actor
 
 BashCore has **BP_CharacterCustomizerActor**, which is a basic actor that uses the character customizer mesh of the specified player controller. The player controller can be specified by player number. This actor has no logic attached to it other than loading the customizer mesh, making it a good candidate for things like cutscenes that only need to animate with it.
 
-# 10 Editor Tools
+## 10.2 MinigameCustomizablePlayer Overrides
+
+By default, the **CustomizablePlayer** component will use the customized character that the player chooses (or the one randomly generated if starting from the minigame). However, minigames can choose to **override** certain customizer choices using the **MinigameCustomizablePlayer** component (instead of the **CustomizablePlayer** component).
+
+This will ensure that players in the minigame will always have that specified parameter value. The override only applies for the players in the current minigame and has no effect on the player on the board or other minigames.
+
+Each override specifies a parameter to change and the parameter's new value. 
+
+For example, the following override ensures all players are wearing a pirate hat. 
+
+![Minigame Override](Images/customizeroverride.png)
+
+Note: There is a known issue where the dropdowns will sometimes not populate when the editor is freshly opened. Simply opening CO_ModularCharacter or starting Play-in-Editor with an instance of the customized character will fix this. This only needs to be done once per editor instance.
+
+# 11 Editor Tools
 
 MinigameCore comes with Editor Utility Widgets to make playtesting and debugging easier. All the editor tools are compiled in **MinigameCore Content > Tools > EUW_MinigameCoreEditorTools**. While playing the minigame, right click the widget asset and select “Run Editor Utility Widget”.
 
@@ -523,7 +556,7 @@ MinigameCore Tools:
 
 There is another editor tool that displays various motion sensor information being received by connected devices. This can be found in **LimbitlessBluetoothPlugin Content > Tools > EUW_DeviceValueTool**. While not strictly necessary for minigame creation, it can be occasionally useful. 
 
-# 11 Asset Organization Conventions
+# 12 Asset Organization Conventions
 
 All in-editor assets and blueprints should follow the standard Unreal asset naming convention. In general, the naming convention is an initialism of the type of asset followed by an underscore should prefix the name of the asset. For example, blueprints are prefixed BP_, textures are prefixed T_, etc.
 
@@ -531,7 +564,7 @@ Minigame-specific blueprints should additionally include the minigame name (or i
 
 For more information on asset conventions, see [the Asset Guide](AssetGuide.md).
 
-# 12 Minigame Design Pillars
+# 13 Minigame Design Pillars
 
 * Foster competition, but prioritize fun for all players  
   * Games should not be overly punishing.  
@@ -546,13 +579,13 @@ For more information on asset conventions, see [the Asset Guide](AssetGuide.md).
 * Enemies can be aggressive but never hateful  
 * Avoid controversial content.
 
-# 13 Minigame Migration
+# 14 Minigame Migration
 
 This section documents the process to move minigames created in separate projects into the base Super Bionic Bash project. For minigame creators, this section can be ignored.
 
 The project with the minigame will be referred to as the “minigame project”. Super Bionic Bash will be referred to as the “base project”.
 
-## 13.1 Migrating C++
+## 14.1 Migrating C++
 
 If the minigame project has C++ classes, then:
 
@@ -566,9 +599,9 @@ If the minigame project has C++ classes, then:
 
 5. Build to ensure there are no compilation errors
 
-## 13.2 Migrating Assets
+## 14.2 Migrating Content
 
-Remaining minigame assets (Blueprints, Levels, Textures, etc) can be migrated using Unreal Engine’s migration system.
+Remaining minigame content (Blueprints, Levels, Textures, etc) can be migrated using Unreal Engine’s migration system.
 
 1. In the minigame project, navigate to the minigame Level.
 
@@ -580,7 +613,7 @@ Remaining minigame assets (Blueprints, Levels, Textures, etc) can be migrated us
 
 5. Open the base project and ensure the newly migrated assets are in their own subfolder within the Content folder, if it isn’t already. The subfolder should have the same name as the minigame. Fix up any redirectors from this move, if necessary
 
-## 14 Disclaimer and Licensing
+## 15 Disclaimer and Licensing
 
 University of Central Florida Research Foundation, Inc., d/b/a Limbitless Solutions, Inc. (Limbitless or LSI), located at the University of Central Florida (University) in Orlando, Florida, United States of America received support to host a game-jam. This project was funded [in part] by a grant from the United States Department of State. The opinions, findings and conclusions stated herein are those of the author[s] and do not  necessarily reflect those of the United States Department of State or the University of Central Florida. 
 

@@ -1310,7 +1310,7 @@ struct Z_Construct_UClass_AMinigameBase_Statics
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
 		{ "ToolTip", "True if the minigame is not finished" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DebugHideUI_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bDebugHideUI_MetaData[] = {
 		{ "Category", "Debug" },
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
 	};
@@ -1367,8 +1367,8 @@ struct Z_Construct_UClass_AMinigameBase_Statics
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsPractice;
 	static void NewProp_bIsInProgress_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsInProgress;
-	static void NewProp_DebugHideUI_SetBit(void* Obj);
-	static const UECodeGen_Private::FBoolPropertyParams NewProp_DebugHideUI;
+	static void NewProp_bDebugHideUI_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_bDebugHideUI;
 	static const UECodeGen_Private::FDoublePropertyParams NewProp_TimeRemaining;
 	static const UECodeGen_Private::FClassPropertyParams NewProp_IntroCutscene;
 	static const UECodeGen_Private::FClassPropertyParams NewProp_EndingCutscene;
@@ -1445,11 +1445,11 @@ void Z_Construct_UClass_AMinigameBase_Statics::NewProp_bIsInProgress_SetBit(void
 	((AMinigameBase*)Obj)->bIsInProgress = 1;
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_bIsInProgress = { "bIsInProgress", nullptr, (EPropertyFlags)0x0040000000000014, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AMinigameBase), &Z_Construct_UClass_AMinigameBase_Statics::NewProp_bIsInProgress_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bIsInProgress_MetaData), NewProp_bIsInProgress_MetaData) };
-void Z_Construct_UClass_AMinigameBase_Statics::NewProp_DebugHideUI_SetBit(void* Obj)
+void Z_Construct_UClass_AMinigameBase_Statics::NewProp_bDebugHideUI_SetBit(void* Obj)
 {
-	((AMinigameBase*)Obj)->DebugHideUI = 1;
+	((AMinigameBase*)Obj)->bDebugHideUI = 1;
 }
-const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_DebugHideUI = { "DebugHideUI", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AMinigameBase), &Z_Construct_UClass_AMinigameBase_Statics::NewProp_DebugHideUI_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DebugHideUI_MetaData), NewProp_DebugHideUI_MetaData) };
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_bDebugHideUI = { "bDebugHideUI", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AMinigameBase), &Z_Construct_UClass_AMinigameBase_Statics::NewProp_bDebugHideUI_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bDebugHideUI_MetaData), NewProp_bDebugHideUI_MetaData) };
 const UECodeGen_Private::FDoublePropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_TimeRemaining = { "TimeRemaining", nullptr, (EPropertyFlags)0x0040000000000805, UECodeGen_Private::EPropertyGenFlags::Double, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, TimeRemaining), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TimeRemaining_MetaData), NewProp_TimeRemaining_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_IntroCutscene = { "IntroCutscene", nullptr, (EPropertyFlags)0x0044000000010001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, IntroCutscene), Z_Construct_UClass_UClass, Z_Construct_UClass_UMinigameCutsceneManager_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IntroCutscene_MetaData), NewProp_IntroCutscene_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_EndingCutscene = { "EndingCutscene", nullptr, (EPropertyFlags)0x0044000000010001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, EndingCutscene), Z_Construct_UClass_UClass, Z_Construct_UClass_UMinigameCutsceneManager_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EndingCutscene_MetaData), NewProp_EndingCutscene_MetaData) };
@@ -1481,7 +1481,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMinigame
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_NumPlayers,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_bIsPractice,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_bIsInProgress,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_DebugHideUI,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_bDebugHideUI,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_TimeRemaining,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_IntroCutscene,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_EndingCutscene,
@@ -1526,10 +1526,10 @@ AMinigameBase::~AMinigameBase() {}
 struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AMinigameBase, AMinigameBase::StaticClass, TEXT("AMinigameBase"), &Z_Registration_Info_UClass_AMinigameBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMinigameBase), 996162906U) },
+		{ Z_Construct_UClass_AMinigameBase, AMinigameBase::StaticClass, TEXT("AMinigameBase"), &Z_Registration_Info_UClass_AMinigameBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMinigameBase), 2566455975U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_1143405091(TEXT("/Script/MinigameCore"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_2557606320(TEXT("/Script/MinigameCore"),
 	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

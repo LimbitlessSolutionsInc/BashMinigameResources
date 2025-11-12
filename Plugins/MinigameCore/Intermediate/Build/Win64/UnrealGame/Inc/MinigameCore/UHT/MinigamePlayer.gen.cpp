@@ -162,6 +162,12 @@ struct Z_Construct_UClass_AMinigamePlayer_Statics
 		{ "Category", "Minigame Player" },
 		{ "ModuleRelativePath", "Public/Player/MinigamePlayer.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bDisableDebugInputs_MetaData[] = {
+		{ "Category", "Debug" },
+		{ "Comment", "// Disables debug input mapping contexts from applying to players.\n// In non-editor builds, debug inputs are always disabled\n" },
+		{ "ModuleRelativePath", "Public/Player/MinigamePlayer.h" },
+		{ "ToolTip", "Disables debug input mapping contexts from applying to players.\nIn non-editor builds, debug inputs are always disabled" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_Team;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_PlayerNumber;
@@ -170,6 +176,8 @@ struct Z_Construct_UClass_AMinigamePlayer_Statics
 	static void NewProp_bIsReady_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsReady;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Minigame;
+	static void NewProp_bDisableDebugInputs_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_bDisableDebugInputs;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -195,12 +203,18 @@ void Z_Construct_UClass_AMinigamePlayer_Statics::NewProp_bIsReady_SetBit(void* O
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AMinigamePlayer_Statics::NewProp_bIsReady = { "bIsReady", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AMinigamePlayer), &Z_Construct_UClass_AMinigamePlayer_Statics::NewProp_bIsReady_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bIsReady_MetaData), NewProp_bIsReady_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMinigamePlayer_Statics::NewProp_Minigame = { "Minigame", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigamePlayer, Minigame), Z_Construct_UClass_AMinigameBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Minigame_MetaData), NewProp_Minigame_MetaData) };
+void Z_Construct_UClass_AMinigamePlayer_Statics::NewProp_bDisableDebugInputs_SetBit(void* Obj)
+{
+	((AMinigamePlayer*)Obj)->bDisableDebugInputs = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AMinigamePlayer_Statics::NewProp_bDisableDebugInputs = { "bDisableDebugInputs", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AMinigamePlayer), &Z_Construct_UClass_AMinigamePlayer_Statics::NewProp_bDisableDebugInputs_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bDisableDebugInputs_MetaData), NewProp_bDisableDebugInputs_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMinigamePlayer_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigamePlayer_Statics::NewProp_Team,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigamePlayer_Statics::NewProp_PlayerNumber,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigamePlayer_Statics::NewProp_bHasFlexDevice,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigamePlayer_Statics::NewProp_bIsReady,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigamePlayer_Statics::NewProp_Minigame,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigamePlayer_Statics::NewProp_bDisableDebugInputs,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AMinigamePlayer_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AMinigamePlayer_Statics::DependentSingletons[])() = {
@@ -239,10 +253,10 @@ AMinigamePlayer::~AMinigamePlayer() {}
 struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h__Script_MinigameCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AMinigamePlayer, AMinigamePlayer::StaticClass, TEXT("AMinigamePlayer"), &Z_Registration_Info_UClass_AMinigamePlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMinigamePlayer), 1734466270U) },
+		{ Z_Construct_UClass_AMinigamePlayer, AMinigamePlayer::StaticClass, TEXT("AMinigamePlayer"), &Z_Registration_Info_UClass_AMinigamePlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMinigamePlayer), 3976987438U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h__Script_MinigameCore_3745227215(TEXT("/Script/MinigameCore"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h__Script_MinigameCore_540765088(TEXT("/Script/MinigameCore"),
 	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h__Script_MinigameCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

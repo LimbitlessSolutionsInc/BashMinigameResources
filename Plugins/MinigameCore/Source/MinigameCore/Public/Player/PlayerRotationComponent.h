@@ -54,15 +54,22 @@ public:
 	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "Player Rotation")
 	virtual FVector GetDirectionFromCamera(FQuat CameraOrientation) const;
 
-	UFUNCTION(BlueprintCallable, Category = "Player Rotation")
+	UFUNCTION(BlueprintCallable, Category = "Aiming")
 	virtual void AddAimOffset(const FVector2D& DeltaOffset) { AimOffset += DeltaOffset; }
-
+	
+	UFUNCTION(BlueprintCallable, Category = "Aiming")
+	virtual void SetAimOffset(const FVector2D& NewAimOffset) { AimOffset = NewAimOffset; }
+	
 	// Reads the rotation value from the Rotation input action
 	UFUNCTION(BlueprintCallable, Category = "Player Rotation")
 	FQuat GetRotationInputValue() const;
 
 	UFUNCTION(BlueprintCallable, Category = "Player Rotation")
 	FVector GetRotationInputValueVector() const;
+
+	// Returns the resolution used for rotation aiming
+	UFUNCTION(BlueprintCallable, Category = "Player Rotation")
+	FVector2D GetSetScreenResolution() const { return ScreenResolution; };
 	
 protected:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Input")

@@ -18,8 +18,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UPlayerRotationComponent *************************************************
 #define FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerRotationComponent_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execGetSetScreenResolution); \
 	DECLARE_FUNCTION(execGetRotationInputValueVector); \
 	DECLARE_FUNCTION(execGetRotationInputValue); \
+	DECLARE_FUNCTION(execSetAimOffset); \
 	DECLARE_FUNCTION(execAddAimOffset); \
 	DECLARE_FUNCTION(execGetDirectionFromCamera); \
 	DECLARE_FUNCTION(execGetAimPosition); \

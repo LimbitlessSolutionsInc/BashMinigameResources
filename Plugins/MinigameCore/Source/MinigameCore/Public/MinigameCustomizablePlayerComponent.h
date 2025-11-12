@@ -26,7 +26,7 @@ class MINIGAMECORE_API UMinigameCustomizablePlayerComponent : public UCustomizab
 public:
 	UCustomizableObject* GetCustomizableObject() { return CustomizableObject; }
 	
-	virtual void LoadCustomizableInstance(ABashPlayerController* PC) override;
+	virtual void LoadCustomizableInstance(UPlayerData* PlayerData) override;
 
 protected:
 	UPROPERTY(EditDefaultsOnly, Category="Override")

@@ -30,7 +30,7 @@ protected:
 	int NumStoredValues{};
 	
 	virtual void NativeConstruct() override;
-	virtual void OnOpenMenu(ABashPlayerController* InOwningPlayer) override;
+	virtual void OnOpenMenu(TScriptInterface<IBashController> InOwningPlayer) override;
 	virtual void OnCloseMenu() override;
 	virtual void NativeTick(const FGeometry& MyGeometry, float InDeltaTime) override;
 

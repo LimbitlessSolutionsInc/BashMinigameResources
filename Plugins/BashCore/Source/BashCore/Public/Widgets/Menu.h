@@ -4,12 +4,12 @@
 
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
+#include "Player/BashController.h"
 #include "Menu.generated.h"
 
+class IBashController;
 class ABashPlayerController;
-/**
- * 
- */
+
 UCLASS()
 class BASHCORE_API UMenu : public UUserWidget
 {
@@ -17,11 +17,10 @@ class BASHCORE_API UMenu : public UUserWidget
 public:
 	UMenu(const FObjectInitializer& ObjectInitializer);
 
-	
 	/*  Call to open the menu. Calls the bp function as well.
 	 *  This is specifically for visuals. For Menu Functionality(IE. Subscribing to events), refer to @OnEnterMenu()
 	 */
-	virtual void OnOpenMenu(ABashPlayerController* owningPlayer);
+	virtual void OnOpenMenu(TScriptInterface<IBashController> owningPlayer);
 	UFUNCTION(BlueprintImplementableEvent, Category = "Menu Events")
 	void OnOpenMenuBP();
 	
@@ -32,13 +31,11 @@ public:
 	UFUNCTION(BlueprintImplementableEvent, Category = "Menu Events")
 	void OnCloseMenuBP();
 
-
-	
 	/*  On Enter Menu is called when this menu becomes a player's active menu.
 	 *	This is separate from a visual opening because when returning from a pop up menu, the original menu would still be visible.
 	 *	Use to enable menu functionality(IE. Subscribing to events.)
 	 */
-	virtual void OnEnterMenu(ABashPlayerController* owningPlayer);
+	virtual void OnEnterMenu(TScriptInterface<IBashController> owningPlayer);
 	UFUNCTION(BlueprintImplementableEvent, Category = "Menu Events")
 	void OnEnterMenuBP();
 
@@ -46,7 +43,7 @@ public:
 	 * When Opening a pop up menu, this menu will still exist but is not interactable.
 	 * Use to disable functionality(IE. Unsubscribing from events.)
 	 */
-	virtual void OnExitMenu(ABashPlayerController* owningPlayer);
+	virtual void OnExitMenu(TScriptInterface<IBashController> owningPlayer);
 	UFUNCTION(BlueprintImplementableEvent, Category = "Menu Events")
 	void OnExitMenuBP();
 
@@ -68,7 +65,7 @@ protected:
 	UUserWidget* DefaultSelectedWidget;
 	
 	UPROPERTY(BlueprintReadOnly, Category = "Menu")
-	TWeakObjectPtr<ABashPlayerController> OwningPlayer;
+	TScriptInterface<IBashController> OwningPlayer;
 
 	// If true, this menu will quickly navigable by holding directional inputs. Best for longer menus
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Menu")

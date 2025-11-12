@@ -12,7 +12,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeMenu() {}
 
 // ********** Begin Cross Module References ********************************************************
-BASHCORE_API UClass* Z_Construct_UClass_ABashPlayerController_NoRegister();
+BASHCORE_API UClass* Z_Construct_UClass_UBashController_NoRegister();
 BASHCORE_API UClass* Z_Construct_UClass_UMenu();
 BASHCORE_API UClass* Z_Construct_UClass_UMenu_NoRegister();
 UMG_API UClass* Z_Construct_UClass_UUserWidget();
@@ -271,7 +271,6 @@ struct Z_Construct_UClass_UMenu_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
 		{ "IncludePath", "Widgets/Menu.h" },
 		{ "ModuleRelativePath", "Public/Widgets/Menu.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
@@ -294,7 +293,7 @@ struct Z_Construct_UClass_UMenu_Statics
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_DefaultSelectedWidget;
-	static const UECodeGen_Private::FWeakObjectPropertyParams NewProp_OwningPlayer;
+	static const UECodeGen_Private::FInterfacePropertyParams NewProp_OwningPlayer;
 	static void NewProp_bAllowHoldNavigation_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bAllowHoldNavigation;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
@@ -314,7 +313,7 @@ struct Z_Construct_UClass_UMenu_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UMenu_Statics::NewProp_DefaultSelectedWidget = { "DefaultSelectedWidget", nullptr, (EPropertyFlags)0x002108000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMenu, DefaultSelectedWidget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultSelectedWidget_MetaData), NewProp_DefaultSelectedWidget_MetaData) };
-const UECodeGen_Private::FWeakObjectPropertyParams Z_Construct_UClass_UMenu_Statics::NewProp_OwningPlayer = { "OwningPlayer", nullptr, (EPropertyFlags)0x0024080000000014, UECodeGen_Private::EPropertyGenFlags::WeakObject, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMenu, OwningPlayer), Z_Construct_UClass_ABashPlayerController_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OwningPlayer_MetaData), NewProp_OwningPlayer_MetaData) };
+const UECodeGen_Private::FInterfacePropertyParams Z_Construct_UClass_UMenu_Statics::NewProp_OwningPlayer = { "OwningPlayer", nullptr, (EPropertyFlags)0x0024080000000014, UECodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMenu, OwningPlayer), Z_Construct_UClass_UBashController_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OwningPlayer_MetaData), NewProp_OwningPlayer_MetaData) };
 void Z_Construct_UClass_UMenu_Statics::NewProp_bAllowHoldNavigation_SetBit(void* Obj)
 {
 	((UMenu*)Obj)->bAllowHoldNavigation = 1;
@@ -362,10 +361,10 @@ UMenu::~UMenu() {}
 struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h__Script_BashCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMenu, UMenu::StaticClass, TEXT("UMenu"), &Z_Registration_Info_UClass_UMenu, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMenu), 3606566194U) },
+		{ Z_Construct_UClass_UMenu, UMenu::StaticClass, TEXT("UMenu"), &Z_Registration_Info_UClass_UMenu, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMenu), 2152296681U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h__Script_BashCore_4210257142(TEXT("/Script/BashCore"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h__Script_BashCore_4272397190(TEXT("/Script/BashCore"),
 	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h__Script_BashCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

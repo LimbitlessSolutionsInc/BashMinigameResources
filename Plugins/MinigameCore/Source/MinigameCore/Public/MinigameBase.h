@@ -175,8 +175,7 @@ private:
 	// The amount of time the minigame should last before ending, in seconds
 	UPROPERTY(EditDefaultsOnly, Category = "Minigame|Settings")
 	double MinigameDuration;
-
-
+	
 	/*
 	 *  Practice Mode
 	 */
@@ -242,12 +241,12 @@ private:
 	bool bIsInProgress;
 
 	UPROPERTY(EditAnywhere, Category = "Debug")
-	bool DebugHideUI{};
-	
+	bool bDebugHideUI{};
+
 	// The amount of time remaining for this minigame, in seconds.
 	UPROPERTY(EditInstanceOnly, BlueprintGetter = GetTimeRemaining, BlueprintSetter = SetTimeRemaining, Category = "Minigame|Gameplay", meta = (AllowPrivateAccess = true))
 	double TimeRemaining;
-
+	
 	/*
 	 *  Cutscenes
 	 */

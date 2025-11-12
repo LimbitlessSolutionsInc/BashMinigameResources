@@ -20,6 +20,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCapture_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execSetShakeIntensity); \
 	DECLARE_FUNCTION(execGetShakeIntensity); \
+	DECLARE_FUNCTION(execProjectWorldToCapture); \
 	DECLARE_FUNCTION(execGetCaptureNumber); \
 	DECLARE_FUNCTION(execApplyCameraShake);
 
