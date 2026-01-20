@@ -56,7 +56,7 @@ This documentation assumes an understanding of Unreal Engine 5 basics, such as f
 
 To get started with making your new minigame:
 
-1. Create a new Unreal Engine 5.1 project with the same name as your minigame
+1. Create a new Unreal Engine 5.6 project with the same name as your minigame
 
 2. Create a folder called Plugins in the root folder of your newly created project. Clone this GitHub repository and copy the contents of its Plugins into the newly created project Plugins folder. Enable MinigameCore in the editor (Edit > Plugins > Search for **MinigameCore** > Select checkbox)
 
