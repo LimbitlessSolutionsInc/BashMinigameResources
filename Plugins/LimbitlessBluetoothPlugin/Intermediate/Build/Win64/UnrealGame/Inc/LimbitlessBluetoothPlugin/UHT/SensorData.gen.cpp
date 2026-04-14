@@ -102,6 +102,10 @@ struct Z_Construct_UScriptStruct_FSensorData_Statics
 		{ "BlueprintType", "true" },
 		{ "ModuleRelativePath", "Public/SensorData.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EMGReading_MetaData[] = {
+		{ "Category", "Sensor Data" },
+		{ "ModuleRelativePath", "Public/SensorData.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AngularVelocity_MetaData[] = {
 		{ "Category", "Sensor Data" },
 		{ "ModuleRelativePath", "Public/SensorData.h" },
@@ -123,6 +127,7 @@ struct Z_Construct_UScriptStruct_FSensorData_Statics
 		{ "ModuleRelativePath", "Public/SensorData.h" },
 	};
 #endif // WITH_METADATA
+	static const UECodeGen_Private::FIntPropertyParams NewProp_EMGReading;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_AngularVelocity;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ProperAcceleration;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Scale;
@@ -136,6 +141,7 @@ struct Z_Construct_UScriptStruct_FSensorData_Statics
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
 };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FSensorData_Statics::NewProp_EMGReading = { "EMGReading", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSensorData, EMGReading), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EMGReading_MetaData), NewProp_EMGReading_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSensorData_Statics::NewProp_AngularVelocity = { "AngularVelocity", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSensorData, AngularVelocity), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AngularVelocity_MetaData), NewProp_AngularVelocity_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSensorData_Statics::NewProp_ProperAcceleration = { "ProperAcceleration", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSensorData, ProperAcceleration), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ProperAcceleration_MetaData), NewProp_ProperAcceleration_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FSensorData_Statics::NewProp_Scale = { "Scale", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSensorData, Scale), nullptr, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Scale_MetaData), NewProp_Scale_MetaData) };
@@ -143,6 +149,7 @@ const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FSensorDa
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FSensorData_Statics::NewProp_Color_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FSensorData_Statics::NewProp_Color = { "Color", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSensorData, Color), Z_Construct_UEnum_LimbitlessBluetoothPlugin_EFlexColor, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Color_MetaData), NewProp_Color_MetaData) }; // 2899337883
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FSensorData_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSensorData_Statics::NewProp_EMGReading,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSensorData_Statics::NewProp_AngularVelocity,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSensorData_Statics::NewProp_ProperAcceleration,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSensorData_Statics::NewProp_Scale,
@@ -175,19 +182,19 @@ UScriptStruct* Z_Construct_UScriptStruct_FSensorData()
 // ********** End ScriptStruct FSensorData *********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_SensorData_h__Script_LimbitlessBluetoothPlugin_Statics
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_SensorData_h__Script_LimbitlessBluetoothPlugin_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EFlexColor_StaticEnum, TEXT("EFlexColor"), &Z_Registration_Info_UEnum_EFlexColor, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2899337883U) },
 	};
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FSensorData::StaticStruct, Z_Construct_UScriptStruct_FSensorData_Statics::NewStructOps, TEXT("SensorData"), &Z_Registration_Info_UScriptStruct_FSensorData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSensorData), 3968792232U) },
+		{ FSensorData::StaticStruct, Z_Construct_UScriptStruct_FSensorData_Statics::NewStructOps, TEXT("SensorData"), &Z_Registration_Info_UScriptStruct_FSensorData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSensorData), 3977798340U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_SensorData_h__Script_LimbitlessBluetoothPlugin_3547378499(TEXT("/Script/LimbitlessBluetoothPlugin"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_SensorData_h__Script_LimbitlessBluetoothPlugin_164140555(TEXT("/Script/LimbitlessBluetoothPlugin"),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_SensorData_h__Script_LimbitlessBluetoothPlugin_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_SensorData_h__Script_LimbitlessBluetoothPlugin_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_SensorData_h__Script_LimbitlessBluetoothPlugin_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_P_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_SensorData_h__Script_LimbitlessBluetoothPlugin_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_SensorData_h__Script_LimbitlessBluetoothPlugin_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_SensorData_h__Script_LimbitlessBluetoothPlugin_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_SensorData_h__Script_LimbitlessBluetoothPlugin_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_SensorData_h__Script_LimbitlessBluetoothPlugin_Statics::EnumInfo));
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

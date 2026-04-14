@@ -21,12 +21,16 @@ struct FSensorData
 {
 	GENERATED_BODY()
 
+	UPROPERTY(BlueprintReadOnly, Category = "Sensor Data")
 	int EMGReading;
+	
 	UPROPERTY(BlueprintReadOnly, Category = "Sensor Data")
 	FVector AngularVelocity{ FVector::ZeroVector };
 	UPROPERTY(BlueprintReadOnly, Category = "Sensor Data")
 	FVector ProperAcceleration{ FVector::ZeroVector };
+
 	uint16 Version{};
+	
 	uint8 BrdVersion{};
 	UPROPERTY(BlueprintReadOnly, Category = "Sensor Data")
 	uint8 Scale{1};

@@ -39,6 +39,14 @@
 			"Name": "PlatformManager",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "LimbitlessBTAndroid",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Android"
+			]
 		}
 	],
 	"Plugins": [
@@ -58,6 +66,13 @@
 			"Name": "BleUtilities",
 			"Enabled": true,
 			"Optional": true,
+			"PlatformAllowList": [
+				"Android"
+			]
+		},
+		{
+			"Name": "AndroidPermission",
+			"Enabled": true,
 			"PlatformAllowList": [
 				"Android"
 			]
