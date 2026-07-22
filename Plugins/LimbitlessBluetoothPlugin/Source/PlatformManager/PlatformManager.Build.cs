@@ -4,12 +4,14 @@ public class PlatformManager : ModuleRules
 {
     public PlatformManager(ReadOnlyTargetRules Target) : base(Target)
     {
-        bUsePrecompiled = true;
+        PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
+
+        PrecompileForTargets = PrecompileTargetsType.Any;
         
         PublicDependencyModuleNames.AddRange(
             new string[]
             {
-                "Core", "LimbitlessBluetoothPlugin", 
+                "Core", "LimbitlessBluetoothPlugin"
             }
         );
 
@@ -25,12 +27,13 @@ public class PlatformManager : ModuleRules
 
         if (Target.Platform == UnrealTargetPlatform.Win64)
         {
-            PrivateDependencyModuleNames.Add("LimbitlessBTWindows");
+            PrivateDependencyModuleNames.Add("LimbitlessBTWindows");  
+            PrivateDependencyModuleNames.Add("LimbitlessBTAndroid");
         }
 
         if (Target.Platform == UnrealTargetPlatform.Android)
         {
-            PrivateDependencyModuleNames.Add("BleUtilities");
+            PrivateDependencyModuleNames.Add("LimbitlessBTAndroid");
         }
     }
 }

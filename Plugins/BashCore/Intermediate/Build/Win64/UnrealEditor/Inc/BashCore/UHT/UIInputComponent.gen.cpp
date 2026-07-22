@@ -489,9 +489,13 @@ struct Z_Construct_UClass_UUIInputComponent_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SelectAction_MetaData[] = {
 		{ "Category", "Input" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Input:\n//Input Actions:\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Components/Player/UIInputComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Input:\nInput Actions:" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BackAction_MetaData[] = {
 		{ "Category", "Input" },
@@ -519,21 +523,33 @@ struct Z_Construct_UClass_UUIInputComponent_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MenuMappingContext_MetaData[] = {
 		{ "Category", "Input" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Input Mapping context:\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Components/Player/UIInputComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Input Mapping context:" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InitialHoldNavigationDelay_MetaData[] = {
 		{ "Category", "Input" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// How long should the input be pressed to start hold navigating\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Components/Player/UIInputComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "How long should the input be pressed to start hold navigating" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RepeatHoldNavigationDelay_MetaData[] = {
 		{ "Category", "Input" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// How often should navigation happen when hold navigating\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Components/Player/UIInputComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "How often should navigation happen when hold navigating" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OwningPlayerController_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Components/Player/UIInputComponent.h" },
@@ -632,14 +648,14 @@ UUIInputComponent::~UUIInputComponent() {}
 // ********** End Class UUIInputComponent **********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h__Script_BashCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h__Script_BashCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UUIInputComponent, UUIInputComponent::StaticClass, TEXT("UUIInputComponent"), &Z_Registration_Info_UClass_UUIInputComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UUIInputComponent), 1390944985U) },
+		{ Z_Construct_UClass_UUIInputComponent, UUIInputComponent::StaticClass, TEXT("UUIInputComponent"), &Z_Registration_Info_UClass_UUIInputComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UUIInputComponent), 56749840U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h__Script_BashCore_3197378297(TEXT("/Script/BashCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h__Script_BashCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h__Script_BashCore_204622489(TEXT("/Script/BashCore"),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h__Script_BashCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

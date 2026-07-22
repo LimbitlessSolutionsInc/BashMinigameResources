@@ -1,0 +1,14 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.LimbitlessBTWindows.cpp.obj": [
+			"LimbitlessBTWindows.init.gen.cpp.obj",
+			"WindowsBluetoothManager.gen.cpp.obj",
+			"WindowsFlexController.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"LimbitlessBTWindows.cpp.obj",
+			"WindowsBluetoothManager.cpp.obj",
+			"WindowsFlexController.cpp.obj"
+		]
+	}
+}

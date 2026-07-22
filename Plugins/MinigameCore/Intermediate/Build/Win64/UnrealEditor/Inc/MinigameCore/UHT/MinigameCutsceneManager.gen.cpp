@@ -26,9 +26,13 @@ struct Z_Construct_UFunction_UMinigameCutsceneManager_EndCutscene_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Cutscene" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// To be called by the cutscene to end the cutscene.\n// This prompts the minigame to continue with minigame flow (e.g. starting the game or transitioning to board)\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Cutscenes/MinigameCutsceneManager.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "To be called by the cutscene to end the cutscene.\nThis prompts the minigame to continue with minigame flow (e.g. starting the game or transitioning to board)" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -118,9 +122,13 @@ struct Z_Construct_UFunction_UMinigameCutsceneManager_OnStartCutscene_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Called by the minigame when the cutscene should begin playing\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Cutscenes/MinigameCutsceneManager.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called by the minigame when the cutscene should begin playing" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Minigame;
@@ -198,18 +206,26 @@ struct Z_Construct_UClass_UMinigameCutsceneManager_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Manages the behavior of minigame cutscenes when the minigame ends or completes.\n */" },
+#endif
 		{ "IncludePath", "Cutscenes/MinigameCutsceneManager.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Cutscenes/MinigameCutsceneManager.h" },
 		{ "ShowWorldContextPin", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Manages the behavior of minigame cutscenes when the minigame ends or completes." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bShouldSpawnPlayers_MetaData[] = {
 		{ "Category", "Cutscene" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* If true, players will be spawned by the minigame before the cutscene starts.\n\x09* This can be helpful in having the cutscene transition smoothly into gameplay, but\n\x09* isn't necessary if cutscene uses something else to represent players.\n\x09*\n\x09* If this cutscene is an end cutscene, players will already be spawned in their end-of-minigame state.\n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Cutscenes/MinigameCutsceneManager.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If true, players will be spawned by the minigame before the cutscene starts.\n      * This can be helpful in having the cutscene transition smoothly into gameplay, but\n      * isn't necessary if cutscene uses something else to represent players.\n      *\n      * If this cutscene is an end cutscene, players will already be spawned in their end-of-minigame state." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CurrentMinigame_MetaData[] = {
 		{ "Category", "Cutscene" },
@@ -222,9 +238,9 @@ struct Z_Construct_UClass_UMinigameCutsceneManager_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UMinigameCutsceneManager_EndCutscene, "EndCutscene" }, // 926466827
+		{ &Z_Construct_UFunction_UMinigameCutsceneManager_EndCutscene, "EndCutscene" }, // 1255749756
 		{ &Z_Construct_UFunction_UMinigameCutsceneManager_GetWorld, "GetWorld" }, // 1914722519
-		{ &Z_Construct_UFunction_UMinigameCutsceneManager_OnStartCutscene, "OnStartCutscene" }, // 1592340952
+		{ &Z_Construct_UFunction_UMinigameCutsceneManager_OnStartCutscene, "OnStartCutscene" }, // 109452008
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -277,14 +293,14 @@ UMinigameCutsceneManager::~UMinigameCutsceneManager() {}
 // ********** End Class UMinigameCutsceneManager ***************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Cutscenes_MinigameCutsceneManager_h__Script_MinigameCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Cutscenes_MinigameCutsceneManager_h__Script_MinigameCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMinigameCutsceneManager, UMinigameCutsceneManager::StaticClass, TEXT("UMinigameCutsceneManager"), &Z_Registration_Info_UClass_UMinigameCutsceneManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMinigameCutsceneManager), 3810835787U) },
+		{ Z_Construct_UClass_UMinigameCutsceneManager, UMinigameCutsceneManager::StaticClass, TEXT("UMinigameCutsceneManager"), &Z_Registration_Info_UClass_UMinigameCutsceneManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMinigameCutsceneManager), 2058274839U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Cutscenes_MinigameCutsceneManager_h__Script_MinigameCore_2379261775(TEXT("/Script/MinigameCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Cutscenes_MinigameCutsceneManager_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Cutscenes_MinigameCutsceneManager_h__Script_MinigameCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Cutscenes_MinigameCutsceneManager_h__Script_MinigameCore_2534412320(TEXT("/Script/MinigameCore"),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Cutscenes_MinigameCutsceneManager_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Cutscenes_MinigameCutsceneManager_h__Script_MinigameCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

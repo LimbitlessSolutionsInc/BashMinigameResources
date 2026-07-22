@@ -19,14 +19,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct FInputActionValue;
 
 // ********** Begin Class AMinigamePlayer **********************************************************
-#define FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execReadyPlayer);
 
 
-#define FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h_17_CALLBACK_WRAPPERS
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h_17_CALLBACK_WRAPPERS
 MINIGAMECORE_API UClass* Z_Construct_UClass_AMinigamePlayer_NoRegister();
 
-#define FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h_17_INCLASS_NO_PURE_DECLS \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMinigamePlayer(); \
 	friend struct Z_Construct_UClass_AMinigamePlayer_Statics; \
@@ -37,7 +37,7 @@ public: \
 	DECLARE_SERIALIZER(AMinigamePlayer)
 
 
-#define FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h_17_ENHANCED_CONSTRUCTORS \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h_17_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	AMinigamePlayer(AMinigamePlayer&&) = delete; \
 	AMinigamePlayer(const AMinigamePlayer&) = delete; \
@@ -47,14 +47,14 @@ public: \
 	NO_API virtual ~AMinigamePlayer();
 
 
-#define FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h_14_PROLOG
-#define FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h_17_GENERATED_BODY \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h_14_PROLOG
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h_17_CALLBACK_WRAPPERS \
-	FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h_17_INCLASS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h_17_ENHANCED_CONSTRUCTORS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h_17_CALLBACK_WRAPPERS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h_17_INCLASS_NO_PURE_DECLS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -64,6 +64,6 @@ class AMinigamePlayer;
 // ********** End Class AMinigamePlayer ************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h
+#define CURRENT_FILE_ID FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

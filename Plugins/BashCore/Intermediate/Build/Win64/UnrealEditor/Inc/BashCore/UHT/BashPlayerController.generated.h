@@ -22,7 +22,7 @@ class UPlayerData;
 class UUIInputComponentBase;
 
 // ********** Begin Class ABashPlayerController ****************************************************
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashPlayerController_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_BashPlayerController_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execGetBashLocalPlayer); \
 	DECLARE_FUNCTION(execGetPlayerPawn); \
 	DECLARE_FUNCTION(execGetPlayerData); \
@@ -31,7 +31,7 @@ class UUIInputComponentBase;
 
 BASHCORE_API UClass* Z_Construct_UClass_ABashPlayerController_NoRegister();
 
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashPlayerController_h_19_INCLASS_NO_PURE_DECLS \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_BashPlayerController_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABashPlayerController(); \
 	friend struct Z_Construct_UClass_ABashPlayerController_Statics; \
@@ -43,7 +43,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<ABashPlayerController*>(this); }
 
 
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashPlayerController_h_19_ENHANCED_CONSTRUCTORS \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_BashPlayerController_h_19_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ABashPlayerController(ABashPlayerController&&) = delete; \
 	ABashPlayerController(const ABashPlayerController&) = delete; \
@@ -53,13 +53,13 @@ public: \
 	NO_API virtual ~ABashPlayerController();
 
 
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashPlayerController_h_16_PROLOG
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashPlayerController_h_19_GENERATED_BODY \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_BashPlayerController_h_16_PROLOG
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_BashPlayerController_h_19_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashPlayerController_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashPlayerController_h_19_INCLASS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashPlayerController_h_19_ENHANCED_CONSTRUCTORS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_BashPlayerController_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_BashPlayerController_h_19_INCLASS_NO_PURE_DECLS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_BashPlayerController_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -69,6 +69,6 @@ class ABashPlayerController;
 // ********** End Class ABashPlayerController ******************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashPlayerController_h
+#define CURRENT_FILE_ID FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_BashPlayerController_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

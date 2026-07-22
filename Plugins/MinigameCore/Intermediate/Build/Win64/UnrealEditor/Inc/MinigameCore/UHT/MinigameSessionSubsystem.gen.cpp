@@ -91,8 +91,8 @@ struct Z_Construct_UFunction_UMinigameSessionSubsystem_GetMinigameResults_Static
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMinigameSessionSubsystem_GetMinigameResults_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FMinigameStanding, METADATA_PARAMS(0, nullptr) }; // 585325468
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UMinigameSessionSubsystem_GetMinigameResults_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MinigameSessionSubsystem_eventGetMinigameResults_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) }; // 585325468
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMinigameSessionSubsystem_GetMinigameResults_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FMinigameStanding, METADATA_PARAMS(0, nullptr) }; // 1679223635
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UMinigameSessionSubsystem_GetMinigameResults_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MinigameSessionSubsystem_eventGetMinigameResults_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) }; // 1679223635
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMinigameSessionSubsystem_GetMinigameResults_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMinigameSessionSubsystem_GetMinigameResults_Statics::NewProp_ReturnValue_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMinigameSessionSubsystem_GetMinigameResults_Statics::NewProp_ReturnValue,
@@ -212,9 +212,13 @@ struct Z_Construct_UFunction_UMinigameSessionSubsystem_SetMinigameReturnLevel_St
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Minigame Input" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Sets the level to return to after the minigame\n" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameSessionSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sets the level to return to after the minigame" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FSoftObjectPropertyParams NewProp_Level;
@@ -336,17 +340,19 @@ struct Z_Construct_UClass_UMinigameSessionSubsystem_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "MinigameSessionSubsystem.h" },
 		{ "ModuleRelativePath", "Public/MinigameSessionSubsystem.h" },
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UMinigameSessionSubsystem_GetMinigameResults, "GetMinigameResults" }, // 4254838859
+		{ &Z_Construct_UFunction_UMinigameSessionSubsystem_GetMinigameResults, "GetMinigameResults" }, // 1518726547
 		{ &Z_Construct_UFunction_UMinigameSessionSubsystem_GetMinigameReturnLevel, "GetMinigameReturnLevel" }, // 1430433858
 		{ &Z_Construct_UFunction_UMinigameSessionSubsystem_GetPlayerCount, "GetPlayerCount" }, // 3128610292
-		{ &Z_Construct_UFunction_UMinigameSessionSubsystem_SetMinigameReturnLevel, "SetMinigameReturnLevel" }, // 1579177313
+		{ &Z_Construct_UFunction_UMinigameSessionSubsystem_SetMinigameReturnLevel, "SetMinigameReturnLevel" }, // 2916554159
 		{ &Z_Construct_UFunction_UMinigameSessionSubsystem_SetPlayerCount, "SetPlayerCount" }, // 4258968797
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -389,14 +395,14 @@ UMinigameSessionSubsystem::~UMinigameSessionSubsystem() {}
 // ********** End Class UMinigameSessionSubsystem **************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameSessionSubsystem_h__Script_MinigameCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameSessionSubsystem_h__Script_MinigameCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMinigameSessionSubsystem, UMinigameSessionSubsystem::StaticClass, TEXT("UMinigameSessionSubsystem"), &Z_Registration_Info_UClass_UMinigameSessionSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMinigameSessionSubsystem), 3292440744U) },
+		{ Z_Construct_UClass_UMinigameSessionSubsystem, UMinigameSessionSubsystem::StaticClass, TEXT("UMinigameSessionSubsystem"), &Z_Registration_Info_UClass_UMinigameSessionSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMinigameSessionSubsystem), 3951988496U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameSessionSubsystem_h__Script_MinigameCore_1740446214(TEXT("/Script/MinigameCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameSessionSubsystem_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameSessionSubsystem_h__Script_MinigameCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameSessionSubsystem_h__Script_MinigameCore_3033682260(TEXT("/Script/MinigameCore"),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameSessionSubsystem_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameSessionSubsystem_h__Script_MinigameCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

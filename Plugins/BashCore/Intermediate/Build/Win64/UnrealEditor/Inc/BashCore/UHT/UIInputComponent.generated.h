@@ -17,7 +17,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UUIInputComponent ********************************************************
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execBackButtonPressed); \
 	DECLARE_FUNCTION(execStartButtonPressed); \
 	DECLARE_FUNCTION(execOnRightCompleted); \
@@ -36,7 +36,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 BASHCORE_API UClass* Z_Construct_UClass_UUIInputComponent_NoRegister();
 
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_21_INCLASS_NO_PURE_DECLS \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_21_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUUIInputComponent(); \
 	friend struct Z_Construct_UClass_UUIInputComponent_Statics; \
@@ -47,7 +47,7 @@ public: \
 	DECLARE_SERIALIZER(UUIInputComponent)
 
 
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_21_ENHANCED_CONSTRUCTORS \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_21_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UUIInputComponent(UUIInputComponent&&) = delete; \
 	UUIInputComponent(const UUIInputComponent&) = delete; \
@@ -57,13 +57,13 @@ public: \
 	NO_API virtual ~UUIInputComponent();
 
 
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_18_PROLOG
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_21_GENERATED_BODY \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_18_PROLOG
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_21_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_21_INCLASS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_21_ENHANCED_CONSTRUCTORS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_21_INCLASS_NO_PURE_DECLS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -73,6 +73,6 @@ class UUIInputComponent;
 // ********** End Class UUIInputComponent **********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h
+#define CURRENT_FILE_ID FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponent_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

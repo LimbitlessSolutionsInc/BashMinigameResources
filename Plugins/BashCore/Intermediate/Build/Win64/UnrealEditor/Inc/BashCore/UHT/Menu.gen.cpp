@@ -287,9 +287,13 @@ struct Z_Construct_UClass_UMenu_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bAllowHoldNavigation_MetaData[] = {
 		{ "Category", "Menu" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// If true, this menu will quickly navigable by holding directional inputs. Best for longer menus\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Widgets/Menu.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If true, this menu will quickly navigable by holding directional inputs. Best for longer menus" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_DefaultSelectedWidget;
@@ -358,14 +362,14 @@ UMenu::~UMenu() {}
 // ********** End Class UMenu **********************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h__Script_BashCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h__Script_BashCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMenu, UMenu::StaticClass, TEXT("UMenu"), &Z_Registration_Info_UClass_UMenu, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMenu), 2152296681U) },
+		{ Z_Construct_UClass_UMenu, UMenu::StaticClass, TEXT("UMenu"), &Z_Registration_Info_UClass_UMenu, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMenu), 1422765484U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h__Script_BashCore_4272397190(TEXT("/Script/BashCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h__Script_BashCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h__Script_BashCore_2954623071(TEXT("/Script/BashCore"),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Widgets_Menu_h__Script_BashCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

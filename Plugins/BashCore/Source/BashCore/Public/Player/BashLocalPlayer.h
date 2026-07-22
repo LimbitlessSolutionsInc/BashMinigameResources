@@ -7,6 +7,7 @@
 #include "Engine/LocalPlayer.h"
 #include "BashLocalPlayer.generated.h"
 
+class UCanvasRenderTarget2D;
 class UFlexController;
 class UCustomizableObjectInstance;
 class UCustomizableObject;
@@ -17,11 +18,13 @@ class BASHCORE_API UPlayerData : public UObject
 	GENERATED_BODY()
 
 public:
+	UPlayerData();
+	
 	//Player Data getters/setters
 	UFUNCTION(BlueprintCallable, Category = "Player Data")
-	int GetTilePos() const
+	const FString& GetCurrentTileName() const
 	{
-		return TilePos;
+		return CurrentTileName;
 	}
 
 	UFUNCTION(BlueprintCallable, Category = "Player Data")
@@ -31,9 +34,9 @@ public:
 	}
 
 	UFUNCTION(BlueprintCallable, Category = "Player Data")
-	void SetTilePos(int NewTilePos)
+	void SetCurrentTile(const FString& TileName)
 	{
-		TilePos = NewTilePos;
+		CurrentTileName = TileName;
 	}
 
 	UFUNCTION(BlueprintCallable, Category = "Player Data")
@@ -64,13 +67,25 @@ public:
 	{
 		Mobius = newMobius;
 	}
-
+	
 	UFUNCTION(BlueprintCallable, Category = "Player Data")
 	UCustomizableObjectInstance* GetCustomizableInstance() const
 	{
 		return CustomizableObjectInstance;
 	}
 
+	UFUNCTION(BlueprintCallable, Category = "Player Data")
+	UCanvasRenderTarget2D* GetPortraitTexture() const
+	{
+		return PortraitTexture;
+	}
+
+	UFUNCTION(BlueprintCallable, Category = "Player Data")
+	UMaterialInstanceDynamic* GetPortraitMaterial() const
+	{
+		return PortraitMaterial;
+	}
+	
 	UFUNCTION(BlueprintCallable, Category = "Player Data")
 	void AddBoardItem(UObject* Item);
 
@@ -79,13 +94,21 @@ public:
 	
 	UFUNCTION(BlueprintCallable, Category = "Player Data")
 	const TArray<UObject*>& GetBoardItems() const;
-	
-	void InitializeCustomizableInstance(UCustomizableObject* CO);
+
+	void Initialize(UCustomizableObject* CO, bool bInIsAI = false);
+
+	UFUNCTION(BlueprintCallable, Category = "Player Data")
+	bool GetIsAI() const { return bIsAI; }
 
 private:
+	void InitializeCustomizableInstance(UCustomizableObject* CO);
+	void InitializePortraitTexture();
+	
 	int PlayerNum = -1;
-	int PlayerOrder = 0;
-	int TilePos = 0;
+
+	// Name of the tile the player was last on in the board
+	FString CurrentTileName;
+	
 	int Coins = 0;
 	int Mobius = 0;
 
@@ -93,7 +116,16 @@ private:
 	TArray<TObjectPtr<UObject>> BoardItems{};
 
 	UPROPERTY()
-	UCustomizableObjectInstance* CustomizableObjectInstance;
+	TObjectPtr<UCustomizableObjectInstance> CustomizableObjectInstance;
+
+	UPROPERTY()
+	TObjectPtr<UCanvasRenderTarget2D> PortraitTexture;
+	
+	UPROPERTY()
+	TObjectPtr<UMaterialInstanceDynamic> PortraitMaterial;
+
+	UPROPERTY()
+	bool bIsAI;
 };
 
 UCLASS()

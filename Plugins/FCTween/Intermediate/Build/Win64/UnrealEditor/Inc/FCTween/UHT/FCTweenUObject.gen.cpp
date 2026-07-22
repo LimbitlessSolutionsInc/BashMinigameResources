@@ -55,10 +55,14 @@ struct Z_Construct_UClass_UFCTweenUObject_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * @brief Use this to wrap an FCTweenInstance inside a UObject, so that it's destroyed when its outer object is destroyed\n */" },
+#endif
 		{ "IncludePath", "FCTweenUObject.h" },
 		{ "ModuleRelativePath", "Public/FCTweenUObject.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Use this to wrap an FCTweenInstance inside a UObject, so that it's destroyed when its outer object is destroyed" },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -100,14 +104,14 @@ UFCTweenUObject::~UFCTweenUObject() {}
 // ********** End Class UFCTweenUObject ************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_FCTween_HostProject_Plugins_FCTween_Source_FCTween_Public_FCTweenUObject_h__Script_FCTween_Statics
+struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_FCTween_Source_FCTween_Public_FCTweenUObject_h__Script_FCTween_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UFCTweenUObject, UFCTweenUObject::StaticClass, TEXT("UFCTweenUObject"), &Z_Registration_Info_UClass_UFCTweenUObject, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UFCTweenUObject), 2327713537U) },
+		{ Z_Construct_UClass_UFCTweenUObject, UFCTweenUObject::StaticClass, TEXT("UFCTweenUObject"), &Z_Registration_Info_UClass_UFCTweenUObject, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UFCTweenUObject), 1099494210U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_FCTween_HostProject_Plugins_FCTween_Source_FCTween_Public_FCTweenUObject_h__Script_FCTween_2709225291(TEXT("/Script/FCTween"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_FCTween_HostProject_Plugins_FCTween_Source_FCTween_Public_FCTweenUObject_h__Script_FCTween_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_FCTween_HostProject_Plugins_FCTween_Source_FCTween_Public_FCTweenUObject_h__Script_FCTween_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_FCTween_Source_FCTween_Public_FCTweenUObject_h__Script_FCTween_943480266(TEXT("/Script/FCTween"),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_FCTween_Source_FCTween_Public_FCTweenUObject_h__Script_FCTween_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_FCTween_Source_FCTween_Public_FCTweenUObject_h__Script_FCTween_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

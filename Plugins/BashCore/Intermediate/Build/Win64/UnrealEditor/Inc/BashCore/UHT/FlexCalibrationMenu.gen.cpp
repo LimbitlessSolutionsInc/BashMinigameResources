@@ -239,15 +239,21 @@ struct Z_Construct_UClass_UFlexCalibrationMenu_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "Widgets/FlexCalibrationMenu.h" },
 		{ "ModuleRelativePath", "Public/Widgets/FlexCalibrationMenu.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NumStoredValues_MetaData[] = {
 		{ "Category", "Flex Calibration Menu" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// How many flex values to store to show in calibration graph\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Widgets/FlexCalibrationMenu.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "How many flex values to store to show in calibration graph" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_NumStoredValues;
@@ -304,14 +310,14 @@ UFlexCalibrationMenu::~UFlexCalibrationMenu() {}
 // ********** End Class UFlexCalibrationMenu *******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_FlexCalibrationMenu_h__Script_BashCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Widgets_FlexCalibrationMenu_h__Script_BashCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UFlexCalibrationMenu, UFlexCalibrationMenu::StaticClass, TEXT("UFlexCalibrationMenu"), &Z_Registration_Info_UClass_UFlexCalibrationMenu, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UFlexCalibrationMenu), 2083639312U) },
+		{ Z_Construct_UClass_UFlexCalibrationMenu, UFlexCalibrationMenu::StaticClass, TEXT("UFlexCalibrationMenu"), &Z_Registration_Info_UClass_UFlexCalibrationMenu, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UFlexCalibrationMenu), 366911093U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_FlexCalibrationMenu_h__Script_BashCore_2622411628(TEXT("/Script/BashCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_FlexCalibrationMenu_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_FlexCalibrationMenu_h__Script_BashCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Widgets_FlexCalibrationMenu_h__Script_BashCore_4104503380(TEXT("/Script/BashCore"),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Widgets_FlexCalibrationMenu_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Widgets_FlexCalibrationMenu_h__Script_BashCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

@@ -15,6 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeMinigameBase() {}
 // ********** Begin Cross Module References ********************************************************
 BASHCORE_API UClass* Z_Construct_UClass_ABashGamemode();
 COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector2D();
 CUSTOMIZABLEOBJECT_API UClass* Z_Construct_UClass_UCustomizableObjectInstance_NoRegister();
 MINIGAMECORE_API UClass* Z_Construct_UClass_AMinigameBase();
 MINIGAMECORE_API UClass* Z_Construct_UClass_AMinigameBase_NoRegister();
@@ -30,6 +31,7 @@ MINIGAMECORE_API UEnum* Z_Construct_UEnum_MinigameCore_ESplitBy();
 MINIGAMECORE_API UFunction* Z_Construct_UDelegateFunction_MinigameCore_GameEndedSignature__DelegateSignature();
 MINIGAMECORE_API UFunction* Z_Construct_UDelegateFunction_MinigameCore_GameResetSignature__DelegateSignature();
 MINIGAMECORE_API UFunction* Z_Construct_UDelegateFunction_MinigameCore_GameStartedSignature__DelegateSignature();
+MINIGAMECORE_API UFunction* Z_Construct_UDelegateFunction_MinigameCore_OnViewportSizeChangedSignature__DelegateSignature();
 MINIGAMECORE_API UScriptStruct* Z_Construct_UScriptStruct_FControlDisplay();
 UMG_API UClass* Z_Construct_UClass_UOverlaySlot_NoRegister();
 UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
@@ -114,6 +116,50 @@ void FGameResetSignature_DelegateWrapper(const FMulticastScriptDelegate& GameRes
 }
 // ********** End Delegate FGameResetSignature *****************************************************
 
+// ********** Begin Delegate FOnViewportSizeChangedSignature ***************************************
+struct Z_Construct_UDelegateFunction_MinigameCore_OnViewportSizeChangedSignature__DelegateSignature_Statics
+{
+	struct _Script_MinigameCore_eventOnViewportSizeChangedSignature_Parms
+	{
+		FVector2D NewSize;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_NewSize;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_MinigameCore_OnViewportSizeChangedSignature__DelegateSignature_Statics::NewProp_NewSize = { "NewSize", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_MinigameCore_eventOnViewportSizeChangedSignature_Parms, NewSize), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_MinigameCore_OnViewportSizeChangedSignature__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_MinigameCore_OnViewportSizeChangedSignature__DelegateSignature_Statics::NewProp_NewSize,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_MinigameCore_OnViewportSizeChangedSignature__DelegateSignature_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_MinigameCore_OnViewportSizeChangedSignature__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_MinigameCore, nullptr, "OnViewportSizeChangedSignature__DelegateSignature", Z_Construct_UDelegateFunction_MinigameCore_OnViewportSizeChangedSignature__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_MinigameCore_OnViewportSizeChangedSignature__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_MinigameCore_OnViewportSizeChangedSignature__DelegateSignature_Statics::_Script_MinigameCore_eventOnViewportSizeChangedSignature_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_MinigameCore_OnViewportSizeChangedSignature__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_MinigameCore_OnViewportSizeChangedSignature__DelegateSignature_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UDelegateFunction_MinigameCore_OnViewportSizeChangedSignature__DelegateSignature_Statics::_Script_MinigameCore_eventOnViewportSizeChangedSignature_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_MinigameCore_OnViewportSizeChangedSignature__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUDelegateFunction(&ReturnFunction, Z_Construct_UDelegateFunction_MinigameCore_OnViewportSizeChangedSignature__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOnViewportSizeChangedSignature_DelegateWrapper(const FMulticastScriptDelegate& OnViewportSizeChangedSignature, FVector2D NewSize)
+{
+	struct _Script_MinigameCore_eventOnViewportSizeChangedSignature_Parms
+	{
+		FVector2D NewSize;
+	};
+	_Script_MinigameCore_eventOnViewportSizeChangedSignature_Parms Parms;
+	Parms.NewSize=NewSize;
+	OnViewportSizeChangedSignature.ProcessMulticastDelegate<UObject>(&Parms);
+}
+// ********** End Delegate FOnViewportSizeChangedSignature *****************************************
+
 // ********** Begin Class AMinigameBase Function AddCamera *****************************************
 struct Z_Construct_UFunction_AMinigameBase_AddCamera_Statics
 {
@@ -125,9 +171,13 @@ struct Z_Construct_UFunction_AMinigameBase_AddCamera_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Minigame|Splitscreen" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*\n\x09 *  Cameras/UI\n\x09 */// Registers a camera to be used by the splitscreen system\n" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "*  Cameras/UI\n// Registers a camera to be used by the splitscreen system" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Camera;
@@ -233,9 +283,13 @@ struct Z_Construct_UFunction_AMinigameBase_CheckReady_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Minigame|Practice" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Checks the ready status of a player in practice mode\n" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Checks the ready status of a player in practice mode" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_Player;
@@ -277,9 +331,13 @@ struct Z_Construct_UFunction_AMinigameBase_EndGame_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Minigame" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Ends the minigame early\n" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Ends the minigame early" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -314,9 +372,13 @@ struct Z_Construct_UFunction_AMinigameBase_GetCamera_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Minigame|Splitscreen" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Gets the camera assigned to this player through the splitscreen system\n" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Gets the camera assigned to this player through the splitscreen system" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_PlayerNumber;
@@ -449,9 +511,13 @@ struct Z_Construct_UFunction_AMinigameBase_GetNumCameraSplits_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Minigame|Splitscreen" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Returns the number of camera splits this gamemode should have\n" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the number of camera splits this gamemode should have" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
@@ -494,9 +560,13 @@ struct Z_Construct_UFunction_AMinigameBase_GetPlayer_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Minigame|Player" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*\n\x09 *  Players & Teams\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "*  Players & Teams" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_PlayerNum;
@@ -973,9 +1043,13 @@ struct Z_Construct_UFunction_AMinigameBase_ReadyPlayer_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Minigame|Practice" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*\n\x09 *  Game flow\n\x09 */// Readies a Player to exit practice mode\n" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "*  Game flow\n// Readies a Player to exit practice mode" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_Player;
@@ -1185,54 +1259,89 @@ struct Z_Construct_UClass_AMinigameBase_Statics
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnMinigameStartEvent_MetaData[] = {
-		{ "Comment", "// Called after players are spawned and the minigame base has initialized. Also called after every reset\n" },
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnViewportSizeChanged_MetaData[] = {
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnMinigameStartEvent_MetaData[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Called after players are spawned and the minigame base has initialized. Also called after every reset\n" },
+#endif
+		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called after players are spawned and the minigame base has initialized. Also called after every reset" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnMinigameEndEvent_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Triggered when the minigame end has been initialized, either from the timer or explicit call of EndGame()\n" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Triggered when the minigame end has been initialized, either from the timer or explicit call of EndGame()" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnMinigameResetEvent_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Triggered right before the minigame is reset. Use this to clean up persistent state\n" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Triggered right before the minigame is reset. Use this to clean up persistent state" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PlayerObjects_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
 		{ "Category", "Minigame|Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*\n\x09 *  General Settings \n\x09 */// The Pawns to spawn as the players of each team. Index 0 corresponds to the first team, etc.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "*  General Settings\n// The Pawns to spawn as the players of each team. Index 0 corresponds to the first team, etc." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TeamType_MetaData[] = {
 		{ "BlueprintGetter", "GetTeamType" },
 		{ "Category", "Minigame|Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// The team arrangement of this minigame.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The team arrangement of this minigame." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MinigameDuration_MetaData[] = {
 		{ "Category", "Minigame|Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// The amount of time the minigame should last before ending, in seconds\n" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The amount of time the minigame should last before ending, in seconds" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MinigameName_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
 		{ "Category", "Minigame|Practice" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*\n\x09 *  Practice Mode\n\x09 */// The name of the minigame to display in Practice UI\n" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "*  Practice Mode\n// The name of the minigame to display in Practice UI" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Description_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
 		{ "Category", "Minigame|Practice" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// The description of the minigame. This should explain what the goal of the minigame is and how to play\n" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The description of the minigame. This should explain what the goal of the minigame is and how to play" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Controls_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -1241,74 +1350,114 @@ struct Z_Construct_UClass_AMinigameBase_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ResetDelay_MetaData[] = {
 		{ "Category", "Minigame|Practice" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Amount of time between game ending and game resetting in practice mode\n" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Amount of time between game ending and game resetting in practice mode" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PracticeUIClass_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
 		{ "Category", "Minigame|UI" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*\n\x09 *  UI\n\x09 */// The UI to spawn during the Practice phase\n" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "*  UI\n// The UI to spawn during the Practice phase" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MinigameUIClass_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
 		{ "Category", "Minigame|UI" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// The UI to display in the minigame. Can be left unassigned if no minigame UI is desired\n" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The UI to display in the minigame. Can be left unassigned if no minigame UI is desired" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SplitBy_MetaData[] = {
 		{ "Category", "Minigame|Splitscreen" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Should splits be assigned to each player or to each team?\n" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Should splits be assigned to each player or to each team?" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bUseSplitscreen_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
 		{ "Category", "Minigame|Splitscreen" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Whether this minigame should use splitscreen\n" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether this minigame should use splitscreen" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SplitscreenUIClasses_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
 		{ "Category", "Minigame|Splitscreen" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Widget classes to spawn for specified number of splits\n" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Widget classes to spawn for specified number of splits" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TimeElapsed_MetaData[] = {
 		{ "BlueprintGetter", "GetTimeElapsed" },
 		{ "Category", "Minigame|Gameplay" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*\n\x09 *  Gameplay\n\x09 */// The amount of time that has passed since the start of the minigame, in seconds\n" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "*  Gameplay\n// The amount of time that has passed since the start of the minigame, in seconds" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NumPlayers_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
 		{ "BlueprintGetter", "GetMinigameNumPlayers" },
 		{ "Category", "Minigame|Gameplay" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Number of players currently in this game\n" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Number of players currently in this game" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bIsPractice_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
 		{ "BlueprintGetter", "IsPractice" },
 		{ "Category", "Minigame|Gameplay" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// True if the minigame is in practice mode\n" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "True if the minigame is in practice mode" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bIsInProgress_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
 		{ "BlueprintGetter", "IsInProgress" },
 		{ "Category", "Minigame|Gameplay" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// True if the minigame is not finished\n" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "True if the minigame is not finished" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bDebugHideUI_MetaData[] = {
 		{ "Category", "Debug" },
@@ -1319,15 +1468,23 @@ struct Z_Construct_UClass_AMinigameBase_Statics
 		{ "BlueprintGetter", "GetTimeRemaining" },
 		{ "BlueprintSetter", "SetTimeRemaining" },
 		{ "Category", "Minigame|Gameplay" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// The amount of time remaining for this minigame, in seconds.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The amount of time remaining for this minigame, in seconds." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_IntroCutscene_MetaData[] = {
 		{ "Category", "Minigame|Cutscenes" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*\n\x09 *  Cutscenes\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "*  Cutscenes" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EndingCutscene_MetaData[] = {
 		{ "Category", "Minigame|Cutscenes" },
@@ -1340,6 +1497,7 @@ struct Z_Construct_UClass_AMinigameBase_Statics
 		{ "ModuleRelativePath", "Public/MinigameBase.h" },
 	};
 #endif // WITH_METADATA
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnViewportSizeChanged;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnMinigameStartEvent;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnMinigameEndEvent;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnMinigameResetEvent;
@@ -1378,15 +1536,15 @@ struct Z_Construct_UClass_AMinigameBase_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_AMinigameBase_AddCamera, "AddCamera" }, // 4040090676
+		{ &Z_Construct_UFunction_AMinigameBase_AddCamera, "AddCamera" }, // 3903016092
 		{ &Z_Construct_UFunction_AMinigameBase_AddWidgetToMinigameUISplit, "AddWidgetToMinigameUISplit" }, // 714754114
-		{ &Z_Construct_UFunction_AMinigameBase_CheckReady, "CheckReady" }, // 690649126
-		{ &Z_Construct_UFunction_AMinigameBase_EndGame, "EndGame" }, // 3245318679
-		{ &Z_Construct_UFunction_AMinigameBase_GetCamera, "GetCamera" }, // 2824723936
+		{ &Z_Construct_UFunction_AMinigameBase_CheckReady, "CheckReady" }, // 3166872537
+		{ &Z_Construct_UFunction_AMinigameBase_EndGame, "EndGame" }, // 1631782328
+		{ &Z_Construct_UFunction_AMinigameBase_GetCamera, "GetCamera" }, // 3218803245
 		{ &Z_Construct_UFunction_AMinigameBase_GetMinigameNumPlayers, "GetMinigameNumPlayers" }, // 3355659229
 		{ &Z_Construct_UFunction_AMinigameBase_GetMinigameWidgetRoot, "GetMinigameWidgetRoot" }, // 1992932288
-		{ &Z_Construct_UFunction_AMinigameBase_GetNumCameraSplits, "GetNumCameraSplits" }, // 2566553902
-		{ &Z_Construct_UFunction_AMinigameBase_GetPlayer, "GetPlayer" }, // 3523574661
+		{ &Z_Construct_UFunction_AMinigameBase_GetNumCameraSplits, "GetNumCameraSplits" }, // 3398989397
+		{ &Z_Construct_UFunction_AMinigameBase_GetPlayer, "GetPlayer" }, // 3585088490
 		{ &Z_Construct_UFunction_AMinigameBase_GetPlayers, "GetPlayers" }, // 1656817721
 		{ &Z_Construct_UFunction_AMinigameBase_GetPointCounter, "GetPointCounter" }, // 1887108845
 		{ &Z_Construct_UFunction_AMinigameBase_GetTeamType, "GetTeamType" }, // 1323698761
@@ -1398,7 +1556,7 @@ struct Z_Construct_UClass_AMinigameBase_Statics
 		{ &Z_Construct_UFunction_AMinigameBase_OnMinigameReset, "OnMinigameReset" }, // 2448577650
 		{ &Z_Construct_UFunction_AMinigameBase_OnMinigameStart, "OnMinigameStart" }, // 3356453703
 		{ &Z_Construct_UFunction_AMinigameBase_PlayMinigameTransitionEffects, "PlayMinigameTransitionEffects" }, // 355793990
-		{ &Z_Construct_UFunction_AMinigameBase_ReadyPlayer, "ReadyPlayer" }, // 1194233720
+		{ &Z_Construct_UFunction_AMinigameBase_ReadyPlayer, "ReadyPlayer" }, // 2260413156
 		{ &Z_Construct_UFunction_AMinigameBase_SetTimeRemaining, "SetTimeRemaining" }, // 2053961354
 		{ &Z_Construct_UFunction_AMinigameBase_SetupGame, "SetupGame" }, // 4259040021
 		{ &Z_Construct_UFunction_AMinigameBase_StartGame, "StartGame" }, // 694720540
@@ -1409,6 +1567,7 @@ struct Z_Construct_UClass_AMinigameBase_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_OnViewportSizeChanged = { "OnViewportSizeChanged", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, OnViewportSizeChanged), Z_Construct_UDelegateFunction_MinigameCore_OnViewportSizeChangedSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnViewportSizeChanged_MetaData), NewProp_OnViewportSizeChanged_MetaData) }; // 2645834242
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_OnMinigameStartEvent = { "OnMinigameStartEvent", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, OnMinigameStartEvent), Z_Construct_UDelegateFunction_MinigameCore_GameStartedSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnMinigameStartEvent_MetaData), NewProp_OnMinigameStartEvent_MetaData) }; // 214695888
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_OnMinigameEndEvent = { "OnMinigameEndEvent", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, OnMinigameEndEvent), Z_Construct_UDelegateFunction_MinigameCore_GameEndedSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnMinigameEndEvent_MetaData), NewProp_OnMinigameEndEvent_MetaData) }; // 219998007
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_OnMinigameResetEvent = { "OnMinigameResetEvent", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, OnMinigameResetEvent), Z_Construct_UDelegateFunction_MinigameCore_GameResetSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnMinigameResetEvent_MetaData), NewProp_OnMinigameResetEvent_MetaData) }; // 2057380670
@@ -1419,8 +1578,8 @@ const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AMinigameBase_St
 const UECodeGen_Private::FDoublePropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_MinigameDuration = { "MinigameDuration", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Double, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, MinigameDuration), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MinigameDuration_MetaData), NewProp_MinigameDuration_MetaData) };
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_MinigameName = { "MinigameName", nullptr, (EPropertyFlags)0x0040000000010015, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, MinigameName), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MinigameName_MetaData), NewProp_MinigameName_MetaData) };
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_Description = { "Description", nullptr, (EPropertyFlags)0x0040000000010015, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, Description), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Description_MetaData), NewProp_Description_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_Controls_Inner = { "Controls", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FControlDisplay, METADATA_PARAMS(0, nullptr) }; // 2154370425
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_Controls = { "Controls", nullptr, (EPropertyFlags)0x0040000000010015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, Controls), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Controls_MetaData), NewProp_Controls_MetaData) }; // 2154370425
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_Controls_Inner = { "Controls", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FControlDisplay, METADATA_PARAMS(0, nullptr) }; // 1828512188
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_Controls = { "Controls", nullptr, (EPropertyFlags)0x0040000000010015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, Controls), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Controls_MetaData), NewProp_Controls_MetaData) }; // 1828512188
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_ResetDelay = { "ResetDelay", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, ResetDelay), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ResetDelay_MetaData), NewProp_ResetDelay_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_PracticeUIClass = { "PracticeUIClass", nullptr, (EPropertyFlags)0x0044000000010015, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, PracticeUIClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UPracticeModeUI_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PracticeUIClass_MetaData), NewProp_PracticeUIClass_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_MinigameUIClass = { "MinigameUIClass", nullptr, (EPropertyFlags)0x0044000000010015, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, MinigameUIClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UMinigameUI_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MinigameUIClass_MetaData), NewProp_MinigameUIClass_MetaData) };
@@ -1457,6 +1616,7 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMinigameBase_
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_CachedCustomizationOverrides_Inner = { "CachedCustomizationOverrides", nullptr, (EPropertyFlags)0x0104000000000000, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UCustomizableObjectInstance_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AMinigameBase_Statics::NewProp_CachedCustomizationOverrides = { "CachedCustomizationOverrides", nullptr, (EPropertyFlags)0x0144000000000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMinigameBase, CachedCustomizationOverrides), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CachedCustomizationOverrides_MetaData), NewProp_CachedCustomizationOverrides_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMinigameBase_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_OnViewportSizeChanged,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_OnMinigameStartEvent,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_OnMinigameEndEvent,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinigameBase_Statics::NewProp_OnMinigameResetEvent,
@@ -1523,14 +1683,14 @@ AMinigameBase::~AMinigameBase() {}
 // ********** End Class AMinigameBase **************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AMinigameBase, AMinigameBase::StaticClass, TEXT("AMinigameBase"), &Z_Registration_Info_UClass_AMinigameBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMinigameBase), 2566455975U) },
+		{ Z_Construct_UClass_AMinigameBase, AMinigameBase::StaticClass, TEXT("AMinigameBase"), &Z_Registration_Info_UClass_AMinigameBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMinigameBase), 915274490U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_2557606320(TEXT("/Script/MinigameCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_2350034715(TEXT("/Script/MinigameCore"),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameBase_h__Script_MinigameCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

@@ -22,7 +22,7 @@ class UUserWidget;
 class UWidget;
 
 // ********** Begin Delegate FUIInputSignature *****************************************************
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_15_DELEGATE \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_15_DELEGATE \
 BASHCORE_API void FUIInputSignature_DelegateWrapper(const FMulticastScriptDelegate& UIInputSignature, const TScriptInterface<IBashController>& FromPlayer);
 
 
@@ -31,7 +31,7 @@ BASHCORE_API void FUIInputSignature_DelegateWrapper(const FMulticastScriptDelega
 // ********** Begin Class UMenuStackContext ********************************************************
 BASHCORE_API UClass* Z_Construct_UClass_UMenuStackContext_NoRegister();
 
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_23_INCLASS_NO_PURE_DECLS \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_23_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMenuStackContext(); \
 	friend struct Z_Construct_UClass_UMenuStackContext_Statics; \
@@ -42,7 +42,7 @@ public: \
 	DECLARE_SERIALIZER(UMenuStackContext)
 
 
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_23_ENHANCED_CONSTRUCTORS \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_23_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UMenuStackContext(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -54,12 +54,12 @@ public: \
 	NO_API virtual ~UMenuStackContext();
 
 
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_20_PROLOG
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_23_GENERATED_BODY \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_20_PROLOG
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_23_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_23_INCLASS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_23_ENHANCED_CONSTRUCTORS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_23_INCLASS_NO_PURE_DECLS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_23_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -69,7 +69,7 @@ class UMenuStackContext;
 // ********** End Class UMenuStackContext **********************************************************
 
 // ********** Begin Class UUIInputComponentBase ****************************************************
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_42_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_42_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execSelectOption); \
 	DECLARE_FUNCTION(execGetFocusWidget); \
 	DECLARE_FUNCTION(execFocusWidget); \
@@ -80,7 +80,7 @@ class UMenuStackContext;
 
 BASHCORE_API UClass* Z_Construct_UClass_UUIInputComponentBase_NoRegister();
 
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_42_INCLASS_NO_PURE_DECLS \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_42_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUUIInputComponentBase(); \
 	friend struct Z_Construct_UClass_UUIInputComponentBase_Statics; \
@@ -91,7 +91,7 @@ public: \
 	DECLARE_SERIALIZER(UUIInputComponentBase)
 
 
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_42_ENHANCED_CONSTRUCTORS \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_42_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UUIInputComponentBase(UUIInputComponentBase&&) = delete; \
 	UUIInputComponentBase(const UUIInputComponentBase&) = delete; \
@@ -101,13 +101,13 @@ public: \
 	NO_API virtual ~UUIInputComponentBase();
 
 
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_39_PROLOG
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_42_GENERATED_BODY \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_39_PROLOG
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_42_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_42_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_42_INCLASS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_42_ENHANCED_CONSTRUCTORS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_42_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_42_INCLASS_NO_PURE_DECLS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h_42_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -117,6 +117,6 @@ class UUIInputComponentBase;
 // ********** End Class UUIInputComponentBase ******************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h
+#define CURRENT_FILE_ID FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

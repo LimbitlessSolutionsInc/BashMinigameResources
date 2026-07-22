@@ -56,7 +56,9 @@ struct Z_Construct_UClass_ULimbitlessBluetoothManager_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "LimbitlessBluetoothManager.h" },
 		{ "ModuleRelativePath", "Public/LimbitlessBluetoothManager.h" },
 	};
@@ -115,14 +117,14 @@ ULimbitlessBluetoothManager::~ULimbitlessBluetoothManager() {}
 // ********** End Class ULimbitlessBluetoothManager ************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_LimbitlessBluetoothManager_h__Script_PlatformManager_Statics
+struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_LimbitlessBluetoothManager_h__Script_PlatformManager_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ULimbitlessBluetoothManager, ULimbitlessBluetoothManager::StaticClass, TEXT("ULimbitlessBluetoothManager"), &Z_Registration_Info_UClass_ULimbitlessBluetoothManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ULimbitlessBluetoothManager), 2895720890U) },
+		{ Z_Construct_UClass_ULimbitlessBluetoothManager, ULimbitlessBluetoothManager::StaticClass, TEXT("ULimbitlessBluetoothManager"), &Z_Registration_Info_UClass_ULimbitlessBluetoothManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ULimbitlessBluetoothManager), 1390154050U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_LimbitlessBluetoothManager_h__Script_PlatformManager_763937205(TEXT("/Script/PlatformManager"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_LimbitlessBluetoothManager_h__Script_PlatformManager_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_LimbitlessBluetoothManager_h__Script_PlatformManager_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_LimbitlessBluetoothManager_h__Script_PlatformManager_4007553998(TEXT("/Script/PlatformManager"),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_LimbitlessBluetoothManager_h__Script_PlatformManager_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_LimbitlessBluetoothManager_h__Script_PlatformManager_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

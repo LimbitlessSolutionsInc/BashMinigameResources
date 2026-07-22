@@ -21,7 +21,7 @@ class UPlayerData;
 class UUIInputComponentBase;
 
 // ********** Begin Interface UBashController ******************************************************
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashController_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_BashController_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execGetPlayerPawn); \
 	DECLARE_FUNCTION(execGetPlayerData); \
 	DECLARE_FUNCTION(execGetUiInputComponent);
@@ -29,7 +29,7 @@ class UUIInputComponentBase;
 
 BASHCORE_API UClass* Z_Construct_UClass_UBashController_NoRegister();
 
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashController_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_BashController_h_15_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UBashController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -41,7 +41,7 @@ BASHCORE_API UClass* Z_Construct_UClass_UBashController_NoRegister();
 	virtual ~UBashController() = default;
 
 
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashController_h_15_GENERATED_UINTERFACE_BODY() \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_BashController_h_15_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUBashController(); \
 	friend struct Z_Construct_UClass_UBashController_Statics; \
@@ -52,15 +52,15 @@ public: \
 	DECLARE_SERIALIZER(UBashController)
 
 
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashController_h_15_GENERATED_BODY \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_BashController_h_15_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashController_h_15_GENERATED_UINTERFACE_BODY() \
-	FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashController_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_BashController_h_15_GENERATED_UINTERFACE_BODY() \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_BashController_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashController_h_15_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_BashController_h_15_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~IBashController() {} \
 public: \
@@ -69,12 +69,12 @@ public: \
 	virtual UObject* _getUObject() const { return nullptr; }
 
 
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashController_h_12_PROLOG
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashController_h_20_GENERATED_BODY \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_BashController_h_12_PROLOG
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_BashController_h_20_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashController_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashController_h_15_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_BashController_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_BashController_h_15_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -84,6 +84,6 @@ class UBashController;
 // ********** End Interface UBashController ********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_BashController_h
+#define CURRENT_FILE_ID FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_BashController_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

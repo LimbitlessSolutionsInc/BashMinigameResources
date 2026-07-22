@@ -9,12 +9,13 @@
 	"CreatedByURL": "",
 	"DocsURL": "",
 	"MarketplaceURL": "",
-	"SupportURL": "",
-	"EngineVersion": "5.6.0",
 	"CanContainContent": true,
-	"Installed": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
 	"SupportedTargetPlatforms": [
-		"Win64"
+		"Win64",
+		"Android"
 	],
 	"Modules": [
 		{
@@ -53,10 +54,10 @@
 		{
 			"Name": "WinBT",
 			"Enabled": true,
-			"Optional": true,
 			"PlatformAllowList": [
 				"Win64"
-			]
+			],
+			"Optional": true
 		},
 		{
 			"Name": "EnhancedInput",
@@ -65,10 +66,10 @@
 		{
 			"Name": "BleUtilities",
 			"Enabled": true,
-			"Optional": true,
 			"PlatformAllowList": [
 				"Android"
-			]
+			],
+			"Optional": true
 		},
 		{
 			"Name": "AndroidPermission",
@@ -77,5 +78,6 @@
 				"Android"
 			]
 		}
-	]
+	],
+	"SupportURL": ""
 }

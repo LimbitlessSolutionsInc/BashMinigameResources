@@ -14,6 +14,7 @@ void EmptyLinkFunctionForGeneratedCodeMinigameCoreBlueprintLibrary() {}
 // ********** Begin Cross Module References ********************************************************
 COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
+COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector2D();
 ENGINE_API UClass* Z_Construct_UClass_UBlueprintFunctionLibrary();
 MINIGAMECORE_API UClass* Z_Construct_UClass_UMinigameCoreBlueprintLibrary();
 MINIGAMECORE_API UClass* Z_Construct_UClass_UMinigameCoreBlueprintLibrary_NoRegister();
@@ -37,10 +38,14 @@ struct Z_Construct_UFunction_UMinigameCoreBlueprintLibrary_GetProjectileTrajecto
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Projectile Motion" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Gets the angle off the XY plane (pitch) needed to shoot a freefall projectile from Source to Target given a launch speed.\n\x09 * A trajectory may not exist if LaunchSpeed is too low for the given GravityAcceleration and source-to-target distance.\n\x09 * @param Source Starting location of the projectile's flight\n\x09 * @param Target Target location for the projectile to arrive at\n\x09 * @param LaunchSpeed The speed of the projectile at the very start of its flight, in cm/s\n\x09 * @param GravityAcceleration Acceleration due to gravity, in cm/s^2. Downward acceleration is negative\n\x09 * @param bCalculateAlternateTrajectory If true, calculates an alternate trajectory that arcs even higher\n\x09 * This projectile's flight may be very long\n\x09 * @param OutTrajectory Out parameter with desired angle to fire the projectile at, in degrees\n\x09 * @param OutTime Out parameter with the expected time the projectile will take to reach the destination, in seconds\n\x09 * @return True if a valid trajectory exists, false otherwise\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameCoreBlueprintLibrary.h" },
 		{ "ReturnDisplayName", "Valid Trajectory Found" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Gets the angle off the XY plane (pitch) needed to shoot a freefall projectile from Source to Target given a launch speed.\nA trajectory may not exist if LaunchSpeed is too low for the given GravityAcceleration and source-to-target distance.\n@param Source Starting location of the projectile's flight\n@param Target Target location for the projectile to arrive at\n@param LaunchSpeed The speed of the projectile at the very start of its flight, in cm/s\n@param GravityAcceleration Acceleration due to gravity, in cm/s^2. Downward acceleration is negative\n@param bCalculateAlternateTrajectory If true, calculates an alternate trajectory that arcs even higher\nThis projectile's flight may be very long\n@param OutTrajectory Out parameter with desired angle to fire the projectile at, in degrees\n@param OutTime Out parameter with the expected time the projectile will take to reach the destination, in seconds\n@return True if a valid trajectory exists, false otherwise" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Source;
@@ -127,10 +132,14 @@ struct Z_Construct_UFunction_UMinigameCoreBlueprintLibrary_GetProjectileTrajecto
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Projectile Motion" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Gets the velocity needed to shoot a freefall projectile from Source to Target given a launch speed\n\x09 * A trajectory may not exist if LaunchSpeed is too low for the given GravityAcceleration and source-to-target distance.\n\x09 * @param WorldContextObject World context object of the projectile\n\x09 * @param Source Start location of the projectile's flight\n\x09 * @param Target Target location for the projectile to arrive at\n\x09 * @param LaunchSpeed The speed of the projectile at the very start of its flight, in cm/s\n\x09 * @param bCalculateAlternateTrajectory If true, calculates an alternate trajectory that arcs even higher\n\x09 * This projectile's flight may be very long\n\x09 * @param OutVelocity The velocity needed to launch the projectile at for the desired trajectory\n\x09 * @param OutTravelTime The predicted time the projectile will be in flight for to reach destination\n\x09 * @return True if a valid trajectory exists, false otherwise\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameCoreBlueprintLibrary.h" },
 		{ "ReturnDisplayName", "Valid Trajectory Found" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Gets the velocity needed to shoot a freefall projectile from Source to Target given a launch speed\nA trajectory may not exist if LaunchSpeed is too low for the given GravityAcceleration and source-to-target distance.\n@param WorldContextObject World context object of the projectile\n@param Source Start location of the projectile's flight\n@param Target Target location for the projectile to arrive at\n@param LaunchSpeed The speed of the projectile at the very start of its flight, in cm/s\n@param bCalculateAlternateTrajectory If true, calculates an alternate trajectory that arcs even higher\nThis projectile's flight may be very long\n@param OutVelocity The velocity needed to launch the projectile at for the desired trajectory\n@param OutTravelTime The predicted time the projectile will be in flight for to reach destination\n@return True if a valid trajectory exists, false otherwise" },
+#endif
 		{ "WorldContext", "WorldContextObject" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WorldContextObject_MetaData[] = {
@@ -218,10 +227,14 @@ struct Z_Construct_UFunction_UMinigameCoreBlueprintLibrary_GetProjectileTrajecto
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Projectile Motion" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Gets the velocity needed to shoot a freefall projectile from Source to Target\n\x09 * given the time the projectile should be in flight for.\n\x09 * @param WorldContextObject World context object of the projectile\n\x09 * @param Source Start location of the projectile's flight\n\x09 * @param Target Target location for the projectile to arrive at\n\x09 * @param Time Desired time of flight\n\x09 * @return Returns the launch velocity of the projectile\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MinigameCoreBlueprintLibrary.h" },
 		{ "ReturnDisplayName", "Velocity" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Gets the velocity needed to shoot a freefall projectile from Source to Target\ngiven the time the projectile should be in flight for.\n@param WorldContextObject World context object of the projectile\n@param Source Start location of the projectile's flight\n@param Target Target location for the projectile to arrive at\n@param Time Desired time of flight\n@return Returns the launch velocity of the projectile" },
+#endif
 		{ "WorldContext", "WorldContextObject" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WorldContextObject_MetaData[] = {
@@ -273,6 +286,60 @@ DEFINE_FUNCTION(UMinigameCoreBlueprintLibrary::execGetProjectileTrajectoryVeloci
 }
 // ********** End Class UMinigameCoreBlueprintLibrary Function GetProjectileTrajectoryVelocityFromTime 
 
+// ********** Begin Class UMinigameCoreBlueprintLibrary Function GetViewportSize *******************
+struct Z_Construct_UFunction_UMinigameCoreBlueprintLibrary_GetViewportSize_Statics
+{
+	struct MinigameCoreBlueprintLibrary_eventGetViewportSize_Parms
+	{
+		UObject* WorldContextObject;
+		FVector2D ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "MinigameUI" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/**\n\x09 * \n\x09 * @param WorldContextObject \n\x09 * @return Gets the size of the viewport\n\x09 */" },
+#endif
+		{ "ModuleRelativePath", "Public/MinigameCoreBlueprintLibrary.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "@param WorldContextObject\n@return Gets the size of the viewport" },
+#endif
+		{ "WorldContext", "WorldContextObject" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_WorldContextObject;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMinigameCoreBlueprintLibrary_GetViewportSize_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MinigameCoreBlueprintLibrary_eventGetViewportSize_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMinigameCoreBlueprintLibrary_GetViewportSize_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MinigameCoreBlueprintLibrary_eventGetViewportSize_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMinigameCoreBlueprintLibrary_GetViewportSize_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMinigameCoreBlueprintLibrary_GetViewportSize_Statics::NewProp_WorldContextObject,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMinigameCoreBlueprintLibrary_GetViewportSize_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMinigameCoreBlueprintLibrary_GetViewportSize_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMinigameCoreBlueprintLibrary_GetViewportSize_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMinigameCoreBlueprintLibrary, nullptr, "GetViewportSize", Z_Construct_UFunction_UMinigameCoreBlueprintLibrary_GetViewportSize_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMinigameCoreBlueprintLibrary_GetViewportSize_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMinigameCoreBlueprintLibrary_GetViewportSize_Statics::MinigameCoreBlueprintLibrary_eventGetViewportSize_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMinigameCoreBlueprintLibrary_GetViewportSize_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMinigameCoreBlueprintLibrary_GetViewportSize_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UMinigameCoreBlueprintLibrary_GetViewportSize_Statics::MinigameCoreBlueprintLibrary_eventGetViewportSize_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UMinigameCoreBlueprintLibrary_GetViewportSize()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UMinigameCoreBlueprintLibrary_GetViewportSize_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UMinigameCoreBlueprintLibrary::execGetViewportSize)
+{
+	P_GET_OBJECT(UObject,Z_Param_WorldContextObject);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(FVector2D*)Z_Param__Result=UMinigameCoreBlueprintLibrary::GetViewportSize(Z_Param_WorldContextObject);
+	P_NATIVE_END;
+}
+// ********** End Class UMinigameCoreBlueprintLibrary Function GetViewportSize *********************
+
 // ********** Begin Class UMinigameCoreBlueprintLibrary ********************************************
 void UMinigameCoreBlueprintLibrary::StaticRegisterNativesUMinigameCoreBlueprintLibrary()
 {
@@ -281,6 +348,7 @@ void UMinigameCoreBlueprintLibrary::StaticRegisterNativesUMinigameCoreBlueprintL
 		{ "GetProjectileTrajectoryAngleFromLaunchSpeed", &UMinigameCoreBlueprintLibrary::execGetProjectileTrajectoryAngleFromLaunchSpeed },
 		{ "GetProjectileTrajectoryVelocityFromLaunchSpeed", &UMinigameCoreBlueprintLibrary::execGetProjectileTrajectoryVelocityFromLaunchSpeed },
 		{ "GetProjectileTrajectoryVelocityFromTime", &UMinigameCoreBlueprintLibrary::execGetProjectileTrajectoryVelocityFromTime },
+		{ "GetViewportSize", &UMinigameCoreBlueprintLibrary::execGetViewportSize },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -317,16 +385,19 @@ struct Z_Construct_UClass_UMinigameCoreBlueprintLibrary_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "MinigameCoreBlueprintLibrary.h" },
 		{ "ModuleRelativePath", "Public/MinigameCoreBlueprintLibrary.h" },
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UMinigameCoreBlueprintLibrary_GetProjectileTrajectoryAngleFromLaunchSpeed, "GetProjectileTrajectoryAngleFromLaunchSpeed" }, // 89094148
-		{ &Z_Construct_UFunction_UMinigameCoreBlueprintLibrary_GetProjectileTrajectoryVelocityFromLaunchSpeed, "GetProjectileTrajectoryVelocityFromLaunchSpeed" }, // 994242611
-		{ &Z_Construct_UFunction_UMinigameCoreBlueprintLibrary_GetProjectileTrajectoryVelocityFromTime, "GetProjectileTrajectoryVelocityFromTime" }, // 1308843889
+		{ &Z_Construct_UFunction_UMinigameCoreBlueprintLibrary_GetProjectileTrajectoryAngleFromLaunchSpeed, "GetProjectileTrajectoryAngleFromLaunchSpeed" }, // 2344633838
+		{ &Z_Construct_UFunction_UMinigameCoreBlueprintLibrary_GetProjectileTrajectoryVelocityFromLaunchSpeed, "GetProjectileTrajectoryVelocityFromLaunchSpeed" }, // 3538291990
+		{ &Z_Construct_UFunction_UMinigameCoreBlueprintLibrary_GetProjectileTrajectoryVelocityFromTime, "GetProjectileTrajectoryVelocityFromTime" }, // 2057908719
+		{ &Z_Construct_UFunction_UMinigameCoreBlueprintLibrary_GetViewportSize, "GetViewportSize" }, // 2521344977
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -368,14 +439,14 @@ UMinigameCoreBlueprintLibrary::~UMinigameCoreBlueprintLibrary() {}
 // ********** End Class UMinigameCoreBlueprintLibrary **********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCoreBlueprintLibrary_h__Script_MinigameCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCoreBlueprintLibrary_h__Script_MinigameCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMinigameCoreBlueprintLibrary, UMinigameCoreBlueprintLibrary::StaticClass, TEXT("UMinigameCoreBlueprintLibrary"), &Z_Registration_Info_UClass_UMinigameCoreBlueprintLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMinigameCoreBlueprintLibrary), 175443051U) },
+		{ Z_Construct_UClass_UMinigameCoreBlueprintLibrary, UMinigameCoreBlueprintLibrary::StaticClass, TEXT("UMinigameCoreBlueprintLibrary"), &Z_Registration_Info_UClass_UMinigameCoreBlueprintLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMinigameCoreBlueprintLibrary), 1948328396U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCoreBlueprintLibrary_h__Script_MinigameCore_615414972(TEXT("/Script/MinigameCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCoreBlueprintLibrary_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCoreBlueprintLibrary_h__Script_MinigameCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCoreBlueprintLibrary_h__Script_MinigameCore_2787358036(TEXT("/Script/MinigameCore"),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCoreBlueprintLibrary_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCoreBlueprintLibrary_h__Script_MinigameCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

@@ -1,0 +1,40 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.BashCore.cpp.obj": [
+			"AIPlayerDataSubsystem.gen.cpp.obj",
+			"AIUIInputComponent.gen.cpp.obj",
+			"BashController.gen.cpp.obj",
+			"BashCore.init.gen.cpp.obj",
+			"BashCoreBlueprintLibrary.gen.cpp.obj",
+			"BashGamemode.gen.cpp.obj",
+			"BashLocalPlayer.gen.cpp.obj",
+			"BashPlayerController.gen.cpp.obj",
+			"CircularWipeWidget.gen.cpp.obj",
+			"CustomizablePlayerComponent.gen.cpp.obj",
+			"CustomizerPortraitCapture.gen.cpp.obj",
+			"FlexCalibrationMenu.gen.cpp.obj",
+			"Menu.gen.cpp.obj",
+			"SelectableWidget.gen.cpp.obj",
+			"UIInputComponent.gen.cpp.obj",
+			"UIInputComponentBase.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"BashCore.cpp.obj",
+			"BashCoreBlueprintLibrary.cpp.obj",
+			"BashCoreLog.cpp.obj",
+			"BashGamemode.cpp.obj",
+			"AIUIInputComponent.cpp.obj",
+			"CustomizablePlayerComponent.cpp.obj",
+			"UIInputComponent.cpp.obj",
+			"CustomizerPortraitCapture.cpp.obj",
+			"AIPlayerDataSubsystem.cpp.obj",
+			"BashLocalPlayer.cpp.obj",
+			"BashPlayerController.cpp.obj",
+			"CircularWipeWidget.cpp.obj",
+			"FlexCalibrationMenu.cpp.obj",
+			"Menu.cpp.obj",
+			"SelectableWidget.cpp.obj",
+			"UIInputComponentBase.cpp.obj"
+		]
+	}
+}

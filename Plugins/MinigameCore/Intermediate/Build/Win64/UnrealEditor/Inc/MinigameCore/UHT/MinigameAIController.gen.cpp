@@ -13,6 +13,7 @@ void EmptyLinkFunctionForGeneratedCodeMinigameAIController() {}
 
 // ********** Begin Cross Module References ********************************************************
 AIMODULE_API UClass* Z_Construct_UClass_AAIController();
+BASHCORE_API UClass* Z_Construct_UClass_UBashController_NoRegister();
 MINIGAMECORE_API UClass* Z_Construct_UClass_AMinigameAIController();
 MINIGAMECORE_API UClass* Z_Construct_UClass_AMinigameAIController_NoRegister();
 MINIGAMECORE_API UClass* Z_Construct_UClass_AMinigameBase_NoRegister();
@@ -106,6 +107,7 @@ struct Z_Construct_UClass_AMinigameAIController_Statics
 		{ &Z_Construct_UFunction_AMinigameAIController_OnMinigamePlayerPossessed, "OnMinigamePlayerPossessed" }, // 1639375580
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
+	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMinigameAIController>::IsAbstract,
 	};
@@ -123,6 +125,9 @@ UObject* (*const Z_Construct_UClass_AMinigameAIController_Statics::DependentSing
 	(UObject* (*)())Z_Construct_UPackage__Script_MinigameCore,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AMinigameAIController_Statics::DependentSingletons) < 16);
+const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AMinigameAIController_Statics::InterfaceParams[] = {
+	{ Z_Construct_UClass_UBashController_NoRegister, (int32)VTABLE_OFFSET(AMinigameAIController, IBashController), false },  // 1362611079
+};
 const UECodeGen_Private::FClassParams Z_Construct_UClass_AMinigameAIController_Statics::ClassParams = {
 	&AMinigameAIController::StaticClass,
 	"Engine",
@@ -130,11 +135,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AMinigameAIController_S
 	DependentSingletons,
 	FuncInfo,
 	Z_Construct_UClass_AMinigameAIController_Statics::PropPointers,
-	nullptr,
+	InterfaceParams,
 	UE_ARRAY_COUNT(DependentSingletons),
 	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_AMinigameAIController_Statics::PropPointers),
-	0,
+	UE_ARRAY_COUNT(InterfaceParams),
 	0x009003A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AMinigameAIController_Statics::Class_MetaDataParams), Z_Construct_UClass_AMinigameAIController_Statics::Class_MetaDataParams)
 };
@@ -151,14 +156,14 @@ AMinigameAIController::~AMinigameAIController() {}
 // ********** End Class AMinigameAIController ******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigameAIController_h__Script_MinigameCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigameAIController_h__Script_MinigameCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AMinigameAIController, AMinigameAIController::StaticClass, TEXT("AMinigameAIController"), &Z_Registration_Info_UClass_AMinigameAIController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMinigameAIController), 2435665972U) },
+		{ Z_Construct_UClass_AMinigameAIController, AMinigameAIController::StaticClass, TEXT("AMinigameAIController"), &Z_Registration_Info_UClass_AMinigameAIController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMinigameAIController), 3304834685U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigameAIController_h__Script_MinigameCore_3656055878(TEXT("/Script/MinigameCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigameAIController_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigameAIController_h__Script_MinigameCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigameAIController_h__Script_MinigameCore_3560623255(TEXT("/Script/MinigameCore"),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigameAIController_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigameAIController_h__Script_MinigameCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

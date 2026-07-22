@@ -67,10 +67,6 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Player Rotation")
 	FVector GetRotationInputValueVector() const;
 
-	// Returns the resolution used for rotation aiming
-	UFUNCTION(BlueprintCallable, Category = "Player Rotation")
-	FVector2D GetSetScreenResolution() const { return ScreenResolution; };
-	
 protected:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Input")
 	TObjectPtr<UInputAction> RotationAction;
@@ -92,9 +88,6 @@ protected:
 	UPROPERTY(EditDefaultsOnly, Category = "Player Rotation")
 	double AimSensitivity{ 25.0 };
 
-	UPROPERTY(EditDefaultsOnly, Category = "Player Rotation")
-	FVector2D ScreenResolution{ 1920, 1080 };
-
 	// The distance from the edge of the screen that the aimed position must remain in
 	UPROPERTY(EditDefaultsOnly, Category = "Player Rotation")
 	double ClampOffset;
@@ -112,8 +105,6 @@ protected:
 
 	float YawOffset{};
 	
-	FVector2D SquareResolution{ScreenResolution.X, ScreenResolution.X};
-
 	FVector2D ClampVector(FVector2D In, FVector2D Max, double Offset);
 	
 };

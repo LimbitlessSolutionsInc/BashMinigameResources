@@ -4,7 +4,6 @@ public class LimbitlessBTAndroid : ModuleRules
 {
     public LimbitlessBTAndroid(ReadOnlyTargetRules Target) : base(Target)
     {
-        bUsePrecompiled = true; 
         PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 
         PublicDependencyModuleNames.AddRange(

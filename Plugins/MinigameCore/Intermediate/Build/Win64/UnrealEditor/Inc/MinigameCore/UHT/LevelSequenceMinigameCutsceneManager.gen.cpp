@@ -44,9 +44,13 @@ struct Z_Construct_UFunction_ULevelSequenceMinigameCutsceneManager_InitializeLev
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Initializes level sequence actor\n// By default, binds the first minigame capture to the \"Camera\" binding tag\n// If bBindSpawnedPlayersToSequence is true, spawned players are bound to binding tags \"Player0\", \"Player1\", \"Player2\", and \"Player3\" \n" },
+#endif
 		{ "ModuleRelativePath", "Public/Cutscenes/LevelSequenceMinigameCutsceneManager.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Initializes level sequence actor\nBy default, binds the first minigame capture to the \"Camera\" binding tag\nIf bBindSpawnedPlayersToSequence is true, spawned players are bound to binding tags \"Player0\", \"Player1\", \"Player2\", and \"Player3\"" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SequenceActor;
@@ -97,9 +101,13 @@ struct Z_Construct_UFunction_ULevelSequenceMinigameCutsceneManager_OnLevelSequen
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Called when the level sequence is finished\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Cutscenes/LevelSequenceMinigameCutsceneManager.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when the level sequence is finished" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -166,10 +174,14 @@ struct Z_Construct_UClass_ULevelSequenceMinigameCutsceneManager_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * A minigame cutscene that uses a level sequence. The level sequence should have Possessable bindings (Player0, Player1, etc.)\n */" },
+#endif
 		{ "IncludePath", "Cutscenes/LevelSequenceMinigameCutsceneManager.h" },
 		{ "ModuleRelativePath", "Public/Cutscenes/LevelSequenceMinigameCutsceneManager.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A minigame cutscene that uses a level sequence. The level sequence should have Possessable bindings (Player0, Player1, etc.)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LevelSequence_MetaData[] = {
 		{ "Category", "Cutscene" },
@@ -177,9 +189,13 @@ struct Z_Construct_UClass_ULevelSequenceMinigameCutsceneManager_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bBindSpawnedPlayersToSequence_MetaData[] = {
 		{ "Category", "Cutscene" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// If this is true and bShouldSpawnPlayers, the spawned players will be bound to the level sequence\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Cutscenes/LevelSequenceMinigameCutsceneManager.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If this is true and bShouldSpawnPlayers, the spawned players will be bound to the level sequence" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_LevelSequence;
@@ -188,8 +204,8 @@ struct Z_Construct_UClass_ULevelSequenceMinigameCutsceneManager_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_ULevelSequenceMinigameCutsceneManager_InitializeLevelSequence, "InitializeLevelSequence" }, // 389447672
-		{ &Z_Construct_UFunction_ULevelSequenceMinigameCutsceneManager_OnLevelSequenceComplete, "OnLevelSequenceComplete" }, // 3016669322
+		{ &Z_Construct_UFunction_ULevelSequenceMinigameCutsceneManager_InitializeLevelSequence, "InitializeLevelSequence" }, // 2732366181
+		{ &Z_Construct_UFunction_ULevelSequenceMinigameCutsceneManager_OnLevelSequenceComplete, "OnLevelSequenceComplete" }, // 2477516981
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -241,14 +257,14 @@ ULevelSequenceMinigameCutsceneManager::~ULevelSequenceMinigameCutsceneManager() 
 // ********** End Class ULevelSequenceMinigameCutsceneManager **************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Cutscenes_LevelSequenceMinigameCutsceneManager_h__Script_MinigameCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Cutscenes_LevelSequenceMinigameCutsceneManager_h__Script_MinigameCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ULevelSequenceMinigameCutsceneManager, ULevelSequenceMinigameCutsceneManager::StaticClass, TEXT("ULevelSequenceMinigameCutsceneManager"), &Z_Registration_Info_UClass_ULevelSequenceMinigameCutsceneManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ULevelSequenceMinigameCutsceneManager), 3497913969U) },
+		{ Z_Construct_UClass_ULevelSequenceMinigameCutsceneManager, ULevelSequenceMinigameCutsceneManager::StaticClass, TEXT("ULevelSequenceMinigameCutsceneManager"), &Z_Registration_Info_UClass_ULevelSequenceMinigameCutsceneManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ULevelSequenceMinigameCutsceneManager), 2635716616U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Cutscenes_LevelSequenceMinigameCutsceneManager_h__Script_MinigameCore_312564148(TEXT("/Script/MinigameCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Cutscenes_LevelSequenceMinigameCutsceneManager_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Cutscenes_LevelSequenceMinigameCutsceneManager_h__Script_MinigameCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Cutscenes_LevelSequenceMinigameCutsceneManager_h__Script_MinigameCore_1406865968(TEXT("/Script/MinigameCore"),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Cutscenes_LevelSequenceMinigameCutsceneManager_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Cutscenes_LevelSequenceMinigameCutsceneManager_h__Script_MinigameCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

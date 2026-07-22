@@ -160,9 +160,13 @@ struct Z_Construct_UFunction_UPlayerAccelerationComponent_GetCoordinateAccelerat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Player Acceleration" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Returns the coordinate acceleration of the player's flex controller in m/s^2. Coordinate acceleration is not affected by gravity\n// and represents acceleration experienced by the device relative to Earth. Useful for game logic.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Player/PlayerAccelerationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the coordinate acceleration of the player's flex controller in m/s^2. Coordinate acceleration is not affected by gravity\nand represents acceleration experienced by the device relative to Earth. Useful for game logic." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
@@ -295,7 +299,7 @@ struct Z_Construct_UClass_UPlayerAccelerationComponent_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UPlayerAccelerationComponent_GetAccelerationInputValue, "GetAccelerationInputValue" }, // 2050872361
-		{ &Z_Construct_UFunction_UPlayerAccelerationComponent_GetCoordinateAcceleration, "GetCoordinateAcceleration" }, // 1955412207
+		{ &Z_Construct_UFunction_UPlayerAccelerationComponent_GetCoordinateAcceleration, "GetCoordinateAcceleration" }, // 1214445670
 		{ &Z_Construct_UFunction_UPlayerAccelerationComponent_ListenForMovement, "ListenForMovement" }, // 2687595345
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -337,14 +341,14 @@ UPlayerAccelerationComponent::~UPlayerAccelerationComponent() {}
 // ********** End Class UPlayerAccelerationComponent ***********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h__Script_MinigameCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h__Script_MinigameCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UPlayerAccelerationComponent, UPlayerAccelerationComponent::StaticClass, TEXT("UPlayerAccelerationComponent"), &Z_Registration_Info_UClass_UPlayerAccelerationComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPlayerAccelerationComponent), 4231231062U) },
+		{ Z_Construct_UClass_UPlayerAccelerationComponent, UPlayerAccelerationComponent::StaticClass, TEXT("UPlayerAccelerationComponent"), &Z_Registration_Info_UClass_UPlayerAccelerationComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPlayerAccelerationComponent), 3375752328U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h__Script_MinigameCore_3622475767(TEXT("/Script/MinigameCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h__Script_MinigameCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h__Script_MinigameCore_595716403(TEXT("/Script/MinigameCore"),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerAccelerationComponent_h__Script_MinigameCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

@@ -81,9 +81,13 @@ struct Z_Construct_UFunction_UBluetoothManagerSubsystem_GetColors_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintGetter", "" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Gets all the colors that can be assigned to devices\n" },
+#endif
 		{ "ModuleRelativePath", "Public/BluetoothManagerSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Gets all the colors that can be assigned to devices" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "NativeConst", "" },
@@ -130,9 +134,13 @@ struct Z_Construct_UFunction_UBluetoothManagerSubsystem_StartScan_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Scanning" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Starts a bluetooth scan\n" },
+#endif
 		{ "ModuleRelativePath", "Public/BluetoothManagerSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Starts a bluetooth scan" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -231,15 +239,21 @@ struct Z_Construct_UClass_UBluetoothManagerSubsystem_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "BluetoothManagerSubsystem.h" },
 		{ "ModuleRelativePath", "Public/BluetoothManagerSubsystem.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UnpairedFlexDevices_MetaData[] = {
 		{ "Category", "Connected Controllers" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Information about connected devices\n" },
+#endif
 		{ "ModuleRelativePath", "Public/BluetoothManagerSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Information about connected devices" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PairedFlexDevices_MetaData[] = {
 		{ "Category", "Connected Controllers" },
@@ -252,12 +266,18 @@ struct Z_Construct_UClass_UBluetoothManagerSubsystem_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DeviceColors_MetaData[] = {
 		{ "BlueprintGetter", "GetColors" },
 		{ "Category", "Assignment" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Colors automatically assigned to flex devices in order of connection. \n// First color is reserved for unassigned players and isn't assigned to flex devices\n" },
+#endif
 		{ "ModuleRelativePath", "Public/BluetoothManagerSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Colors automatically assigned to flex devices in order of connection.\nFirst color is reserved for unassigned players and isn't assigned to flex devices" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BLEManager_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// --------------------\n" },
+#endif
 		{ "ModuleRelativePath", "Public/BluetoothManagerSubsystem.h" },
 	};
 #endif // WITH_METADATA
@@ -275,8 +295,8 @@ struct Z_Construct_UClass_UBluetoothManagerSubsystem_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UBluetoothManagerSubsystem_AssignControllerToPlayer, "AssignControllerToPlayer" }, // 1127558346
-		{ &Z_Construct_UFunction_UBluetoothManagerSubsystem_GetColors, "GetColors" }, // 2863922660
-		{ &Z_Construct_UFunction_UBluetoothManagerSubsystem_StartScan, "StartScan" }, // 40946758
+		{ &Z_Construct_UFunction_UBluetoothManagerSubsystem_GetColors, "GetColors" }, // 864567327
+		{ &Z_Construct_UFunction_UBluetoothManagerSubsystem_StartScan, "StartScan" }, // 3781276784
 		{ &Z_Construct_UFunction_UBluetoothManagerSubsystem_StopScan, "StopScan" }, // 1155092844
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -342,14 +362,14 @@ UBluetoothManagerSubsystem::~UBluetoothManagerSubsystem() {}
 // ********** End Class UBluetoothManagerSubsystem *************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_BluetoothManagerSubsystem_h__Script_PlatformManager_Statics
+struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_BluetoothManagerSubsystem_h__Script_PlatformManager_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UBluetoothManagerSubsystem, UBluetoothManagerSubsystem::StaticClass, TEXT("UBluetoothManagerSubsystem"), &Z_Registration_Info_UClass_UBluetoothManagerSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBluetoothManagerSubsystem), 3479636915U) },
+		{ Z_Construct_UClass_UBluetoothManagerSubsystem, UBluetoothManagerSubsystem::StaticClass, TEXT("UBluetoothManagerSubsystem"), &Z_Registration_Info_UClass_UBluetoothManagerSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBluetoothManagerSubsystem), 1578639133U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_BluetoothManagerSubsystem_h__Script_PlatformManager_53987915(TEXT("/Script/PlatformManager"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_BluetoothManagerSubsystem_h__Script_PlatformManager_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_BluetoothManagerSubsystem_h__Script_PlatformManager_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_BluetoothManagerSubsystem_h__Script_PlatformManager_4162026953(TEXT("/Script/PlatformManager"),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_BluetoothManagerSubsystem_h__Script_PlatformManager_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_LimbitlessBluetoothPlugin_Source_PlatformManager_Public_BluetoothManagerSubsystem_h__Script_PlatformManager_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

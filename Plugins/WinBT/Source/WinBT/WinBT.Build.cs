@@ -7,7 +7,11 @@ public class WinBT : ModuleRules
 {
 	public WinBT(ReadOnlyTargetRules Target) : base(Target)
 	{
-		bUsePrecompiled = true;
+		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
+		
+		PrecompileForTargets = PrecompileTargetsType.Any;
+
+		DefaultBuildSettings = BuildSettingsVersion.Latest;
 		
 		PublicDependencyModuleNames.AddRange(
 			new string[]
@@ -29,6 +33,10 @@ public class WinBT : ModuleRules
 			}
 			);
 
+		if (Target.Platform != UnrealTargetPlatform.Win64)
+		{
+			return; 
+		}
 		string windowsSdkVersion = Target.WindowsPlatform.WindowsSdkVersion;
 		string windowsSdkPath = Target.WindowsPlatform.WindowsSdkDir;
 		

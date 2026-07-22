@@ -13,6 +13,7 @@ void EmptyLinkFunctionForGeneratedCodeMinigameCore_init() {}
 	MINIGAMECORE_API UFunction* Z_Construct_UDelegateFunction_MinigameCore_GameStartedSignature__DelegateSignature();
 	MINIGAMECORE_API UFunction* Z_Construct_UDelegateFunction_MinigameCore_GetMinigamePlayerCountSignature__DelegateSignature();
 	MINIGAMECORE_API UFunction* Z_Construct_UDelegateFunction_MinigameCore_OnMovementTriggeredSignature__DelegateSignature();
+	MINIGAMECORE_API UFunction* Z_Construct_UDelegateFunction_MinigameCore_OnViewportSizeChangedSignature__DelegateSignature();
 	MINIGAMECORE_API UFunction* Z_Construct_UDelegateFunction_MinigameCore_PointsChanged__DelegateSignature();
 	static FPackageRegistrationInfo Z_Registration_Info_UPackage__Script_MinigameCore;
 	FORCENOINLINE UPackage* Z_Construct_UPackage__Script_MinigameCore()
@@ -26,6 +27,7 @@ void EmptyLinkFunctionForGeneratedCodeMinigameCore_init() {}
 				(UObject* (*)())Z_Construct_UDelegateFunction_MinigameCore_GameStartedSignature__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_MinigameCore_GetMinigamePlayerCountSignature__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_MinigameCore_OnMovementTriggeredSignature__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_MinigameCore_OnViewportSizeChangedSignature__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_MinigameCore_PointsChanged__DelegateSignature,
 			};
 			static const UECodeGen_Private::FPackageParams PackageParams = {
@@ -33,13 +35,13 @@ void EmptyLinkFunctionForGeneratedCodeMinigameCore_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xC1B2488E,
-				0x8A4B050D,
+				0x84F0C397,
+				0x35AF9F1F,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_MinigameCore.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_MinigameCore.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_MinigameCore(Z_Construct_UPackage__Script_MinigameCore, TEXT("/Script/MinigameCore"), Z_Registration_Info_UPackage__Script_MinigameCore, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xC1B2488E, 0x8A4B050D));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_MinigameCore(Z_Construct_UPackage__Script_MinigameCore, TEXT("/Script/MinigameCore"), Z_Registration_Info_UPackage__Script_MinigameCore, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x84F0C397, 0x35AF9F1F));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

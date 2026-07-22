@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class UAIPlayerDataSubsystem ***************************************************
 BASHCORE_API UClass* Z_Construct_UClass_UAIPlayerDataSubsystem_NoRegister();
 
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_AIPlayerDataSubsystem_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_AIPlayerDataSubsystem_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUAIPlayerDataSubsystem(); \
 	friend struct Z_Construct_UClass_UAIPlayerDataSubsystem_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(UAIPlayerDataSubsystem)
 
 
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_AIPlayerDataSubsystem_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_AIPlayerDataSubsystem_h_15_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UAIPlayerDataSubsystem(UAIPlayerDataSubsystem&&) = delete; \
 	UAIPlayerDataSubsystem(const UAIPlayerDataSubsystem&) = delete; \
@@ -40,12 +40,12 @@ public: \
 	NO_API virtual ~UAIPlayerDataSubsystem();
 
 
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_AIPlayerDataSubsystem_h_12_PROLOG
-#define FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_AIPlayerDataSubsystem_h_15_GENERATED_BODY \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_AIPlayerDataSubsystem_h_12_PROLOG
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_AIPlayerDataSubsystem_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_AIPlayerDataSubsystem_h_15_INCLASS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_AIPlayerDataSubsystem_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_AIPlayerDataSubsystem_h_15_INCLASS_NO_PURE_DECLS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_AIPlayerDataSubsystem_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -55,6 +55,6 @@ class UAIPlayerDataSubsystem;
 // ********** End Class UAIPlayerDataSubsystem *****************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Player_AIPlayerDataSubsystem_h
+#define CURRENT_FILE_ID FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Player_AIPlayerDataSubsystem_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

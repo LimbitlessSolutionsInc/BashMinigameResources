@@ -79,9 +79,13 @@ struct Z_Construct_UFunction_UPlayerRotationComponent_GetAimPosition_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Player Rotation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Gets the screenspace position of the aimed position. Good for rendering a crosshair on a widget.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Player/PlayerRotationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Gets the screenspace position of the aimed position. Good for rendering a crosshair on a widget." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
@@ -123,9 +127,13 @@ struct Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotation_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Player Rotation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Returns the rotation from the set initial orientation\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Player/PlayerRotationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the rotation from the set initial orientation" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
@@ -252,9 +260,13 @@ struct Z_Construct_UFunction_UPlayerRotationComponent_GetDirectionFromCamera_Sta
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Player Rotation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Gets a direction from the camera to the aimed position in global worldspace. Good for raycasting to where a crosshair is visually aiming.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Player/PlayerRotationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Gets a direction from the camera to the aimed position in global worldspace. Good for raycasting to where a crosshair is visually aiming." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_CameraOrientation;
@@ -300,9 +312,13 @@ struct Z_Construct_UFunction_UPlayerRotationComponent_GetRotationInputValue_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Player Rotation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Reads the rotation value from the Rotation input action\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Player/PlayerRotationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Reads the rotation value from the Rotation input action" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
@@ -376,59 +392,19 @@ DEFINE_FUNCTION(UPlayerRotationComponent::execGetRotationInputValueVector)
 }
 // ********** End Class UPlayerRotationComponent Function GetRotationInputValueVector **************
 
-// ********** Begin Class UPlayerRotationComponent Function GetSetScreenResolution *****************
-struct Z_Construct_UFunction_UPlayerRotationComponent_GetSetScreenResolution_Statics
-{
-	struct PlayerRotationComponent_eventGetSetScreenResolution_Parms
-	{
-		FVector2D ReturnValue;
-	};
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
-		{ "Category", "Player Rotation" },
-		{ "Comment", "// Returns the resolution used for rotation aiming\n" },
-		{ "ModuleRelativePath", "Public/Player/PlayerRotationComponent.h" },
-		{ "ToolTip", "Returns the resolution used for rotation aiming" },
-	};
-#endif // WITH_METADATA
-	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
-	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-	static const UECodeGen_Private::FFunctionParams FuncParams;
-};
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UPlayerRotationComponent_GetSetScreenResolution_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(PlayerRotationComponent_eventGetSetScreenResolution_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPlayerRotationComponent_GetSetScreenResolution_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlayerRotationComponent_GetSetScreenResolution_Statics::NewProp_ReturnValue,
-};
-static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerRotationComponent_GetSetScreenResolution_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerRotationComponent_GetSetScreenResolution_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UPlayerRotationComponent, nullptr, "GetSetScreenResolution", Z_Construct_UFunction_UPlayerRotationComponent_GetSetScreenResolution_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerRotationComponent_GetSetScreenResolution_Statics::PropPointers), sizeof(Z_Construct_UFunction_UPlayerRotationComponent_GetSetScreenResolution_Statics::PlayerRotationComponent_eventGetSetScreenResolution_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerRotationComponent_GetSetScreenResolution_Statics::Function_MetaDataParams), Z_Construct_UFunction_UPlayerRotationComponent_GetSetScreenResolution_Statics::Function_MetaDataParams)},  };
-static_assert(sizeof(Z_Construct_UFunction_UPlayerRotationComponent_GetSetScreenResolution_Statics::PlayerRotationComponent_eventGetSetScreenResolution_Parms) < MAX_uint16);
-UFunction* Z_Construct_UFunction_UPlayerRotationComponent_GetSetScreenResolution()
-{
-	static UFunction* ReturnFunction = nullptr;
-	if (!ReturnFunction)
-	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UPlayerRotationComponent_GetSetScreenResolution_Statics::FuncParams);
-	}
-	return ReturnFunction;
-}
-DEFINE_FUNCTION(UPlayerRotationComponent::execGetSetScreenResolution)
-{
-	P_FINISH;
-	P_NATIVE_BEGIN;
-	*(FVector2D*)Z_Param__Result=P_THIS->GetSetScreenResolution();
-	P_NATIVE_END;
-}
-// ********** End Class UPlayerRotationComponent Function GetSetScreenResolution *******************
-
 // ********** Begin Class UPlayerRotationComponent Function ResetInitialOrientation ****************
 struct Z_Construct_UFunction_UPlayerRotationComponent_ResetInitialOrientation_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Player Rotation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Sets the initial rotation to the current rotation. Helpful to reset effects of drift along Z-axis\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Player/PlayerRotationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sets the initial rotation to the current rotation. Helpful to reset effects of drift along Z-axis" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -511,7 +487,6 @@ void UPlayerRotationComponent::StaticRegisterNativesUPlayerRotationComponent()
 		{ "GetDirectionFromCamera", &UPlayerRotationComponent::execGetDirectionFromCamera },
 		{ "GetRotationInputValue", &UPlayerRotationComponent::execGetRotationInputValue },
 		{ "GetRotationInputValueVector", &UPlayerRotationComponent::execGetRotationInputValueVector },
-		{ "GetSetScreenResolution", &UPlayerRotationComponent::execGetSetScreenResolution },
 		{ "ResetInitialOrientation", &UPlayerRotationComponent::execResetInitialOrientation },
 		{ "SetAimOffset", &UPlayerRotationComponent::execSetAimOffset },
 	};
@@ -552,16 +527,24 @@ struct Z_Construct_UClass_UPlayerRotationComponent_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "ClassGroupNames", "Custom" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Processes raw rotation input data to provide helpful utilities.\n * Recommended if minigame needs motion inputs for gameplay.\n * Requires resetting the initial orientation for accurate Z-axis orientation\n */" },
+#endif
 		{ "IncludePath", "Player/PlayerRotationComponent.h" },
 		{ "ModuleRelativePath", "Public/Player/PlayerRotationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Processes raw rotation input data to provide helpful utilities.\nRecommended if minigame needs motion inputs for gameplay.\nRequires resetting the initial orientation for accurate Z-axis orientation" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InitialPosition_MetaData[] = {
 		{ "Category", "Player Rotation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* The initial position of the crosshair.\n\x09*  Each coordinate is a percentage of the screen size away from the top left corner\n\x09*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Player/PlayerRotationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The initial position of the crosshair.\n      *  Each coordinate is a percentage of the screen size away from the top left corner" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RotationAction_MetaData[] = {
 		{ "Category", "Input" },
@@ -569,39 +552,41 @@ struct Z_Construct_UClass_UPlayerRotationComponent_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AimSensitivity_MetaData[] = {
 		{ "Category", "Player Rotation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Screen distance traveled per angle of rotation\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Player/PlayerRotationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Screen distance traveled per angle of rotation" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ScreenResolution_MetaData[] = {
-		{ "Category", "Player Rotation" },
-		{ "ModuleRelativePath", "Public/Player/PlayerRotationComponent.h" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ClampOffset_MetaData[] = {
 		{ "Category", "Player Rotation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// The distance from the edge of the screen that the aimed position must remain in\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Player/PlayerRotationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The distance from the edge of the screen that the aimed position must remain in" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_InitialPosition;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_RotationAction;
 	static const UECodeGen_Private::FDoublePropertyParams NewProp_AimSensitivity;
-	static const UECodeGen_Private::FStructPropertyParams NewProp_ScreenResolution;
 	static const UECodeGen_Private::FDoublePropertyParams NewProp_ClampOffset;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UPlayerRotationComponent_AddAimOffset, "AddAimOffset" }, // 4198201280
-		{ &Z_Construct_UFunction_UPlayerRotationComponent_GetAimPosition, "GetAimPosition" }, // 667872270
-		{ &Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotation, "GetDeltaRotation" }, // 1815841424
+		{ &Z_Construct_UFunction_UPlayerRotationComponent_GetAimPosition, "GetAimPosition" }, // 2105079942
+		{ &Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotation, "GetDeltaRotation" }, // 38106736
 		{ &Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotationEuler, "GetDeltaRotationEuler" }, // 473017462
 		{ &Z_Construct_UFunction_UPlayerRotationComponent_GetDeltaRotator, "GetDeltaRotator" }, // 3681972672
-		{ &Z_Construct_UFunction_UPlayerRotationComponent_GetDirectionFromCamera, "GetDirectionFromCamera" }, // 2522827164
-		{ &Z_Construct_UFunction_UPlayerRotationComponent_GetRotationInputValue, "GetRotationInputValue" }, // 1386139466
+		{ &Z_Construct_UFunction_UPlayerRotationComponent_GetDirectionFromCamera, "GetDirectionFromCamera" }, // 3675051906
+		{ &Z_Construct_UFunction_UPlayerRotationComponent_GetRotationInputValue, "GetRotationInputValue" }, // 1327591475
 		{ &Z_Construct_UFunction_UPlayerRotationComponent_GetRotationInputValueVector, "GetRotationInputValueVector" }, // 1927099902
-		{ &Z_Construct_UFunction_UPlayerRotationComponent_GetSetScreenResolution, "GetSetScreenResolution" }, // 4169817254
-		{ &Z_Construct_UFunction_UPlayerRotationComponent_ResetInitialOrientation, "ResetInitialOrientation" }, // 3902731151
+		{ &Z_Construct_UFunction_UPlayerRotationComponent_ResetInitialOrientation, "ResetInitialOrientation" }, // 2950526175
 		{ &Z_Construct_UFunction_UPlayerRotationComponent_SetAimOffset, "SetAimOffset" }, // 112285986
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -613,13 +598,11 @@ struct Z_Construct_UClass_UPlayerRotationComponent_Statics
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UPlayerRotationComponent_Statics::NewProp_InitialPosition = { "InitialPosition", nullptr, (EPropertyFlags)0x0010000000010005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UPlayerRotationComponent, InitialPosition), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InitialPosition_MetaData), NewProp_InitialPosition_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UPlayerRotationComponent_Statics::NewProp_RotationAction = { "RotationAction", nullptr, (EPropertyFlags)0x0124080000010015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UPlayerRotationComponent, RotationAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RotationAction_MetaData), NewProp_RotationAction_MetaData) };
 const UECodeGen_Private::FDoublePropertyParams Z_Construct_UClass_UPlayerRotationComponent_Statics::NewProp_AimSensitivity = { "AimSensitivity", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Double, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UPlayerRotationComponent, AimSensitivity), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AimSensitivity_MetaData), NewProp_AimSensitivity_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UPlayerRotationComponent_Statics::NewProp_ScreenResolution = { "ScreenResolution", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UPlayerRotationComponent, ScreenResolution), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ScreenResolution_MetaData), NewProp_ScreenResolution_MetaData) };
 const UECodeGen_Private::FDoublePropertyParams Z_Construct_UClass_UPlayerRotationComponent_Statics::NewProp_ClampOffset = { "ClampOffset", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Double, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UPlayerRotationComponent, ClampOffset), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ClampOffset_MetaData), NewProp_ClampOffset_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UPlayerRotationComponent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerRotationComponent_Statics::NewProp_InitialPosition,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerRotationComponent_Statics::NewProp_RotationAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerRotationComponent_Statics::NewProp_AimSensitivity,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerRotationComponent_Statics::NewProp_ScreenResolution,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerRotationComponent_Statics::NewProp_ClampOffset,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerRotationComponent_Statics::PropPointers) < 2048);
@@ -656,14 +639,14 @@ UPlayerRotationComponent::~UPlayerRotationComponent() {}
 // ********** End Class UPlayerRotationComponent ***************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerRotationComponent_h__Script_MinigameCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerRotationComponent_h__Script_MinigameCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UPlayerRotationComponent, UPlayerRotationComponent::StaticClass, TEXT("UPlayerRotationComponent"), &Z_Registration_Info_UClass_UPlayerRotationComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPlayerRotationComponent), 4172030749U) },
+		{ Z_Construct_UClass_UPlayerRotationComponent, UPlayerRotationComponent::StaticClass, TEXT("UPlayerRotationComponent"), &Z_Registration_Info_UClass_UPlayerRotationComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPlayerRotationComponent), 1720205197U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerRotationComponent_h__Script_MinigameCore_780913076(TEXT("/Script/MinigameCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerRotationComponent_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerRotationComponent_h__Script_MinigameCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerRotationComponent_h__Script_MinigameCore_1497602969(TEXT("/Script/MinigameCore"),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerRotationComponent_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerRotationComponent_h__Script_MinigameCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

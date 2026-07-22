@@ -62,25 +62,37 @@ struct Z_Construct_UClass_APlayerSpawn_Statics
 		{ "Category", "Spawn Properties" },
 		{ "ClampMax", "1" },
 		{ "ClampMin", "0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Team associated with this player spawn\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Player/PlayerSpawn.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Team associated with this player spawn" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Position_MetaData[] = {
 		{ "Category", "Spawn Properties" },
 		{ "ClampMax", "3" },
 		{ "ClampMin", "0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// The position of this player spawn in the team\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Player/PlayerSpawn.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The position of this player spawn in the team" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NumPlayersRequired_MetaData[] = {
 		{ "Category", "Spawn Properties" },
 		{ "ClampMax", "4" },
 		{ "ClampMin", "1" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * The number of players that must on the associated team to consider this player spawn\n\x09 * For example, restricting a player spawn to only work if there are 2 players on a 3v1 minigame\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/Player/PlayerSpawn.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The number of players that must on the associated team to consider this player spawn\nFor example, restricting a player spawn to only work if there are 2 players on a 3v1 minigame" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bUseOnAnyPlayerCount_MetaData[] = {
 		{ "Category", "Spawn Properties" },
@@ -148,14 +160,14 @@ APlayerSpawn::~APlayerSpawn() {}
 // ********** End Class APlayerSpawn ***************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerSpawn_h__Script_MinigameCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerSpawn_h__Script_MinigameCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_APlayerSpawn, APlayerSpawn::StaticClass, TEXT("APlayerSpawn"), &Z_Registration_Info_UClass_APlayerSpawn, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlayerSpawn), 2834900618U) },
+		{ Z_Construct_UClass_APlayerSpawn, APlayerSpawn::StaticClass, TEXT("APlayerSpawn"), &Z_Registration_Info_UClass_APlayerSpawn, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlayerSpawn), 1701451408U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerSpawn_h__Script_MinigameCore_1329441184(TEXT("/Script/MinigameCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerSpawn_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerSpawn_h__Script_MinigameCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerSpawn_h__Script_MinigameCore_2588052141(TEXT("/Script/MinigameCore"),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerSpawn_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerSpawn_h__Script_MinigameCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

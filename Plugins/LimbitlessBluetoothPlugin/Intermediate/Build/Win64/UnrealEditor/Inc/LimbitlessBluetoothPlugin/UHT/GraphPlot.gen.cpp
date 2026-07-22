@@ -246,22 +246,32 @@ struct Z_Construct_UClass_UGraphPlot_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "Widgets/GraphPlot.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Widgets/GraphPlot.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NumVerticalLines_MetaData[] = {
 		{ "Category", "Graph Properties" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Number of grid lines that stretch from top to bottom\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Widgets/GraphPlot.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Number of grid lines that stretch from top to bottom" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NumHorizontalLines_MetaData[] = {
 		{ "Category", "Graph Properties" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Number of grid lines that stretch from left to right\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Widgets/GraphPlot.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Number of grid lines that stretch from left to right" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GridLineThickness_MetaData[] = {
 		{ "Category", "Graph Properties" },
@@ -293,27 +303,43 @@ struct Z_Construct_UClass_UGraphPlot_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MinGraphSize_MetaData[] = {
 		{ "Category", "Graph Properties" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// The amount added to the most extreme absolute value in a data sample when setting graph vertical scaling.\n// For scaling graphs only.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Widgets/GraphPlot.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The amount added to the most extreme absolute value in a data sample when setting graph vertical scaling.\nFor scaling graphs only." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UnscaledGraphMinimum_MetaData[] = {
 		{ "Category", "Graph Properties" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// The minimum value shown on the graph. For nonscaling graphs only.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Widgets/GraphPlot.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The minimum value shown on the graph. For nonscaling graphs only." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UnscaledGraphMaximum_MetaData[] = {
 		{ "Category", "Graph Properties" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// The maximum value shown on the graph. For nonscaling graphs only.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Widgets/GraphPlot.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The maximum value shown on the graph. For nonscaling graphs only." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MovingAverageWindowSize_MetaData[] = {
 		{ "Category", "Graph Properties" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Number of values to be stored when using a simple moving average\n// If zero, there will be no SMA smoothing\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Widgets/GraphPlot.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Number of values to be stored when using a simple moving average\nIf zero, there will be no SMA smoothing" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_NumVerticalLines;
@@ -411,14 +437,14 @@ UGraphPlot::~UGraphPlot() {}
 // ********** End Class UGraphPlot *****************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Widgets_GraphPlot_h__Script_LimbitlessBluetoothPlugin_Statics
+struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Widgets_GraphPlot_h__Script_LimbitlessBluetoothPlugin_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UGraphPlot, UGraphPlot::StaticClass, TEXT("UGraphPlot"), &Z_Registration_Info_UClass_UGraphPlot, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGraphPlot), 2173472607U) },
+		{ Z_Construct_UClass_UGraphPlot, UGraphPlot::StaticClass, TEXT("UGraphPlot"), &Z_Registration_Info_UClass_UGraphPlot, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGraphPlot), 3586981350U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Widgets_GraphPlot_h__Script_LimbitlessBluetoothPlugin_2859060710(TEXT("/Script/LimbitlessBluetoothPlugin"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Widgets_GraphPlot_h__Script_LimbitlessBluetoothPlugin_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Widgets_GraphPlot_h__Script_LimbitlessBluetoothPlugin_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Widgets_GraphPlot_h__Script_LimbitlessBluetoothPlugin_113279130(TEXT("/Script/LimbitlessBluetoothPlugin"),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Widgets_GraphPlot_h__Script_LimbitlessBluetoothPlugin_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_Widgets_GraphPlot_h__Script_LimbitlessBluetoothPlugin_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

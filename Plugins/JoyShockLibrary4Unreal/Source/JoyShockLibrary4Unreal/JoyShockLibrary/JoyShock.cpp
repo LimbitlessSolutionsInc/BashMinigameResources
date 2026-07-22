@@ -539,7 +539,6 @@ void JoyShock::enable_IMU(unsigned char *buf, int bufLength) {
 	memset(buf, 0, bufLength);
 
 	// Enable IMU data
-	UE_LOG(LogJoyShockLibrary, Log, TEXT("Enabling IMU data...\n"));
 	if (controller_type == ControllerType::s_ds4)
 	{
 		if (is_usb)

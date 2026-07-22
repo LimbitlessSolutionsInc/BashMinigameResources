@@ -55,10 +55,14 @@ struct Z_Construct_UClass_UWinBLEManager_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// ServiceUUIDs \"0000FE84-0000-1000-8000-00805F9B34FB\"\n// CharacteristicUUID \"0000FE84-0000-0001-8000-00805F9B34FB\"\n" },
+#endif
 		{ "IncludePath", "WinBLEManager.h" },
 		{ "ModuleRelativePath", "Public/WinBLEManager.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "ServiceUUIDs \"0000FE84-0000-1000-8000-00805F9B34FB\"\nCharacteristicUUID \"0000FE84-0000-0001-8000-00805F9B34FB\"" },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -100,14 +104,14 @@ UWinBLEManager::~UWinBLEManager() {}
 // ********** End Class UWinBLEManager *************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_HostProject_Plugins_WinBT_Source_WinBT_Public_WinBLEManager_h__Script_WinBT_Statics
+struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_WinBT_Source_WinBT_Public_WinBLEManager_h__Script_WinBT_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UWinBLEManager, UWinBLEManager::StaticClass, TEXT("UWinBLEManager"), &Z_Registration_Info_UClass_UWinBLEManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UWinBLEManager), 175275694U) },
+		{ Z_Construct_UClass_UWinBLEManager, UWinBLEManager::StaticClass, TEXT("UWinBLEManager"), &Z_Registration_Info_UClass_UWinBLEManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UWinBLEManager), 601149056U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_HostProject_Plugins_WinBT_Source_WinBT_Public_WinBLEManager_h__Script_WinBT_621119075(TEXT("/Script/WinBT"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_HostProject_Plugins_WinBT_Source_WinBT_Public_WinBLEManager_h__Script_WinBT_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_HostProject_Plugins_WinBT_Source_WinBT_Public_WinBLEManager_h__Script_WinBT_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_WinBT_Source_WinBT_Public_WinBLEManager_h__Script_WinBT_3771532733(TEXT("/Script/WinBT"),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_WinBT_Source_WinBT_Public_WinBLEManager_h__Script_WinBT_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_WinBT_Source_WinBT_Public_WinBLEManager_h__Script_WinBT_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

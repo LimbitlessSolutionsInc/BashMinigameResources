@@ -4,7 +4,7 @@ public class MinigameCoreEditor : ModuleRules
 {
     public MinigameCoreEditor(ReadOnlyTargetRules Target) : base(Target)
     {
-        bUsePrecompiled = true;
+        PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 
         PublicDependencyModuleNames.AddRange(
             new string[]

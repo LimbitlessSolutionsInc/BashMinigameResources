@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class UJoyShockLibrary4UnrealSettings ******************************************
 JOYSHOCKLIBRARY4UNREAL_API UClass* Z_Construct_UClass_UJoyShockLibrary4UnrealSettings_NoRegister();
 
-#define FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_Public_JoyShockLibrary4UnrealSettings_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_Public_JoyShockLibrary4UnrealSettings_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUJoyShockLibrary4UnrealSettings(); \
 	friend struct Z_Construct_UClass_UJoyShockLibrary4UnrealSettings_Statics; \
@@ -32,7 +32,7 @@ public: \
 
 
 
-#define FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_Public_JoyShockLibrary4UnrealSettings_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_Public_JoyShockLibrary4UnrealSettings_h_15_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UJoyShockLibrary4UnrealSettings(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -44,12 +44,12 @@ public: \
 	NO_API virtual ~UJoyShockLibrary4UnrealSettings();
 
 
-#define FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_Public_JoyShockLibrary4UnrealSettings_h_12_PROLOG
-#define FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_Public_JoyShockLibrary4UnrealSettings_h_15_GENERATED_BODY \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_Public_JoyShockLibrary4UnrealSettings_h_12_PROLOG
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_Public_JoyShockLibrary4UnrealSettings_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_Public_JoyShockLibrary4UnrealSettings_h_15_INCLASS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_Public_JoyShockLibrary4UnrealSettings_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_Public_JoyShockLibrary4UnrealSettings_h_15_INCLASS_NO_PURE_DECLS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_Public_JoyShockLibrary4UnrealSettings_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -59,6 +59,6 @@ class UJoyShockLibrary4UnrealSettings;
 // ********** End Class UJoyShockLibrary4UnrealSettings ********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_Downloads_MinigameCore_JoyShockLibrary4Unreal_HostProject_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_Public_JoyShockLibrary4UnrealSettings_h
+#define CURRENT_FILE_ID FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_JoyShockLibrary4Unreal_Source_JoyShockLibrary4Unreal_Public_JoyShockLibrary4UnrealSettings_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -19,14 +19,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct FMinigameStanding;
 
 // ********** Begin Delegate FPointsChanged ********************************************************
-#define FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h_11_DELEGATE \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h_11_DELEGATE \
 MINIGAMECORE_API void FPointsChanged_DelegateWrapper(const FMulticastScriptDelegate& PointsChanged, int32 Team, int32 Amount);
 
 
 // ********** End Delegate FPointsChanged **********************************************************
 
 // ********** Begin Class UBasePointCounter ********************************************************
-#define FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void SetupTeamAssignment_Implementation(int32 NumTeams, TArray<int32> const& TeamAssignments); \
 	virtual void InitializePointCounter_Implementation(int32 NumTeams, TArray<int32> const& TeamAssignment); \
 	virtual TArray<FMinigameStanding> GetStandings_Implementation() const; \
@@ -44,10 +44,10 @@ MINIGAMECORE_API void FPointsChanged_DelegateWrapper(const FMulticastScriptDeleg
 	DECLARE_FUNCTION(execAddPoints);
 
 
-#define FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h_16_CALLBACK_WRAPPERS
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h_16_CALLBACK_WRAPPERS
 MINIGAMECORE_API UClass* Z_Construct_UClass_UBasePointCounter_NoRegister();
 
-#define FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h_16_INCLASS_NO_PURE_DECLS \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUBasePointCounter(); \
 	friend struct Z_Construct_UClass_UBasePointCounter_Statics; \
@@ -58,7 +58,7 @@ public: \
 	DECLARE_SERIALIZER(UBasePointCounter)
 
 
-#define FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h_16_ENHANCED_CONSTRUCTORS \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h_16_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UBasePointCounter(UBasePointCounter&&) = delete; \
 	UBasePointCounter(const UBasePointCounter&) = delete; \
@@ -68,14 +68,14 @@ public: \
 	NO_API virtual ~UBasePointCounter();
 
 
-#define FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h_13_PROLOG
-#define FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h_16_GENERATED_BODY \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h_13_PROLOG
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h_16_CALLBACK_WRAPPERS \
-	FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h_16_INCLASS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h_16_ENHANCED_CONSTRUCTORS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h_16_CALLBACK_WRAPPERS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h_16_INCLASS_NO_PURE_DECLS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -85,6 +85,6 @@ class UBasePointCounter;
 // ********** End Class UBasePointCounter **********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h
+#define CURRENT_FILE_ID FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Components_BasePointCounter_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -76,4 +76,13 @@ public:
 		FVector Source,
 		FVector Target,
 		float Time);
+
+	/**
+	 * 
+	 * @param WorldContextObject 
+	 * @return Gets the size of the viewport
+	 */
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "MinigameUI", meta=(WorldContext="WorldContextObject"))
+	static FVector2D GetViewportSize(UObject* WorldContextObject);
+
 };

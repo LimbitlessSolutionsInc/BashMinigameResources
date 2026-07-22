@@ -31,9 +31,13 @@ struct Z_Construct_UFunction_UFCTweenBlueprintLibrary_Ease_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Tween" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Ease with overriding parameters\n\x09 * @param t the percent complete, 0-1\n\x09 * @param EaseType The easing function to interpolate with\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/Blueprints/FCTweenBlueprintLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Ease with overriding parameters\n@param t the percent complete, 0-1\n@param EaseType The easing function to interpolate with" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_t;
@@ -90,11 +94,15 @@ struct Z_Construct_UFunction_UFCTweenBlueprintLibrary_EaseWithParams_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Tween" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Ease with overriding parameters that affect Elastic, Back, Stepped, and Smoothstep. 0 means no override\n\x09 * @param t the percent complete, 0-1\n\x09 * @param EaseType The easing function to interpolate with\n\x09 * @param Param1 Elastic: Amplitude (1.0) / Back: Overshoot (1.70158) / Stepped: Steps (10) / Smoothstep: x0 (0)\n\x09 * @param Param2 Elastic: Period (0.2) / Smoothstep: x1 (1)\n\x09 */" },
+#endif
 		{ "CPP_Default_Param1", "0.000000" },
 		{ "CPP_Default_Param2", "0.000000" },
 		{ "ModuleRelativePath", "Public/Blueprints/FCTweenBlueprintLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Ease with overriding parameters that affect Elastic, Back, Stepped, and Smoothstep. 0 means no override\n@param t the percent complete, 0-1\n@param EaseType The easing function to interpolate with\n@param Param1 Elastic: Amplitude (1.0) / Back: Overshoot (1.70158) / Stepped: Steps (10) / Smoothstep: x0 (0)\n@param Param2 Elastic: Period (0.2) / Smoothstep: x1 (1)" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_t;
@@ -158,13 +166,17 @@ struct Z_Construct_UFunction_UFCTweenBlueprintLibrary_EnsureTweenCapacity_Static
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Tween|Utility" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Make sure there are at least these many of each type of tween available in memory. Call this only once, probably in a\n// GameInstance blueprint, if you need more initial memory reserved on game startup.\n" },
+#endif
 		{ "CPP_Default_NumFloatTweens", "75" },
 		{ "CPP_Default_NumQuatTweens", "10" },
 		{ "CPP_Default_NumVector2DTweens", "50" },
 		{ "CPP_Default_NumVectorTweens", "50" },
 		{ "ModuleRelativePath", "Public/Blueprints/FCTweenBlueprintLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Make sure there are at least these many of each type of tween available in memory. Call this only once, probably in a\nGameInstance blueprint, if you need more initial memory reserved on game startup." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_NumFloatTweens;
@@ -259,9 +271,9 @@ struct Z_Construct_UClass_UFCTweenBlueprintLibrary_Statics
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFCTweenBlueprintLibrary_Ease, "Ease" }, // 3132345217
-		{ &Z_Construct_UFunction_UFCTweenBlueprintLibrary_EaseWithParams, "EaseWithParams" }, // 2439817499
-		{ &Z_Construct_UFunction_UFCTweenBlueprintLibrary_EnsureTweenCapacity, "EnsureTweenCapacity" }, // 2740892475
+		{ &Z_Construct_UFunction_UFCTweenBlueprintLibrary_Ease, "Ease" }, // 4233919311
+		{ &Z_Construct_UFunction_UFCTweenBlueprintLibrary_EaseWithParams, "EaseWithParams" }, // 1622398570
+		{ &Z_Construct_UFunction_UFCTweenBlueprintLibrary_EnsureTweenCapacity, "EnsureTweenCapacity" }, // 1692957402
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -303,14 +315,14 @@ UFCTweenBlueprintLibrary::~UFCTweenBlueprintLibrary() {}
 // ********** End Class UFCTweenBlueprintLibrary ***************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_FCTween_HostProject_Plugins_FCTween_Source_FCTween_Public_Blueprints_FCTweenBlueprintLibrary_h__Script_FCTween_Statics
+struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_FCTween_Source_FCTween_Public_Blueprints_FCTweenBlueprintLibrary_h__Script_FCTween_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UFCTweenBlueprintLibrary, UFCTweenBlueprintLibrary::StaticClass, TEXT("UFCTweenBlueprintLibrary"), &Z_Registration_Info_UClass_UFCTweenBlueprintLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UFCTweenBlueprintLibrary), 557227706U) },
+		{ Z_Construct_UClass_UFCTweenBlueprintLibrary, UFCTweenBlueprintLibrary::StaticClass, TEXT("UFCTweenBlueprintLibrary"), &Z_Registration_Info_UClass_UFCTweenBlueprintLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UFCTweenBlueprintLibrary), 810375595U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_FCTween_HostProject_Plugins_FCTween_Source_FCTween_Public_Blueprints_FCTweenBlueprintLibrary_h__Script_FCTween_756409672(TEXT("/Script/FCTween"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_FCTween_HostProject_Plugins_FCTween_Source_FCTween_Public_Blueprints_FCTweenBlueprintLibrary_h__Script_FCTween_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_FCTween_HostProject_Plugins_FCTween_Source_FCTween_Public_Blueprints_FCTweenBlueprintLibrary_h__Script_FCTween_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_FCTween_Source_FCTween_Public_Blueprints_FCTweenBlueprintLibrary_h__Script_FCTween_751815829(TEXT("/Script/FCTween"),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_FCTween_Source_FCTween_Public_Blueprints_FCTweenBlueprintLibrary_h__Script_FCTween_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_FCTween_Source_FCTween_Public_Blueprints_FCTweenBlueprintLibrary_h__Script_FCTween_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

@@ -227,7 +227,9 @@ struct Z_Construct_UClass_UAsyncActionCalibrateFlex_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "AsyncActions/AsyncActionCalibrateFlex.h" },
 		{ "ModuleRelativePath", "Public/AsyncActions/AsyncActionCalibrateFlex.h" },
 	};
@@ -301,14 +303,14 @@ UAsyncActionCalibrateFlex::~UAsyncActionCalibrateFlex() {}
 // ********** End Class UAsyncActionCalibrateFlex **************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_AsyncActions_AsyncActionCalibrateFlex_h__Script_LimbitlessBluetoothPlugin_Statics
+struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_AsyncActions_AsyncActionCalibrateFlex_h__Script_LimbitlessBluetoothPlugin_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UAsyncActionCalibrateFlex, UAsyncActionCalibrateFlex::StaticClass, TEXT("UAsyncActionCalibrateFlex"), &Z_Registration_Info_UClass_UAsyncActionCalibrateFlex, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAsyncActionCalibrateFlex), 219510423U) },
+		{ Z_Construct_UClass_UAsyncActionCalibrateFlex, UAsyncActionCalibrateFlex::StaticClass, TEXT("UAsyncActionCalibrateFlex"), &Z_Registration_Info_UClass_UAsyncActionCalibrateFlex, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAsyncActionCalibrateFlex), 47545238U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_AsyncActions_AsyncActionCalibrateFlex_h__Script_LimbitlessBluetoothPlugin_1333083491(TEXT("/Script/LimbitlessBluetoothPlugin"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_AsyncActions_AsyncActionCalibrateFlex_h__Script_LimbitlessBluetoothPlugin_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_AsyncActions_AsyncActionCalibrateFlex_h__Script_LimbitlessBluetoothPlugin_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_AsyncActions_AsyncActionCalibrateFlex_h__Script_LimbitlessBluetoothPlugin_3492677148(TEXT("/Script/LimbitlessBluetoothPlugin"),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_AsyncActions_AsyncActionCalibrateFlex_h__Script_LimbitlessBluetoothPlugin_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothPlugin_Public_AsyncActions_AsyncActionCalibrateFlex_h__Script_LimbitlessBluetoothPlugin_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

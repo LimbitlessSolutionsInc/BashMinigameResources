@@ -1,0 +1,10 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.MinigameCoreEditor.cpp.obj": [
+			"PerModuleInline.gen.cpp.obj",
+			"MinigameCoreEditor.cpp.obj",
+			"MinigameParameterOverrideCustomization.cpp.obj"
+		]
+	}
+}

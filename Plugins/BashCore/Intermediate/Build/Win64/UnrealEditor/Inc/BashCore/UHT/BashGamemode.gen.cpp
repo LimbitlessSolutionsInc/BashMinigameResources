@@ -37,7 +37,9 @@ struct Z_Construct_UScriptStruct_FLoadLevelParams_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "ModuleRelativePath", "Public/BashGamemode.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LevelToOpenName_MetaData[] = {
@@ -93,9 +95,13 @@ struct Z_Construct_UFunction_ABashGamemode_OnEnterTransitionFinish_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Called after the circular wipe\n" },
+#endif
 		{ "ModuleRelativePath", "Public/BashGamemode.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called after the circular wipe" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -194,7 +200,7 @@ struct Z_Construct_UFunction_ABashGamemode_TransitionToLevel_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ABashGamemode_TransitionToLevel_Statics::NewProp_loadLevelParams = { "loadLevelParams", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BashGamemode_eventTransitionToLevel_Parms, loadLevelParams), Z_Construct_UScriptStruct_FLoadLevelParams, METADATA_PARAMS(0, nullptr) }; // 1199184576
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ABashGamemode_TransitionToLevel_Statics::NewProp_loadLevelParams = { "loadLevelParams", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BashGamemode_eventTransitionToLevel_Parms, loadLevelParams), Z_Construct_UScriptStruct_FLoadLevelParams, METADATA_PARAMS(0, nullptr) }; // 2392600115
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABashGamemode_TransitionToLevel_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABashGamemode_TransitionToLevel_Statics::NewProp_loadLevelParams,
 };
@@ -285,10 +291,10 @@ struct Z_Construct_UClass_ABashGamemode_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_ABashGamemode_OnEnterTransitionFinish, "OnEnterTransitionFinish" }, // 960802673
+		{ &Z_Construct_UFunction_ABashGamemode_OnEnterTransitionFinish, "OnEnterTransitionFinish" }, // 3597785369
 		{ &Z_Construct_UFunction_ABashGamemode_OpenLevel, "OpenLevel" }, // 3378913662
 		{ &Z_Construct_UFunction_ABashGamemode_PlayTransitionEffects, "PlayTransitionEffects" }, // 1406427169
-		{ &Z_Construct_UFunction_ABashGamemode_TransitionToLevel, "TransitionToLevel" }, // 1525822195
+		{ &Z_Construct_UFunction_ABashGamemode_TransitionToLevel, "TransitionToLevel" }, // 3253908114
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -337,18 +343,18 @@ ABashGamemode::~ABashGamemode() {}
 // ********** End Class ABashGamemode **************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FLoadLevelParams::StaticStruct, Z_Construct_UScriptStruct_FLoadLevelParams_Statics::NewStructOps, TEXT("LoadLevelParams"), &Z_Registration_Info_UScriptStruct_FLoadLevelParams, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FLoadLevelParams), 1199184576U) },
+		{ FLoadLevelParams::StaticStruct, Z_Construct_UScriptStruct_FLoadLevelParams_Statics::NewStructOps, TEXT("LoadLevelParams"), &Z_Registration_Info_UScriptStruct_FLoadLevelParams, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FLoadLevelParams), 2392600115U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABashGamemode, ABashGamemode::StaticClass, TEXT("ABashGamemode"), &Z_Registration_Info_UClass_ABashGamemode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABashGamemode), 1867278654U) },
+		{ Z_Construct_UClass_ABashGamemode, ABashGamemode::StaticClass, TEXT("ABashGamemode"), &Z_Registration_Info_UClass_ABashGamemode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABashGamemode), 3845191400U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_3537925303(TEXT("/Script/BashCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_234789459(TEXT("/Script/BashCore"),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_BashGamemode_h__Script_BashCore_Statics::ScriptStructInfo),
 	nullptr, 0);
 // ********** End Registration *********************************************************************
 

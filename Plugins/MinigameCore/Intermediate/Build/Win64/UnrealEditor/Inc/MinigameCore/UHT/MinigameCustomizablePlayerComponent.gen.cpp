@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "MinigameCustomizablePlayerComponent.h"
+#include "Components/MinigameCustomizablePlayerComponent.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
@@ -35,15 +35,15 @@ struct Z_Construct_UScriptStruct_FCustomizationOverride_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "Public/MinigameCustomizablePlayerComponent.h" },
+		{ "ModuleRelativePath", "Public/Components/MinigameCustomizablePlayerComponent.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ParameterName_MetaData[] = {
 		{ "Category", "Override" },
-		{ "ModuleRelativePath", "Public/MinigameCustomizablePlayerComponent.h" },
+		{ "ModuleRelativePath", "Public/Components/MinigameCustomizablePlayerComponent.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ParameterValue_MetaData[] = {
 		{ "Category", "Override" },
-		{ "ModuleRelativePath", "Public/MinigameCustomizablePlayerComponent.h" },
+		{ "ModuleRelativePath", "Public/Components/MinigameCustomizablePlayerComponent.h" },
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStrPropertyParams NewProp_ParameterName;
@@ -125,16 +125,16 @@ struct Z_Construct_UClass_UMinigameCustomizablePlayerComponent_Statics
 		{ "BlueprintSpawnableComponent", "" },
 		{ "ClassGroupNames", "Custom" },
 		{ "HideCategories", "Trigger PhysicsVolume" },
-		{ "IncludePath", "MinigameCustomizablePlayerComponent.h" },
-		{ "ModuleRelativePath", "Public/MinigameCustomizablePlayerComponent.h" },
+		{ "IncludePath", "Components/MinigameCustomizablePlayerComponent.h" },
+		{ "ModuleRelativePath", "Public/Components/MinigameCustomizablePlayerComponent.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CustomizableObject_MetaData[] = {
 		{ "Category", "Override" },
-		{ "ModuleRelativePath", "Public/MinigameCustomizablePlayerComponent.h" },
+		{ "ModuleRelativePath", "Public/Components/MinigameCustomizablePlayerComponent.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CustomizationOverrides_MetaData[] = {
 		{ "Category", "Override" },
-		{ "ModuleRelativePath", "Public/MinigameCustomizablePlayerComponent.h" },
+		{ "ModuleRelativePath", "Public/Components/MinigameCustomizablePlayerComponent.h" },
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CustomizableObject;
@@ -147,9 +147,9 @@ struct Z_Construct_UClass_UMinigameCustomizablePlayerComponent_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UMinigameCustomizablePlayerComponent_Statics::NewProp_CustomizableObject = { "CustomizableObject", nullptr, (EPropertyFlags)0x0124080000010001, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMinigameCustomizablePlayerComponent, CustomizableObject), Z_Construct_UClass_UCustomizableObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CustomizableObject_MetaData), NewProp_CustomizableObject_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UMinigameCustomizablePlayerComponent_Statics::NewProp_CustomizationOverrides_Inner = { "CustomizationOverrides", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FCustomizationOverride, METADATA_PARAMS(0, nullptr) }; // 4287615833
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UMinigameCustomizablePlayerComponent_Statics::NewProp_CustomizationOverrides = { "CustomizationOverrides", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMinigameCustomizablePlayerComponent, CustomizationOverrides), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CustomizationOverrides_MetaData), NewProp_CustomizationOverrides_MetaData) }; // 4287615833
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UMinigameCustomizablePlayerComponent_Statics::NewProp_CustomizableObject = { "CustomizableObject", nullptr, (EPropertyFlags)0x0124080000020001, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMinigameCustomizablePlayerComponent, CustomizableObject), Z_Construct_UClass_UCustomizableObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CustomizableObject_MetaData), NewProp_CustomizableObject_MetaData) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UMinigameCustomizablePlayerComponent_Statics::NewProp_CustomizationOverrides_Inner = { "CustomizationOverrides", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FCustomizationOverride, METADATA_PARAMS(0, nullptr) }; // 3476142171
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UMinigameCustomizablePlayerComponent_Statics::NewProp_CustomizationOverrides = { "CustomizationOverrides", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMinigameCustomizablePlayerComponent, CustomizationOverrides), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CustomizationOverrides_MetaData), NewProp_CustomizationOverrides_MetaData) }; // 3476142171
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UMinigameCustomizablePlayerComponent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMinigameCustomizablePlayerComponent_Statics::NewProp_CustomizableObject,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMinigameCustomizablePlayerComponent_Statics::NewProp_CustomizationOverrides_Inner,
@@ -184,24 +184,23 @@ UClass* Z_Construct_UClass_UMinigameCustomizablePlayerComponent()
 	}
 	return Z_Registration_Info_UClass_UMinigameCustomizablePlayerComponent.OuterSingleton;
 }
-UMinigameCustomizablePlayerComponent::UMinigameCustomizablePlayerComponent() {}
 DEFINE_VTABLE_PTR_HELPER_CTOR(UMinigameCustomizablePlayerComponent);
 UMinigameCustomizablePlayerComponent::~UMinigameCustomizablePlayerComponent() {}
 // ********** End Class UMinigameCustomizablePlayerComponent ***************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCustomizablePlayerComponent_h__Script_MinigameCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Components_MinigameCustomizablePlayerComponent_h__Script_MinigameCore_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FCustomizationOverride::StaticStruct, Z_Construct_UScriptStruct_FCustomizationOverride_Statics::NewStructOps, TEXT("CustomizationOverride"), &Z_Registration_Info_UScriptStruct_FCustomizationOverride, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCustomizationOverride), 4287615833U) },
+		{ FCustomizationOverride::StaticStruct, Z_Construct_UScriptStruct_FCustomizationOverride_Statics::NewStructOps, TEXT("CustomizationOverride"), &Z_Registration_Info_UScriptStruct_FCustomizationOverride, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCustomizationOverride), 3476142171U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMinigameCustomizablePlayerComponent, UMinigameCustomizablePlayerComponent::StaticClass, TEXT("UMinigameCustomizablePlayerComponent"), &Z_Registration_Info_UClass_UMinigameCustomizablePlayerComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMinigameCustomizablePlayerComponent), 2514930624U) },
+		{ Z_Construct_UClass_UMinigameCustomizablePlayerComponent, UMinigameCustomizablePlayerComponent::StaticClass, TEXT("UMinigameCustomizablePlayerComponent"), &Z_Registration_Info_UClass_UMinigameCustomizablePlayerComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMinigameCustomizablePlayerComponent), 791173743U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCustomizablePlayerComponent_h__Script_MinigameCore_3977350153(TEXT("/Script/MinigameCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCustomizablePlayerComponent_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCustomizablePlayerComponent_h__Script_MinigameCore_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCustomizablePlayerComponent_h__Script_MinigameCore_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_MinigameCustomizablePlayerComponent_h__Script_MinigameCore_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Components_MinigameCustomizablePlayerComponent_h__Script_MinigameCore_3217027235(TEXT("/Script/MinigameCore"),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Components_MinigameCustomizablePlayerComponent_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Components_MinigameCustomizablePlayerComponent_h__Script_MinigameCore_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Components_MinigameCustomizablePlayerComponent_h__Script_MinigameCore_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Components_MinigameCustomizablePlayerComponent_h__Script_MinigameCore_Statics::ScriptStructInfo),
 	nullptr, 0);
 // ********** End Registration *********************************************************************
 

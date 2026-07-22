@@ -17,10 +17,10 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class AMinigameAIController ****************************************************
-#define FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigameAIController_h_15_CALLBACK_WRAPPERS
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigameAIController_h_16_CALLBACK_WRAPPERS
 MINIGAMECORE_API UClass* Z_Construct_UClass_AMinigameAIController_NoRegister();
 
-#define FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigameAIController_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigameAIController_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMinigameAIController(); \
 	friend struct Z_Construct_UClass_AMinigameAIController_Statics; \
@@ -28,10 +28,11 @@ private: \
 	friend MINIGAMECORE_API UClass* Z_Construct_UClass_AMinigameAIController_NoRegister(); \
 public: \
 	DECLARE_CLASS2(AMinigameAIController, AAIController, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/MinigameCore"), Z_Construct_UClass_AMinigameAIController_NoRegister) \
-	DECLARE_SERIALIZER(AMinigameAIController)
+	DECLARE_SERIALIZER(AMinigameAIController) \
+	virtual UObject* _getUObject() const override { return const_cast<AMinigameAIController*>(this); }
 
 
-#define FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigameAIController_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigameAIController_h_16_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	AMinigameAIController(AMinigameAIController&&) = delete; \
 	AMinigameAIController(const AMinigameAIController&) = delete; \
@@ -41,13 +42,13 @@ public: \
 	NO_API virtual ~AMinigameAIController();
 
 
-#define FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigameAIController_h_12_PROLOG
-#define FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigameAIController_h_15_GENERATED_BODY \
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigameAIController_h_13_PROLOG
+#define FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigameAIController_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigameAIController_h_15_CALLBACK_WRAPPERS \
-	FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigameAIController_h_15_INCLASS_NO_PURE_DECLS \
-	FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigameAIController_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigameAIController_h_16_CALLBACK_WRAPPERS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigameAIController_h_16_INCLASS_NO_PURE_DECLS \
+	FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigameAIController_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -57,6 +58,6 @@ class AMinigameAIController;
 // ********** End Class AMinigameAIController ******************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigameAIController_h
+#define CURRENT_FILE_ID FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigameAIController_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

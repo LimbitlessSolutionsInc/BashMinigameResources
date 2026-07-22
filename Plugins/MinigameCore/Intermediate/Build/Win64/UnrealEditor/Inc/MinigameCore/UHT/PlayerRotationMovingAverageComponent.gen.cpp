@@ -57,16 +57,24 @@ struct Z_Construct_UClass_UPlayerRotationMovingAverageComponent_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "ClassGroupNames", "Custom" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Uses a simple moving average of rotation data to calculate delta rotations.\n * This effectively \"zeros\" the rotation continuously, removing the need to explicitly zero with ResetInitialOrientation()\n * Use if you need rotation/acceleration data for quick movements and actions without interrupting gameplay.\n * If you need aiming behavior, use the base UPlayerRotationComponent instead\n */" },
+#endif
 		{ "IncludePath", "Player/PlayerRotationMovingAverageComponent.h" },
 		{ "ModuleRelativePath", "Public/Player/PlayerRotationMovingAverageComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Uses a simple moving average of rotation data to calculate delta rotations.\nThis effectively \"zeros\" the rotation continuously, removing the need to explicitly zero with ResetInitialOrientation()\nUse if you need rotation/acceleration data for quick movements and actions without interrupting gameplay.\nIf you need aiming behavior, use the base UPlayerRotationComponent instead" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WindowSize_MetaData[] = {
 		{ "Category", "Player Rotation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Number of samples to use in the average\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Player/PlayerRotationMovingAverageComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Number of samples to use in the average" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_WindowSize;
@@ -116,14 +124,14 @@ UPlayerRotationMovingAverageComponent::~UPlayerRotationMovingAverageComponent() 
 // ********** End Class UPlayerRotationMovingAverageComponent **************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerRotationMovingAverageComponent_h__Script_MinigameCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerRotationMovingAverageComponent_h__Script_MinigameCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UPlayerRotationMovingAverageComponent, UPlayerRotationMovingAverageComponent::StaticClass, TEXT("UPlayerRotationMovingAverageComponent"), &Z_Registration_Info_UClass_UPlayerRotationMovingAverageComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPlayerRotationMovingAverageComponent), 1020168761U) },
+		{ Z_Construct_UClass_UPlayerRotationMovingAverageComponent, UPlayerRotationMovingAverageComponent::StaticClass, TEXT("UPlayerRotationMovingAverageComponent"), &Z_Registration_Info_UClass_UPlayerRotationMovingAverageComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPlayerRotationMovingAverageComponent), 1645892690U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerRotationMovingAverageComponent_h__Script_MinigameCore_321161421(TEXT("/Script/MinigameCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerRotationMovingAverageComponent_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerRotationMovingAverageComponent_h__Script_MinigameCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerRotationMovingAverageComponent_h__Script_MinigameCore_47730268(TEXT("/Script/MinigameCore"),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerRotationMovingAverageComponent_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_PlayerRotationMovingAverageComponent_h__Script_MinigameCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

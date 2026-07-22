@@ -1,0 +1,25 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.LimbitlessBluetoothPlugin.cpp.obj": [
+			"AsyncActionCalibrateFlex.gen.cpp.obj",
+			"AsyncActionCalibrateIMU.gen.cpp.obj",
+			"BluetoothManager.gen.cpp.obj",
+			"FlexController.gen.cpp.obj",
+			"GraphPlot.gen.cpp.obj",
+			"LimbitlessBluetoothPlugin.init.gen.cpp.obj",
+			"LimbitlessLocalPlayer.gen.cpp.obj",
+			"LimbitlessPlayerController.gen.cpp.obj",
+			"SensorData.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"AsyncActionCalibrateFlex.cpp.obj",
+			"AsyncActionCalibrateIMU.cpp.obj",
+			"LimbitlessLocalPlayer.cpp.obj",
+			"LimbitlessPlayerController.cpp.obj",
+			"FlexController.cpp.obj",
+			"LimbitlessBluetoothPlugin.cpp.obj",
+			"BluetoothManager.cpp.obj",
+			"GraphPlot.cpp.obj"
+		]
+	}
+}

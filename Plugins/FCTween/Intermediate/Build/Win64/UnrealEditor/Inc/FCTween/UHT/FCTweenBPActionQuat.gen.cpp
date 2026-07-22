@@ -92,7 +92,9 @@ struct Z_Construct_UFunction_UFCTweenBPActionQuat_TweenQuat_Statics
 		{ "AdvancedDisplay", "4" },
 		{ "BlueprintInternalUseOnly", "true" },
 		{ "Category", "Tween" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * @brief Tween a Quaternion parameter between the given values\n\x09 * @param Start The starting value\n\x09 * @param End The ending value\n\x09 * @param DurationSecs The seconds to go from start to end\n\x09 * @param EaseType The type of easing function to use for interpolation\n\x09 * @param EaseParam1 Elastic: Amplitude (1.0) / Back: Overshoot (1.70158) / Stepped: Steps (10) / Smoothstep: x0 (0)\n\x09 * @param EaseParam2 Elastic: Period (0.2) / Smoothstep: x1 (1)\n\x09 * @param Delay Seconds before the tween starts interpolating, after being created\n\x09 * @param Loops The number of loops to play. -1 for infinite\n\x09 * @param LoopDelay Seconds to pause before starting each loop\n\x09 * @param bYoyo Whether to \"yoyo\" the tween - once it reaches the end, it starts counting backwards\n\x09 * @param YoyoDelay Seconds to pause before starting to yoyo\n\x09 * @param bCanTickDuringPause Whether to play this tween while the game is paused. Useful for UI purposes, such as a pause menu\n\x09 */" },
+#endif
 		{ "CPP_Default_bCanTickDuringPause", "false" },
 		{ "CPP_Default_bUseGlobalTimeDilation", "true" },
 		{ "CPP_Default_bYoyo", "false" },
@@ -105,7 +107,9 @@ struct Z_Construct_UFunction_UFCTweenBPActionQuat_TweenQuat_Statics
 		{ "CPP_Default_Loops", "0" },
 		{ "CPP_Default_YoyoDelay", "0.000000" },
 		{ "ModuleRelativePath", "Public/Blueprints/FCTweenBPActionQuat.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Tween a Quaternion parameter between the given values\n@param Start The starting value\n@param End The ending value\n@param DurationSecs The seconds to go from start to end\n@param EaseType The type of easing function to use for interpolation\n@param EaseParam1 Elastic: Amplitude (1.0) / Back: Overshoot (1.70158) / Stepped: Steps (10) / Smoothstep: x0 (0)\n@param EaseParam2 Elastic: Period (0.2) / Smoothstep: x1 (1)\n@param Delay Seconds before the tween starts interpolating, after being created\n@param Loops The number of loops to play. -1 for infinite\n@param LoopDelay Seconds to pause before starting each loop\n@param bYoyo Whether to \"yoyo\" the tween - once it reaches the end, it starts counting backwards\n@param YoyoDelay Seconds to pause before starting to yoyo\n@param bCanTickDuringPause Whether to play this tween while the game is paused. Useful for UI purposes, such as a pause menu" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Start;
@@ -230,7 +234,9 @@ struct Z_Construct_UFunction_UFCTweenBPActionQuat_TweenQuatCustomCurve_Statics
 		{ "AdvancedDisplay", "4" },
 		{ "BlueprintInternalUseOnly", "true" },
 		{ "Category", "Tween|Custom Curve" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * @brief Tween a float parameter between the given values\n\x09 * @param Start The starting value\n\x09 * @param End The ending value\n\x09 * @param DurationSecs The seconds to go from start to end\n\x09 * @param Curve The curve to interpolate with\n\x09 * @param Delay Seconds before the tween starts interpolating, after being created\n\x09 * @param Loops The number of loops to play. -1 for infinite\n\x09 * @param LoopDelay Seconds to pause before starting each loop\n\x09 * @param bYoyo Whether to \"yoyo\" the tween - once it reaches the end, it starts counting backwards\n\x09 * @param YoyoDelay Seconds to pause before starting to yoyo\n\x09 * @param bCanTickDuringPause Whether to play this tween while the game is paused. Useful for UI purposes, such as a pause menu\n\x09 */" },
+#endif
 		{ "CPP_Default_bCanTickDuringPause", "false" },
 		{ "CPP_Default_bUseGlobalTimeDilation", "true" },
 		{ "CPP_Default_bYoyo", "false" },
@@ -241,7 +247,9 @@ struct Z_Construct_UFunction_UFCTweenBPActionQuat_TweenQuatCustomCurve_Statics
 		{ "CPP_Default_Loops", "0" },
 		{ "CPP_Default_YoyoDelay", "0.000000" },
 		{ "ModuleRelativePath", "Public/Blueprints/FCTweenBPActionQuat.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Tween a float parameter between the given values\n@param Start The starting value\n@param End The ending value\n@param DurationSecs The seconds to go from start to end\n@param Curve The curve to interpolate with\n@param Delay Seconds before the tween starts interpolating, after being created\n@param Loops The number of loops to play. -1 for infinite\n@param LoopDelay Seconds to pause before starting each loop\n@param bYoyo Whether to \"yoyo\" the tween - once it reaches the end, it starts counting backwards\n@param YoyoDelay Seconds to pause before starting to yoyo\n@param bCanTickDuringPause Whether to play this tween while the game is paused. Useful for UI purposes, such as a pause menu" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Start;
@@ -357,7 +365,9 @@ struct Z_Construct_UFunction_UFCTweenBPActionQuat_TweenQuatFromRotator_Statics
 		{ "AdvancedDisplay", "4" },
 		{ "BlueprintInternalUseOnly", "true" },
 		{ "Category", "Tween" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * @brief Tweens a quaternion, but you can enter in yaw/pitch/roll as the input\n\x09 * @param Start The starting value\n\x09 * @param End The ending value\n\x09 * @param DurationSecs The seconds to go from start to end\n\x09 * @param EaseType The type of easing function to use for interpolation\n\x09 * @param EaseParam1 Elastic: Amplitude (1.0) / Back: Overshoot (1.70158) / Stepped: Steps (10) / Smoothstep: x0 (0)\n\x09 * @param EaseParam2 Elastic: Period (0.2) / Smoothstep: x1 (1)\n\x09 * @param Delay Seconds before the tween starts interpolating, after being created\n\x09 * @param Loops The number of loops to play. -1 for infinite\n\x09 * @param LoopDelay Seconds to pause before starting each loop\n\x09 * @param bYoyo Whether to \"yoyo\" the tween - once it reaches the end, it starts counting backwards\n\x09 * @param YoyoDelay Seconds to pause before starting to yoyo\n\x09 * @param bCanTickDuringPause Whether to play this tween while the game is paused. Useful for UI purposes, such as a pause menu\n\x09 */" },
+#endif
 		{ "CPP_Default_bCanTickDuringPause", "false" },
 		{ "CPP_Default_bUseGlobalTimeDilation", "true" },
 		{ "CPP_Default_bYoyo", "false" },
@@ -372,7 +382,9 @@ struct Z_Construct_UFunction_UFCTweenBPActionQuat_TweenQuatFromRotator_Statics
 		{ "CPP_Default_Start", "" },
 		{ "CPP_Default_YoyoDelay", "0.000000" },
 		{ "ModuleRelativePath", "Public/Blueprints/FCTweenBPActionQuat.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Tweens a quaternion, but you can enter in yaw/pitch/roll as the input\n@param Start The starting value\n@param End The ending value\n@param DurationSecs The seconds to go from start to end\n@param EaseType The type of easing function to use for interpolation\n@param EaseParam1 Elastic: Amplitude (1.0) / Back: Overshoot (1.70158) / Stepped: Steps (10) / Smoothstep: x0 (0)\n@param EaseParam2 Elastic: Period (0.2) / Smoothstep: x1 (1)\n@param Delay Seconds before the tween starts interpolating, after being created\n@param Loops The number of loops to play. -1 for infinite\n@param LoopDelay Seconds to pause before starting each loop\n@param bYoyo Whether to \"yoyo\" the tween - once it reaches the end, it starts counting backwards\n@param YoyoDelay Seconds to pause before starting to yoyo\n@param bCanTickDuringPause Whether to play this tween while the game is paused. Useful for UI purposes, such as a pause menu" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Start;
@@ -497,7 +509,9 @@ struct Z_Construct_UFunction_UFCTweenBPActionQuat_TweenQuatFromRotatorCustomCurv
 		{ "AdvancedDisplay", "4" },
 		{ "BlueprintInternalUseOnly", "true" },
 		{ "Category", "Tween|Custom Curve" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * @brief Tween a float parameter between the given values\n\x09 * @param Start The starting value\n\x09 * @param End The ending value\n\x09 * @param DurationSecs The seconds to go from start to end\n\x09 * @param Curve The curve to interpolate with\n\x09 * @param Delay Seconds before the tween starts interpolating, after being created\n\x09 * @param Loops The number of loops to play. -1 for infinite\n\x09 * @param LoopDelay Seconds to pause before starting each loop\n\x09 * @param bYoyo Whether to \"yoyo\" the tween - once it reaches the end, it starts counting backwards\n\x09 * @param YoyoDelay Seconds to pause before starting to yoyo\n\x09 * @param bCanTickDuringPause Whether to play this tween while the game is paused. Useful for UI purposes, such as a pause menu\n\x09 */" },
+#endif
 		{ "CPP_Default_bCanTickDuringPause", "false" },
 		{ "CPP_Default_bUseGlobalTimeDilation", "true" },
 		{ "CPP_Default_bYoyo", "false" },
@@ -510,7 +524,9 @@ struct Z_Construct_UFunction_UFCTweenBPActionQuat_TweenQuatFromRotatorCustomCurv
 		{ "CPP_Default_Start", "" },
 		{ "CPP_Default_YoyoDelay", "0.000000" },
 		{ "ModuleRelativePath", "Public/Blueprints/FCTweenBPActionQuat.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Tween a float parameter between the given values\n@param Start The starting value\n@param End The ending value\n@param DurationSecs The seconds to go from start to end\n@param Curve The curve to interpolate with\n@param Delay Seconds before the tween starts interpolating, after being created\n@param Loops The number of loops to play. -1 for infinite\n@param LoopDelay Seconds to pause before starting each loop\n@param bYoyo Whether to \"yoyo\" the tween - once it reaches the end, it starts counting backwards\n@param YoyoDelay Seconds to pause before starting to yoyo\n@param bCanTickDuringPause Whether to play this tween while the game is paused. Useful for UI purposes, such as a pause menu" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Start;
@@ -650,19 +666,23 @@ struct Z_Construct_UClass_UFCTweenBPActionQuat_Statics
 		{ "ModuleRelativePath", "Public/Blueprints/FCTweenBPActionQuat.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ApplyEasing_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Triggered every tween update. use \"Value\" to get the tweened float for this frame\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Blueprints/FCTweenBPActionQuat.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Triggered every tween update. use \"Value\" to get the tweened float for this frame" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_ApplyEasing;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFCTweenBPActionQuat_TweenQuat, "TweenQuat" }, // 1145280003
-		{ &Z_Construct_UFunction_UFCTweenBPActionQuat_TweenQuatCustomCurve, "TweenQuatCustomCurve" }, // 2977624745
-		{ &Z_Construct_UFunction_UFCTweenBPActionQuat_TweenQuatFromRotator, "TweenQuatFromRotator" }, // 476968008
-		{ &Z_Construct_UFunction_UFCTweenBPActionQuat_TweenQuatFromRotatorCustomCurve, "TweenQuatFromRotatorCustomCurve" }, // 2804283719
+		{ &Z_Construct_UFunction_UFCTweenBPActionQuat_TweenQuat, "TweenQuat" }, // 2728680870
+		{ &Z_Construct_UFunction_UFCTweenBPActionQuat_TweenQuatCustomCurve, "TweenQuatCustomCurve" }, // 34814173
+		{ &Z_Construct_UFunction_UFCTweenBPActionQuat_TweenQuatFromRotator, "TweenQuatFromRotator" }, // 4280143474
+		{ &Z_Construct_UFunction_UFCTweenBPActionQuat_TweenQuatFromRotatorCustomCurve, "TweenQuatFromRotatorCustomCurve" }, // 2367368515
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -709,14 +729,14 @@ UFCTweenBPActionQuat::~UFCTweenBPActionQuat() {}
 // ********** End Class UFCTweenBPActionQuat *******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_FCTween_HostProject_Plugins_FCTween_Source_FCTween_Public_Blueprints_FCTweenBPActionQuat_h__Script_FCTween_Statics
+struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_FCTween_Source_FCTween_Public_Blueprints_FCTweenBPActionQuat_h__Script_FCTween_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UFCTweenBPActionQuat, UFCTweenBPActionQuat::StaticClass, TEXT("UFCTweenBPActionQuat"), &Z_Registration_Info_UClass_UFCTweenBPActionQuat, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UFCTweenBPActionQuat), 1431890764U) },
+		{ Z_Construct_UClass_UFCTweenBPActionQuat, UFCTweenBPActionQuat::StaticClass, TEXT("UFCTweenBPActionQuat"), &Z_Registration_Info_UClass_UFCTweenBPActionQuat, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UFCTweenBPActionQuat), 3244731505U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_FCTween_HostProject_Plugins_FCTween_Source_FCTween_Public_Blueprints_FCTweenBPActionQuat_h__Script_FCTween_3806405571(TEXT("/Script/FCTween"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_FCTween_HostProject_Plugins_FCTween_Source_FCTween_Public_Blueprints_FCTweenBPActionQuat_h__Script_FCTween_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_FCTween_HostProject_Plugins_FCTween_Source_FCTween_Public_Blueprints_FCTweenBPActionQuat_h__Script_FCTween_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_FCTween_Source_FCTween_Public_Blueprints_FCTweenBPActionQuat_h__Script_FCTween_2298637940(TEXT("/Script/FCTween"),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_FCTween_Source_FCTween_Public_Blueprints_FCTweenBPActionQuat_h__Script_FCTween_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_FCTween_Source_FCTween_Public_Blueprints_FCTweenBPActionQuat_h__Script_FCTween_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

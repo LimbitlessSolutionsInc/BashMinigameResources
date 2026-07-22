@@ -32,9 +32,13 @@ struct Z_Construct_UFunction_AMinigamePlayer_OnPlayerSpawned_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Called when the minigame creates the player. This happens before OnMinigameStart is called\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Player/MinigamePlayer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Called when the minigame creates the player. This happens before OnMinigameStart is called" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -164,9 +168,13 @@ struct Z_Construct_UClass_AMinigamePlayer_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bDisableDebugInputs_MetaData[] = {
 		{ "Category", "Debug" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Disables debug input mapping contexts from applying to players.\n// In non-editor builds, debug inputs are always disabled\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Player/MinigamePlayer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Disables debug input mapping contexts from applying to players.\nIn non-editor builds, debug inputs are always disabled" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_Team;
@@ -181,7 +189,7 @@ struct Z_Construct_UClass_AMinigamePlayer_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_AMinigamePlayer_OnPlayerSpawned, "OnPlayerSpawned" }, // 234422003
+		{ &Z_Construct_UFunction_AMinigamePlayer_OnPlayerSpawned, "OnPlayerSpawned" }, // 678142032
 		{ &Z_Construct_UFunction_AMinigamePlayer_ReadyPlayer, "ReadyPlayer" }, // 2676108870
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -250,14 +258,14 @@ AMinigamePlayer::~AMinigamePlayer() {}
 // ********** End Class AMinigamePlayer ************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h__Script_MinigameCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h__Script_MinigameCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AMinigamePlayer, AMinigamePlayer::StaticClass, TEXT("AMinigamePlayer"), &Z_Registration_Info_UClass_AMinigamePlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMinigamePlayer), 3976987438U) },
+		{ Z_Construct_UClass_AMinigamePlayer, AMinigamePlayer::StaticClass, TEXT("AMinigamePlayer"), &Z_Registration_Info_UClass_AMinigamePlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMinigamePlayer), 1802042594U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h__Script_MinigameCore_540765088(TEXT("/Script/MinigameCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_MinigameCore_HostProject_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h__Script_MinigameCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h__Script_MinigameCore_409485921(TEXT("/Script/MinigameCore"),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h__Script_MinigameCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_MinigameCore_Source_MinigameCore_Public_Player_MinigamePlayer_h__Script_MinigameCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

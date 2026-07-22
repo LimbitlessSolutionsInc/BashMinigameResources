@@ -25,7 +25,9 @@ struct Z_Construct_UDelegateFunction_BashCore_OnWipeFilledSignature__DelegateSig
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "ModuleRelativePath", "Public/Widgets/CircularWipeWidget.h" },
 	};
 #endif // WITH_METADATA
@@ -82,8 +84,8 @@ struct Z_Construct_UScriptStruct_FCircleWipeParams_Statics
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
 };
-const UECodeGen_Private::FDelegatePropertyParams Z_Construct_UScriptStruct_FCircleWipeParams_Statics::NewProp_onWipeFilled = { "onWipeFilled", nullptr, (EPropertyFlags)0x0010000000080014, UECodeGen_Private::EPropertyGenFlags::Delegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FCircleWipeParams, onWipeFilled), Z_Construct_UDelegateFunction_BashCore_OnWipeFilledSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_onWipeFilled_MetaData), NewProp_onWipeFilled_MetaData) }; // 3345847146
-const UECodeGen_Private::FDelegatePropertyParams Z_Construct_UScriptStruct_FCircleWipeParams_Statics::NewProp_onWipeComplete = { "onWipeComplete", nullptr, (EPropertyFlags)0x0010000000080014, UECodeGen_Private::EPropertyGenFlags::Delegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FCircleWipeParams, onWipeComplete), Z_Construct_UDelegateFunction_BashCore_OnWipeFilledSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_onWipeComplete_MetaData), NewProp_onWipeComplete_MetaData) }; // 3345847146
+const UECodeGen_Private::FDelegatePropertyParams Z_Construct_UScriptStruct_FCircleWipeParams_Statics::NewProp_onWipeFilled = { "onWipeFilled", nullptr, (EPropertyFlags)0x0010000000080014, UECodeGen_Private::EPropertyGenFlags::Delegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FCircleWipeParams, onWipeFilled), Z_Construct_UDelegateFunction_BashCore_OnWipeFilledSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_onWipeFilled_MetaData), NewProp_onWipeFilled_MetaData) }; // 1190214363
+const UECodeGen_Private::FDelegatePropertyParams Z_Construct_UScriptStruct_FCircleWipeParams_Statics::NewProp_onWipeComplete = { "onWipeComplete", nullptr, (EPropertyFlags)0x0010000000080014, UECodeGen_Private::EPropertyGenFlags::Delegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FCircleWipeParams, onWipeComplete), Z_Construct_UDelegateFunction_BashCore_OnWipeFilledSignature__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_onWipeComplete_MetaData), NewProp_onWipeComplete_MetaData) }; // 1190214363
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FCircleWipeParams_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCircleWipeParams_Statics::NewProp_onWipeFilled,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCircleWipeParams_Statics::NewProp_onWipeComplete,
@@ -129,7 +131,7 @@ struct Z_Construct_UFunction_UCircularWipeWidget_CallDelegate_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FDelegatePropertyParams Z_Construct_UFunction_UCircularWipeWidget_CallDelegate_Statics::NewProp_delegate = { "delegate", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Delegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(CircularWipeWidget_eventCallDelegate_Parms, delegate), Z_Construct_UDelegateFunction_BashCore_OnWipeFilledSignature__DelegateSignature, METADATA_PARAMS(0, nullptr) }; // 3345847146
+const UECodeGen_Private::FDelegatePropertyParams Z_Construct_UFunction_UCircularWipeWidget_CallDelegate_Statics::NewProp_delegate = { "delegate", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Delegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(CircularWipeWidget_eventCallDelegate_Parms, delegate), Z_Construct_UDelegateFunction_BashCore_OnWipeFilledSignature__DelegateSignature, METADATA_PARAMS(0, nullptr) }; // 1190214363
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UCircularWipeWidget_CallDelegate_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UCircularWipeWidget_CallDelegate_Statics::NewProp_delegate,
 };
@@ -180,7 +182,7 @@ struct Z_Construct_UFunction_UCircularWipeWidget_EndWipeVisuals_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UCircularWipeWidget_EndWipeVisuals_Statics::NewProp_params = { "params", nullptr, (EPropertyFlags)0x0010008000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(CircularWipeWidget_eventEndWipeVisuals_Parms, params), Z_Construct_UScriptStruct_FCircleWipeParams, METADATA_PARAMS(0, nullptr) }; // 2393117434
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UCircularWipeWidget_EndWipeVisuals_Statics::NewProp_params = { "params", nullptr, (EPropertyFlags)0x0010008000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(CircularWipeWidget_eventEndWipeVisuals_Parms, params), Z_Construct_UScriptStruct_FCircleWipeParams, METADATA_PARAMS(0, nullptr) }; // 1496909078
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UCircularWipeWidget_EndWipeVisuals_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UCircularWipeWidget_EndWipeVisuals_Statics::NewProp_params,
 };
@@ -215,7 +217,7 @@ struct Z_Construct_UFunction_UCircularWipeWidget_FadeFromBlack_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UCircularWipeWidget_FadeFromBlack_Statics::NewProp_params = { "params", nullptr, (EPropertyFlags)0x0010008000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(CircularWipeWidget_eventFadeFromBlack_Parms, params), Z_Construct_UScriptStruct_FCircleWipeParams, METADATA_PARAMS(0, nullptr) }; // 2393117434
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UCircularWipeWidget_FadeFromBlack_Statics::NewProp_params = { "params", nullptr, (EPropertyFlags)0x0010008000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(CircularWipeWidget_eventFadeFromBlack_Parms, params), Z_Construct_UScriptStruct_FCircleWipeParams, METADATA_PARAMS(0, nullptr) }; // 1496909078
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UCircularWipeWidget_FadeFromBlack_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UCircularWipeWidget_FadeFromBlack_Statics::NewProp_params,
 };
@@ -258,7 +260,7 @@ struct Z_Construct_UFunction_UCircularWipeWidget_PlayFullWipe_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UCircularWipeWidget_PlayFullWipe_Statics::NewProp_params = { "params", nullptr, (EPropertyFlags)0x0010008000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(CircularWipeWidget_eventPlayFullWipe_Parms, params), Z_Construct_UScriptStruct_FCircleWipeParams, METADATA_PARAMS(0, nullptr) }; // 2393117434
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UCircularWipeWidget_PlayFullWipe_Statics::NewProp_params = { "params", nullptr, (EPropertyFlags)0x0010008000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(CircularWipeWidget_eventPlayFullWipe_Parms, params), Z_Construct_UScriptStruct_FCircleWipeParams, METADATA_PARAMS(0, nullptr) }; // 1496909078
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UCircularWipeWidget_PlayFullWipe_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UCircularWipeWidget_PlayFullWipe_Statics::NewProp_params,
 };
@@ -309,7 +311,7 @@ struct Z_Construct_UFunction_UCircularWipeWidget_PlayFullWipeVisuals_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UCircularWipeWidget_PlayFullWipeVisuals_Statics::NewProp_params = { "params", nullptr, (EPropertyFlags)0x0010008000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(CircularWipeWidget_eventPlayFullWipeVisuals_Parms, params), Z_Construct_UScriptStruct_FCircleWipeParams, METADATA_PARAMS(0, nullptr) }; // 2393117434
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UCircularWipeWidget_PlayFullWipeVisuals_Statics::NewProp_params = { "params", nullptr, (EPropertyFlags)0x0010008000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(CircularWipeWidget_eventPlayFullWipeVisuals_Parms, params), Z_Construct_UScriptStruct_FCircleWipeParams, METADATA_PARAMS(0, nullptr) }; // 1496909078
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UCircularWipeWidget_PlayFullWipeVisuals_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UCircularWipeWidget_PlayFullWipeVisuals_Statics::NewProp_params,
 };
@@ -344,7 +346,7 @@ struct Z_Construct_UFunction_UCircularWipeWidget_StartWipe_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UCircularWipeWidget_StartWipe_Statics::NewProp_params = { "params", nullptr, (EPropertyFlags)0x0010008000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(CircularWipeWidget_eventStartWipe_Parms, params), Z_Construct_UScriptStruct_FCircleWipeParams, METADATA_PARAMS(0, nullptr) }; // 2393117434
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UCircularWipeWidget_StartWipe_Statics::NewProp_params = { "params", nullptr, (EPropertyFlags)0x0010008000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(CircularWipeWidget_eventStartWipe_Parms, params), Z_Construct_UScriptStruct_FCircleWipeParams, METADATA_PARAMS(0, nullptr) }; // 1496909078
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UCircularWipeWidget_StartWipe_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UCircularWipeWidget_StartWipe_Statics::NewProp_params,
 };
@@ -395,7 +397,7 @@ struct Z_Construct_UFunction_UCircularWipeWidget_StartWipeVisuals_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UCircularWipeWidget_StartWipeVisuals_Statics::NewProp_params = { "params", nullptr, (EPropertyFlags)0x0010008000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(CircularWipeWidget_eventStartWipeVisuals_Parms, params), Z_Construct_UScriptStruct_FCircleWipeParams, METADATA_PARAMS(0, nullptr) }; // 2393117434
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UCircularWipeWidget_StartWipeVisuals_Statics::NewProp_params = { "params", nullptr, (EPropertyFlags)0x0010008000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(CircularWipeWidget_eventStartWipeVisuals_Parms, params), Z_Construct_UScriptStruct_FCircleWipeParams, METADATA_PARAMS(0, nullptr) }; // 1496909078
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UCircularWipeWidget_StartWipeVisuals_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UCircularWipeWidget_StartWipeVisuals_Statics::NewProp_params,
 };
@@ -464,13 +466,13 @@ struct Z_Construct_UClass_UCircularWipeWidget_Statics
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UCircularWipeWidget_CallDelegate, "CallDelegate" }, // 1848332482
-		{ &Z_Construct_UFunction_UCircularWipeWidget_EndWipeVisuals, "EndWipeVisuals" }, // 1310602777
-		{ &Z_Construct_UFunction_UCircularWipeWidget_FadeFromBlack, "FadeFromBlack" }, // 1717593888
-		{ &Z_Construct_UFunction_UCircularWipeWidget_PlayFullWipe, "PlayFullWipe" }, // 3806605540
-		{ &Z_Construct_UFunction_UCircularWipeWidget_PlayFullWipeVisuals, "PlayFullWipeVisuals" }, // 1793888082
-		{ &Z_Construct_UFunction_UCircularWipeWidget_StartWipe, "StartWipe" }, // 951365160
-		{ &Z_Construct_UFunction_UCircularWipeWidget_StartWipeVisuals, "StartWipeVisuals" }, // 2788617034
+		{ &Z_Construct_UFunction_UCircularWipeWidget_CallDelegate, "CallDelegate" }, // 623842134
+		{ &Z_Construct_UFunction_UCircularWipeWidget_EndWipeVisuals, "EndWipeVisuals" }, // 1810586554
+		{ &Z_Construct_UFunction_UCircularWipeWidget_FadeFromBlack, "FadeFromBlack" }, // 681587482
+		{ &Z_Construct_UFunction_UCircularWipeWidget_PlayFullWipe, "PlayFullWipe" }, // 4086808637
+		{ &Z_Construct_UFunction_UCircularWipeWidget_PlayFullWipeVisuals, "PlayFullWipeVisuals" }, // 3366408246
+		{ &Z_Construct_UFunction_UCircularWipeWidget_StartWipe, "StartWipe" }, // 3992399419
+		{ &Z_Construct_UFunction_UCircularWipeWidget_StartWipeVisuals, "StartWipeVisuals" }, // 1970611141
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -512,18 +514,18 @@ UCircularWipeWidget::~UCircularWipeWidget() {}
 // ********** End Class UCircularWipeWidget ********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h__Script_BashCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h__Script_BashCore_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FCircleWipeParams::StaticStruct, Z_Construct_UScriptStruct_FCircleWipeParams_Statics::NewStructOps, TEXT("CircleWipeParams"), &Z_Registration_Info_UScriptStruct_FCircleWipeParams, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCircleWipeParams), 2393117434U) },
+		{ FCircleWipeParams::StaticStruct, Z_Construct_UScriptStruct_FCircleWipeParams_Statics::NewStructOps, TEXT("CircleWipeParams"), &Z_Registration_Info_UScriptStruct_FCircleWipeParams, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCircleWipeParams), 1496909078U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UCircularWipeWidget, UCircularWipeWidget::StaticClass, TEXT("UCircularWipeWidget"), &Z_Registration_Info_UClass_UCircularWipeWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCircularWipeWidget), 2942561924U) },
+		{ Z_Construct_UClass_UCircularWipeWidget, UCircularWipeWidget::StaticClass, TEXT("UCircularWipeWidget"), &Z_Registration_Info_UClass_UCircularWipeWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCircularWipeWidget), 1373378320U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h__Script_BashCore_4155159319(TEXT("/Script/BashCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h__Script_BashCore_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h__Script_BashCore_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h__Script_BashCore_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h__Script_BashCore_1165548082(TEXT("/Script/BashCore"),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h__Script_BashCore_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h__Script_BashCore_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Widgets_CircularWipeWidget_h__Script_BashCore_Statics::ScriptStructInfo),
 	nullptr, 0);
 // ********** End Registration *********************************************************************
 

@@ -1,0 +1,46 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.MinigameCore.cpp.obj": [
+			"BasePointCounter.gen.cpp.obj",
+			"ControlDisplay.gen.cpp.obj",
+			"LevelSequenceMinigameCutsceneManager.gen.cpp.obj",
+			"MinigameAIController.gen.cpp.obj",
+			"MinigameBase.gen.cpp.obj",
+			"MinigameCapture.gen.cpp.obj",
+			"MinigameCore.init.gen.cpp.obj",
+			"MinigameCoreBlueprintLibrary.gen.cpp.obj",
+			"MinigameCustomizablePlayerComponent.gen.cpp.obj",
+			"MinigameCutsceneManager.gen.cpp.obj",
+			"MinigameEnums.gen.cpp.obj",
+			"MinigamePlayer.gen.cpp.obj",
+			"MinigameSessionSubsystem.gen.cpp.obj",
+			"MinigameStanding.gen.cpp.obj",
+			"MinigameUI.gen.cpp.obj",
+			"PlayerAccelerationComponent.gen.cpp.obj",
+			"PlayerRotationComponent.gen.cpp.obj",
+			"PlayerRotationMovingAverageComponent.gen.cpp.obj",
+			"PlayerSpawn.gen.cpp.obj",
+			"PracticeModeUI.gen.cpp.obj",
+			"SplitscreenUI.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"BasePointCounter.cpp.obj",
+			"LevelSequenceMinigameCutsceneManager.cpp.obj",
+			"MinigameCutsceneManager.cpp.obj",
+			"MinigameBase.cpp.obj",
+			"MinigameCapture.cpp.obj",
+			"MinigameCore.cpp.obj",
+			"MinigameCoreBlueprintLibrary.cpp.obj",
+			"MinigameCoreLogChannel.cpp.obj",
+			"MinigameCustomizablePlayerComponent.cpp.obj",
+			"MinigameAIController.cpp.obj",
+			"MinigamePlayer.cpp.obj",
+			"PlayerAccelerationComponent.cpp.obj",
+			"PlayerRotationComponent.cpp.obj",
+			"PlayerRotationMovingAverageComponent.cpp.obj",
+			"MinigameUI.cpp.obj",
+			"PracticeModeUI.cpp.obj",
+			"SplitscreenUI.cpp.obj"
+		]
+	}
+}

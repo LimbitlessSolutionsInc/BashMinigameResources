@@ -107,10 +107,14 @@ struct Z_Construct_UClass_UMenuStackContext_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Used to retain a stack of open menus. Allows the closing and opening of menus and returning to the previous location.\n * Menu is the actual menu widget. SelectedWidget is the last selected widget before exiting that menu.\n */" },
+#endif
 		{ "IncludePath", "Components/Player/UIInputComponentBase.h" },
 		{ "ModuleRelativePath", "Public/Components/Player/UIInputComponentBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Used to retain a stack of open menus. Allows the closing and opening of menus and returning to the previous location.\n* Menu is the actual menu widget. SelectedWidget is the last selected widget before exiting that menu." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -193,10 +197,14 @@ struct Z_Construct_UFunction_UUIInputComponentBase_CloseMenu_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Events" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Call to close a menu. Will close all menus on top of it.\n\x09 * @param menu - The menu to close\n\x09 */" },
+#endif
 		{ "CPP_Default_closeAll", "false" },
 		{ "ModuleRelativePath", "Public/Components/Player/UIInputComponentBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Call to close a menu. Will close all menus on top of it.\n       * @param menu - The menu to close" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_menu_MetaData[] = {
 		{ "EditInline", "true" },
@@ -251,9 +259,13 @@ struct Z_Construct_UFunction_UUIInputComponentBase_FocusWidget_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Events" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Has User focus specific widget.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Components/Player/UIInputComponentBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Has User focus specific widget." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_widget_MetaData[] = {
 		{ "EditInline", "true" },
@@ -345,9 +357,13 @@ struct Z_Construct_UFunction_UUIInputComponentBase_OpenMenu_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Events" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Call to open a menu with this player as the controller.\n\x09 * @param menu - The menu to open\n\x09 * @param clearMenuStack - if true clears all menus from the menu stack. Used if previous menus will not be accesible.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/Components/Player/UIInputComponentBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Call to open a menu with this player as the controller.\n       * @param menu - The menu to open\n       * @param clearMenuStack - if true clears all menus from the menu stack. Used if previous menus will not be accesible." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_menu_MetaData[] = {
 		{ "EditInline", "true" },
@@ -474,9 +490,13 @@ struct Z_Construct_UClass_UUIInputComponentBase_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnSelectButtonPressed_MetaData[] = {
 		{ "Category", "Input" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Input Delegates\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Components/Player/UIInputComponentBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Input Delegates" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnBackButtonPressed_MetaData[] = {
 		{ "Category", "Input" },
@@ -548,10 +568,10 @@ struct Z_Construct_UClass_UUIInputComponentBase_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UUIInputComponentBase_CloseAllMenus, "CloseAllMenus" }, // 102788730
-		{ &Z_Construct_UFunction_UUIInputComponentBase_CloseMenu, "CloseMenu" }, // 2793488302
-		{ &Z_Construct_UFunction_UUIInputComponentBase_FocusWidget, "FocusWidget" }, // 1140481921
+		{ &Z_Construct_UFunction_UUIInputComponentBase_CloseMenu, "CloseMenu" }, // 373625731
+		{ &Z_Construct_UFunction_UUIInputComponentBase_FocusWidget, "FocusWidget" }, // 57242842
 		{ &Z_Construct_UFunction_UUIInputComponentBase_GetFocusWidget, "GetFocusWidget" }, // 3401377780
-		{ &Z_Construct_UFunction_UUIInputComponentBase_OpenMenu, "OpenMenu" }, // 2591250353
+		{ &Z_Construct_UFunction_UUIInputComponentBase_OpenMenu, "OpenMenu" }, // 1869205566
 		{ &Z_Construct_UFunction_UUIInputComponentBase_SelectOption, "SelectOption" }, // 1166036507
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -626,15 +646,15 @@ UUIInputComponentBase::~UUIInputComponentBase() {}
 // ********** End Class UUIInputComponentBase ******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h__Script_BashCore_Statics
+struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h__Script_BashCore_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMenuStackContext, UMenuStackContext::StaticClass, TEXT("UMenuStackContext"), &Z_Registration_Info_UClass_UMenuStackContext, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMenuStackContext), 2794084451U) },
-		{ Z_Construct_UClass_UUIInputComponentBase, UUIInputComponentBase::StaticClass, TEXT("UUIInputComponentBase"), &Z_Registration_Info_UClass_UUIInputComponentBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UUIInputComponentBase), 3010370379U) },
+		{ Z_Construct_UClass_UMenuStackContext, UMenuStackContext::StaticClass, TEXT("UMenuStackContext"), &Z_Registration_Info_UClass_UMenuStackContext, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMenuStackContext), 1875956042U) },
+		{ Z_Construct_UClass_UUIInputComponentBase, UUIInputComponentBase::StaticClass, TEXT("UUIInputComponentBase"), &Z_Registration_Info_UClass_UUIInputComponentBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UUIInputComponentBase), 302142861U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h__Script_BashCore_1576557291(TEXT("/Script/BashCore"),
-	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_Plugins_BashCore_HostProject_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h__Script_BashCore_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h__Script_BashCore_1717713649(TEXT("/Script/BashCore"),
+	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h__Script_BashCore_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_BashCore_Source_BashCore_Public_Components_Player_UIInputComponentBase_h__Script_BashCore_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************
