@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-BleUtilities-Win64-DebugGame.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:/Users/nortm/OneDrive/Documents/Github/Limbitless/UnrealParty/Intermediate/Build/Win64/x64/werid_flexEditor/DebugGame/UnrealEd/SharedPCH.UnrealEd.Project.NonOptimized.ValApi.ValExpApi.Cpp20.h.obj"
+"C:/Users/nortm/OneDrive/Documents/Github/Limbitless/UnrealParty/Plugins/ble-utilities-unreal-master/Intermediate/Build/Win64/x64/UnrealEditor/DebugGame/BleUtilities/Module.BleUtilities.cpp.obj"
+"C:/Users/nortm/OneDrive/Documents/Github/Limbitless/UnrealParty/Plugins/ble-utilities-unreal-master/Intermediate/Build/Win64/x64/UnrealEditor/DebugGame/BleUtilities/Default.rc2.res"
+/OUT:"C:/Users/nortm/OneDrive/Documents/Github/Limbitless/UnrealParty/Plugins/ble-utilities-unreal-master/Intermediate/Build/Win64/x64/UnrealEditor/DebugGame/BleUtilities/UnrealEditor-BleUtilities-Win64-DebugGame.lib"

@@ -1,0 +1,17 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.BleUtilities.cpp.obj": [
+			"BLEDeviceInterface.gen.cpp.obj",
+			"BLEManagerInterface.gen.cpp.obj",
+			"BLEScannerInterface.gen.cpp.obj",
+			"BleUtilities.init.gen.cpp.obj",
+			"BleUtilitiesBPL.gen.cpp.obj",
+			"BleUtilitiesPluginUtils.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"BleUtilitiesBPL.cpp.obj",
+			"BleUtilitiesModule.cpp.obj",
+			"BleUtilitiesPluginUtils.cpp.obj"
+		]
+	}
+}
