@@ -1,8 +1,0 @@
-{
-	"BuildId": "43139311",
-	"Modules": 
-	{
-		"MinigameCore": "UnrealEditor-MinigameCore-Win64-DebugGame.dll",
-		"MinigameCoreEditor": "UnrealEditor-MinigameCoreEditor-Win64-DebugGame.dll"
-	}
-}

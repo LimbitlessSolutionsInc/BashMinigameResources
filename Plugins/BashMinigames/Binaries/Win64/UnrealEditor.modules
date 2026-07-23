@@ -1,8 +1,0 @@
-{
-	"BuildId": "43139311",
-	"Modules": 
-	{
-		"BashMinigames": "UnrealEditor-BashMinigames.dll",
-		"ShootingRange": "UnrealEditor-ShootingRange.dll"
-	}
-}

@@ -6,9 +6,7 @@ public class BashCore : ModuleRules
 {
 	public BashCore(ReadOnlyTargetRules Target) : base(Target)
 	{
-		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
-		
-		PrecompileForTargets = PrecompileTargetsType.Any;
+		bUsePrecompiled = true;
 		
 		PublicIncludePaths.AddRange(
 			new string[] {

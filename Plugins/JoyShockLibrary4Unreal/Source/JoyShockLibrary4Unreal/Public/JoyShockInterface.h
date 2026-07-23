@@ -114,12 +114,7 @@ private:
 	void OnControllerAnalog(const FPlatformUserId& InPlatformUser, const FInputDeviceId& InInputDevice,
 						const FName& GamePadKey, float NewAxisValueNormalized, float OldAxisValueNormalized,
 						float DeadZone) const;
-	void OnStickAnalog(const FPlatformUserId& InPlatformUser, const FInputDeviceId& InInputDevice,
-	                   const FName& AnalogGamePadKey, const FName& TriggeredGamePadKeyPositive,
-	                   const FName& TriggeredGamePadKeyNegative, float NewAxisValueNormalized,
-	                   float OldAxisValueNormalized,
-	                   float DeadZone) const;
-
+	
 	void ProcessButtons(int32 CurrentButtons, int32 PreviousButtons, FPlatformUserId PlatformUser, FInputDeviceId InputDevice);
 	void ProcessAnalogInputs(const FJoyShockState& SimpleState, const FJoyShockState& PreviousSimpleState, FPlatformUserId PlatformUser, FInputDeviceId InputDevice);
 	// Callbacks

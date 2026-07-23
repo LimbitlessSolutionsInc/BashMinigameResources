@@ -10,12 +10,12 @@
 	"DocsURL": "",
 	"MarketplaceURL": "",
 	"SupportURL": "",
+	"EngineVersion": "5.6.0",
 	"CanContainContent": false,
-	"IsBetaVersion": false,
-	"IsExperimentalVersion": false,
-	"Installed": false,
+	"Installed": true,
 	"SupportedTargetPlatforms": [
-		"Win64", "Android"
+		"Win64",
+		"Android"
 	],
 	"Modules": [
 		{

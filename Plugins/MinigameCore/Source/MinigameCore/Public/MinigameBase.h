@@ -26,9 +26,6 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE(FGameStartedSignature);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FGameEndedSignature);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FGameResetSignature);
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnViewportSizeChangedSignature, FVector2D, NewSize);
-
-
 UCLASS()
 class MINIGAMECORE_API AMinigameBase : public ABashGamemode
 {
@@ -119,9 +116,7 @@ public:
 	
 	UFUNCTION(BlueprintCallable, Category = "MinigameUI")
 	void PlayMinigameTransitionEffects();
-
-	UPROPERTY(BlueprintAssignable)
-	FOnViewportSizeChangedSignature OnViewportSizeChanged;
+	
 protected:
 	/*
 	 *  Base overrides
@@ -260,7 +255,8 @@ private:
 
 	UPROPERTY(EditDefaultsOnly, Category="Minigame|Cutscenes")
 	TSubclassOf<UMinigameCutsceneManager> EndingCutscene{};
-	
+
+
 	/*
 	 *  Private references 
 	 */
@@ -279,13 +275,9 @@ private:
 	UPROPERTY()
 	TArray<TObjectPtr<UCustomizableObjectInstance>> CachedCustomizationOverrides;
 
-	// Index: team number | Value: array of player numbers on the team
-	TArray<TArray<int>> Teams;
-
 	// Index: Player | Value: Team of player
+	TArray<TArray<int>> Teams;
 	TArray<int> TeamsByPlayers;
-
-	// Index: Player | Value: bool of player's ready status
 	TArray<bool> ReadyPlayers;
 
 	TArray<TObjectPtr<AMinigamePlayer>> Players{};
@@ -298,8 +290,6 @@ private:
 	TObjectPtr<ACameraActor> DefaultCamera;
 
 	FTimerHandle ResetTimerHandle{};
-
-	FVector2D LastViewportSize{};
 
 	// Returns the index in playerSpawns that has the specified team and position
 	AActor* GetPlayerSpawn(int Team, int Pos) const;

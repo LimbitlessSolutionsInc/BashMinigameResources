@@ -106,13 +106,13 @@ void FJoyShockInterface::InitializeAdditionalKeys()
 	EKeys::AddKey(FKeyDetails(FunctionRightButtonKey, LOCTEXT("JoyShock_Function_Right", "JoyShock Function Right"), FKeyDetails::GamepadKey, JoyShockControllerName));
 
 	// IMU Input
-	EKeys::AddKey(FKeyDetails(AccelerationXVirtualKey, LOCTEXT("JoyShock_Acceleration_X", "JoyShock Acceleration X"), FKeyDetails::GamepadKey | FKeyDetails::Axis1D, JoyShockControllerName));
-	EKeys::AddKey(FKeyDetails(AccelerationYVirtualKey, LOCTEXT("JoyShock_Acceleration_Y", "JoyShock Acceleration Y"), FKeyDetails::GamepadKey | FKeyDetails::Axis1D, JoyShockControllerName));
-	EKeys::AddKey(FKeyDetails(AccelerationZVirtualKey, LOCTEXT("JoyShock_Acceleration_Z", "JoyShock Acceleration Z"), FKeyDetails::GamepadKey | FKeyDetails::Axis1D, JoyShockControllerName));
+	EKeys::AddKey(FKeyDetails(AccelerationXVirtualKey, LOCTEXT("JoyShock_Acceleration_X", "JoyShock Acceleration X"), FKeyDetails::GamepadKey, JoyShockControllerName));
+	EKeys::AddKey(FKeyDetails(AccelerationYVirtualKey, LOCTEXT("JoyShock_Acceleration_Y", "JoyShock Acceleration Y"), FKeyDetails::GamepadKey, JoyShockControllerName));
+	EKeys::AddKey(FKeyDetails(AccelerationZVirtualKey, LOCTEXT("JoyShock_Acceleration_Z", "JoyShock Acceleration Z"), FKeyDetails::GamepadKey, JoyShockControllerName));
 
-	EKeys::AddKey(FKeyDetails(RotationXVirtualKey, LOCTEXT("JoyShock_Rotation_X", "JoyShock Rotation X"), FKeyDetails::GamepadKey | FKeyDetails::Axis1D, JoyShockControllerName));
-	EKeys::AddKey(FKeyDetails(RotationYVirtualKey, LOCTEXT("JoyShock_Rotation_Y", "JoyShock Rotation Y"), FKeyDetails::GamepadKey | FKeyDetails::Axis1D, JoyShockControllerName));
-	EKeys::AddKey(FKeyDetails(RotationZVirtualKey, LOCTEXT("JoyShock_Rotation_Z", "JoyShock Rotation Z"), FKeyDetails::GamepadKey | FKeyDetails::Axis1D, JoyShockControllerName));
+	EKeys::AddKey(FKeyDetails(RotationXVirtualKey, LOCTEXT("JoyShock_Rotation_X", "JoyShock Rotation X"), FKeyDetails::GamepadKey, JoyShockControllerName));
+	EKeys::AddKey(FKeyDetails(RotationYVirtualKey, LOCTEXT("JoyShock_Rotation_Y", "JoyShock Rotation Y"), FKeyDetails::GamepadKey, JoyShockControllerName));
+	EKeys::AddKey(FKeyDetails(RotationZVirtualKey, LOCTEXT("JoyShock_Rotation_Z", "JoyShock Rotation Z"), FKeyDetails::GamepadKey, JoyShockControllerName));
 
 }
 
@@ -261,31 +261,7 @@ void FJoyShockInterface::OnControllerAnalog(const FPlatformUserId& InPlatformUse
 	// Send new analog data if it's different or outside the platform deadzone.
 	if (OldAxisValueNormalized != NewAxisValueNormalized || FMath::Abs(NewAxisValueNormalized) > DeadZone)
 		MessageHandler->OnControllerAnalog(GamePadKey, InPlatformUser, InInputDevice, NewAxisValueNormalized);
-}
-
-void FJoyShockInterface::OnStickAnalog(const FPlatformUserId& InPlatformUser, const FInputDeviceId& InInputDevice, const FName& AnalogGamePadKey, const FName& TriggeredGamePadKeyPositive, const FName& TriggeredGamePadKeyNegative, const float NewAxisValueNormalized, const float OldAxisValueNormalized, float DeadZone) const
-{
-	constexpr float StickTriggerThreshold = .8;
 	
-	if (JoyShockEnableXInputDeadzones == 0)
-		DeadZone = 0.0f;
-
-	// Send new analog data if it's outside the platform deadzone.
-	if (FMath::Abs(NewAxisValueNormalized) > DeadZone)
-		MessageHandler->OnControllerAnalog(AnalogGamePadKey, InPlatformUser, InInputDevice, NewAxisValueNormalized);
-	else
-		MessageHandler->OnControllerAnalog(AnalogGamePadKey, InPlatformUser, InInputDevice, 0);
-	
-	bool bOldExceedsThreshold = FMath::Abs(OldAxisValueNormalized) > StickTriggerThreshold;
-	bool bNewExceedsThreshold = FMath::Abs(NewAxisValueNormalized) > StickTriggerThreshold;
-	
-	// If just exceeded threshold, send trigger data
-	if (!bOldExceedsThreshold && bNewExceedsThreshold)
-	{
-		const FName& TriggeredKey = FMath::Sign(NewAxisValueNormalized) < 0 ? TriggeredGamePadKeyNegative : TriggeredGamePadKeyPositive;
-		MessageHandler->OnControllerButtonPressed(TriggeredKey, InPlatformUser, InInputDevice, false);
-		MessageHandler->OnControllerButtonReleased(TriggeredKey, InPlatformUser, InInputDevice, false);
-	}
 }
 
 void FJoyShockInterface::ProcessButtons(int32 CurrentButtons, int32 PreviousButtons, FPlatformUserId PlatformUser, FInputDeviceId InputDevice)
@@ -328,12 +304,12 @@ void FJoyShockInterface::ProcessButtons(int32 CurrentButtons, int32 PreviousButt
 
 void FJoyShockInterface::ProcessAnalogInputs(const FJoyShockState& SimpleState, const FJoyShockState& PreviousSimpleState, FPlatformUserId PlatformUser, FInputDeviceId InputDevice)
 {
-	OnStickAnalog(PlatformUser, InputDevice, FGamepadKeyNames::LeftAnalogX, FGamepadKeyNames::LeftStickRight, FGamepadKeyNames::LeftStickLeft, SimpleState.stickLX, PreviousSimpleState.stickLX, XInputLeftStickDeadzone);
-	OnStickAnalog(PlatformUser, InputDevice, FGamepadKeyNames::LeftAnalogY, FGamepadKeyNames::LeftStickUp, FGamepadKeyNames::LeftStickDown, SimpleState.stickLY, PreviousSimpleState.stickLY, XInputLeftStickDeadzone);
+	OnControllerAnalog(PlatformUser, InputDevice, FGamepadKeyNames::LeftAnalogX, SimpleState.stickLX, PreviousSimpleState.stickLX, XInputLeftStickDeadzone);
+	OnControllerAnalog(PlatformUser, InputDevice, FGamepadKeyNames::LeftAnalogY, SimpleState.stickLY, PreviousSimpleState.stickLY, XInputLeftStickDeadzone);
 
-	OnStickAnalog(PlatformUser, InputDevice, FGamepadKeyNames::RightAnalogX, FGamepadKeyNames::RightStickRight, FGamepadKeyNames::RightStickLeft, SimpleState.stickRX, PreviousSimpleState.stickRX, XInputRightStickDeadzone);
-	OnStickAnalog(PlatformUser, InputDevice, FGamepadKeyNames::RightAnalogY, FGamepadKeyNames::RightStickUp, FGamepadKeyNames::RightStickDown, SimpleState.stickRY, PreviousSimpleState.stickRY, XInputRightStickDeadzone);
-	
+	OnControllerAnalog(PlatformUser, InputDevice, FGamepadKeyNames::RightAnalogX, SimpleState.stickRX, PreviousSimpleState.stickRX, XInputRightStickDeadzone);
+	OnControllerAnalog(PlatformUser, InputDevice, FGamepadKeyNames::RightAnalogY, SimpleState.stickRY, PreviousSimpleState.stickRY, XInputRightStickDeadzone);
+
 	OnControllerAnalog(PlatformUser, InputDevice, FGamepadKeyNames::LeftTriggerAnalog, SimpleState.lTrigger, PreviousSimpleState.lTrigger, XInputTriggerDeadzone);
 	OnControllerAnalog(PlatformUser, InputDevice, FGamepadKeyNames::RightTriggerAnalog, SimpleState.rTrigger, PreviousSimpleState.rTrigger, XInputTriggerDeadzone);
 }

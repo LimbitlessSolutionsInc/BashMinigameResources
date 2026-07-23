@@ -1,19 +1,21 @@
-﻿{
+{
 	"FileVersion": 3,
 	"Version": 1,
 	"VersionName": "1.0",
 	"FriendlyName": "JoyShockLibrary4Unreal",
 	"Description": "Unreal Wrapper for JibbSmart's JoyShockLibrary",
-	"Category" : "Input Devices",
+	"Category": "Input Devices",
 	"CreatedBy": "AgentOttsel, JibbSmart",
 	"CreatedByURL": "",
 	"DocsURL": "",
 	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EngineVersion": "5.6.0",
 	"CanContainContent": true,
-	"IsBetaVersion": false,
-	"IsExperimentalVersion": false,
-	"Installed": false,
-	"SupportedTargetPlatforms": [ "Win64" ],
+	"Installed": true,
+	"SupportedTargetPlatforms": [
+		"Win64"
+	],
 	"Modules": [
 		{
 			"Name": "JoyShockLibrary4Unreal",

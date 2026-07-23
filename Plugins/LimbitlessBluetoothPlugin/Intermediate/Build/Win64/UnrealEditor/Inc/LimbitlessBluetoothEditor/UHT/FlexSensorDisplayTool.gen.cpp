@@ -243,9 +243,7 @@ struct Z_Construct_UClass_UFlexSensorDisplayTool_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
-#endif
 		{ "IncludePath", "FlexSensorDisplayTool.h" },
 		{ "ModuleRelativePath", "Public/FlexSensorDisplayTool.h" },
 	};
@@ -328,18 +326,18 @@ UFlexSensorDisplayTool::~UFlexSensorDisplayTool() {}
 // ********** End Class UFlexSensorDisplayTool *****************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothEditor_Public_FlexSensorDisplayTool_h__Script_LimbitlessBluetoothEditor_Statics
+struct Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothEditor_Public_FlexSensorDisplayTool_h__Script_LimbitlessBluetoothEditor_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
 		{ FSensorDisplayData::StaticStruct, Z_Construct_UScriptStruct_FSensorDisplayData_Statics::NewStructOps, TEXT("SensorDisplayData"), &Z_Registration_Info_UScriptStruct_FSensorDisplayData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSensorDisplayData), 109474022U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UFlexSensorDisplayTool, UFlexSensorDisplayTool::StaticClass, TEXT("UFlexSensorDisplayTool"), &Z_Registration_Info_UClass_UFlexSensorDisplayTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UFlexSensorDisplayTool), 1384454158U) },
+		{ Z_Construct_UClass_UFlexSensorDisplayTool, UFlexSensorDisplayTool::StaticClass, TEXT("UFlexSensorDisplayTool"), &Z_Registration_Info_UClass_UFlexSensorDisplayTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UFlexSensorDisplayTool), 2915366502U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothEditor_Public_FlexSensorDisplayTool_h__Script_LimbitlessBluetoothEditor_1516402781(TEXT("/Script/LimbitlessBluetoothEditor"),
-	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothEditor_Public_FlexSensorDisplayTool_h__Script_LimbitlessBluetoothEditor_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothEditor_Public_FlexSensorDisplayTool_h__Script_LimbitlessBluetoothEditor_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothEditor_Public_FlexSensorDisplayTool_h__Script_LimbitlessBluetoothEditor_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nortm_OneDrive_Documents_Github_Limbitless_UnrealParty_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothEditor_Public_FlexSensorDisplayTool_h__Script_LimbitlessBluetoothEditor_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothEditor_Public_FlexSensorDisplayTool_h__Script_LimbitlessBluetoothEditor_3892604895(TEXT("/Script/LimbitlessBluetoothEditor"),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothEditor_Public_FlexSensorDisplayTool_h__Script_LimbitlessBluetoothEditor_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothEditor_Public_FlexSensorDisplayTool_h__Script_LimbitlessBluetoothEditor_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothEditor_Public_FlexSensorDisplayTool_h__Script_LimbitlessBluetoothEditor_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_zombi_Downloads_LimbitlessBluetoothPlugin_HostProject_Plugins_LimbitlessBluetoothPlugin_Source_LimbitlessBluetoothEditor_Public_FlexSensorDisplayTool_h__Script_LimbitlessBluetoothEditor_Statics::ScriptStructInfo),
 	nullptr, 0);
 // ********** End Registration *********************************************************************
 
