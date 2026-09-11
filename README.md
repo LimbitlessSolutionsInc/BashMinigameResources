@@ -44,7 +44,7 @@ Here is a sample project that uses MinigameCore. Feel free to reference it to se
      10.1 [Customizer Character Actor](#101-character-customizer-actor)  
 > 1. [Editor Tools](#11-editor-tools)  
 > 1. [Asset Organization Conventions](#12-asset-organization-conventions)  
-> 1. [Limbitless Asset Database](#13-limbitless-asset-databases)  
+> 1. [Limbitless Asset Database](#13-limbitless-asset-database)  
 > 1. [Minigame Design Pillars](#14-minigame-design-pillars)
 > 1. [Minigame Migration](#15-minigame-migration)  
 >    14.1 [Migrating C++](#151-migrating-cpp)  
