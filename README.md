@@ -566,7 +566,16 @@ Minigame-specific blueprints should additionally include the minigame name (or i
 
 For more information on asset conventions, see [the Asset Guide](AssetGuide.md).
 
-# 13 Minigame Design Pillars
+# 13 Limbitless Asset Database
+Limbitless has game-ready assets (3d models, animations, music, etc.) accessible for use in all minigames. To access these assets, you should have the Bash plugins installed into your Unreal project from [Getting Started](#1-getting-started).  open the Content Browser in your minigame and go to **Plugins > BashAssets**. 
+
+The assets are split between the different board map themes (ex. Serenity, Warrior, Ethereal, Shadow). 
+
+![Plugins > BashAssets](Images/BashAssets_Image.png)
+![Plugins > BashAssets](Images/BashAssets2_Image.png)
+
+
+# 14 Minigame Design Pillars
 
 * Foster competition, but prioritize fun for all players  
   * Games should not be overly punishing.  
@@ -581,13 +590,13 @@ For more information on asset conventions, see [the Asset Guide](AssetGuide.md).
 * Enemies can be aggressive but never hateful  
 * Avoid controversial content.
 
-# 14 Minigame Migration
+# 15 Minigame Migration
 
 This section documents the process to move minigames created in separate projects into the base Super Bionic Bash project. For minigame creators, this section can be ignored.
 
 The project with the minigame will be referred to as the “minigame project”. Super Bionic Bash will be referred to as the “base project”.
 
-## 14.1 Migrating C++
+## 15.1 Migrating C++
 
 If the minigame project has C++ classes, then:
 
@@ -601,7 +610,7 @@ If the minigame project has C++ classes, then:
 
 5. Build to ensure there are no compilation errors
 
-## 14.2 Migrating Content
+## 15.2 Migrating Content
 
 Remaining minigame content (Blueprints, Levels, Textures, etc) can be migrated using Unreal Engine’s migration system.
 
@@ -615,7 +624,7 @@ Remaining minigame content (Blueprints, Levels, Textures, etc) can be migrated u
 
 5. Open the base project and ensure the newly migrated assets are in their own subfolder within the Content folder, if it isn’t already. The subfolder should have the same name as the minigame. Fix up any redirectors from this move, if necessary
 
-## 15 Disclaimer and Licensing
+## 16 Disclaimer and Licensing
 
 University of Central Florida Research Foundation, Inc., d/b/a Limbitless Solutions, Inc. (Limbitless or LSI), located at the University of Central Florida (University) in Orlando, Florida, United States of America received support to host a game-jam. This project was funded [in part] by a grant from the United States Department of State. The opinions, findings and conclusions stated herein are those of the author[s] and do not  necessarily reflect those of the United States Department of State or the University of Central Florida. 
 
