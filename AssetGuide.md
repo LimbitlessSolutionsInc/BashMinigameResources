@@ -10,7 +10,9 @@ Contents
 > 1. [Naming Conventions](#naming-conventions)  
 > 1. [Folder Structure](#folder-structure)  
 > 1. [/Asset/](#asset)  
->    5.1 [/3rdParty/](#3rdparty)  
+>    5.1 [/3rdParty/](#3rdparty)
+> 1. [Creating New Materials](#creating-new-materials)  
+>    6.1 [How to create a material instance](#how-to-create-a-material-instance)
 ## Important Information
 
 When importing assets into an Unreal Game, the engine makes a *copy* of the source file. It does **not** actually import the original file. To rectify this, Bionic Bash Minigames should contain 2 Asset Folders. **There should be 1 asset folder inside the Content directory, and 1 asset folder inside the project root directory.** These should be exact mirrors of each other. The one inside the content directory should contain **UASSETS**, and the one in root should contain the **original source files** (fbxs, pngs, etc). This does **not** include files like “.mb, .ma, .blender”. Those will not be kept inside of the project or source control. 
@@ -145,3 +147,19 @@ The Root Asset folder will only contain folders. Do not put assets directly in t
 #### /3rdParty/
 
 If your minigame contains third party assets like an asset pack, please place them inside a directory named “3rdParty” within the asset folder, as well as any related copyright licenses.
+
+## Creating New Materials 
+
+When creating new materials for custom/imported assets, please create *material instances* using the Bash master material named **MM_Master** (found in **Plugins > BashAssets > Materials** ). For specialized materials that need more control, such as custom VFX, creating a new Material is fine.
+
+### How to create a material instance
+
+1. Right-click in the folder you would like to create your material instance and select **Material > Material Instance**.
+![Create a new MI](Images/Materials1_Image.png)
+2. Name your material instance using the prefix `MI_[AssetName]`.
+3. Double-click your new material instance to open the asset editor.
+4. In the Details panel, choose **MM_Master** (Path: /BashAssets/Materials) as the Parent material.
+![Select parent material as MM_Master](Images/Materials2_Image.png)
+6. Expand the newly exposed parameters and input your textures and desired settings.
+![Set material pameters](Images/Materials3_Image.png)
+8. Apply the material instance to your meshes. 
