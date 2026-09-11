@@ -156,10 +156,15 @@ When creating new materials for custom/imported assets, please create *material 
 
 1. Right-click in the folder you would like to create your material instance and select **Material > Material Instance**.
 ![Create a new MI](Images/Materials1_Image.png)
+
 2. Name your material instance using the prefix `MI_[AssetName]`.
+
 3. Double-click your new material instance to open the asset editor.
+
 4. In the Details panel, choose **MM_Master** (Path: /BashAssets/Materials) as the Parent material.
 ![Select parent material as MM_Master](Images/Materials2_Image.png)
-6. Expand the newly exposed parameters and input your textures and desired settings.
+
+5. Expand the newly exposed parameters and input your textures and desired settings.
 ![Set material pameters](Images/Materials3_Image.png)
-8. Apply the material instance to your meshes. 
+
+6. Apply the material instance to your meshes. 
