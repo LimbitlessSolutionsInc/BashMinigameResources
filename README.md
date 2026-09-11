@@ -52,13 +52,16 @@ Here is a sample project that uses MinigameCore. Feel free to reference it to se
 
 # 1. Getting Started
 
-This documentation assumes an understanding of Unreal Engine 5 basics, such as familiarity with blueprints, actors, and gamemodes. C++ knowledge is **not** required.
+This documentation assumes an understanding of Unreal Engine 5 basics, such as familiarity with blueprints, actors, and gamemodes. 
+Bash minigames are primarily made in Blueprints; C++ knowledge is **not** required.
 
 To get started with making your new minigame:
 
-1. Create a new Unreal Engine 5.6 project with the same name as your minigame
+1. Create a new blank Unreal Engine 5.6.1 project with the same name as your minigame. Use no spaces in the title. Choose **Blank** as the project template and use default settings. Blueprints is recommended to start off, C++ can always be added later if desired. 
 
-2. Create a folder called Plugins in the root folder of your newly created project. Clone this GitHub repository and copy the contents of its Plugins into the newly created project Plugins folder. Enable MinigameCore in the editor (Edit > Plugins > Search for **MinigameCore** > Select checkbox)
+![Create new project in Unreal](Images/CreateNewProject_Image.png)
+
+2. Create a folder called Plugins in the root folder of your newly created project. Download this GitHub repository and copy the contents of the BashMinigameResources's Plugins folder into the newly created project Plugins folder. Enable MinigameCore in the editor (Edit > Plugins > Search for **MinigameCore** > Select checkbox)
 
 ![Enter image alt description](Images/Dnq_Image_1.png)
 
@@ -496,15 +499,14 @@ Level Sequence cutscenes also have several new BlueprintNativeEvents that can be
  
 # 10 Player Mesh
 
-Super Bionic Bash uses a character customizer. As such, the mesh for the player is generated at runtime. If you want to use the 
-customized character mesh in your minigame, attach a **CustomizablePlayer** component (located in the **BashCore** module) to your MinigamePlayer's **skeletal mesh component**. The skeletal mesh will be set at runtime by the CustomizablePlayer component. Optionally, you can set the skeletal mesh component itself to use **SKM_ModularCharacterFallback**'s skeletal mesh for reference of the character's size in viewport and editor (note that it will still be overridden at runtime).
+Super Bionic Bash uses a character customizer. As such, the mesh for the player is generated at runtime. If you want to use the customized character mesh in your minigame, attach a **CustomizablePlayer** component (located in the **BashCore** module) to your MinigamePlayer's **skeletal mesh component**. The skeletal mesh will be set at runtime by the CustomizablePlayer component. Optionally, you can set the skeletal mesh component itself to use **SKM_ModularCharacterFallback**'s skeletal mesh for reference of the character's size in viewport and editor (note that it will still be overridden at runtime).
 
 ![Skeletal mesh and customizable player component](Images/customizableplayercomponent.png)
 
 In the Blueprint's Components Tab, click **Add**, search for **Customizable Player**, then click on the search result
 
 The character customizer is not included as part of the minigame creation plugins, so there will be no customized character mesh to 
-display when playtesting the game. By default, **CustomizablePlayer** will display a randomized player for reference. In an a full Bash game, the mesh will be replaced with the corresponding player's customized mesh.
+display when playtesting the game. By default, **CustomizablePlayer** will display a randomized player for reference. Once the minigame is integrated into the full game, the mesh will be replaced with the corresponding player's customized mesh.
 
 The skeleton, physics asset, and fallback skeletal mesh is located in **Plugins** > **BashAssets** > **Content** > **Characters**. Some basic animations for the character can also be found in this folder.
 
