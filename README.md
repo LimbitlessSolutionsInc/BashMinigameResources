@@ -110,7 +110,7 @@ To create from C++, go to Tools (in the top toolbar) > New C++ Class > All Class
 
 
 
-9. Create a new GameMode Blueprint derived from **BP_MinigameBase** (similar to step 8 with MinigamePlayer). Name this Minigame Base as **BP_[Minigame Name]Gamemode**. Replace [Minigame Name] with the name of your minigame or an initialism. Open the Blueprint and fill the settings in the Details pane (see [2.3 Minigame Base Settings](#23-minigame-base-settings)) with information about your minigame.
+9. Create a new GameMode Blueprint derived from **BP_MinigameBase** (similar to step 8 with MinigamePlayer). Name this Minigame Base as **BP_[Minigame Name]Gamemode**. Replace [Minigame Name] with the name of your minigame or an initialism. Open the Blueprint and fill the settings in the Details pane (see [2.3 Minigame Base Settings](#23-minigame-base-settings)) with information about your minigame. Ensure to set an Player Objects array element to the **BP_[Minigame Name]Player** previously created.
 
 ![Enter image alt description](Images/hEP_Image_5.png)
 
@@ -145,6 +145,10 @@ When transitioning into a minigame from the board, it will start in the Practice
 Practice Mode uses the same level. All of this is handled by the Minigame Base by default.
 
 To comply with the Practice Mode phase reset, ensure that your GameMode and any Actors implement OnReset, if applicable, (see [2.7 Resetting](#27-resetting)) and that you have filled in all the fields in the Practice category (see [2.3 Minigame Base Settings](#23-minigame-base-settings)).
+
+To display controls in the Practice Mode UI, add array elements to the Controls and expand the index to add a control icon and control text. **T_AimIcon** and **T_FlexIcon** are available to use within Plugins/MinigameCore/PracticeModeResources.
+
+![Add tutorial UI for controls](Images/ControlUI_Image.png)
 
 Example of Practice Mode
 
